@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="cobolProject" name="bankdemo" uuid="416aa1ce-96e7-4f12-a76a-c3ab9265e3db" version="5.0">
+   <settings xsi:type="projectSettingsContainer">
+      <copybook-paths xsi:type="copybookPathsSettings">
+         <path enabled="true" name="/bankdemo" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/listing" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/bms" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/cobol" type="mfpath"/>
+         <path enabled="true" name="/bankdemo/sources/copybook" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/csd" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/jcl" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/ctlcards" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/proclib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/logs" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/rdef" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/sysloadlib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/xa" type="mfpath"/>
+      </copybook-paths>
+      <build-precedence-paths xsi:type="buildPrecedenceSettings">
+         <path enabled="true" name="/bankdemo" type="mfpath"/>
+         <path enabled="true" name="/bankdemo/listing" type="mfpath"/>
+         <path enabled="true" name="/bankdemo/sources" type="mfpath"/>
+         <path enabled="true" name="/bankdemo/sources/bms" type="mfpath"/>
+         <path enabled="true" name="/bankdemo/sources/cobol" type="mfpath"/>
+         <path enabled="true" name="/bankdemo/sources/copybook" type="mfpath"/>
+         <path enabled="true" name="/bankdemo/sources/csd" type="mfpath"/>
+         <path enabled="true" name="/bankdemo/sources/jcl" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/ctlcards" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/proclib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/logs" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/rdef" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/sysloadlib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/xa" type="mfpath"/>
+      </build-precedence-paths>
+      <configurations default="New Configuration" linkedWith="2017" xsi:type="buildConfigurationsContainer">
+         <configuration description="New Configuration" type="all_dll" xsi:type="cobolBuildConfiguration">
+            <targetdir name="AWSBankDemo"/>
+            <application_configuration xsi:type="runtimeConfigurationSettings">
+               <cobol_switches xsi:type="projectCobolSwitches"/>
+               <rts_switches xsi:type="projectRtsSwitches">
+                  <rts_switch name="A" value="on" index="1"/>
+                  <rts_switch name="D" value="off" index="0"/>
+                  <rts_switch name="F" value="on" index="0"/>
+                  <rts_switch name="I" value="off" index="2"/>
+                  <rts_switch name="O" value="on" index="0"/>
+                  <rts_switch name="S" value="off" index="5"/>
+               </rts_switches>
+               <deployment>
+                  <tunable name="reuse_container" value="true" index="0"/>
+                  <tunable name="reuse_container_after_error" value="true" index="0"/>
+                  <tunable name="app_always_exits" value="true" index="0"/>
+               </deployment>
+               <envScriptParameters></envScriptParameters>
+               <envScriptPath></envScriptPath>
+               <inheritBuildEnv>false</inheritBuildEnv>
+               <tunables>
+                  <tunable name="screen_lines" value="25" index="0"/>
+                  <tunable name="screen_cols" value="80" index="0"/>
+                  <tunable name="default_cancel_mode" value="2" index="0"/>
+               </tunables>
+            </application_configuration>
+            <link_settings xsi:type="linkSettings">
+               <options>
+                  <option id="targetName" name="linkSettings" value="AWSBankDemo"/>
+                  <option id="applicationType" name="linkSettings" value="console"/>
+                  <option id="outputDirectory" name="linkSettings" value="deploy/loadlib"/>
+                  <option id="type" name="linkSettings" value="all_dll"/>
+                  <option id="threadedRts" name="linkSettings" value="threadedRts"/>
+                  <option id="runtimeModel" name="linkSettings" value="shared"/>
+                  <option id="platform" name="linkSettings" value="Windows"/>
+                  <option id="bitism" name="linkSettings" value="64 bit"/>
+               </options>
+               <additional_files/>
+            </link_settings>
+            <deploy_settings xsi:type="deploySettings">
+               <options>
+                  <option id="deployFolder" name="deploySettings" value="deploy"/>
+                  <option id="cleanAllowed" name="deploySettings" value="cleanAllowed"/>
+                  <option id="deployFiles" name="deploySettings" value=""/>
+                  <option id="deployPatterns" name="deploySettings" value="System/Loadlib/*${exeext}"/>
+               </options>
+            </deploy_settings>
+         </configuration>
+      </configurations>
+      <ims_settings xsi:type="additionalImsSettings">
+         <generatedFileDir name=""/>
+         <imsDatabaseDir name=""/>
+      </ims_settings>
+      <imscopy-paths xsi:type="imsCopyPathsSettings">
+         <path enabled="true" name="/AWSBankDemo" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/BMS" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/COBOL" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/COPYBOOK" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/JCL" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/System/Loadlib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/listing" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/bms" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/cobol" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/copybook" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/csd" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/jcl" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/ctlcards" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/proclib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/logs" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/rdef" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/sysloadlib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/xa" type="mfpath"/>
+      </imscopy-paths>
+      <jcl-include-paths xsi:type="jclIncludePathsSettings">
+         <path enabled="true" name="/AWSBankDemo" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/BMS" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/COBOL" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/COPYBOOK" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/JCL" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/System/Loadlib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/listing" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/bms" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/cobol" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/copybook" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/csd" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/jcl" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/ctlcards" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/proclib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/logs" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/rdef" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/sysloadlib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/xa" type="mfpath"/>
+      </jcl-include-paths>
+      <asmmacro-paths xsi:type="assemblerMacroPathsSettings">
+         <path enabled="true" name="/AWSBankDemo" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/BMS" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/COBOL" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/COPYBOOK" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/SOURCES/JCL" type="mfpath"/>
+         <path enabled="false" name="/AWSBankDemo/System/Loadlib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/listing" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/bms" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/cobol" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/copybook" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/csd" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/sources/jcl" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/ctlcards" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/catalog/data/proclib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/logs" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/rdef" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/sysloadlib" type="mfpath"/>
+         <path enabled="false" name="/bankdemo/deploy/xa" type="mfpath"/>
+      </asmmacro-paths>
+      <dependent-projects xsi:type="dependentProjectsSettings"/>
+      <asm_link_settings xsi:type="assemblerLinkSettings">
+         <options>
+            <option id="link_create_debug_info" name="mf370lnk" value="ANIM"/>
+            <option id="link_mark_reentrant" name="mf370lnk" value="RENT"/>
+            <option id="link_addressing_mode" name="mf370lnk" value="AMODE(31)"/>
+            <option id="link_residency_mode" name="mf370lnk" value="RMODE(31)"/>
+            <option id="link_generate_listing" name="mf370lnk" value="NOLIST"/>
+            <option id="link_mark_reusable" name="mf370lnk" value="REUS"/>
+            <option id="link_linker_output" name="mf370lnk" value="OMF(390)"/>
+            <option id="link_resolve_external" name="mf370lnk" value="CALL"/>
+         </options>
+      </asm_link_settings>
+   </settings>
+   <files xsi:type="projectFileStore">
+      <filetype type="macro" xsi:type="cobolFileContainer"/>
+      <filetype type="cobol" xsi:type="cobolFileContainer">
+         <file compile="true" path="sources/cobol/BBANK10P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK20P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK30P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK35P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK40P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK50P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK60P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK70P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK80P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK90P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANK99P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BBANKZZP.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BCASH00P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BCASH01P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BCASH02P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/BCASH03P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/CLOSEFIL.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK01P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK02P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK03P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK04P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK05P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK06P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK07P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK08P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK09P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK11P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK51P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANK52P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DBANKIOP.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DCASH01P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DCASH02P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DFHUAINS.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DFHZCSGM.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/DHELP01P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/OPENFIL.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK00P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK10P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK20P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK30P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK35P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK40P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK50P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK60P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK70P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK80P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK90P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANK99P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SBANKZZP.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SCASH00P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SCASHDRV.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SCHAR00P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SCUSTOMP.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SPSWD01P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SSECUREP.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SSTMT01P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/STRAC00P.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/SVERSONP.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/UBNKPLT1.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/UBNKPLT2.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/UDATECNV.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/UTWOSCMP.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/ZBNKE15.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/ZBNKE35.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/ZBNKEXT1.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/ZBNKLOAD.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/ZBNKPRNX.CBL" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/cobol/ZBNKPRT1.CBL" xsi:type="cobolFile"/>
+      </filetype>
+      <filetype type="asm" xsi:type="cobolFileContainer"/>
+      <filetype type="psb" xsi:type="cobolFileContainer"/>
+      <filetype type="jcl" xsi:type="cobolFileContainer">
+         <file compile="true" path="sources/jcl/ZBNKSTMT.JCL" xsi:type="cobolFile"/>
+      </filetype>
+      <filetype type="rexx" xsi:type="cobolFileContainer"/>
+      <filetype type="bms" xsi:type="cobolFileContainer">
+         <file compile="true" path="sources/bms/BTS01M.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/DFHZCSGM.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK10.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK20.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK30.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK35.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK40.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK50.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK60.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK70.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK80.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK90.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANK99.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="sources/bms/MBANKZZ.BMS" xsi:type="cobolFile"/>
+      </filetype>
+      <filetype type="mfs" xsi:type="cobolFileContainer"/>
+      <filetype type="clist" xsi:type="cobolFileContainer"/>
+      <filetype type="easytrieve" xsi:type="cobolFileContainer"/>
+      <filetype type="cobol.copybook" xsi:type="cobolFileContainer"/>
+      <filetype type="lin" xsi:type="cobolFileContainer"/>
+      <filetype type="dbd" xsi:type="cobolFileContainer"/>
+      <folders xsi:type="cobolFolderContainer">
+         <folder compile="true" path="SOURCES/BMS" xsi:type="cobolFolder"/>
+         <folder compile="true" path="system" xsi:type="cobolFolder"/>
+         <folder compile="true" path="deploy" xsi:type="cobolFolder"/>
+         <folder compile="true" path="deploy/catalog/data" xsi:type="cobolFolder"/>
+         <folder compile="true" path="deploy/catalog/data/proclib" xsi:type="cobolFolder"/>
+         <folder compile="true" path="catalog/data/ctlcards" xsi:type="cobolFolder"/>
+         <folder compile="true" path="system/loadlib" xsi:type="cobolFolder"/>
+         <folder compile="true" path="deploy/catalog" xsi:type="cobolFolder"/>
+         <folder compile="true" path="deploy/rdef" xsi:type="cobolFolder"/>
+         <folder compile="true" path="deploy/sysloadlib" xsi:type="cobolFolder"/>
+         <folder compile="true" path="system/rdef" xsi:type="cobolFolder"/>
+         <folder compile="true" path="sources/bms" xsi:type="cobolFolder"/>
+         <folder compile="true" path="system/catalog" xsi:type="cobolFolder"/>
+         <folder compile="true" path="deploy/catalog/data/ctlcards" xsi:type="cobolFolder"/>
+         <folder compile="true" path="deploy/xa" xsi:type="cobolFolder"/>
+         <folder compile="true" path="sources/cobol" xsi:type="cobolFolder"/>
+         <folder compile="true" path="catalog/data" xsi:type="cobolFolder"/>
+         <folder compile="true" path="sources/jcl" xsi:type="cobolFolder"/>
+         <folder compile="true" path="system/logs" xsi:type="cobolFolder"/>
+         <folder compile="true" path="SOURCES" xsi:type="cobolFolder"/>
+         <folder compile="true" path="catalog" xsi:type="cobolFolder"/>
+         <folder compile="true" path="rdef" xsi:type="cobolFolder"/>
+         <folder compile="true" path="sysloadlib" xsi:type="cobolFolder"/>
+         <folder compile="true" path="SOURCES/JCL" xsi:type="cobolFolder"/>
+         <folder compile="true" path="system/catalog/data" xsi:type="cobolFolder"/>
+         <folder compile="true" path="system/catalog/data/ctlcards" xsi:type="cobolFolder"/>
+         <folder compile="true" path="SOURCES/COBOL" xsi:type="cobolFolder"/>
+         <folder compile="true" path="sources" xsi:type="cobolFolder"/>
+         <folder compile="true" path="catalog/data/proclib" xsi:type="cobolFolder"/>
+         <folder compile="true" path="xa" xsi:type="cobolFolder"/>
+         <folder compile="true" path="system/catalog/data/proclib" xsi:type="cobolFolder"/>
+      </folders>
+   </files>
+</project>
