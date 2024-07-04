@@ -1,34 +1,61 @@
 name: Cobol CI/CD Pipeline
+# description: "A composite action that deploy a Cobol application to a Micro Focus server"
+# author: "Minsait"
+# inputs:
+#   retention-days:
+#     description: "Duration after which artifact will expire in days."
+#     required: false
+#     default: "30"
 
 on:
     push:
         branches:
-        - main
-    pull_request:
-        branches:
-        - main
+        - uat
+    # pull_request:
+    #     branches:
+    #     - uat
 
 jobs:
   build-and-deploy:
     runs-on: self-hosted
+    env:
+      LOADLIB_NAME: cobol-builded-app # después del build (%WORKSPACE%\%loadlib_name%)
+      DEPLOYMENT_PATH: TBD
+      ARTIFACTORY_PATH: C:\artifacts #TBD (en un disco a parte?)
+      SERVER_TYPE: remote
+      REMOTE_USER: root
+      DEPLOYMENT_SERVER: ${{ secrets.DEPLOYMENT_SERVER }} #10.193.4.108
+      REPO_NAME: Wizink-mainframe-app1
+      #BUILD_DIR: app1-build
     steps:
-      - name: Checkout Code
+      - name: Checkout Main Repository    #¿Utilizar sparse-checkout para bajarse ficheros determinados, como Copybooks?
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+        # with:
+        #   fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-
-      - name: Set up Java
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'adopt'
-          java-version: '11'
+      #Este build lo tiene que hacer por cada una de las dependencias de los ficheros que se han modificado???
+      - name: Build
+        run: .\cicd_build_scripts\batchBuild.bat ${{env.LOADLIB_NAME}} ${{env.DEPLOYMENT_PATH}} ${{env.ARTIFACTORY_PATH}} ${{env.SERVER_TYPE}} ${{env.REMOTE_USER}} ${{env.DEPLOYMENT_SERVER}} -wait
+        shell: cmd
       
-      - name: Build Artifacts
+      - name: Archive Artifacts
+        run: .\cicd_build_scripts\archiveBuild.bat ${{env.LOADLIB_NAME}} ${{env.DEPLOYMENT_PATH}} ${{env.ARTIFACTORY_PATH}} ${{env.SERVER_TYPE}} ${{env.REMOTE_USER}} ${{env.DEPLOYMENT_SERVER}} -wait
+        shell: cmd
+      
+      - name: Prepare Artifacts
         run: |
-            # Your build commands here
-            echo "Building artifacts..."
+          mkdir -p ${{env.ARTIFACTORY_PATH}}\${{ env.REPO_NAME }}\${{ env.VERSION_LABEL }}
+          cp -r .\${{env.LOADLIB_NAME}}\** ${{env.ARTIFACTORY_PATH}}\${{ env.REPO_NAME }}\${{ env.VERSION_LABEL }}}\
+        shell: cmd
+      
+      - name: Upload Artifacts to GitHub
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.REPO_NAME }}-${{ env.VERSION_LABEL }}_RC
+          path: ${{env.ARTIFACTORY_PATH}}\${{ env.REPO_NAME }}\${{ env.VERSION_LABEL }}\**
+          #retention-days: ${{ inputs.retention-days }}
+          retention-days: 30
+
+      # - name: Deploy
+      #   run: .\cicd_build_scripts\deployment.bat ${{env.LOADLIB_NAME}} ${{env.DEPLOYMENT_PATH}} ${{env.ARTIFACTORY_PATH}} ${{env.SERVER_TYPE}} ${{env.REMOTE_USER}} ${{env.DEPLOYMENT_SERVER}} -wait
+      #   shell: cmd
