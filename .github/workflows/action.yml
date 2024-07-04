@@ -3,7 +3,7 @@ name: Cobol CI/CD Pipeline
 # author: "Minsait"
 # inputs:
 #   retention-days:
-#     description: "Duration after which artifact will expire in days."
+#     description: "Duration after which artifact will expire in days"
 #     required: false
 #     default: "30"
 
