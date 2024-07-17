@@ -22,10 +22,11 @@ jobs:
       - name: Extract Binary version
         id: output_version
         env:
-          BINARY_NAME: CBACT01C #test
+          BINAR_NAME: CBA #test
         run: |
           VERSION=$(yq e '.binaries[] | select(.name == "${{ env.BINARY_NAME }}").version' ./artifacts_version.yml)
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
           echo "Binary version: $VERSION"
           echo $GITHUB_ENV
+          echo $BINAR_NAME
 
