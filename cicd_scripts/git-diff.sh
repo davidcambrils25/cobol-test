@@ -1,3 +1,9 @@
+#!/bin/bash
+
+#BINARY_NAME=$1
+
+echo $BINARY_NAME
+
 CHANGED_FILES=$(git diff --name-only HEAD^ HEAD)
 for file in $CHANGED_FILES; do
   if [[ "$file" == *".cbl"* ]]; then

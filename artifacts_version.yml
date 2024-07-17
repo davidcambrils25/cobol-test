@@ -2,7 +2,7 @@ global_version: 1.0
 
 binaries:
   - name: CBACT01C
-    version: 1
+    version: 2
     sources:
       - test1.yml
       - test2.yml
