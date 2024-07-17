@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="cobolProject" name="CardDemo" uuid="2a732f25-03e4-49aa-bff8-bcd25740cf90" version="5.0">
+   <settings xsi:type="projectSettingsContainer">
+      <copybook-paths xsi:type="copybookPathsSettings">
+         <path enabled="true" name="/CardDemo" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COBOL" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/DIRECTIVES" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE/DBRMLIB" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/BMSCOPY" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES/DEFAULTDIR" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES/DIRFOLDER" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/COMPILE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/FAIL" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/GOOD" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/RELEASE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/RELEASE/LOADLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/LISTINGS" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/COPYBOOKS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE/MODLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMSCOPYGEN" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COBOL - Copy" type="mfpath"/>
+      </copybook-paths>
+      <build-precedence-paths xsi:type="buildPrecedenceSettings">
+         <path enabled="true" name="/CardDemo" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/BMS" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/COBOL" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/DIRECTIVES" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/RELEASE" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/RELEASE/DBRMLIB" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/BMSCOPY" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD/DIRECTIVES" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD/DIRECTIVES/DEFAULTDIR" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD/DIRECTIVES/DIRFOLDER" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD/LISTINGS" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD/LISTINGS/COMPILE" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD/LISTINGS/FAIL" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD/LISTINGS/GOOD" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD/RELEASE" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/UXBUILD/RELEASE/LOADLIB" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/LISTINGS" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/COPYBOOKS" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/RELEASE/MODLIB" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/BMSCOPYGEN" type="mfpath"/>
+         <path enabled="true" name="/CardDemo/COBOL - Copy" type="mfpath"/>
+      </build-precedence-paths>
+      <configurations default="New Configuration" linkedWith="2017" xsi:type="buildConfigurationsContainer">
+         <configuration description="New Configuration" type="all_dll" xsi:type="cobolBuildConfiguration">
+            <targetdir name="CardDemo"/>
+            <application_configuration xsi:type="runtimeConfigurationSettings">
+               <cobol_switches xsi:type="projectCobolSwitches"/>
+               <rts_switches xsi:type="projectRtsSwitches">
+                  <rts_switch name="A" value="on" index="1"/>
+                  <rts_switch name="D" value="off" index="0"/>
+                  <rts_switch name="F" value="on" index="0"/>
+                  <rts_switch name="I" value="off" index="2"/>
+                  <rts_switch name="O" value="on" index="0"/>
+                  <rts_switch name="S" value="off" index="5"/>
+               </rts_switches>
+               <deployment>
+                  <tunable name="reuse_container" value="true" index="0"/>
+                  <tunable name="reuse_container_after_error" value="true" index="0"/>
+                  <tunable name="app_always_exits" value="true" index="0"/>
+                  <tunable name="output_filtering_enabled" value="true" index="0"/>
+               </deployment>
+               <envScriptParameters></envScriptParameters>
+               <envScriptPath></envScriptPath>
+               <inheritBuildEnv>false</inheritBuildEnv>
+               <tunables>
+                  <tunable name="screen_lines" value="25" index="0"/>
+                  <tunable name="screen_cols" value="80" index="0"/>
+                  <tunable name="default_cancel_mode" value="2" index="0"/>
+               </tunables>
+            </application_configuration>
+            <link_settings xsi:type="linkSettings">
+               <options>
+                  <option id="targetName" name="linkSettings" value="CardDemo"/>
+                  <option id="applicationType" name="linkSettings" value="console"/>
+                  <option id="outputDirectory" name="linkSettings" value="RELEASE/LOADLIB"/>
+                  <option id="type" name="linkSettings" value="all_dll"/>
+                  <option id="threadedRts" name="linkSettings" value="threadedRts"/>
+                  <option id="runtimeModel" name="linkSettings" value="shared"/>
+                  <option id="platform" name="linkSettings" value="Windows"/>
+                  <option id="bitism" name="linkSettings" value="64 bit"/>
+               </options>
+               <additional_files/>
+            </link_settings>
+            <deploy_settings xsi:type="deploySettings">
+               <options>
+                  <option id="deployFolder" name="deploySettings" value="deploy"/>
+                  <option id="cleanAllowed" name="deploySettings" value="cleanAllowed"/>
+                  <option id="deployFiles" name="deploySettings" value=""/>
+                  <option id="deployPatterns" name="deploySettings" value="New_Configuration.bin/*${exeext}"/>
+               </options>
+            </deploy_settings>
+         </configuration>
+      </configurations>
+      <ims_settings xsi:type="additionalImsSettings">
+         <generatedFileDir name=""/>
+         <imsDatabaseDir name=""/>
+      </ims_settings>
+      <imscopy-paths xsi:type="imsCopyPathsSettings">
+         <path enabled="true" name="/CardDemo" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COBOL" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/DIRECTIVES" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE/DBRMLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMSCOPY" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES/DEFAULTDIR" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES/DIRFOLDER" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/COMPILE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/FAIL" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/GOOD" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/RELEASE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/RELEASE/LOADLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/LISTINGS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COPYBOOKS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE/MODLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMSCOPYGEN" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COBOL - Copy" type="mfpath"/>
+      </imscopy-paths>
+      <jcl-include-paths xsi:type="jclIncludePathsSettings">
+         <path enabled="true" name="/CardDemo" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COBOL" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/DIRECTIVES" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE/DBRMLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMSCOPY" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES/DEFAULTDIR" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES/DIRFOLDER" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/COMPILE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/FAIL" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/GOOD" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/RELEASE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/RELEASE/LOADLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/LISTINGS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COPYBOOKS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE/MODLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMSCOPYGEN" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COBOL - Copy" type="mfpath"/>
+      </jcl-include-paths>
+      <asmmacro-paths xsi:type="assemblerMacroPathsSettings">
+         <path enabled="true" name="/CardDemo" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COBOL" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/DIRECTIVES" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE/DBRMLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMSCOPY" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES/DEFAULTDIR" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/DIRECTIVES/DIRFOLDER" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/COMPILE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/FAIL" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/LISTINGS/GOOD" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/RELEASE" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/UXBUILD/RELEASE/LOADLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/LISTINGS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COPYBOOKS" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/RELEASE/MODLIB" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/BMSCOPYGEN" type="mfpath"/>
+         <path enabled="false" name="/CardDemo/COBOL - Copy" type="mfpath"/>
+      </asmmacro-paths>
+      <dependent-projects xsi:type="dependentProjectsSettings"/>
+      <asm_link_settings xsi:type="assemblerLinkSettings">
+         <options>
+            <option id="link_create_debug_info" name="mf370lnk" value="ANIM"/>
+            <option id="link_mark_reentrant" name="mf370lnk" value="RENT"/>
+            <option id="link_addressing_mode" name="mf370lnk" value="AMODE(31)"/>
+            <option id="link_residency_mode" name="mf370lnk" value="RMODE(31)"/>
+            <option id="link_generate_listing" name="mf370lnk" value="NOLIST"/>
+            <option id="link_mark_reusable" name="mf370lnk" value="REUS"/>
+            <option id="link_linker_output" name="mf370lnk" value="OMF(390)"/>
+            <option id="link_resolve_external" name="mf370lnk" value="CALL"/>
+         </options>
+      </asm_link_settings>
+   </settings>
+   <files xsi:type="projectFileStore">
+      <filetype type="macro" xsi:type="cobolFileContainer"/>
+      <filetype type="cobol" xsi:type="cobolFileContainer">
+         <file compile="true" path="COBOL/CBACT01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/CBACT02C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/CBACT03C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/CBACT04C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/CBCUS01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/CBTRN01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/CBTRN02C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/CBTRN03C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COADM01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COBIL00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COCRDLIC.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COCRDSLC.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COCRDUPC.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COMEN01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/CORPT00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COSGN00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COTRN00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COTRN01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COTRN02C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COUSR00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COUSR01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COUSR02C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL/COUSR03C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CBACT01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CBACT02C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CBACT03C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CBACT04C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CBCUS01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CBTRN01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CBTRN02C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CBTRN03C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COACTUPC.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COACTVWC.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COADM01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COBIL00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COCRDLIC.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COCRDSLC.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COCRDUPC.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COMEN01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CORPT00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COSGN00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COTRN00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COTRN01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COTRN02C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COUSR00C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COUSR01C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COUSR02C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/COUSR03C.cbl" xsi:type="cobolFile"/>
+         <file compile="true" path="COBOL - Copy/CSUTLDTC.CBL" xsi:type="cobolFile"/>
+      </filetype>
+      <filetype type="asm" xsi:type="cobolFileContainer"/>
+      <filetype type="psb" xsi:type="cobolFileContainer"/>
+      <filetype type="jcl" xsi:type="cobolFileContainer"/>
+      <filetype type="rexx" xsi:type="cobolFileContainer"/>
+      <filetype type="bms" xsi:type="cobolFileContainer">
+         <file compile="true" path="BMS/COACTUP.BMS" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COACTVW.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COADM01.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COBIL00.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COCRDLI.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COCRDSL.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COCRDUP.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COMEN01.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/CORPT00.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COSGN00.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COTRN00.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COTRN01.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COTRN02.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COUSR00.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COUSR01.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COUSR02.bms" xsi:type="cobolFile"/>
+         <file compile="true" path="BMS/COUSR03.bms" xsi:type="cobolFile"/>
+      </filetype>
+      <filetype type="mfs" xsi:type="cobolFileContainer"/>
+      <filetype type="clist" xsi:type="cobolFileContainer"/>
+      <filetype type="easytrieve" xsi:type="cobolFileContainer"/>
+      <filetype type="cobol.copybook" xsi:type="cobolFileContainer"/>
+      <filetype type="lin" xsi:type="cobolFileContainer"/>
+      <filetype type="dbd" xsi:type="cobolFileContainer"/>
+      <folders xsi:type="cobolFolderContainer">
+         <folder compile="true" path="COBOL" xsi:type="cobolFolder"/>
+         <folder compile="true" path="RELEASE/LOADLIB" xsi:type="cobolFolder"/>
+         <folder compile="true" path="etc" xsi:type="cobolFolder"/>
+         <folder compile="true" path="COBOL - Copy" xsi:type="cobolFolder"/>
+         <folder compile="true" path="BMS" xsi:type="cobolFolder"/>
+         <folder compile="true" path="etc/defaultdir" xsi:type="cobolFolder"/>
+      </folders>
+   </files>
+</project>

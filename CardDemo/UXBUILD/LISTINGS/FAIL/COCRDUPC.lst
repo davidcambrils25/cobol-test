@@ -1,0 +1,2612 @@
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   1
+* COCRDUPC.cbl
+* Options: int("COCRDUPC.int") verbose
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DI
+*          RFOLDER/COCRDUPC.cbl.dir)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+* Setting: NOACCEPTREFRESH
+*          NOACU
+*          NOACUCOMMENT
+*          NOACUSYNC
+*          NOACU-UNDERSCORE
+*            ADV
+*            ALIGN"8 OPT"
+*            ALPHALITCONT"MARGIN"
+*            ALPHASTART"1"
+*            ALTER
+*          NOAMODE
+*            ANIM
+*            ANS85
+*            APOST
+*            AREACHECK
+*            ARITH"EXTEND"
+*            ARITHMETIC"ENTCOBOL"
+*            ASSIGN"EXTERNAL"
+*          NOASSIGN-PRINTER
+*          NOAUTOLOCK
+*          NOBELL
+*            BINLIT"BOOLEAN"
+*          NOBOUND
+*          NOBRIEF
+*          NOBS2000
+*            BWZSTAR
+*            BYTEMODEMOVE
+*            CALLFH"EXTFH"
+*          NOCALLRECOVERY
+*            CALLSORT"EXTSM"
+*            CANCEL
+*            CANCELLBR
+*            CHANGEMESSAGE"2000 N"
+*            CHARSET"EBCDIC"
+*            CHECKDIV"ENTCOBOL"
+*          NOCHECKREFMOD
+*          NOCICS
+*          NOCICS-CPY
+*          NOCICSOPTIMIZE
+*          NOCMPR2
+*            COBFSTATCONV
+*          NOCOBIDY
+*          NOCOBOL370
+*          NOCOBOLDIR
+*          NOCOMMANDLINELINKAGE
+*            COLLECTION"CardDemo"
+*          NOCOMP
+*            COMP"BINARY"
+*            COMP1"FLOAT"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   2
+* COCRDUPC.cbl
+*            COMP2"FLOAT"
+*            COMP-5"2"
+*            COMP-6"2"
+*            CONFIRM
+*          NOCONVERTRET
+*            CONVSPACE
+*            COPYEXT"cpy,cbl"
+*            COPYLBR
+*            COPYLIST
+*            COPYLISTCOMMENT"7"
+*            COPYSEARCH"MF"
+*            CSI
+*            CURRENCY-SIGN"36"
+*            CURRENT-DATE"MMDDYY"
+*          NODATA
+*            DATACOMPRESS"0"
+*          NODATA-CONTEXT
+*          NODATAMAP
+*            DATE
+*            DBCHECK
+*            DBCS"3"
+*            DBCSSOSI"14""15"
+*            DBSPACE
+*            DE-EDIT"2"
+*            DEFAULTBYTE"0"
+*          NODEFAULTCALLS
+*            DETECTLOCK
+*          NODG
+*            DIALECT"ENTCOBOL"
+*          NODIRECTIVES-IN-COMMENTS
+*            DISPLAY"CONSOLE"
+*          NODISPLAYAT
+*            DISPLAYPICU"ANSI"
+*            DISPSIGN"COMPAT"
+*          NODOSVS
+*          NODOTNET
+*            DPCINDATA"XML"
+*            DPCINSUBSCRIPT
+*          NODYNAM
+*          NOEARLY-RELEASE
+*            EBCCOLSEQ"1"
+*            ECHO
+*          NOECHOALL
+*            ENTCOBOL
+*          NOEOF1A
+*            ERRFORMAT"2"
+*            ERRLIST"VERBOSE"
+*          NOERRQ
+*          NOEXECSQLFLAG
+*            EXITPROGRAM"ANSI"
+*          NOFASTINIT
+*            FASTSORT
+*            FCD3
+*          NOFCDALIGN
+*          NOFCDREG
+*            FDCLEAR"3"
+*          NOFILESHARE
+*            FILETYPE"0"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   3
+* COCRDUPC.cbl
+*            FLAG"ENTCOBOL"
+*            FLAGAS"S"
+*          NOFLAGEUC
+*          NOFLAGMIG
+*          NOFLAGQ
+*            FLAGSINEDIT
+*          NOFLAGSTD
+*            FOLDCALLNAME"UPPER"
+*            FOLDCOPYNAME"UPPER"
+*            FORM"60"
+*            FP-ROUNDING"ENTCOBOL"
+*          NOHOSTARITHMETIC
+*            HOSTCONTZERO
+*            HOST-NUMCOMPARE
+*            HOST-NUMMOVE
+*            HOSTFD
+*          NOHOSTRW
+*          NOIBM-MS
+*            IBMCOMP
+*            IDENTIFIERLEN"30"
+*            IDXFORMAT"0"
+*          NOIGNOREEXEC
+*          NOIL
+*          NOILGEN
+*          NOILEMIT
+*            IMPLICITSCOPE
+*            INCFORMAT"PC"
+*            INDD"SYSIN 80 R"
+*          NOIDYSRCPATH
+*            INFORETURN"0"
+*          NOINITCALL
+*            INITIAL"1"
+*          NOINITPTR
+*          NOINITBYTYPE
+*            INT"COCRDUPC.int"
+*            INTDATE"ANSI"
+*            INTLEVEL"9"
+*            IOCONV
+*          NOISO2002
+*          NOIXNLSKEY
+*          NOIXNUMKEY
+*          NOJAVACALLABLE
+*          NOJAVAGENPROGS
+*          NOJAVAGENSTRG
+*            JAVAOUTPUTPATH""
+*            JAVAPACKAGENAME"com.microfocus.COBOL"
+*          NOJVMGEN
+*            KEYCHECK
+*            KEYCOMPRESS"0"
+*          NOLIBRARIAN
+*          NOLINE-COUNT
+*            LIST"COCRDUPC.lst"
+*            LISTPATH...
+*          ..."/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/LISTINGS/CO"
+*            LISTWIDTH"80"
+*            LITVAL-SIZE"4"
+*          NOLOCALSOURCEFORMAT
+*            LOCKTYPE"0"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   4
+* COCRDUPC.cbl
+*            MAPNAME
+*          NOMAINFRAMEFLOATINGPOINT
+*          NOMAXERROR
+*            METHODDEFAULT"REFERENCE"
+*          NOMF
+*          NOMFCOMMENT
+*          NOMFSYNC
+*          NOMOVELENCHECK
+*          NOMS
+*          NOMVS
+*            NATIONAL"1"
+*            NATIVE"EBCDIC"
+*          NONATIVEFLOATINGPOINT
+*          NONCHAR
+*          NONLS
+*          NONLSCURRENCYLENGTH
+*            NSYMBOL"NATIONAL"
+*            NULLESCAPE
+*          NOODOOSVS
+*            ODOSLIDE
+*          NOOLDBLANKLINE
+*          NOOLDCOPY
+*          NOOLDINDEX
+*          NOOLDNEXTSENTENCE
+*          NOOLDREADINTO
+*          NOOLDSTRMIX
+*            OOCTRL"-C-E-G+L-P+Q+R-S+W"
+*          NOOPTIONAL-FILE
+*          NOOS390
+*            OSEXT""
+*          NOOSVS
+*            OUTDD"SYSOUT 121 R"
+*            P64
+*          NOPANVALET
+*            PANVALET-INCLUDES-IN-COMMENTS
+*            PERFORM-TYPE"ENTCOBOL"
+*          NOPREPLIST
+*          NOPREPROCESS
+*            PRESERVECASE
+*          NOPRINT-EXT
+*          NOPROFILE
+*          NOPROGID-COMMENT
+*          NOPROGID-INT-NAME
+*          NOPROTECT-LINKAGE
+*            PROTOTYPE"RELAXED"
+*            QUAL
+*            QUALPROC
+*          NOQUERY
+*          NOQUOTE
+*          NORAWLIST
+*            RDW
+*            RECMODE"ENTCOBOL"
+*          NOREENTRANT
+*          NOREF
+*          NOREFNO
+*            REMAINDER"2"
+*            REPLACE"NOKEEPSEQ"
+*            REPORT-LINE"256"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   5
+* COCRDUPC.cbl
+*            RESEQ
+*          NORETRYLOCK
+*            REWRITE-LS
+*          NORM
+*          NORM-FILE-ERRORS
+*            RTNCODE-SIZE"2"
+*            RTNCODE-TYPE"COMP"
+*          NORWHARDPAGE
+*          NOSAA
+*          NOSEG
+*          NOSEQCHK
+*            SEQUENTIAL"RECORD"
+*          NOSERIAL
+*            SETTING"COL"
+*          NOSHAREOUTDD
+*          NOSHOW-DIR
+*            SIGN"EBCDIC"
+*            SIGN"TRAILING"
+*          NOSIGNDISCARD
+*          NOSIGNFIXUP
+*            SORTTYPE"DFSORT"
+*          NOSOURCEENCODING
+*            SOURCEFORMAT"FIXED"
+*            SOURCETABSTOP"4"
+*          NOSPZERO
+*          NOSSRANGE
+*            STDERR
+*            STICKY-LINKAGE"1"
+*          NOSTICKY-PERFORM
+*            SUPFF
+*            SWITCHTYPE"1"
+*            SYMBSTART"1"
+*            SYSPUNCH"80"
+*            TERMPAGE
+*          NOTESTCOVER
+*            TIME
+*          NOTRACE
+*          NOTRUNC
+*            TRUNCCALLNAME"8"
+*            TRUNCCOPY"8"
+*            TRUNCINC"10"
+*            UNICODE"PORTABLE"
+*            VERBOSE
+*          NOVISUALSTUDIO
+*          NOVSC2
+*          NOWARNASERROR
+*            WARNING"1"
+*            WEBSERVER"CGI"
+*          NOWRITELOCK
+*          NOWRITETHRU
+*          NOXMLGEN
+*            XMLPARSE"XMLSS"
+*          NOXOPEN
+*          NOXREF
+*            ZEROLENGTHFALSE
+*          NOZEROSEQ
+*            ZWB
+     1*****************************************************************
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   6
+* COCRDUPC.cbl
+     2* Program:     COCRDUPC.CBL                                     *
+     3* Layer:       Business logic                                   *
+     4* Function:    Accept and process credit card detail request    *
+     5*****************************************************************
+     6
+     7 IDENTIFICATION DIVISION.
+     8 PROGRAM-ID.
+     9     COCRDUPC.
+    10 DATE-WRITTEN.
+    11     April 2022.
+    12 DATE-COMPILED. 12-Jul-24 07:58.
+    15 ENVIRONMENT DIVISION.
+    16 INPUT-OUTPUT SECTION.
+    17
+    18 DATA DIVISION.
+    19
+    20 WORKING-STORAGE SECTION.
+    21 01  WS-MISC-STORAGE.
+    22******************************************************************
+    23* General CICS related
+    24******************************************************************
+    25   05 WS-CICS-PROCESSNG-VARS.
+    26      07 WS-RESP-CD                          PIC S9(09) COMP
+    27                                             VALUE ZEROS.
+    28      07 WS-REAS-CD                          PIC S9(09) COMP
+    29                                             VALUE ZEROS.
+    30      07 WS-TRANID                           PIC X(4)
+    31                                             VALUE SPACES.
+    32      07 WS-UCTRANS                          PIC X(4)
+    33                                             VALUE SPACES.
+    34******************************************************************
+    35*      Input edits
+    36******************************************************************
+    37
+    38   05  WS-INPUT-FLAG                         PIC X(1).
+    39     88  INPUT-OK                            VALUE '0'.
+    40     88  INPUT-ERROR                         VALUE '1'.
+    41     88  INPUT-PENDING                       VALUE LOW-VALUES.
+    42   05  WS-EDIT-ACCT-FLAG                     PIC X(1).
+    43     88  FLG-ACCTFILTER-NOT-OK               VALUE '0'.
+    44     88  FLG-ACCTFILTER-ISVALID              VALUE '1'.
+    45     88  FLG-ACCTFILTER-BLANK                VALUE ' '.
+    46   05  WS-EDIT-CARD-FLAG                     PIC X(1).
+    47     88  FLG-CARDFILTER-NOT-OK               VALUE '0'.
+    48     88  FLG-CARDFILTER-ISVALID             VALUE '1'.
+    49     88  FLG-CARDFILTER-BLANK                VALUE ' '.
+    50   05  WS-EDIT-CARDNAME-FLAG                 PIC X(1).
+    51     88  FLG-CARDNAME-NOT-OK                 VALUE '0'.
+    52     88  FLG-CARDNAME-ISVALID                VALUE '1'.
+    53     88  FLG-CARDNAME-BLANK                  VALUE ' '.
+    54   05  WS-EDIT-CARDSTATUS-FLAG              PIC X(1).
+    55     88  FLG-CARDSTATUS-NOT-OK               VALUE '0'.
+    56     88  FLG-CARDSTATUS-ISVALID              VALUE '1'.
+    57     88  FLG-CARDSTATUS-BLANK                VALUE ' '.
+    58   05  WS-EDIT-CARDEXPMON-FLAG              PIC X(1).
+    59     88  FLG-CARDEXPMON-NOT-OK               VALUE '0'.
+    60     88  FLG-CARDEXPMON-ISVALID              VALUE '1'.
+    61     88  FLG-CARDEXPMON-BLANK                VALUE ' '.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   7
+* COCRDUPC.cbl
+    62   05  WS-EDIT-CARDEXPYEAR-FLAG             PIC X(1).
+    63     88  FLG-CARDEXPYEAR-NOT-OK              VALUE '0'.
+    64     88  FLG-CARDEXPYEAR-ISVALID             VALUE '1'.
+    65     88  FLG-CARDEXPYEAR-BLANK               VALUE ' '.
+    66   05  WS-RETURN-FLAG                        PIC X(1).
+    67     88  WS-RETURN-FLAG-OFF                  VALUE LOW-VALUES.
+    68     88  WS-RETURN-FLAG-ON                   VALUE '1'.
+    69   05  WS-PFK-FLAG                           PIC X(1).
+    70     88  PFK-VALID                           VALUE '0'.
+    71     88  PFK-INVALID                         VALUE '1'.
+    72   05  CARD-NAME-CHECK                       PIC X(50)
+    73                                             VALUE LOW-VALUES.
+    74   05  FLG-YES-NO-CHECK                      PIC X(1)
+    75                                             VALUE 'N'.
+    76     88 FLG-YES-NO-VALID                     VALUES 'Y', 'N'.
+    77   05  CARD-MONTH-CHECK                      PIC X(2).
+    78   05  CARD-MONTH-CHECK-N REDEFINES
+    79       CARD-MONTH-CHECK                      PIC 9(2).
+    80       88 VALID-MONTH                        VALUES 1 THRU 12.
+    81   05  CARD-YEAR-CHECK                      PIC X(4).
+    82   05  CARD-YEAR-CHECK-N REDEFINES
+    83       CARD-YEAR-CHECK                      PIC 9(4).
+    84       88 VALID-YEAR                        VALUES 1950 THRU 2099.
+    85******************************************************************
+    86* Output edits
+    87******************************************************************
+    88   05 CICS-OUTPUT-EDIT-VARS.
+    89     10  CARD-ACCT-ID-X                      PIC X(11).
+    90     10  CARD-ACCT-ID-N REDEFINES CARD-ACCT-ID-X
+    91                                             PIC 9(11).
+    92     10  CARD-CVV-CD-X                       PIC X(03).
+    93     10  CARD-CVV-CD-N REDEFINES  CARD-CVV-CD-X
+    94                                             PIC 9(03).
+    95     10  CARD-CARD-NUM-X                     PIC X(16).
+    96     10  CARD-CARD-NUM-N REDEFINES  CARD-CARD-NUM-X
+    97                                             PIC 9(16).
+    98     10  CARD-NAME-EMBOSSED-X                PIC X(50).
+    99     10  CARD-STATUS-X                       PIC X.
+   100     10  CARD-EXPIRAION-DATE-X               PIC X(10).
+   101     10  FILLER REDEFINES CARD-EXPIRAION-DATE-X.
+   102         20 CARD-EXPIRY-YEAR                 PIC X(4).
+   103         20 FILLER                           PIC X(1).
+   104         20 CARD-EXPIRY-MONTH                PIC X(2).
+   105         20 FILLER                           PIC X(1).
+   106         20 CARD-EXPIRY-DAY                  PIC X(2).
+   107     10  CARD-EXPIRAION-DATE-N REDEFINES
+   108         CARD-EXPIRAION-DATE-X               PIC 9(10).
+   109
+   110******************************************************************
+   111*      File and data Handling
+   112******************************************************************
+   113   05  WS-CARD-RID.
+   114     10  WS-CARD-RID-CARDNUM                 PIC X(16).
+   115     10  WS-CARD-RID-ACCT-ID                 PIC 9(11).
+   116     10  WS-CARD-RID-ACCT-ID-X REDEFINES
+   117            WS-CARD-RID-ACCT-ID              PIC X(11).
+   118   05  WS-FILE-ERROR-MESSAGE.
+   119     10  FILLER                              PIC X(12)
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   8
+* COCRDUPC.cbl
+   120                                             VALUE 'File Error: '.
+   121     10  ERROR-OPNAME                        PIC X(8)
+   122                                             VALUE SPACES.
+   123     10  FILLER                              PIC X(4)
+   124                                             VALUE ' on '.
+   125     10  ERROR-FILE                          PIC X(9)
+   126                                             VALUE SPACES.
+   127     10  FILLER                              PIC X(15)
+   128                                             VALUE
+   129                                             ' returned RESP '.
+   130     10  ERROR-RESP                          PIC X(10)
+   131                                             VALUE SPACES.
+   132     10  FILLER                              PIC X(7)
+   133                                             VALUE ',RESP2 '.
+   134     10  ERROR-RESP2                         PIC X(10)
+   135                                             VALUE SPACES.
+   136    10  FILLER                               PIC X(5)
+   137                                             VALUE SPACES.
+   138******************************************************************
+   139*      Output Message Construction
+   140******************************************************************
+   141   05  WS-LONG-MSG                           PIC X(500).
+   142   05  WS-INFO-MSG                           PIC X(40).
+   143     88  WS-NO-INFO-MESSAGE                 VALUES
+   144                                            SPACES LOW-VALUES.
+   145     88  FOUND-CARDS-FOR-ACCOUNT             VALUE
+   146         'Details of selected card shown above'.
+   147     88  PROMPT-FOR-SEARCH-KEYS              VALUE
+   148         'Please enter Account and Card Number'.
+   149     88  PROMPT-FOR-CHANGES                  VALUE
+   150         'Update card details presented above.'.
+   151     88  PROMPT-FOR-CONFIRMATION             VALUE
+   152         'Changes validated.Press F5 to save'.
+   153     88  CONFIRM-UPDATE-SUCCESS              VALUE
+   154         'Changes committed to database'.
+   155     88  INFORM-FAILURE                      VALUE
+   156         'Changes unsuccessful. Please try again'.
+   157
+   158   05  WS-RETURN-MSG                         PIC X(75).
+   159     88  WS-RETURN-MSG-OFF                   VALUE SPACES.
+   160     88  WS-EXIT-MESSAGE                     VALUE
+   161         'PF03 pressed.Exiting              '.
+   162     88  WS-PROMPT-FOR-ACCT                  VALUE
+   163         'Account number not provided'.
+   164     88  WS-PROMPT-FOR-CARD                  VALUE
+   165         'Card number not provided'.
+   166     88  WS-PROMPT-FOR-NAME                  VALUE
+   167         'Card name not provided'.
+   168     88  WS-NAME-MUST-BE-ALPHA               VALUE
+   169         'Card name can only contain alphabets and spaces'.
+   170     88  NO-SEARCH-CRITERIA-RECEIVED         VALUE
+   171         'No input received'.
+   172     88  NO-CHANGES-DETECTED                 VALUE
+   173         'No change detected with respect to values fetched.'.
+   174     88  SEARCHED-ACCT-ZEROES                VALUE
+   175         'Account number must be a non zero 11 digit number'.
+   176     88  SEARCHED-ACCT-NOT-NUMERIC           VALUE
+   177         'Account number must be a non zero 11 digit number'.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   9
+* COCRDUPC.cbl
+   178     88  SEARCHED-CARD-NOT-NUMERIC           VALUE
+   179         'Card number if supplied must be a 16 digit number'.
+   180     88  CARD-STATUS-MUST-BE-YES-NO          VALUE
+   181         'Card Active Status must be Y or N'.
+   182     88  CARD-EXPIRY-MONTH-NOT-VALID          VALUE
+   183         'Card expiry month must be between 1 and 12'.
+   184     88  CARD-EXPIRY-YEAR-NOT-VALID          VALUE
+   185         'Invalid card expiry year'.
+   186     88  DID-NOT-FIND-ACCT-IN-CARDXREF       VALUE
+   187         'Did not find this account in cards database'.
+   188     88  DID-NOT-FIND-ACCTCARD-COMBO         VALUE
+   189         'Did not find cards for this search condition'.
+   190     88  COULD-NOT-LOCK-FOR-UPDATE           VALUE
+   191         'Could not lock record for update'.
+   192     88  DATA-WAS-CHANGED-BEFORE-UPDATE      VALUE
+   193         'Record changed by some one else. Please review'.
+   194     88  LOCKED-BUT-UPDATE-FAILED            VALUE
+   195         'Update of record failed'.
+   196     88  XREF-READ-ERROR                     VALUE
+   197         'Error reading Card Data File'.
+   198     88  CODING-TO-BE-DONE                   VALUE
+   199         'Looks Good.... so far'.
+   200******************************************************************
+   201*      Literals and Constants
+   202******************************************************************
+   203 01 WS-LITERALS.
+   204    05 LIT-THISPGM                           PIC X(8)
+   205                                             VALUE 'COCRDUPC'.
+   206    05 LIT-THISTRANID                        PIC X(4)
+   207                                             VALUE 'CCUP'.
+   208    05 LIT-THISMAPSET                        PIC X(8)
+   209                                             VALUE 'COCRDUP '.
+   210    05 LIT-THISMAP                           PIC X(7)
+   211                                             VALUE 'CCRDUPA'.
+   212    05 LIT-CCLISTPGM                         PIC X(8)
+   213                                             VALUE 'COCRDLIC'.
+   214    05 LIT-CCLISTTRANID                      PIC X(4)
+   215                                             VALUE 'CCLI'.
+   216    05 LIT-CCLISTMAPSET                      PIC X(7)
+   217                                             VALUE 'COCRDLI'.
+   218    05 LIT-CCLISTMAP                         PIC X(7)
+   219                                             VALUE 'CCRDSLA'.
+   220    05 LIT-MENUPGM                           PIC X(8)
+   221                                             VALUE 'COMEN01C'.
+   222    05 LIT-MENUTRANID                        PIC X(4)
+   223                                             VALUE 'CM00'.
+   224    05 LIT-MENUMAPSET                        PIC X(7)
+   225                                             VALUE 'COMEN01'.
+   226    05 LIT-MENUMAP                           PIC X(7)
+   227                                             VALUE 'COMEN1A'.
+   228    05  LIT-CARDDTLPGM                       PIC X(8)
+   229                                             VALUE 'COCRDSLC'.
+   230    05  LIT-CARDDTLTRANID                    PIC X(4)
+   231                                             VALUE 'CCDL'.
+   232    05  LIT-CARDDTLMAPSET                    PIC X(7)
+   233                                             VALUE 'COCRDSL'.
+   234    05  LIT-CARDDTLMAP                       PIC X(7)
+   235                                             VALUE 'CCRDSLA'.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  10
+* COCRDUPC.cbl
+   236    05 LIT-CARDFILENAME                      PIC X(8)
+   237                                             VALUE 'CARDDAT '.
+   238    05 LIT-CARDFILENAME-ACCT-PATH            PIC X(8)
+   239                                             VALUE 'CARDAIX '.
+   240    05 LIT-ALL-ALPHA-FROM                    PIC X(52)
+   241       VALUE
+   242       'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.
+   243    05 LIT-ALL-SPACES-TO                     PIC X(52)
+   244                                             VALUE SPACES.
+   245    05 LIT-UPPER                             PIC X(26)
+   246                           VALUE 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.
+   247    05 LIT-LOWER                             PIC X(26)
+   248                           VALUE 'abcdefghijklmnopqrstuvwxyz'.
+   249
+   250******************************************************************
+   251*Other common working storage Variables
+   252******************************************************************
+   253*COPY CVCRD01Y.
+   254 01  CC-WORK-AREAS.                                               00010004
+   255    05 CC-WORK-AREA.                                              00020001
+   256       10 CCARD-AID                         PIC X(5).             00090001
+   257          88  CCARD-AID-ENTER                VALUE 'ENTER'.       00100001
+   258          88  CCARD-AID-CLEAR                VALUE 'CLEAR'.       00110001
+   259          88  CCARD-AID-PA1                  VALUE 'PA1  '.       00120001
+   260          88  CCARD-AID-PA2                  VALUE 'PA2  '.       00130001
+   261          88  CCARD-AID-PFK01                VALUE 'PFK01'.       00140001
+   262          88  CCARD-AID-PFK02                VALUE 'PFK02'.       00150001
+   263          88  CCARD-AID-PFK03                VALUE 'PFK03'.       00160001
+   264          88  CCARD-AID-PFK04                VALUE 'PFK04'.       00170001
+   265          88  CCARD-AID-PFK05                VALUE 'PFK05'.       00180001
+   266          88  CCARD-AID-PFK06                VALUE 'PFK06'.       00190001
+   267          88  CCARD-AID-PFK07                VALUE 'PFK07'.       00200001
+   268          88  CCARD-AID-PFK08                VALUE 'PFK08'.       00210001
+   269          88  CCARD-AID-PFK09                VALUE 'PFK09'.       00220001
+   270          88  CCARD-AID-PFK10                VALUE 'PFK10'.       00230001
+   271          88  CCARD-AID-PFK11                VALUE 'PFK11'.       00240001
+   272          88  CCARD-AID-PFK12                VALUE 'PFK12'.       00250001
+   273*      10  CCARD-LAST-PROG                  PIC X(8).             00260001
+   274       10  CCARD-NEXT-PROG                  PIC X(8).             00270001
+   275*      10  CCARD-RETURN-TO-PROG             PIC X(8).             00280001
+   276       10  CCARD-NEXT-MAPSET                PIC X(7).             00330001
+   277       10  CCARD-NEXT-MAP                   PIC X(7).             00340001
+   278*      10  CCARD-RETURN-FLAG                PIC X(1).             00350001
+   279*        88  CCARD-RETURN-FLAG-OFF          VALUE LOW-VALUES.     00360001
+   280*        88  CCARD-RETURN-FLAG-ON           VALUE '1'.            00370001
+   281       10  CCARD-ERROR-MSG                  PIC X(75).            00380001
+   282       10  CCARD-RETURN-MSG                 PIC X(75).            00390001
+   283         88  CCARD-RETURN-MSG-OFF           VALUE LOW-VALUES.     00400001
+   284*      10  CCARD-FUNCTION                   PIC X(1).             00410001
+   285*        88  CCARD-NO-VALUE                  VALUE LOW-VALUES.    00420001
+   286*        88  CCARD-GET-DATA                  VALUE '1'.           00430001
+   287       10 CC-ACCT-ID                        PIC X(11)             00440005
+   288                                            VALUE SPACES.
+   289       10 CC-ACCT-ID-N REDEFINES CC-ACCT-ID PIC 9(11).
+   290       10 CC-CARD-NUM                       PIC X(16)             00460005
+   291                                            VALUE SPACES.         00470005
+   292       10 CC-CARD-NUM-N REDEFINES CC-CARD-NUM PIC 9(16).
+   293       10 CC-CUST-ID                        PIC X(09)             00480005
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  11
+* COCRDUPC.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/COPYBOOKS/CVCRD01Y.c)
+   294                                            VALUE SPACES.         00490005
+   295       10 CC-CUST-ID-N REDEFINES CC-CUST-ID PIC 9(9).             00480005
+   296
+   297*
+   298* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:00 CDT
+   299*
+   300
+   301******************************************************************
+   302*Application Commmarea Copybook
+   303*COPY COCOM01Y.
+   304******************************************************************
+   305* Communication area for CardDemo application programs
+   306******************************************************************
+   307 01 CARDDEMO-COMMAREA.
+   308    05 CDEMO-GENERAL-INFO.
+   309       10 CDEMO-FROM-TRANID             PIC X(04).
+   310       10 CDEMO-FROM-PROGRAM            PIC X(08).
+   311       10 CDEMO-TO-TRANID               PIC X(04).
+   312       10 CDEMO-TO-PROGRAM              PIC X(08).
+   313       10 CDEMO-USER-ID                 PIC X(08).
+   314       10 CDEMO-USER-TYPE               PIC X(01).
+   315          88 CDEMO-USRTYP-ADMIN         VALUE 'A'.
+   316          88 CDEMO-USRTYP-USER          VALUE 'U'.
+   317       10 CDEMO-PGM-CONTEXT             PIC 9(01).
+   318          88 CDEMO-PGM-ENTER            VALUE 0.
+   319          88 CDEMO-PGM-REENTER          VALUE 1.
+   320    05 CDEMO-CUSTOMER-INFO.
+   321       10 CDEMO-CUST-ID                 PIC 9(09).
+   322       10 CDEMO-CUST-FNAME              PIC X(25).
+   323       10 CDEMO-CUST-MNAME              PIC X(25).
+   324       10 CDEMO-CUST-LNAME              PIC X(25).
+   325    05 CDEMO-ACCOUNT-INFO.
+   326       10 CDEMO-ACCT-ID                 PIC 9(11).
+   327       10 CDEMO-ACCT-STATUS             PIC X(01).
+   328    05 CDEMO-CARD-INFO.
+   329       10 CDEMO-CARD-NUM                PIC 9(16).
+   330    05 CDEMO-MORE-INFO.
+   331       10  CDEMO-LAST-MAP               PIC X(7).
+   332       10  CDEMO-LAST-MAPSET            PIC X(7).
+   333*
+   334* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:57 CDT
+   335*
+   336
+   337 01 WS-THIS-PROGCOMMAREA.
+   338    05 CARD-UPDATE-SCREEN-DATA.
+   339       10 CCUP-CHANGE-ACTION                 PIC X(1)
+   340                                             VALUE LOW-VALUES.
+   341          88 CCUP-DETAILS-NOT-FETCHED        VALUES
+   342                                             LOW-VALUES,
+   343                                             SPACES.
+   344          88 CCUP-SHOW-DETAILS               VALUE 'S'.
+   345          88 CCUP-CHANGES-MADE               VALUES 'E', 'N'
+   346                                                  , 'C', 'L'
+   347                                                  , 'F'.
+   348          88 CCUP-CHANGES-NOT-OK             VALUE 'E'.
+   349          88 CCUP-CHANGES-OK-NOT-CONFIRMED   VALUE 'N'.
+   350          88 CCUP-CHANGES-OKAYED-AND-DONE    VALUE 'C'.
+   351          88 CCUP-CHANGES-FAILED             VALUES 'L', 'F'.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  12
+* COCRDUPC.cbl
+   352          88 CCUP-CHANGES-OKAYED-LOCK-ERROR  VALUE 'L'.
+   353          88 CCUP-CHANGES-OKAYED-BUT-FAILED  VALUE 'F'.
+   354    05 CCUP-OLD-DETAILS.
+   355       10 CCUP-OLD-ACCTID                    PIC X(11).
+   356       10 CCUP-OLD-CARDID                    PIC X(16).
+   357       10 CCUP-OLD-CVV-CD                    PIC X(3).
+   358       10 CCUP-OLD-CARDDATA.
+   359          20 CCUP-OLD-CRDNAME                PIC X(50).
+   360          20 CCUP-OLD-EXPIRAION-DATE.
+   361             25 CCUP-OLD-EXPYEAR             PIC X(4).
+   362             25 CCUP-OLD-EXPMON              PIC X(2).
+   363             25 CCUP-OLD-EXPDAY              PIC X(2).
+   364          20 CCUP-OLD-CRDSTCD                PIC X(1).
+   365
+   366    05 CCUP-NEW-DETAILS.
+   367       10 CCUP-NEW-ACCTID                    PIC X(11).
+   368       10 CCUP-NEW-CARDID                    PIC X(16).
+   369       10 CCUP-NEW-CVV-CD                    PIC X(3).
+   370       10 CCUP-NEW-CARDDATA.
+   371          20 CCUP-NEW-CRDNAME                PIC X(50).
+   372          20 CCUP-NEW-EXPIRAION-DATE.
+   373             25 CCUP-NEW-EXPYEAR             PIC X(4).
+   374             25 CCUP-NEW-EXPMON              PIC X(2).
+   375             25 CCUP-NEW-EXPDAY              PIC X(2).
+   376          20 CCUP-NEW-CRDSTCD                PIC X(1).
+   377    05 CARD-UPDATE-RECORD.
+   378       10 CARD-UPDATE-NUM                   PIC X(16).
+   379       10 CARD-UPDATE-ACCT-ID               PIC 9(11).
+   380       10 CARD-UPDATE-CVV-CD                PIC 9(03).
+   381       10 CARD-UPDATE-EMBOSSED-NAME         PIC X(50).
+   382       10 CARD-UPDATE-EXPIRAION-DATE        PIC X(10).
+   383       10 CARD-UPDATE-ACTIVE-STATUS         PIC X(01).
+   384       10 FILLER                            PIC X(59).
+   385
+   386
+   387 01  WS-COMMAREA                             PIC X(2000).
+   388
+   389*IBM SUPPLIED COPYBOOKS
+   390*COPY DFHBMSCA.
+   391*----------------------------------------------------------------*
+   392* dfhbmsca.cpy
+   393*<CR_TAG_DEMO_BEGIN>
+   394*
+   395*  Copyright (C) 2024 Micro Focus or one of its affiliates.
+   396*  All rights reserved.
+   397*
+   398*  This sample code is supplied for demonstration purposes only
+   399*  on an "as is" basis and "is for use at your own risk".
+   400*
+   401*<CR_TAG_DEMO_END>
+   402***---------------------------------------------------------*
+   403***CONTROL BLOCK NAME= DFHBMSCA                             *
+   404***                                                         *
+   405***NAME OF MATCHING ASSEMBLER CONTROL BLOCK = NONE          *
+   406***                                                         *
+   407***DESCRIPTIVE NAME = 3270 ATTRIBUTE VALUES                 *
+   408***                                                         *
+   409***FUNCTION =  Provides the values for 3270 attribute bytes *
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  13
+* COCRDUPC.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHBMSCA.cpy)
+   410***            used by the BMS support.                     *
+   411***                                                         *
+   412***---------------------------------------------------------*
+   413 01      DFHBMSCA.
+   414*                                               X'1915'.
+   415   02    DFHBMPEM-BIN  PICTURE 9(4) COMP VALUE IS 6421.
+   416   02    FILLER REDEFINES DFHBMPEM-BIN.
+   417     03  DFHBMPEM  PICTURE X.
+   418     03  DFHBMPNL  PICTURE X.
+   419*                                               X'0C0D'.
+   420   02    DFHBMPFF-BIN  PICTURE 9(4) COMP VALUE IS 3085.
+   421   02    FILLER REDEFINES DFHBMPFF-BIN.
+   422     03  DFHBMPFF  PICTURE X.
+   423     03  DFHBMPCR  PICTURE X.
+   424   02    DFHBMASK  PICTURE X   VALUE  IS  '0'.
+   425   02    DFHBMUNP  PICTURE X   VALUE  IS  ' '.
+   426   02    DFHBMUNN  PICTURE X   VALUE  IS  '&'.
+   427   02    DFHBMPRO  PICTURE X   VALUE  IS  '-'.
+   428   02    DFHBMBRY  PICTURE X   VALUE  IS  'H'.
+   429   02    DFHBMDAR  PICTURE X   VALUE  IS  '<'.
+   430   02    DFHBMFSE  PICTURE X   VALUE  IS  'A'.
+   431   02    DFHBMPRF  PICTURE X   VALUE  IS  '/'.
+   432   02    DFHBMASF  PICTURE X   VALUE  IS  '1'.
+   433   02    DFHBMASB  PICTURE X   VALUE  IS  '8'.
+   434*                                               X'0E0F'.
+   435   02    DFHBMPSO-BIN  PICTURE 9(4) COMP VALUE IS 3599.
+   436   02    FILLER REDEFINES DFHBMPSO-BIN.
+   437     03  DFHBMPSO  PICTURE X.
+   438     03  DFHBMPSI  PICTURE X.
+   439*                                               X'0080'.
+   440   02    DFHBMEOF-BIN  PICTURE 9(4) COMP VALUE IS 128.
+   441   02    FILLER REDEFINES DFHBMEOF-BIN.
+   442     03  FILLER    PICTURE X.
+   443     03  DFHBMEOF  PICTURE X.
+   444*                                               X'0282'.
+   445   02    DFHBMCUR-BIN  PICTURE 9(4) COMP VALUE IS 642.
+   446   02    FILLER REDEFINES DFHBMCUR-BIN.
+   447     03  DFHBMCUR  PICTURE X.
+   448     03  DFHBMEC   PICTURE X.
+   449*                                               X'0082'.
+   450   02    DFHBMFLG-BIN  PICTURE 9(4) COMP VALUE IS 130.
+   451       88    DFHERASE VALUES ARE 128, 130.
+   452       88    DFHCURSR VALUES ARE   2, 130.
+   453   02    FILLER REDEFINES DFHBMFLG-BIN.
+   454     03  FILLER    PICTURE X.
+   455     03  DFHBMFLG  PICTURE X.
+   456   02    DFHBMDET  PICTURE X   VALUE  IS  HIGH-VALUES.
+   457   02    FILLER    PICTURE X.
+   458*                                               X'0028'.
+   459   02    DFHSA-BIN  PICTURE 9(4) COMP VALUE IS 40.
+   460   02    FILLER REDEFINES DFHSA-BIN.
+   461     03  FILLER    PICTURE X.
+   462     03  DFHSA     PICTURE X.
+   463*                                               X'003F'.
+   464   02    DFHERROR-BIN  PICTURE 9(4) COMP VALUE IS 63.
+   465   02    FILLER REDEFINES DFHERROR-BIN.
+   466     03  FILLER    PICTURE X.
+   467     03  DFHERROR  PICTURE X.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  14
+* COCRDUPC.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHBMSCA.cpy)
+   468*                                               X'0042'.
+   469   02    DFHCOLOR-BIN  PICTURE 9(4) COMP VALUE IS 66.
+   470   02    FILLER REDEFINES DFHCOLOR-BIN.
+   471     03  FILLER    PICTURE X.
+   472     03  DFHCOLOR  PICTURE X.
+   473*                                               X'0043'.
+   474   02    DFHPS-BIN  PICTURE 9(4) COMP VALUE IS 67.
+   475   02    FILLER REDEFINES DFHPS-BIN.
+   476     03  FILLER    PICTURE X.
+   477     03  DFHPS     PICTURE X.
+   478*                                               X'0041'.
+   479   02    DFHHLT-BIN  PICTURE 9(4) COMP VALUE IS 65.
+   480   02    FILLER REDEFINES DFHHLT-BIN.
+   481     03  FILLER    PICTURE X.
+   482     03  DFHHLT    PICTURE X.
+   483*                                               X'00C0'.
+   484   02    DFH3270-BIN   PICTURE 9(4) COMP VALUE IS 192.
+   485   02    FILLER REDEFINES DFH3270-BIN.
+   486     03  FILLER    PICTURE X.
+   487     03  DFH3270   PICTURE X.
+   488   02    DFHVAL    PICTURE X   VALUE  IS  'A'.
+   489   02    DFHOUTLN  PICTURE X   VALUE  IS  'B'.
+   490*                                               X'0046'.
+   491   02    DFHBKTRN-BIN  PICTURE 9(4) COMP VALUE IS 70.
+   492   02    FILLER REDEFINES DFHBKTRN-BIN.
+   493     03  FILLER    PICTURE X.
+   494     03  DFHBKTRN  PICTURE X.
+   495   02    DFHALL    PICTURE X   VALUE  IS  LOW-VALUES.
+   496   02    DFHDFT    PICTURE X   VALUE  IS  HIGH-VALUES.
+   497   02    DFHDFCOL  PICTURE X   VALUE  IS  LOW-VALUES.
+   498   02    DFHBLUE   PICTURE X   VALUE  IS  '1'.
+   499   02    DFHRED    PICTURE X   VALUE  IS  '2'.
+   500   02    DFHPINK   PICTURE X   VALUE  IS  '3'.
+   501   02    DFHGREEN  PICTURE X   VALUE  IS  '4'.
+   502   02    DFHTURQ   PICTURE X   VALUE  IS  '5'.
+   503   02    DFHYELLO  PICTURE X   VALUE  IS  '6'.
+   504   02    DFHNEUTR  PICTURE X   VALUE  IS  '7'.
+   505   02    DFHBASE   PICTURE X   VALUE  IS  LOW-VALUES.
+   506   02    DFHDFHI   PICTURE X   VALUE  IS  LOW-VALUES.
+   507   02    DFHBLINK  PICTURE X   VALUE  IS  '1'.
+   508   02    DFHREVRS  PICTURE X   VALUE  IS  '2'.
+   509   02    DFHUNDLN  PICTURE X   VALUE  IS  '4'.
+   510*                                               X'0402'.
+   511   02    DFHMFIL-BIN  PICTURE 9(4) COMP VALUE IS 1026.
+   512   02    FILLER REDEFINES DFHMFIL-BIN.
+   513     03  DFHMFIL   PICTURE X.
+   514     03  DFHMENT   PICTURE X.
+   515*                                               X'0601'.
+   516   02    DFHMFE-BIN  PICTURE 9(4) COMP VALUE IS 1537.
+   517   02    FILLER REDEFINES DFHMFE-BIN.
+   518     03  DFHMFE    PICTURE X.
+   519     03  DFHMT     PICTURE X.
+   520*                                               X'0503'.
+   521   02    DFHMFT-BIN  PICTURE 9(4) COMP VALUE IS 1283.
+   522   02    FILLER REDEFINES DFHMFT-BIN.
+   523     03  DFHMFT    PICTURE X.
+   524     03  DFHMET    PICTURE X.
+   525*                                               X'0007'.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  15
+* COCRDUPC.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHBMSCA.cpy)
+   526   02    DFHMFET-BIN  PICTURE 9(4) COMP VALUE IS 7.
+   527   02    FILLER REDEFINES DFHMFET-BIN.
+   528     03  FILLER    PICTURE X.
+   529     03  DFHMFET   PICTURE X.
+   530   02    DFHUNNOD  PICTURE X   VALUE  IS  '('.
+   531   02    DFHUNIMD  PICTURE X   VALUE  IS  'I'.
+   532   02    DFHUNNUM  PICTURE X   VALUE  IS  'J'.
+   533   02    DFHUNNUB  PICTURE X   VALUE  IS  'Q'.
+   534   02    DFHUNINT  PICTURE X   VALUE  IS  'R'.
+   535   02    DFHUNNON  PICTURE X   VALUE  IS  ')'.
+   536   02    DFHPROTI  PICTURE X   VALUE  IS  'Y'.
+   537   02    DFHPROTN  PICTURE X   VALUE  IS  '%'.
+   538   02    DFHDFFR   PICTURE X   VALUE  IS  LOW-VALUES.
+   539*                                               X'0102'.
+   540   02    DFHUNDER-BIN  PICTURE 9(4) COMP VALUE IS 258.
+   541   02    FILLER REDEFINES DFHUNDER-BIN.
+   542     03  DFHUNDER  PICTURE X.
+   543     03  DFHRIGHT  PICTURE X.
+   544*                                               X'0408'.
+   545   02    DFHOVER-BIN  PICTURE 9(4) COMP VALUE IS 1032.
+   546   02    FILLER REDEFINES DFHOVER-BIN.
+   547     03  DFHOVER   PICTURE X.
+   548     03  DFHLEFT   PICTURE X.
+   549*                                               X'000F'.
+   550   02    DFHBOX-BIN   PICTURE 9(4) COMP VALUE IS 15.
+   551   02    FILLER REDEFINES DFHBOX-BIN.
+   552     03  FILLER    PICTURE X.
+   553     03  DFHBOX    PICTURE X.
+   554*                                               X'0001'.
+   555   02    DFHSOSI-BIN  PICTURE 9(4) COMP VALUE IS 1.
+   556   02    FILLER REDEFINES DFHSOSI-BIN.
+   557     03  FILLER    PICTURE X.
+   558     03  DFHSOSI   PICTURE X.
+   559   02    DFHTRANS  PICTURE X   VALUE  IS  '0'.
+   560   02    DFHOPAQ   PICTURE X   VALUE  IS  HIGH-VALUES.
+   561*----------------------------------------------------------------*
+   562* dfhbmsca.cpy end
+   563*----------------------------------------------------------------*
+   564*COPY DFHAID.
+   565*<CR_TAG_DEMO_BEGIN>
+   566*
+   567*  Copyright (C) 2024 Micro Focus or one of its affiliates.
+   568*  All rights reserved.
+   569*
+   570*  This sample code is supplied for demonstration purposes only
+   571*  on an "as is" basis and "is for use at your own risk".
+   572*
+   573*<CR_TAG_DEMO_END>
+   574*----------------------------------------------------------------*
+   575* dfhaid.cpy
+   576*----------------------------------------------------------------*
+   577 01  DFHAID.
+   578     02  DFHNULL         PIC X   VALUE IS LOW-VALUE.
+   579     02  DFHENTER        PIC X   VALUE IS ''''.
+   580     02  DFHCLEAR        PIC X   VALUE IS '_'.
+   581     02  DFHPEN          PIC X   VALUE IS '='.
+   582     02  DFHOPID         PIC X   VALUE IS 'W'.
+   583     02  DFHMSRE         PIC X   VALUE IS 'X'.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  16
+* COCRDUPC.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHAID.cpy)
+   584     02  DFHSTRF         PIC X   VALUE IS ' '.
+   585     02  DFHTRIG         PIC X   VALUE IS '"'.
+   586     02  DFHPA1          PIC X   VALUE IS '%'.
+   587     02  DFHPA2          PIC X   VALUE IS '>'.
+   588     02  DFHPA3          PIC X   VALUE IS ','.
+   589     02  DFHPF1          PIC X   VALUE IS '1'.
+   590     02  DFHPF2          PIC X   VALUE IS '2'.
+   591     02  DFHPF3          PIC X   VALUE IS '3'.
+   592     02  DFHPF4          PIC X   VALUE IS '4'.
+   593     02  DFHPF5          PIC X   VALUE IS '5'.
+   594     02  DFHPF6          PIC X   VALUE IS '6'.
+   595     02  DFHPF7          PIC X   VALUE IS '7'.
+   596     02  DFHPF8          PIC X   VALUE IS '8'.
+   597     02  DFHPF9          PIC X   VALUE IS '9'.
+   598     02  DFHPF10         PIC X   VALUE IS ':'.
+   599     02  DFHPF11         PIC X   VALUE IS '#'.
+   600     02  DFHPF12         PIC X   VALUE IS '@'.
+   601     02  DFHPF13         PIC X   VALUE IS 'A'.
+   602     02  DFHPF14         PIC X   VALUE IS 'B'.
+   603     02  DFHPF15         PIC X   VALUE IS 'C'.
+   604     02  DFHPF16         PIC X   VALUE IS 'D'.
+   605     02  DFHPF17         PIC X   VALUE IS 'E'.
+   606     02  DFHPF18         PIC X   VALUE IS 'F'.
+   607     02  DFHPF19         PIC X   VALUE IS 'G'.
+   608     02  DFHPF20         PIC X   VALUE IS 'H'.
+   609     02  DFHPF21         PIC X   VALUE IS 'I'.
+   610     02  DFHPF22         PIC X   VALUE IS ' '.
+   611*    Note: CICS ECM alters the line above to...
+   612*          Value for ASCII  is X'5B'
+   613*          Value for EBCDIC is X'4A'
+   614     02  DFHPF23         PIC X   VALUE IS '.'.
+   615     02  DFHPF24         PIC X   VALUE IS '<'.
+   616*----------------------------------------------------------------*
+   617* dfhaid.cpy end
+   618*----------------------------------------------------------------*
+   619
+   620*COMMON COPYBOOKS
+   621*Screen Titles
+   622*COPY COTTL01Y.
+   623 01 CCDA-SCREEN-TITLE.
+   624   05 CCDA-TITLE01    PIC X(40) VALUE
+   625      '      AWS Mainframe Modernization       '.
+   626   05 CCDA-TITLE02    PIC X(40) VALUE
+   627*     '  Credit Card Demo Application (CCDA)   '.
+   628      '              CardDemo                  '.
+   629   05 CCDA-THANK-YOU  PIC X(40) VALUE
+   630      'Thank you for using CCDA application... '.
+   631*
+   632* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   633*
+   634*Credit Card Update Screen Layout
+   635*COPY COCRDUP.
+   636*   Micro Focus COBOL 2017  7.0.00247
+   637*   Micro Focus BMS Screen Painter
+   638*   MapSet Name   COCRDUP
+   639*   Date Created  08/05/2022
+   640*   Time Created  16:44:45
+   641
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  17
+* COCRDUPC.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COCRDUP.cpy)
+   642*  Input Data For Map CCRDUPA
+   643   01 CCRDUPAI.
+   644      03 FILLER                         PIC X(12).
+   645      03 TRNNAMEL                       PIC S9(4) COMP.
+   646      03 TRNNAMEF                       PIC X.
+   647      03 FILLER REDEFINES TRNNAMEF.
+   648         05 TRNNAMEA                       PIC X.
+   649      03 FILLER                         PIC X(4).
+   650      03 TRNNAMEI                       PIC X(4).
+   651      03 TITLE01L                       PIC S9(4) COMP.
+   652      03 TITLE01F                       PIC X.
+   653      03 FILLER REDEFINES TITLE01F.
+   654         05 TITLE01A                       PIC X.
+   655      03 FILLER                         PIC X(4).
+   656      03 TITLE01I                       PIC X(40).
+   657      03 CURDATEL                       PIC S9(4) COMP.
+   658      03 CURDATEF                       PIC X.
+   659      03 FILLER REDEFINES CURDATEF.
+   660         05 CURDATEA                       PIC X.
+   661      03 FILLER                         PIC X(4).
+   662      03 CURDATEI                       PIC X(8).
+   663      03 PGMNAMEL                       PIC S9(4) COMP.
+   664      03 PGMNAMEF                       PIC X.
+   665      03 FILLER REDEFINES PGMNAMEF.
+   666         05 PGMNAMEA                       PIC X.
+   667      03 FILLER                         PIC X(4).
+   668      03 PGMNAMEI                       PIC X(8).
+   669      03 TITLE02L                       PIC S9(4) COMP.
+   670      03 TITLE02F                       PIC X.
+   671      03 FILLER REDEFINES TITLE02F.
+   672         05 TITLE02A                       PIC X.
+   673      03 FILLER                         PIC X(4).
+   674      03 TITLE02I                       PIC X(40).
+   675      03 CURTIMEL                       PIC S9(4) COMP.
+   676      03 CURTIMEF                       PIC X.
+   677      03 FILLER REDEFINES CURTIMEF.
+   678         05 CURTIMEA                       PIC X.
+   679      03 FILLER                         PIC X(4).
+   680      03 CURTIMEI                       PIC X(8).
+   681      03 ACCTSIDL                       PIC S9(4) COMP.
+   682      03 ACCTSIDF                       PIC X.
+   683      03 FILLER REDEFINES ACCTSIDF.
+   684         05 ACCTSIDA                       PIC X.
+   685      03 FILLER                         PIC X(4).
+   686      03 ACCTSIDI                       PIC X(11).
+   687      03 CARDSIDL                       PIC S9(4) COMP.
+   688      03 CARDSIDF                       PIC X.
+   689      03 FILLER REDEFINES CARDSIDF.
+   690         05 CARDSIDA                       PIC X.
+   691      03 FILLER                         PIC X(4).
+   692      03 CARDSIDI                       PIC X(16).
+   693      03 CRDNAMEL                       PIC S9(4) COMP.
+   694      03 CRDNAMEF                       PIC X.
+   695      03 FILLER REDEFINES CRDNAMEF.
+   696         05 CRDNAMEA                       PIC X.
+   697      03 FILLER                         PIC X(4).
+   698      03 CRDNAMEI                       PIC X(50).
+   699      03 CRDSTCDL                       PIC S9(4) COMP.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  18
+* COCRDUPC.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COCRDUP.cpy)
+   700      03 CRDSTCDF                       PIC X.
+   701      03 FILLER REDEFINES CRDSTCDF.
+   702         05 CRDSTCDA                       PIC X.
+   703      03 FILLER                         PIC X(4).
+   704      03 CRDSTCDI                       PIC X(1).
+   705      03 EXPMONL                        PIC S9(4) COMP.
+   706      03 EXPMONF                        PIC X.
+   707      03 FILLER REDEFINES EXPMONF.
+   708         05 EXPMONA                        PIC X.
+   709      03 FILLER                         PIC X(4).
+   710      03 EXPMONI                        PIC X(2).
+   711      03 EXPYEARL                       PIC S9(4) COMP.
+   712      03 EXPYEARF                       PIC X.
+   713      03 FILLER REDEFINES EXPYEARF.
+   714         05 EXPYEARA                       PIC X.
+   715      03 FILLER                         PIC X(4).
+   716      03 EXPYEARI                       PIC X(4).
+   717      03 EXPDAYL                        PIC S9(4) COMP.
+   718      03 EXPDAYF                        PIC X.
+   719      03 FILLER REDEFINES EXPDAYF.
+   720         05 EXPDAYA                        PIC X.
+   721      03 FILLER                         PIC X(4).
+   722      03 EXPDAYI                        PIC X(2).
+   723      03 INFOMSGL                       PIC S9(4) COMP.
+   724      03 INFOMSGF                       PIC X.
+   725      03 FILLER REDEFINES INFOMSGF.
+   726         05 INFOMSGA                       PIC X.
+   727      03 FILLER                         PIC X(4).
+   728      03 INFOMSGI                       PIC X(40).
+   729      03 ERRMSGL                        PIC S9(4) COMP.
+   730      03 ERRMSGF                        PIC X.
+   731      03 FILLER REDEFINES ERRMSGF.
+   732         05 ERRMSGA                        PIC X.
+   733      03 FILLER                         PIC X(4).
+   734      03 ERRMSGI                        PIC X(80).
+   735      03 FKEYSL                         PIC S9(4) COMP.
+   736      03 FKEYSF                         PIC X.
+   737      03 FILLER REDEFINES FKEYSF.
+   738         05 FKEYSA                         PIC X.
+   739      03 FILLER                         PIC X(4).
+   740      03 FKEYSI                         PIC X(21).
+   741      03 FKEYSCL                        PIC S9(4) COMP.
+   742      03 FKEYSCF                        PIC X.
+   743      03 FILLER REDEFINES FKEYSCF.
+   744         05 FKEYSCA                        PIC X.
+   745      03 FILLER                         PIC X(4).
+   746      03 FKEYSCI                        PIC X(18).
+   747
+   748*  Output Data For Map CCRDUPA
+   749   01 CCRDUPAO REDEFINES CCRDUPAI.
+   750      03 FILLER                         PIC X(12).
+   751      03 FILLER                         PIC X(3).
+   752      03 TRNNAMEC                       PIC X.
+   753      03 TRNNAMEP                       PIC X.
+   754      03 TRNNAMEH                       PIC X.
+   755      03 TRNNAMEV                       PIC X.
+   756      03 TRNNAMEO                       PIC X(4).
+   757      03 FILLER                         PIC X(3).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  19
+* COCRDUPC.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COCRDUP.cpy)
+   758      03 TITLE01C                       PIC X.
+   759      03 TITLE01P                       PIC X.
+   760      03 TITLE01H                       PIC X.
+   761      03 TITLE01V                       PIC X.
+   762      03 TITLE01O                       PIC X(40).
+   763      03 FILLER                         PIC X(3).
+   764      03 CURDATEC                       PIC X.
+   765      03 CURDATEP                       PIC X.
+   766      03 CURDATEH                       PIC X.
+   767      03 CURDATEV                       PIC X.
+   768      03 CURDATEO                       PIC X(8).
+   769      03 FILLER                         PIC X(3).
+   770      03 PGMNAMEC                       PIC X.
+   771      03 PGMNAMEP                       PIC X.
+   772      03 PGMNAMEH                       PIC X.
+   773      03 PGMNAMEV                       PIC X.
+   774      03 PGMNAMEO                       PIC X(8).
+   775      03 FILLER                         PIC X(3).
+   776      03 TITLE02C                       PIC X.
+   777      03 TITLE02P                       PIC X.
+   778      03 TITLE02H                       PIC X.
+   779      03 TITLE02V                       PIC X.
+   780      03 TITLE02O                       PIC X(40).
+   781      03 FILLER                         PIC X(3).
+   782      03 CURTIMEC                       PIC X.
+   783      03 CURTIMEP                       PIC X.
+   784      03 CURTIMEH                       PIC X.
+   785      03 CURTIMEV                       PIC X.
+   786      03 CURTIMEO                       PIC X(8).
+   787      03 FILLER                         PIC X(3).
+   788      03 ACCTSIDC                       PIC X.
+   789      03 ACCTSIDP                       PIC X.
+   790      03 ACCTSIDH                       PIC X.
+   791      03 ACCTSIDV                       PIC X.
+   792      03 ACCTSIDO                       PIC X(11).
+   793      03 FILLER                         PIC X(3).
+   794      03 CARDSIDC                       PIC X.
+   795      03 CARDSIDP                       PIC X.
+   796      03 CARDSIDH                       PIC X.
+   797      03 CARDSIDV                       PIC X.
+   798      03 CARDSIDO                       PIC X(16).
+   799      03 FILLER                         PIC X(3).
+   800      03 CRDNAMEC                       PIC X.
+   801      03 CRDNAMEP                       PIC X.
+   802      03 CRDNAMEH                       PIC X.
+   803      03 CRDNAMEV                       PIC X.
+   804      03 CRDNAMEO                       PIC X(50).
+   805      03 FILLER                         PIC X(3).
+   806      03 CRDSTCDC                       PIC X.
+   807      03 CRDSTCDP                       PIC X.
+   808      03 CRDSTCDH                       PIC X.
+   809      03 CRDSTCDV                       PIC X.
+   810      03 CRDSTCDO                       PIC X(1).
+   811      03 FILLER                         PIC X(3).
+   812      03 EXPMONC                        PIC X.
+   813      03 EXPMONP                        PIC X.
+   814      03 EXPMONH                        PIC X.
+   815      03 EXPMONV                        PIC X.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  20
+* COCRDUPC.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COCRDUP.cpy)
+   816      03 EXPMONO                        PIC X(2).
+   817      03 FILLER                         PIC X(3).
+   818      03 EXPYEARC                       PIC X.
+   819      03 EXPYEARP                       PIC X.
+   820      03 EXPYEARH                       PIC X.
+   821      03 EXPYEARV                       PIC X.
+   822      03 EXPYEARO                       PIC X(4).
+   823      03 FILLER                         PIC X(3).
+   824      03 EXPDAYC                        PIC X.
+   825      03 EXPDAYP                        PIC X.
+   826      03 EXPDAYH                        PIC X.
+   827      03 EXPDAYV                        PIC X.
+   828      03 EXPDAYO                        PIC X(2).
+   829      03 FILLER                         PIC X(3).
+   830      03 INFOMSGC                       PIC X.
+   831      03 INFOMSGP                       PIC X.
+   832      03 INFOMSGH                       PIC X.
+   833      03 INFOMSGV                       PIC X.
+   834      03 INFOMSGO                       PIC X(40).
+   835      03 FILLER                         PIC X(3).
+   836      03 ERRMSGC                        PIC X.
+   837      03 ERRMSGP                        PIC X.
+   838      03 ERRMSGH                        PIC X.
+   839      03 ERRMSGV                        PIC X.
+   840      03 ERRMSGO                        PIC X(80).
+   841      03 FILLER                         PIC X(3).
+   842      03 FKEYSC                         PIC X.
+   843      03 FKEYSP                         PIC X.
+   844      03 FKEYSH                         PIC X.
+   845      03 FKEYSV                         PIC X.
+   846      03 FKEYSO                         PIC X(21).
+   847      03 FILLER                         PIC X(3).
+   848      03 FKEYSCC                        PIC X.
+   849      03 FKEYSCP                        PIC X.
+   850      03 FKEYSCH                        PIC X.
+   851      03 FKEYSCV                        PIC X.
+   852      03 FKEYSCO                        PIC X(18).
+   853
+   854
+   855*Current Date
+   856*COPY CSDAT01Y.
+   857 01 WS-DATE-TIME.
+   858   05 WS-CURDATE-DATA.
+   859     10  WS-CURDATE.
+   860       15  WS-CURDATE-YEAR         PIC 9(04).
+   861       15  WS-CURDATE-MONTH        PIC 9(02).
+   862       15  WS-CURDATE-DAY          PIC 9(02).
+   863     10 WS-CURDATE-N REDEFINES WS-CURDATE PIC 9(08).
+   864     10  WS-CURTIME.
+   865       15  WS-CURTIME-HOURS        PIC 9(02).
+   866       15  WS-CURTIME-MINUTE       PIC 9(02).
+   867       15  WS-CURTIME-SECOND       PIC 9(02).
+   868       15  WS-CURTIME-MILSEC       PIC 9(02).
+   869     10 WS-CURTIME-N REDEFINES WS-CURTIME PIC 9(08).
+   870   05 WS-CURDATE-MM-DD-YY.
+   871     10  WS-CURDATE-MM             PIC 9(02).
+   872     10  FILLER                    PIC X(01) VALUE '/'.
+   873     10  WS-CURDATE-DD             PIC 9(02).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  21
+* COCRDUPC.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/COPYBOOKS/CSDAT01Y.c)
+   874     10  FILLER                    PIC X(01) VALUE '/'.
+   875     10  WS-CURDATE-YY             PIC 9(02).
+   876   05 WS-CURTIME-HH-MM-SS.
+   877     10  WS-CURTIME-HH             PIC 9(02).
+   878     10  FILLER                    PIC X(01) VALUE ':'.
+   879     10  WS-CURTIME-MM             PIC 9(02).
+   880     10  FILLER                    PIC X(01) VALUE ':'.
+   881     10  WS-CURTIME-SS             PIC 9(02).
+   882   05 WS-TIMESTAMP.
+   883     10  WS-TIMESTAMP-DT-YYYY      PIC 9(04).
+   884     10  FILLER                    PIC X(01) VALUE '-'.
+   885     10  WS-TIMESTAMP-DT-MM        PIC 9(02).
+   886     10  FILLER                    PIC X(01) VALUE '-'.
+   887     10  WS-TIMESTAMP-DT-DD        PIC 9(02).
+   888     10  FILLER                    PIC X(01) VALUE ' '.
+   889     10  WS-TIMESTAMP-TM-HH        PIC 9(02).
+   890     10  FILLER                    PIC X(01) VALUE ':'.
+   891     10  WS-TIMESTAMP-TM-MM        PIC 9(02).
+   892     10  FILLER                    PIC X(01) VALUE ':'.
+   893     10  WS-TIMESTAMP-TM-SS        PIC 9(02).
+   894     10  FILLER                    PIC X(01) VALUE '.'.
+   895     10  WS-TIMESTAMP-TM-MS6       PIC 9(06).
+   896*
+   897* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   898*
+   899
+   900*Common Messages
+   901*COPY CSMSG01Y.
+   902 01 CCDA-COMMON-MESSAGES.
+   903   05 CCDA-MSG-THANK-YOU         PIC X(50) VALUE
+   904        'Thank you for using CardDemo application...      '.
+   905   05 CCDA-MSG-INVALID-KEY       PIC X(50) VALUE
+   906        'Invalid key pressed. Please see below...         '.
+   907*
+   908* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   909*
+   910
+   911*Abend Variables
+   912*COPY CSMSG02Y.
+   913*Skeleton COBOL Copybook
+   914*****************************************************************
+   915* CABENDD.CPY                                                   *
+   916*---------------------------------------------------------------*
+   917* Work areas for abend routine                                  *
+   918*****************************************************************
+   919 01  ABEND-DATA.
+   920   05  ABEND-CODE                            PIC X(4)
+   921       VALUE SPACES.
+   922   05  ABEND-CULPRIT                         PIC X(8)
+   923       VALUE SPACES.
+   924   05  ABEND-REASON                          PIC X(50)
+   925       VALUE SPACES.
+   926   05  ABEND-MSG                             PIC X(72)
+   927       VALUE SPACES.
+   928
+   929
+   930
+   931*
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  22
+* COCRDUPC.cbl
+   932* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   933*
+   934
+   935*Signed on user data
+   936*COPY CSUSR01Y.
+   937 01 SEC-USER-DATA.
+   938   05 SEC-USR-ID                 PIC X(08).
+   939   05 SEC-USR-FNAME              PIC X(20).
+   940   05 SEC-USR-LNAME              PIC X(20).
+   941   05 SEC-USR-PWD                PIC X(08).
+   942   05 SEC-USR-TYPE               PIC X(01).
+   943   05 SEC-USR-FILLER             PIC X(23).
+   944*
+   945* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:59 CDT
+   946*
+   947
+   948*Dataset layouts
+   949*ACCOUNT RECORD LAYOUT
+   950*COPY CVACT01Y.
+   951
+   952*CARD RECORD LAYOUT
+   953*COPY CVACT02Y.
+   954*****************************************************************
+   955*    Data-structure for card entity (RECLN 150)
+   956*****************************************************************
+   957 01  CARD-RECORD.
+   958     05  CARD-NUM                          PIC X(16).
+   959     05  CARD-ACCT-ID                      PIC 9(11).
+   960     05  CARD-CVV-CD                       PIC 9(03).
+   961     05  CARD-EMBOSSED-NAME                PIC X(50).
+   962     05  CARD-EXPIRAION-DATE               PIC X(10).
+   963     05  CARD-ACTIVE-STATUS                PIC X(01).
+   964     05  FILLER                            PIC X(59).
+   965*
+   966* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:00 CDT
+   967*
+   968
+   969*CARD XREF LAYOUT
+   970*COPY CVACT03Y.
+   971
+   972*CUSTOMER LAYOUT
+   973*COPY CVCUS01Y.
+   974*****************************************************************
+   975*    Data-structure for Customer entity (RECLN 500)
+   976*****************************************************************
+   977 01  CUSTOMER-RECORD.
+   978     05  CUST-ID                                 PIC 9(09).
+   979     05  CUST-FIRST-NAME                         PIC X(25).
+   980     05  CUST-MIDDLE-NAME                        PIC X(25).
+   981     05  CUST-LAST-NAME                          PIC X(25).
+   982     05  CUST-ADDR-LINE-1                        PIC X(50).
+   983     05  CUST-ADDR-LINE-2                        PIC X(50).
+   984     05  CUST-ADDR-LINE-3                        PIC X(50).
+   985     05  CUST-ADDR-STATE-CD                      PIC X(02).
+   986     05  CUST-ADDR-COUNTRY-CD                    PIC X(03).
+   987     05  CUST-ADDR-ZIP                           PIC X(10).
+   988     05  CUST-PHONE-NUM-1                        PIC X(15).
+   989     05  CUST-PHONE-NUM-2                        PIC X(15).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  23
+* COCRDUPC.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/COPYBOOKS/CVCUS01Y.c)
+   990     05  CUST-SSN                                PIC 9(09).
+   991     05  CUST-GOVT-ISSUED-ID                     PIC X(20).
+   992     05  CUST-DOB-YYYY-MM-DD                     PIC X(10).
+   993     05  CUST-EFT-ACCOUNT-ID                     PIC X(10).
+   994     05  CUST-PRI-CARD-HOLDER-IND                PIC X(01).
+   995     05  CUST-FICO-CREDIT-SCORE                  PIC 9(03).
+   996     05  FILLER                                  PIC X(168).
+   997*
+   998* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:00 CDT
+   999*
+  1000
+  1001 LINKAGE SECTION.
+  1002 01  DFHCOMMAREA.
+  1003   05  FILLER                                PIC X(1)
+  1004       OCCURS 1 TO 32767 TIMES DEPENDING ON EIBCALEN.
+  1005
+  1006 PROCEDURE DIVISION.
+  1007 0000-MAIN.
+  1008
+  1009
+  1010     EXEC CICS HANDLE ABEND
+  1011               LABEL(ABEND-ROUTINE)
+  1012     END-EXEC
+  1013
+  1014     INITIALIZE CC-WORK-AREA
+  1015                WS-MISC-STORAGE
+  1016                WS-COMMAREA
+  1017*****************************************************************
+  1018* Store our context
+  1019*****************************************************************
+  1020     MOVE LIT-THISTRANID       TO WS-TRANID
+  1021*****************************************************************
+  1022* Ensure error message is cleared                               *
+  1023*****************************************************************
+  1024     SET WS-RETURN-MSG-OFF  TO TRUE
+  1025*****************************************************************
+  1026* Store passed data if  any                *
+  1027*****************************************************************
+  1028     IF EIBCALEN IS EQUAL TO 0
+  1029         OR (CDEMO-FROM-PROGRAM = LIT-MENUPGM
+  1030         AND NOT CDEMO-PGM-REENTER)
+  1031        INITIALIZE CARDDEMO-COMMAREA
+  1032                   WS-THIS-PROGCOMMAREA
+  1033        SET CDEMO-PGM-ENTER TO TRUE
+  1034        SET CCUP-DETAILS-NOT-FETCHED TO TRUE
+  1035     ELSE
+  1036        MOVE DFHCOMMAREA (1:LENGTH OF CARDDEMO-COMMAREA)  TO
+  1037                          CARDDEMO-COMMAREA
+  1038        MOVE DFHCOMMAREA(LENGTH OF CARDDEMO-COMMAREA + 1:
+  1039                         LENGTH OF WS-THIS-PROGCOMMAREA ) TO
+  1040                          WS-THIS-PROGCOMMAREA
+  1041     END-IF
+  1042*****************************************************************
+  1043* Remap PFkeys as needed.
+  1044* Store the Mapped PF Key
+  1045*****************************************************************
+  1046     PERFORM YYYY-STORE-PFKEY
+  1047        THRU YYYY-STORE-PFKEY-EXIT
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  24
+* COCRDUPC.cbl
+  1048*****************************************************************
+  1049* Check the AID to see if its valid at this point               *
+  1050* F3 - Exit
+  1051* Enter show screen again
+  1052*****************************************************************
+  1053     SET PFK-INVALID TO TRUE
+  1054     IF CCARD-AID-ENTER OR
+  1055        CCARD-AID-PFK03 OR
+  1056        (CCARD-AID-PFK05 AND CCUP-CHANGES-OK-NOT-CONFIRMED)
+  1057                        OR
+  1058        (CCARD-AID-PFK12 AND NOT CCUP-DETAILS-NOT-FETCHED)
+  1059        SET PFK-VALID TO TRUE
+  1060     END-IF
+  1061
+  1062     IF PFK-INVALID
+  1063        SET CCARD-AID-ENTER TO TRUE
+  1064     END-IF
+  1065
+  1066*****************************************************************
+  1067* Decide what to do based on inputs received
+  1068*****************************************************************
+  1069     EVALUATE TRUE
+  1070******************************************************************
+  1071*       USER PRESSES PF03 TO EXIT
+  1072*  OR   USER IS DONE WITH UPDATE
+  1073*            XCTL TO CALLING PROGRAM OR MAIN MENU
+  1074******************************************************************
+  1075        WHEN CCARD-AID-PFK03
+  1076        WHEN (CCUP-CHANGES-OKAYED-AND-DONE
+  1077         AND  CDEMO-LAST-MAPSET   EQUAL LIT-CCLISTMAPSET)
+  1078        WHEN (CCUP-CHANGES-FAILED
+  1079         AND  CDEMO-LAST-MAPSET   EQUAL LIT-CCLISTMAPSET)
+  1080             SET CCARD-AID-PFK03     TO TRUE
+  1081
+  1082             IF CDEMO-FROM-TRANID    EQUAL LOW-VALUES
+  1083             OR CDEMO-FROM-TRANID    EQUAL SPACES
+  1084                MOVE LIT-MENUTRANID  TO CDEMO-TO-TRANID
+  1085             ELSE
+  1086                MOVE CDEMO-FROM-TRANID  TO CDEMO-TO-TRANID
+  1087             END-IF
+  1088
+  1089             IF CDEMO-FROM-PROGRAM   EQUAL LOW-VALUES
+  1090             OR CDEMO-FROM-PROGRAM   EQUAL SPACES
+  1091                MOVE LIT-MENUPGM     TO CDEMO-TO-PROGRAM
+  1092             ELSE
+  1093                MOVE CDEMO-FROM-PROGRAM TO CDEMO-TO-PROGRAM
+  1094             END-IF
+  1095
+  1096             MOVE LIT-THISTRANID     TO CDEMO-FROM-TRANID
+  1097             MOVE LIT-THISPGM        TO CDEMO-FROM-PROGRAM
+  1098
+  1099             IF CDEMO-LAST-MAPSET    EQUAL LIT-CCLISTMAPSET
+  1100                 MOVE ZEROS          TO CDEMO-ACCT-ID
+  1101                                        CDEMO-CARD-NUM
+  1102             END-IF
+  1103
+  1104             SET  CDEMO-USRTYP-USER  TO TRUE
+  1105             SET  CDEMO-PGM-ENTER    TO TRUE
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  25
+* COCRDUPC.cbl
+  1106             MOVE LIT-THISMAPSET     TO CDEMO-LAST-MAPSET
+  1107             MOVE LIT-THISMAP        TO CDEMO-LAST-MAP
+  1108
+  1109             EXEC CICS
+  1110                  SYNCPOINT
+  1111             END-EXEC
+  1112*
+  1113             EXEC CICS XCTL
+  1114                  PROGRAM (CDEMO-TO-PROGRAM)
+  1115                  COMMAREA(CARDDEMO-COMMAREA)
+  1116             END-EXEC
+  1117******************************************************************
+  1118*       USER CAME FROM CREDIT CARD LIST SCREEN
+  1119*            SO WE ALREADY HAVE THE FILTER KEYS
+  1120*            FETCH THE ASSSOCIATED CARD DETAILS FOR UPDATE
+  1121******************************************************************
+  1122        WHEN CDEMO-PGM-ENTER
+  1123         AND CDEMO-FROM-PROGRAM  EQUAL LIT-CCLISTPGM
+  1124        WHEN CCARD-AID-PFK12
+  1125         AND CDEMO-FROM-PROGRAM  EQUAL LIT-CCLISTPGM
+  1126             SET CDEMO-PGM-REENTER    TO TRUE
+  1127             SET INPUT-OK             TO TRUE
+  1128             SET FLG-ACCTFILTER-ISVALID  TO TRUE
+  1129             SET FLG-CARDFILTER-ISVALID  TO TRUE
+  1130             MOVE CDEMO-ACCT-ID       TO CC-ACCT-ID-N
+  1131             MOVE CDEMO-CARD-NUM      TO CC-CARD-NUM-N
+  1132             PERFORM 9000-READ-DATA
+  1133                THRU 9000-READ-DATA-EXIT
+  1134             SET CCUP-SHOW-DETAILS TO TRUE
+  1135             PERFORM 3000-SEND-MAP
+  1136                THRU 3000-SEND-MAP-EXIT
+  1137             GO TO COMMON-RETURN
+  1138******************************************************************
+  1139*       FRESH ENTRY INTO PROGRAM
+  1140*            ASK THE USER FOR THE KEYS TO FETCH CARD TO BE UPDATED
+  1141******************************************************************
+  1142        WHEN CCUP-DETAILS-NOT-FETCHED
+  1143         AND CDEMO-PGM-ENTER
+  1144        WHEN CDEMO-FROM-PROGRAM   EQUAL LIT-MENUPGM
+  1145         AND NOT CDEMO-PGM-REENTER
+  1146             INITIALIZE WS-THIS-PROGCOMMAREA
+  1147             PERFORM 3000-SEND-MAP THRU
+  1148                     3000-SEND-MAP-EXIT
+  1149             SET CDEMO-PGM-REENTER        TO TRUE
+  1150             SET CCUP-DETAILS-NOT-FETCHED TO TRUE
+  1151             GO TO COMMON-RETURN
+  1152******************************************************************
+  1153*       CARD DATA CHANGES REVIEWED, OKAYED AND DONE SUCESSFULLY
+  1154*            RESET THE SEARCH KEYS
+  1155*            ASK THE USER FOR FRESH SEARCH CRITERIA
+  1156******************************************************************
+  1157        WHEN CCUP-CHANGES-OKAYED-AND-DONE
+  1158        WHEN CCUP-CHANGES-FAILED
+  1159             INITIALIZE WS-THIS-PROGCOMMAREA
+  1160                        WS-MISC-STORAGE
+  1161                        CDEMO-ACCT-ID
+  1162                        CDEMO-CARD-NUM
+  1163             SET CDEMO-PGM-ENTER            TO TRUE
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  26
+* COCRDUPC.cbl
+  1164             PERFORM 3000-SEND-MAP THRU
+  1165                     3000-SEND-MAP-EXIT
+  1166             SET CDEMO-PGM-REENTER          TO TRUE
+  1167             SET CCUP-DETAILS-NOT-FETCHED   TO TRUE
+  1168             GO TO COMMON-RETURN
+  1169******************************************************************
+  1170*      CARD DATA HAS BEEN PRESENTED TO USER
+  1171*            CHECK THE USER INPUTS
+  1172*            DECIDE WHAT TO DO
+  1173*            PRESENT NEXT STEPS TO USER
+  1174******************************************************************
+  1175        WHEN OTHER
+  1176             PERFORM 1000-PROCESS-INPUTS
+  1177                THRU 1000-PROCESS-INPUTS-EXIT
+  1178             PERFORM 2000-DECIDE-ACTION
+  1179                THRU 2000-DECIDE-ACTION-EXIT
+  1180             PERFORM 3000-SEND-MAP
+  1181                THRU 3000-SEND-MAP-EXIT
+  1182             GO TO COMMON-RETURN
+  1183     END-EVALUATE
+  1184     .
+  1185
+  1186 COMMON-RETURN.
+  1187     MOVE WS-RETURN-MSG     TO CCARD-ERROR-MSG
+  1188
+  1189     MOVE  CARDDEMO-COMMAREA    TO WS-COMMAREA
+  1190     MOVE  WS-THIS-PROGCOMMAREA TO
+  1191            WS-COMMAREA(LENGTH OF CARDDEMO-COMMAREA + 1:
+  1192                         LENGTH OF WS-THIS-PROGCOMMAREA )
+  1193
+  1194     EXEC CICS RETURN
+  1195          TRANSID (LIT-THISTRANID)
+  1196          COMMAREA (WS-COMMAREA)
+  1197          LENGTH(LENGTH OF WS-COMMAREA)
+  1198     END-EXEC
+  1199     .
+  1200 0000-MAIN-EXIT.
+  1201     EXIT
+  1202     .
+  1203
+  1204 1000-PROCESS-INPUTS.
+  1205     PERFORM 1100-RECEIVE-MAP
+  1206        THRU 1100-RECEIVE-MAP-EXIT
+  1207     PERFORM 1200-EDIT-MAP-INPUTS
+  1208        THRU 1200-EDIT-MAP-INPUTS-EXIT
+  1209     MOVE WS-RETURN-MSG  TO CCARD-ERROR-MSG
+  1210     MOVE LIT-THISPGM    TO CCARD-NEXT-PROG
+  1211     MOVE LIT-THISMAPSET TO CCARD-NEXT-MAPSET
+  1212     MOVE LIT-THISMAP    TO CCARD-NEXT-MAP
+  1213     .
+  1214
+  1215 1000-PROCESS-INPUTS-EXIT.
+  1216     EXIT
+  1217     .
+  1218 1100-RECEIVE-MAP.
+  1219     EXEC CICS RECEIVE MAP(LIT-THISMAP)
+  1220               MAPSET(LIT-THISMAPSET)
+  1221               INTO(CCRDUPAI)
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  27
+* COCRDUPC.cbl
+  1222               RESP(WS-RESP-CD)
+  1223               RESP2(WS-REAS-CD)
+  1224     END-EXEC
+  1225
+  1226     INITIALIZE CCUP-NEW-DETAILS
+  1227
+  1228*    REPLACE * WITH LOW-VALUES
+  1229     IF  ACCTSIDI OF CCRDUPAI = '*'
+  1230     OR  ACCTSIDI OF CCRDUPAI = SPACES
+  1231         MOVE LOW-VALUES           TO  CC-ACCT-ID
+  1232                                       CCUP-NEW-ACCTID
+  1233     ELSE
+  1234         MOVE ACCTSIDI OF CCRDUPAI TO  CC-ACCT-ID
+  1235                                       CCUP-NEW-ACCTID
+  1236     END-IF
+  1237
+  1238     IF  CARDSIDI OF CCRDUPAI = '*'
+  1239     OR  CARDSIDI OF CCRDUPAI = SPACES
+  1240         MOVE LOW-VALUES           TO  CC-CARD-NUM
+  1241                                       CCUP-NEW-CARDID
+  1242     ELSE
+  1243         MOVE CARDSIDI OF CCRDUPAI TO  CC-CARD-NUM
+  1244                                       CCUP-NEW-CARDID
+  1245     END-IF
+  1246
+  1247     IF  CRDNAMEI OF CCRDUPAI = '*'
+  1248     OR  CRDNAMEI OF CCRDUPAI = SPACES
+  1249         MOVE LOW-VALUES           TO  CCUP-NEW-CRDNAME
+  1250     ELSE
+  1251         MOVE CRDNAMEI OF CCRDUPAI TO  CCUP-NEW-CRDNAME
+  1252     END-IF
+  1253
+  1254     IF  CRDSTCDI OF CCRDUPAI = '*'
+  1255     OR  CRDSTCDI OF CCRDUPAI = SPACES
+  1256         MOVE LOW-VALUES           TO  CCUP-NEW-CRDSTCD
+  1257     ELSE
+  1258         MOVE CRDSTCDI OF CCRDUPAI TO  CCUP-NEW-CRDSTCD
+  1259     END-IF
+  1260
+  1261     MOVE EXPDAYI     OF CCRDUPAI  TO  CCUP-NEW-EXPDAY
+  1262
+  1263     IF  EXPMONI OF CCRDUPAI = '*'
+  1264     OR  EXPMONI OF CCRDUPAI = SPACES
+  1265         MOVE LOW-VALUES           TO  CCUP-NEW-EXPMON
+  1266     ELSE
+  1267         MOVE EXPMONI OF CCRDUPAI  TO  CCUP-NEW-EXPMON
+  1268     END-IF
+  1269
+  1270     IF  EXPYEARI OF CCRDUPAI = '*'
+  1271     OR  EXPYEARI OF CCRDUPAI = SPACES
+  1272         MOVE LOW-VALUES           TO  CCUP-NEW-EXPYEAR
+  1273     ELSE
+  1274         MOVE EXPYEARI OF CCRDUPAI TO  CCUP-NEW-EXPYEAR
+  1275     END-IF
+  1276     .
+  1277
+  1278 1100-RECEIVE-MAP-EXIT.
+  1279     EXIT
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  28
+* COCRDUPC.cbl
+  1280     .
+  1281 1200-EDIT-MAP-INPUTS.
+  1282
+  1283     SET INPUT-OK                  TO TRUE
+  1284
+  1285     IF  CCUP-DETAILS-NOT-FETCHED
+  1286*        VALIDATE THE SEARCH KEYS
+  1287         PERFORM 1210-EDIT-ACCOUNT
+  1288            THRU 1210-EDIT-ACCOUNT-EXIT
+  1289
+  1290         PERFORM 1220-EDIT-CARD
+  1291            THRU 1220-EDIT-CARD-EXIT
+  1292
+  1293         MOVE LOW-VALUES                 TO CCUP-NEW-CARDDATA
+  1294
+  1295*       IF THE SEARCH CONDITIONS HAVE PROBLEMS SKIP OTHER EDITS
+  1296         IF  FLG-ACCTFILTER-BLANK
+  1297         AND FLG-CARDFILTER-BLANK
+  1298             SET NO-SEARCH-CRITERIA-RECEIVED TO TRUE
+  1299         END-IF
+  1300
+  1301         GO TO 1200-EDIT-MAP-INPUTS-EXIT
+  1302
+  1303     ELSE
+  1304         CONTINUE
+  1305     END-IF
+  1306
+  1307*    SEARCH KEYS ALREADY VALIDATED AND DATA FETCHED
+  1308     SET FOUND-CARDS-FOR-ACCOUNT TO TRUE
+  1309     SET FLG-ACCTFILTER-ISVALID  TO TRUE
+  1310     SET FLG-CARDFILTER-ISVALID  TO TRUE
+  1311     MOVE CCUP-OLD-ACCTID     TO CDEMO-ACCT-ID
+  1312     MOVE CCUP-OLD-CARDID     TO CDEMO-CARD-NUM
+  1313     MOVE CCUP-OLD-CRDNAME    TO CARD-EMBOSSED-NAME
+  1314     MOVE CCUP-OLD-CRDSTCD    TO CARD-ACTIVE-STATUS
+  1315     MOVE CCUP-OLD-EXPDAY     TO CARD-EXPIRY-DAY
+  1316     MOVE CCUP-OLD-EXPMON     TO CARD-EXPIRY-MONTH
+  1317     MOVE CCUP-OLD-EXPYEAR    TO CARD-EXPIRY-YEAR
+  1318
+  1319*    NEW DATA IS SAME AS OLD DATA
+  1320     IF  (FUNCTION UPPER-CASE(CCUP-NEW-CARDDATA) EQUAL
+  1321          FUNCTION UPPER-CASE(CCUP-OLD-CARDDATA))
+  1322         SET NO-CHANGES-DETECTED TO TRUE
+  1323     END-IF
+  1324
+  1325     IF  NO-CHANGES-DETECTED
+  1326     OR  CCUP-CHANGES-OK-NOT-CONFIRMED
+  1327     OR  CCUP-CHANGES-OKAYED-AND-DONE
+  1328         SET FLG-CARDNAME-ISVALID    TO TRUE
+  1329         SET FLG-CARDSTATUS-ISVALID  TO TRUE
+  1330         SET FLG-CARDEXPMON-ISVALID  TO TRUE
+  1331         SET FLG-CARDEXPYEAR-ISVALID TO TRUE
+  1332         GO TO 1200-EDIT-MAP-INPUTS-EXIT
+  1333     END-IF
+  1334
+  1335
+  1336     SET CCUP-CHANGES-NOT-OK    TO TRUE
+  1337
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  29
+* COCRDUPC.cbl
+  1338     PERFORM 1230-EDIT-NAME
+  1339        THRU 1230-EDIT-NAME-EXIT
+  1340
+  1341     PERFORM 1240-EDIT-CARDSTATUS
+  1342        THRU 1240-EDIT-CARDSTATUS-EXIT
+  1343
+  1344     PERFORM 1250-EDIT-EXPIRY-MON
+  1345        THRU 1250-EDIT-EXPIRY-MON-EXIT
+  1346
+  1347     PERFORM 1260-EDIT-EXPIRY-YEAR
+  1348        THRU 1260-EDIT-EXPIRY-YEAR-EXIT
+  1349
+  1350     IF INPUT-ERROR
+  1351        CONTINUE
+  1352     ELSE
+  1353        SET CCUP-CHANGES-OK-NOT-CONFIRMED TO TRUE
+  1354     END-IF
+  1355     .
+  1356
+  1357 1200-EDIT-MAP-INPUTS-EXIT.
+  1358     EXIT
+  1359     .
+  1360
+  1361 1210-EDIT-ACCOUNT.
+  1362     SET FLG-ACCTFILTER-NOT-OK TO TRUE
+  1363
+  1364*    Not supplied
+  1365     IF CC-ACCT-ID   EQUAL LOW-VALUES
+  1366     OR CC-ACCT-ID   EQUAL SPACES
+  1367     OR CC-ACCT-ID-N EQUAL ZEROS
+  1368        SET INPUT-ERROR           TO TRUE
+  1369        SET FLG-ACCTFILTER-BLANK  TO TRUE
+  1370        IF WS-RETURN-MSG-OFF
+  1371           SET WS-PROMPT-FOR-ACCT TO TRUE
+  1372        END-IF
+  1373        MOVE ZEROES       TO CDEMO-ACCT-ID
+  1374        MOVE LOW-VALUES   TO CCUP-NEW-ACCTID
+  1375        GO TO  1210-EDIT-ACCOUNT-EXIT
+  1376     END-IF
+  1377*
+  1378*    Not numeric
+  1379*    Not 11 characters
+  1380     IF CC-ACCT-ID  IS NOT NUMERIC
+  1381        SET INPUT-ERROR TO TRUE
+  1382        SET FLG-ACCTFILTER-NOT-OK TO TRUE
+  1383        IF WS-RETURN-MSG-OFF
+  1384          MOVE
+  1385        'ACCOUNT FILTER,IF SUPPLIED MUST BE A 11 DIGIT NUMBER'
+  1386                        TO WS-RETURN-MSG
+  1387        END-IF
+  1388        MOVE ZERO       TO CDEMO-ACCT-ID
+  1389        MOVE LOW-VALUES TO CCUP-NEW-ACCTID
+  1390        GO TO 1210-EDIT-ACCOUNT-EXIT
+  1391     ELSE
+  1392        MOVE CC-ACCT-ID TO CDEMO-ACCT-ID
+  1393                           CCUP-NEW-ACCTID
+  1394        SET FLG-ACCTFILTER-ISVALID TO TRUE
+  1395     END-IF
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  30
+* COCRDUPC.cbl
+  1396     .
+  1397
+  1398 1210-EDIT-ACCOUNT-EXIT.
+  1399     EXIT
+  1400     .
+  1401
+  1402 1220-EDIT-CARD.
+  1403*    Not numeric
+  1404*    Not 16 characters
+  1405     SET FLG-CARDFILTER-NOT-OK TO TRUE
+  1406
+  1407*    Not supplied
+  1408     IF CC-CARD-NUM   EQUAL LOW-VALUES
+  1409     OR CC-CARD-NUM   EQUAL SPACES
+  1410     OR CC-CARD-NUM-N EQUAL ZEROS
+  1411        SET INPUT-ERROR           TO TRUE
+  1412        SET FLG-CARDFILTER-BLANK  TO TRUE
+  1413        IF WS-RETURN-MSG-OFF
+  1414           SET WS-PROMPT-FOR-CARD TO TRUE
+  1415        END-IF
+  1416
+  1417        MOVE ZEROES        TO CDEMO-CARD-NUM
+  1418                             CCUP-NEW-CARDID
+  1419        GO TO  1220-EDIT-CARD-EXIT
+  1420     END-IF
+  1421*
+  1422*    Not numeric
+  1423*    Not 16 characters
+  1424     IF CC-CARD-NUM  IS NOT NUMERIC
+  1425        SET INPUT-ERROR TO TRUE
+  1426        SET FLG-CARDFILTER-NOT-OK TO TRUE
+  1427        IF WS-RETURN-MSG-OFF
+  1428           MOVE
+  1429        'CARD ID FILTER,IF SUPPLIED MUST BE A 16 DIGIT NUMBER'
+  1430                           TO WS-RETURN-MSG
+  1431        END-IF
+  1432        MOVE ZERO          TO CDEMO-CARD-NUM
+  1433        MOVE LOW-VALUES    TO CCUP-NEW-CARDID
+  1434        GO TO 1220-EDIT-CARD-EXIT
+  1435     ELSE
+  1436        MOVE CC-CARD-NUM-N TO CDEMO-CARD-NUM
+  1437        MOVE CC-CARD-NUM   TO CCUP-NEW-CARDID
+  1438        SET FLG-CARDFILTER-ISVALID TO TRUE
+  1439     END-IF
+  1440     .
+  1441
+  1442 1220-EDIT-CARD-EXIT.
+  1443     EXIT
+  1444     .
+  1445
+  1446 1230-EDIT-NAME.
+  1447*    Not BLANK
+  1448     SET FLG-CARDNAME-NOT-OK      TO TRUE
+  1449
+  1450*    Not supplied
+  1451     IF CCUP-NEW-CRDNAME   EQUAL LOW-VALUES
+  1452     OR CCUP-NEW-CRDNAME   EQUAL SPACES
+  1453     OR CCUP-NEW-CRDNAME   EQUAL ZEROS
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  31
+* COCRDUPC.cbl
+  1454        SET INPUT-ERROR           TO TRUE
+  1455        SET FLG-CARDNAME-BLANK  TO TRUE
+  1456        IF WS-RETURN-MSG-OFF
+  1457           SET WS-PROMPT-FOR-NAME TO TRUE
+  1458        END-IF
+  1459        GO TO  1230-EDIT-NAME-EXIT
+  1460     END-IF
+  1461
+  1462*    Only Alphabets and space allowed
+  1463     MOVE CCUP-NEW-CRDNAME        TO CARD-NAME-CHECK
+  1464     INSPECT CARD-NAME-CHECK
+  1465       CONVERTING LIT-ALL-ALPHA-FROM
+  1466               TO LIT-ALL-SPACES-TO
+  1467
+  1468     IF FUNCTION LENGTH(FUNCTION TRIM(CARD-NAME-CHECK)) = 0
+  1469        CONTINUE
+  1470     ELSE
+  1471        SET INPUT-ERROR           TO TRUE
+  1472        SET FLG-CARDNAME-NOT-OK   TO TRUE
+  1473        IF WS-RETURN-MSG-OFF
+  1474           SET WS-NAME-MUST-BE-ALPHA  TO TRUE
+  1475        END-IF
+  1476        GO TO  1230-EDIT-NAME-EXIT
+  1477     END-IF
+  1478
+  1479     SET FLG-CARDNAME-ISVALID     TO TRUE
+  1480     .
+  1481 1230-EDIT-NAME-EXIT.
+  1482     EXIT
+  1483     .
+  1484
+  1485 1240-EDIT-CARDSTATUS.
+  1486*    Must be Y or N
+  1487     SET FLG-CARDSTATUS-NOT-OK      TO TRUE
+  1488
+  1489*    Not supplied
+  1490     IF CCUP-NEW-CRDSTCD   EQUAL LOW-VALUES
+  1491     OR CCUP-NEW-CRDSTCD   EQUAL SPACES
+  1492     OR CCUP-NEW-CRDSTCD   EQUAL ZEROS
+  1493        SET INPUT-ERROR           TO TRUE
+  1494        SET FLG-CARDSTATUS-BLANK  TO TRUE
+  1495        IF WS-RETURN-MSG-OFF
+  1496           SET CARD-STATUS-MUST-BE-YES-NO TO TRUE
+  1497        END-IF
+  1498        GO TO  1240-EDIT-CARDSTATUS-EXIT
+  1499     END-IF
+  1500
+  1501     MOVE CCUP-NEW-CRDSTCD          TO FLG-YES-NO-CHECK
+  1502
+  1503     IF FLG-YES-NO-VALID
+  1504        SET FLG-CARDSTATUS-ISVALID  TO TRUE
+  1505     ELSE
+  1506        SET INPUT-ERROR             TO TRUE
+  1507        SET FLG-CARDSTATUS-NOT-OK   TO TRUE
+  1508        IF WS-RETURN-MSG-OFF
+  1509           SET CARD-STATUS-MUST-BE-YES-NO  TO TRUE
+  1510        END-IF
+  1511        GO TO  1240-EDIT-CARDSTATUS-EXIT
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  32
+* COCRDUPC.cbl
+  1512     END-IF
+  1513     .
+  1514 1240-EDIT-CARDSTATUS-EXIT.
+  1515     EXIT
+  1516     .
+  1517 1250-EDIT-EXPIRY-MON.
+  1518
+  1519
+  1520     SET FLG-CARDEXPMON-NOT-OK      TO TRUE
+  1521
+  1522*    Not supplied
+  1523     IF CCUP-NEW-EXPMON   EQUAL LOW-VALUES
+  1524     OR CCUP-NEW-EXPMON   EQUAL SPACES
+  1525     OR CCUP-NEW-EXPMON   EQUAL ZEROS
+  1526        SET INPUT-ERROR           TO TRUE
+  1527        SET FLG-CARDEXPMON-BLANK  TO TRUE
+  1528        IF WS-RETURN-MSG-OFF
+  1529           SET CARD-EXPIRY-MONTH-NOT-VALID TO TRUE
+  1530        END-IF
+  1531        GO TO  1250-EDIT-EXPIRY-MON-EXIT
+  1532     END-IF
+  1533
+  1534*    Must be numeric
+  1535*    Must be 1 to 12
+  1536     MOVE CCUP-NEW-EXPMON           TO CARD-MONTH-CHECK
+  1537
+  1538     IF VALID-MONTH
+  1539        SET FLG-CARDEXPMON-ISVALID  TO TRUE
+  1540     ELSE
+  1541        SET INPUT-ERROR             TO TRUE
+  1542        SET FLG-CARDEXPMON-NOT-OK   TO TRUE
+  1543        IF WS-RETURN-MSG-OFF
+  1544           SET CARD-EXPIRY-MONTH-NOT-VALID  TO TRUE
+  1545        END-IF
+  1546        GO TO  1250-EDIT-EXPIRY-MON-EXIT
+  1547     END-IF
+  1548     .
+  1549
+  1550 1250-EDIT-EXPIRY-MON-EXIT.
+  1551     EXIT
+  1552     .
+  1553 1260-EDIT-EXPIRY-YEAR.
+  1554
+  1555*    Not supplied
+  1556     IF CCUP-NEW-EXPYEAR   EQUAL LOW-VALUES
+  1557     OR CCUP-NEW-EXPYEAR   EQUAL SPACES
+  1558     OR CCUP-NEW-EXPYEAR   EQUAL ZEROS
+  1559        SET INPUT-ERROR           TO TRUE
+  1560        SET FLG-CARDEXPYEAR-BLANK  TO TRUE
+  1561        IF WS-RETURN-MSG-OFF
+  1562           SET CARD-EXPIRY-YEAR-NOT-VALID TO TRUE
+  1563        END-IF
+  1564        GO TO  1260-EDIT-EXPIRY-YEAR-EXIT
+  1565     END-IF
+  1566
+  1567*    Must be numeric
+  1568*    Must be 1 to 12
+  1569
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  33
+* COCRDUPC.cbl
+  1570     SET FLG-CARDEXPYEAR-NOT-OK      TO TRUE
+  1571
+  1572     MOVE CCUP-NEW-EXPYEAR           TO CARD-YEAR-CHECK
+  1573
+  1574     IF VALID-YEAR
+  1575        SET FLG-CARDEXPYEAR-ISVALID  TO TRUE
+  1576     ELSE
+  1577        SET INPUT-ERROR              TO TRUE
+  1578        SET FLG-CARDEXPYEAR-NOT-OK   TO TRUE
+  1579        IF WS-RETURN-MSG-OFF
+  1580           SET CARD-EXPIRY-YEAR-NOT-VALID  TO TRUE
+  1581        END-IF
+  1582        GO TO  1260-EDIT-EXPIRY-YEAR-EXIT
+  1583     END-IF
+  1584     .
+  1585 1260-EDIT-EXPIRY-YEAR-EXIT.
+  1586     EXIT
+  1587     .
+  1588 2000-DECIDE-ACTION.
+  1589     EVALUATE TRUE
+  1590******************************************************************
+  1591*       NO DETAILS SHOWN.
+  1592*       SO GET THEM AND SETUP DETAIL EDIT SCREEN
+  1593******************************************************************
+  1594        WHEN CCUP-DETAILS-NOT-FETCHED
+  1595******************************************************************
+  1596*       CHANGES MADE. BUT USER CANCELS
+  1597******************************************************************
+  1598        WHEN CCARD-AID-PFK12
+  1599           IF  FLG-ACCTFILTER-ISVALID
+  1600           AND FLG-CARDFILTER-ISVALID
+  1601               PERFORM 9000-READ-DATA
+  1602                  THRU 9000-READ-DATA-EXIT
+  1603               IF FOUND-CARDS-FOR-ACCOUNT
+  1604                  SET CCUP-SHOW-DETAILS    TO TRUE
+  1605               END-IF
+  1606           END-IF
+  1607******************************************************************
+  1608*       DETAILS SHOWN
+  1609*       CHECK CHANGES AND ASK CONFIRMATION IF GOOD
+  1610******************************************************************
+  1611        WHEN CCUP-SHOW-DETAILS
+  1612           IF INPUT-ERROR
+  1613           OR NO-CHANGES-DETECTED
+  1614              CONTINUE
+  1615           ELSE
+  1616              SET CCUP-CHANGES-OK-NOT-CONFIRMED TO TRUE
+  1617           END-IF
+  1618******************************************************************
+  1619*       DETAILS SHOWN
+  1620*       BUT INPUT EDIT ERRORS FOUND
+  1621******************************************************************
+  1622        WHEN CCUP-CHANGES-NOT-OK
+  1623            CONTINUE
+  1624******************************************************************
+  1625*       DETAILS EDITED , FOUND OK, CONFIRM SAVE REQUESTED
+  1626*       CONFIRMATION GIVEN.SO SAVE THE CHANGES
+  1627******************************************************************
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  34
+* COCRDUPC.cbl
+  1628        WHEN CCUP-CHANGES-OK-NOT-CONFIRMED
+  1629         AND CCARD-AID-PFK05
+  1630           PERFORM 9200-WRITE-PROCESSING
+  1631              THRU 9200-WRITE-PROCESSING-EXIT
+  1632           EVALUATE TRUE
+  1633              WHEN COULD-NOT-LOCK-FOR-UPDATE
+  1634                   SET CCUP-CHANGES-OKAYED-LOCK-ERROR TO TRUE
+  1635              WHEN LOCKED-BUT-UPDATE-FAILED
+  1636                 SET CCUP-CHANGES-OKAYED-BUT-FAILED TO TRUE
+  1637              WHEN DATA-WAS-CHANGED-BEFORE-UPDATE
+  1638                  SET CCUP-SHOW-DETAILS            TO TRUE
+  1639              WHEN OTHER
+  1640                 SET CCUP-CHANGES-OKAYED-AND-DONE   TO TRUE
+  1641           END-EVALUATE
+  1642******************************************************************
+  1643*       DETAILS EDITED , FOUND OK, CONFIRM SAVE REQUESTED
+  1644*       CONFIRMATION NOT GIVEN. SO SHOW DETAILS AGAIN
+  1645******************************************************************
+  1646        WHEN CCUP-CHANGES-OK-NOT-CONFIRMED
+  1647            CONTINUE
+  1648******************************************************************
+  1649*       SHOW CONFIRMATION. GO BACK TO SQUARE 1
+  1650******************************************************************
+  1651        WHEN CCUP-CHANGES-OKAYED-AND-DONE
+  1652            SET CCUP-SHOW-DETAILS TO TRUE
+  1653            IF CDEMO-FROM-TRANID    EQUAL LOW-VALUES
+  1654            OR CDEMO-FROM-TRANID    EQUAL SPACES
+  1655               MOVE ZEROES       TO CDEMO-ACCT-ID
+  1656                                    CDEMO-CARD-NUM
+  1657               MOVE LOW-VALUES   TO CDEMO-ACCT-STATUS
+  1658            END-IF
+  1659        WHEN OTHER
+  1660             MOVE LIT-THISPGM    TO ABEND-CULPRIT
+  1661             MOVE '0001'         TO ABEND-CODE
+  1662             MOVE SPACES         TO ABEND-REASON
+  1663             MOVE 'UNEXPECTED DATA SCENARIO'
+  1664                                 TO ABEND-MSG
+  1665             PERFORM ABEND-ROUTINE
+  1666                THRU ABEND-ROUTINE-EXIT
+  1667     END-EVALUATE
+  1668     .
+  1669 2000-DECIDE-ACTION-EXIT.
+  1670     EXIT
+  1671     .
+  1672
+  1673
+  1674
+  1675 3000-SEND-MAP.
+  1676     PERFORM 3100-SCREEN-INIT
+  1677        THRU 3100-SCREEN-INIT-EXIT
+  1678     PERFORM 3200-SETUP-SCREEN-VARS
+  1679        THRU 3200-SETUP-SCREEN-VARS-EXIT
+  1680     PERFORM 3250-SETUP-INFOMSG
+  1681        THRU 3250-SETUP-INFOMSG-EXIT
+  1682     PERFORM 3300-SETUP-SCREEN-ATTRS
+  1683        THRU 3300-SETUP-SCREEN-ATTRS-EXIT
+  1684     PERFORM 3400-SEND-SCREEN
+  1685        THRU 3400-SEND-SCREEN-EXIT
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  35
+* COCRDUPC.cbl
+  1686     .
+  1687
+  1688 3000-SEND-MAP-EXIT.
+  1689     EXIT
+  1690     .
+  1691
+  1692 3100-SCREEN-INIT.
+  1693     MOVE LOW-VALUES TO CCRDUPAO
+  1694
+  1695     MOVE FUNCTION CURRENT-DATE     TO WS-CURDATE-DATA
+  1696
+  1697     MOVE CCDA-TITLE01              TO TITLE01O OF CCRDUPAO
+  1698     MOVE CCDA-TITLE02              TO TITLE02O OF CCRDUPAO
+  1699     MOVE LIT-THISTRANID            TO TRNNAMEO OF CCRDUPAO
+  1700     MOVE LIT-THISPGM               TO PGMNAMEO OF CCRDUPAO
+  1701
+  1702     MOVE FUNCTION CURRENT-DATE     TO WS-CURDATE-DATA
+  1703
+  1704     MOVE WS-CURDATE-MONTH          TO WS-CURDATE-MM
+  1705     MOVE WS-CURDATE-DAY            TO WS-CURDATE-DD
+  1706     MOVE WS-CURDATE-YEAR(3:2)      TO WS-CURDATE-YY
+  1707
+  1708     MOVE WS-CURDATE-MM-DD-YY       TO CURDATEO OF CCRDUPAO
+  1709
+  1710     MOVE WS-CURTIME-HOURS          TO WS-CURTIME-HH
+  1711     MOVE WS-CURTIME-MINUTE         TO WS-CURTIME-MM
+  1712     MOVE WS-CURTIME-SECOND         TO WS-CURTIME-SS
+  1713
+  1714     MOVE WS-CURTIME-HH-MM-SS       TO CURTIMEO OF CCRDUPAO
+  1715
+  1716     .
+  1717
+  1718 3100-SCREEN-INIT-EXIT.
+  1719     EXIT
+  1720     .
+  1721
+  1722 3200-SETUP-SCREEN-VARS.
+  1723*    INITIALIZE SEARCH CRITERIA
+  1724     IF CDEMO-PGM-ENTER
+  1725        CONTINUE
+  1726     ELSE
+  1727        IF CC-ACCT-ID-N = 0
+  1728           MOVE LOW-VALUES          TO ACCTSIDO OF CCRDUPAO
+  1729        ELSE
+  1730           MOVE CC-ACCT-ID          TO ACCTSIDO OF CCRDUPAO
+  1731        END-IF
+  1732
+  1733        IF CC-CARD-NUM-N = 0
+  1734          MOVE LOW-VALUES           TO CARDSIDO OF CCRDUPAO
+  1735        ELSE
+  1736          MOVE CC-CARD-NUM          TO CARDSIDO OF CCRDUPAO
+  1737        END-IF
+  1738
+  1739        EVALUATE TRUE
+  1740            WHEN CCUP-DETAILS-NOT-FETCHED
+  1741                 MOVE LOW-VALUES         TO CRDNAMEO OF CCRDUPAO
+  1742                                            CRDNAMEO OF CCRDUPAO
+  1743                                            CRDSTCDO OF CCRDUPAO
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  36
+* COCRDUPC.cbl
+  1744                                            EXPDAYO  OF CCRDUPAO
+  1745                                            EXPMONO  OF CCRDUPAO
+  1746                                            EXPYEARO OF CCRDUPAO
+  1747            WHEN CCUP-SHOW-DETAILS
+  1748                MOVE CCUP-OLD-CRDNAME    TO CRDNAMEO OF CCRDUPAO
+  1749                MOVE CCUP-OLD-CRDSTCD    TO CRDSTCDO OF CCRDUPAO
+  1750                MOVE CCUP-OLD-EXPDAY     TO EXPDAYO  OF CCRDUPAO
+  1751                MOVE CCUP-OLD-EXPMON     TO EXPMONO  OF CCRDUPAO
+  1752                MOVE CCUP-OLD-EXPYEAR    TO EXPYEARO OF CCRDUPAO
+  1753            WHEN CCUP-CHANGES-MADE
+  1754                MOVE CCUP-NEW-CRDNAME    TO CRDNAMEO OF CCRDUPAO
+  1755                MOVE CCUP-NEW-CRDSTCD    TO CRDSTCDO OF CCRDUPAO
+  1756                MOVE CCUP-NEW-EXPMON     TO EXPMONO  OF CCRDUPAO
+  1757                MOVE CCUP-NEW-EXPYEAR    TO EXPYEARO OF CCRDUPAO
+  1758******************************************************************
+  1759*               MOVE OLD VALUES TO NON-DISPLAY FIELDS
+  1760*               THAT WE ARE NOT ALLOWING USER TO CHANGE(FOR NOW)
+  1761*****************************************************************
+  1762*               MOVE CCUP-NEW-EXPDAY     TO EXPDAYO  OF CCRDUPAO
+  1763                MOVE CCUP-OLD-EXPDAY     TO EXPDAYO  OF CCRDUPAO
+  1764            WHEN OTHER
+  1765                MOVE CCUP-OLD-CRDNAME    TO CRDNAMEO OF CCRDUPAO
+  1766                MOVE CCUP-OLD-CRDSTCD    TO CRDSTCDO OF CCRDUPAO
+  1767                MOVE CCUP-OLD-EXPDAY     TO EXPDAYO  OF CCRDUPAO
+  1768                MOVE CCUP-OLD-EXPMON     TO EXPMONO  OF CCRDUPAO
+  1769                MOVE CCUP-OLD-EXPYEAR    TO EXPYEARO OF CCRDUPAO
+  1770        END-EVALUATE
+  1771
+  1772
+  1773      END-IF
+  1774     .
+  1775 3200-SETUP-SCREEN-VARS-EXIT.
+  1776     EXIT
+  1777     .
+  1778 3250-SETUP-INFOMSG.
+  1779*    SETUP INFORMATION MESSAGE
+  1780     EVALUATE TRUE
+  1781         WHEN CDEMO-PGM-ENTER
+  1782              SET  PROMPT-FOR-SEARCH-KEYS TO TRUE
+  1783         WHEN CCUP-DETAILS-NOT-FETCHED
+  1784             SET PROMPT-FOR-SEARCH-KEYS      TO TRUE
+  1785         WHEN CCUP-SHOW-DETAILS
+  1786              SET FOUND-CARDS-FOR-ACCOUNT    TO TRUE
+  1787         WHEN CCUP-CHANGES-NOT-OK
+  1788              SET PROMPT-FOR-CHANGES         TO TRUE
+  1789         WHEN CCUP-CHANGES-OK-NOT-CONFIRMED
+  1790              SET PROMPT-FOR-CONFIRMATION    TO TRUE
+  1791         WHEN CCUP-CHANGES-OKAYED-AND-DONE
+  1792              SET CONFIRM-UPDATE-SUCCESS     TO TRUE
+  1793         WHEN CCUP-CHANGES-OKAYED-LOCK-ERROR
+  1794              SET INFORM-FAILURE             TO TRUE
+  1795         WHEN CCUP-CHANGES-OKAYED-BUT-FAILED
+  1796              SET INFORM-FAILURE             TO TRUE
+  1797         WHEN WS-NO-INFO-MESSAGE
+  1798             SET PROMPT-FOR-SEARCH-KEYS      TO TRUE
+  1799     END-EVALUATE
+  1800
+  1801     MOVE WS-INFO-MSG                    TO INFOMSGO OF CCRDUPAO
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  37
+* COCRDUPC.cbl
+  1802
+  1803     MOVE WS-RETURN-MSG                  TO ERRMSGO OF CCRDUPAO
+  1804     .
+  1805 3250-SETUP-INFOMSG-EXIT.
+  1806     EXIT
+  1807     .
+  1808 3300-SETUP-SCREEN-ATTRS.
+  1809
+  1810
+  1811*    PROTECT OR UNPROTECT BASED ON CONTEXT
+  1812     EVALUATE TRUE
+  1813        WHEN CCUP-DETAILS-NOT-FETCHED
+  1814             MOVE DFHBMFSE      TO ACCTSIDA OF CCRDUPAI
+  1815                                   CARDSIDA OF CCRDUPAI
+  1816             MOVE DFHBMPRF      TO CRDNAMEA OF CCRDUPAI
+  1817                                   CRDSTCDA OF CCRDUPAI
+  1818*                                  EXPDAYA  OF CCRDUPAI
+  1819                                   EXPMONA  OF CCRDUPAI
+  1820                                   EXPYEARA OF CCRDUPAI
+  1821        WHEN  CCUP-SHOW-DETAILS
+  1822        WHEN  CCUP-CHANGES-NOT-OK
+  1823             MOVE DFHBMPRF      TO ACCTSIDA OF CCRDUPAI
+  1824                                   CARDSIDA OF CCRDUPAI
+  1825*                                  EXPDAYA  OF CCRDUPAI
+  1826             MOVE DFHBMFSE      TO CRDNAMEA OF CCRDUPAI
+  1827                                   CRDSTCDA OF CCRDUPAI
+  1828
+  1829                                   EXPMONA  OF CCRDUPAI
+  1830                                   EXPYEARA OF CCRDUPAI
+  1831        WHEN CCUP-CHANGES-OK-NOT-CONFIRMED
+  1832        WHEN CCUP-CHANGES-OKAYED-AND-DONE
+  1833             MOVE DFHBMPRF      TO ACCTSIDA OF CCRDUPAI
+  1834                                   CARDSIDA OF CCRDUPAI
+  1835                                   CRDNAMEA OF CCRDUPAI
+  1836                                   CRDSTCDA OF CCRDUPAI
+  1837*                                  EXPDAYA  OF CCRDUPAI
+  1838                                   EXPMONA  OF CCRDUPAI
+  1839                                   EXPYEARA OF CCRDUPAI
+  1840        WHEN OTHER
+  1841             MOVE DFHBMFSE      TO ACCTSIDA OF CCRDUPAI
+  1842                                   CARDSIDA OF CCRDUPAI
+  1843             MOVE DFHBMPRF      TO CRDNAMEA OF CCRDUPAI
+  1844                                   CRDSTCDA OF CCRDUPAI
+  1845*                                  EXPDAYA  OF CCRDUPAI
+  1846                                   EXPMONA  OF CCRDUPAI
+  1847                                   EXPYEARA OF CCRDUPAI
+  1848     END-EVALUATE
+  1849
+  1850*    POSITION CURSOR
+  1851     EVALUATE TRUE
+  1852        WHEN FOUND-CARDS-FOR-ACCOUNT
+  1853        WHEN NO-CHANGES-DETECTED
+  1854            MOVE -1              TO CRDNAMEL OF CCRDUPAI
+  1855        WHEN FLG-ACCTFILTER-NOT-OK
+  1856        WHEN FLG-ACCTFILTER-BLANK
+  1857             MOVE -1             TO ACCTSIDL OF CCRDUPAI
+  1858        WHEN FLG-CARDFILTER-NOT-OK
+  1859        WHEN FLG-CARDFILTER-BLANK
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  38
+* COCRDUPC.cbl
+  1860             MOVE -1             TO CARDSIDL OF CCRDUPAI
+  1861        WHEN FLG-CARDNAME-NOT-OK
+  1862        WHEN FLG-CARDNAME-BLANK
+  1863            MOVE -1              TO CRDNAMEL OF  CCRDUPAI
+  1864        WHEN FLG-CARDSTATUS-NOT-OK
+  1865        WHEN FLG-CARDSTATUS-BLANK
+  1866            MOVE -1              TO CRDSTCDL OF  CCRDUPAI
+  1867        WHEN FLG-CARDEXPMON-NOT-OK
+  1868        WHEN FLG-CARDEXPMON-BLANK
+  1869            MOVE -1              TO EXPMONL  OF  CCRDUPAI
+  1870        WHEN FLG-CARDEXPYEAR-NOT-OK
+  1871        WHEN FLG-CARDEXPYEAR-BLANK
+  1872            MOVE -1              TO EXPYEARL OF  CCRDUPAI
+  1873        WHEN OTHER
+  1874            MOVE -1              TO ACCTSIDL OF CCRDUPAI
+  1875     END-EVALUATE
+  1876
+  1877*    SETUP COLOR
+  1878     IF CDEMO-LAST-MAPSET   EQUAL LIT-CCLISTMAPSET
+  1879        MOVE DFHDFCOL            TO ACCTSIDC OF CCRDUPAO
+  1880        MOVE DFHDFCOL            TO CARDSIDC OF CCRDUPAO
+  1881     END-IF
+  1882
+  1883     IF FLG-ACCTFILTER-NOT-OK
+  1884        MOVE DFHRED              TO ACCTSIDC OF CCRDUPAO
+  1885     END-IF
+  1886
+  1887     IF  FLG-ACCTFILTER-BLANK
+  1888     AND CDEMO-PGM-REENTER
+  1889         MOVE '*'                TO ACCTSIDO OF CCRDUPAO
+  1890         MOVE DFHRED             TO ACCTSIDC OF CCRDUPAO
+  1891     END-IF
+  1892
+  1893     IF FLG-CARDFILTER-NOT-OK
+  1894        MOVE DFHRED              TO CARDSIDC OF CCRDUPAO
+  1895     END-IF
+  1896
+  1897     IF  FLG-CARDFILTER-BLANK
+  1898     AND CDEMO-PGM-REENTER
+  1899         MOVE '*'                TO CARDSIDO OF CCRDUPAO
+  1900         MOVE DFHRED             TO CARDSIDC OF CCRDUPAO
+  1901     END-IF
+  1902
+  1903     IF FLG-CARDNAME-NOT-OK
+  1904     AND CCUP-CHANGES-NOT-OK
+  1905        MOVE DFHRED              TO CRDNAMEC OF CCRDUPAO
+  1906     END-IF
+  1907
+  1908     IF  FLG-CARDNAME-BLANK
+  1909     AND CCUP-CHANGES-NOT-OK
+  1910         MOVE '*'                TO CRDNAMEO OF CCRDUPAO
+  1911         MOVE DFHRED             TO CRDNAMEC OF CCRDUPAO
+  1912     END-IF
+  1913
+  1914     IF FLG-CARDSTATUS-NOT-OK
+  1915     AND CCUP-CHANGES-NOT-OK
+  1916        MOVE DFHRED              TO CRDSTCDC OF CCRDUPAO
+  1917     END-IF
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  39
+* COCRDUPC.cbl
+  1918
+  1919     IF  FLG-CARDSTATUS-BLANK
+  1920     AND CCUP-CHANGES-NOT-OK
+  1921         MOVE '*'                TO CRDSTCDO OF CCRDUPAO
+  1922         MOVE DFHRED             TO CRDSTCDC OF CCRDUPAO
+  1923     END-IF
+  1924
+  1925     MOVE DFHBMDAR               TO EXPDAYC  OF CCRDUPAO
+  1926
+  1927     IF FLG-CARDEXPMON-NOT-OK
+  1928     AND CCUP-CHANGES-NOT-OK
+  1929        MOVE DFHRED              TO EXPMONC  OF CCRDUPAO
+  1930     END-IF
+  1931
+  1932     IF  FLG-CARDEXPMON-BLANK
+  1933     AND CCUP-CHANGES-NOT-OK
+  1934         MOVE '*'                TO EXPMONO  OF CCRDUPAO
+  1935         MOVE DFHRED             TO EXPMONC  OF CCRDUPAO
+  1936     END-IF
+  1937
+  1938     IF  FLG-CARDEXPYEAR-NOT-OK
+  1939     AND CCUP-CHANGES-NOT-OK
+  1940        MOVE DFHRED              TO EXPYEARC OF CCRDUPAO
+  1941     END-IF
+  1942
+  1943     IF  FLG-CARDEXPYEAR-BLANK
+  1944     AND CCUP-CHANGES-NOT-OK
+  1945         MOVE '*'                TO EXPYEARO OF CCRDUPAO
+  1946         MOVE DFHRED             TO EXPYEARC OF CCRDUPAO
+  1947     END-IF
+  1948
+  1949     IF  WS-NO-INFO-MESSAGE
+  1950         MOVE DFHBMDAR           TO INFOMSGA OF CCRDUPAI
+  1951     ELSE
+  1952         MOVE DFHBMBRY           TO INFOMSGA OF CCRDUPAI
+  1953     END-IF
+  1954
+  1955     IF PROMPT-FOR-CONFIRMATION
+  1956        MOVE DFHBMBRY            TO FKEYSCA  OF CCRDUPAI
+  1957     END-IF
+  1958     .
+  1959 3300-SETUP-SCREEN-ATTRS-EXIT.
+  1960     EXIT
+  1961     .
+  1962
+  1963
+  1964 3400-SEND-SCREEN.
+  1965
+  1966     MOVE LIT-THISMAPSET         TO CCARD-NEXT-MAPSET
+  1967     MOVE LIT-THISMAP            TO CCARD-NEXT-MAP
+  1968
+  1969     EXEC CICS SEND MAP(CCARD-NEXT-MAP)
+  1970                    MAPSET(CCARD-NEXT-MAPSET)
+  1971                    FROM(CCRDUPAO)
+  1972                    CURSOR
+  1973                    ERASE
+  1974                    FREEKB
+  1975                    RESP(WS-RESP-CD)
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  40
+* COCRDUPC.cbl
+  1976     END-EXEC
+  1977     .
+  1978 3400-SEND-SCREEN-EXIT.
+  1979     EXIT
+  1980     .
+  1981
+  1982
+  1983 9000-READ-DATA.
+  1984
+  1985     INITIALIZE CCUP-OLD-DETAILS
+  1986     MOVE CC-ACCT-ID              TO CCUP-OLD-ACCTID
+  1987     MOVE CC-CARD-NUM             TO CCUP-OLD-CARDID
+  1988
+  1989     PERFORM 9100-GETCARD-BYACCTCARD
+  1990        THRU 9100-GETCARD-BYACCTCARD-EXIT
+  1991
+  1992     IF FOUND-CARDS-FOR-ACCOUNT
+  1993
+  1994        MOVE CARD-CVV-CD          TO CCUP-OLD-CVV-CD
+  1995
+  1996        INSPECT CARD-EMBOSSED-NAME
+  1997        CONVERTING LIT-LOWER
+  1998                TO LIT-UPPER
+  1999
+  2000        MOVE CARD-EMBOSSED-NAME   TO CCUP-OLD-CRDNAME
+  2001        MOVE CARD-EXPIRAION-DATE(1:4)
+  2002                                  TO CCUP-OLD-EXPYEAR
+  2003        MOVE CARD-EXPIRAION-DATE(6:2)
+  2004                                  TO CCUP-OLD-EXPMON
+  2005        MOVE CARD-EXPIRAION-DATE(9:2)
+  2006                                  TO CCUP-OLD-EXPDAY
+  2007        MOVE CARD-ACTIVE-STATUS   TO CCUP-OLD-CRDSTCD
+  2008
+  2009     END-IF
+  2010     .
+  2011
+  2012 9000-READ-DATA-EXIT.
+  2013     EXIT
+  2014     .
+  2015
+  2016 9100-GETCARD-BYACCTCARD.
+  2017*    Read the Card file
+  2018*
+  2019*    MOVE CC-ACCT-ID-N            TO WS-CARD-RID-ACCT-ID
+  2020     MOVE CC-CARD-NUM             TO WS-CARD-RID-CARDNUM
+  2021
+  2022     EXEC CICS READ
+  2023          FILE      (LIT-CARDFILENAME)
+  2024          RIDFLD    (WS-CARD-RID-CARDNUM)
+  2025          KEYLENGTH (LENGTH OF WS-CARD-RID-CARDNUM)
+  2026          INTO      (CARD-RECORD)
+  2027          LENGTH    (LENGTH OF CARD-RECORD)
+  2028          RESP      (WS-RESP-CD)
+  2029          RESP2     (WS-REAS-CD)
+  2030     END-EXEC
+  2031
+  2032     EVALUATE WS-RESP-CD
+  2033         WHEN DFHRESP(NORMAL)
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  41
+* COCRDUPC.cbl
+  2034            SET FOUND-CARDS-FOR-ACCOUNT TO TRUE
+  2035         WHEN DFHRESP(NOTFND)
+  2036            SET INPUT-ERROR                    TO TRUE
+  2037            SET FLG-ACCTFILTER-NOT-OK          TO TRUE
+  2038            SET FLG-CARDFILTER-NOT-OK          TO TRUE
+  2039            IF  WS-RETURN-MSG-OFF
+  2040               SET DID-NOT-FIND-ACCTCARD-COMBO TO TRUE
+  2041            END-IF
+  2042         WHEN OTHER
+  2043            SET INPUT-ERROR                    TO TRUE
+  2044            IF  WS-RETURN-MSG-OFF
+  2045                SET FLG-ACCTFILTER-NOT-OK      TO TRUE
+  2046            END-IF
+  2047            MOVE 'READ'                        TO ERROR-OPNAME
+  2048            MOVE LIT-CARDFILENAME              TO ERROR-FILE
+  2049            MOVE WS-RESP-CD                    TO ERROR-RESP
+  2050            MOVE WS-REAS-CD                    TO ERROR-RESP2
+  2051            MOVE WS-FILE-ERROR-MESSAGE         TO WS-RETURN-MSG
+  2052     END-EVALUATE
+  2053     .
+  2054
+  2055 9100-GETCARD-BYACCTCARD-EXIT.
+  2056     EXIT
+  2057     .
+  2058
+  2059
+  2060 9200-WRITE-PROCESSING.
+  2061
+  2062*    Read the Card file
+  2063*
+  2064*    MOVE CC-ACCT-ID-N            TO WS-CARD-RID-ACCT-ID
+  2065     MOVE CC-CARD-NUM             TO WS-CARD-RID-CARDNUM
+  2066
+  2067     EXEC CICS READ
+  2068          FILE      (LIT-CARDFILENAME)
+  2069          UPDATE
+  2070          RIDFLD    (WS-CARD-RID-CARDNUM)
+  2071          KEYLENGTH (LENGTH OF WS-CARD-RID-CARDNUM)
+  2072          INTO      (CARD-RECORD)
+  2073          LENGTH    (LENGTH OF CARD-RECORD)
+  2074          RESP      (WS-RESP-CD)
+  2075          RESP2     (WS-REAS-CD)
+  2076     END-EXEC
+  2077
+  2078*****************************************************************
+  2079*    Could we lock the record ?
+  2080*****************************************************************
+  2081     IF WS-RESP-CD EQUAL TO DFHRESP(NORMAL)
+  2082        CONTINUE
+  2083     ELSE
+  2084        SET INPUT-ERROR                    TO TRUE
+  2085        IF  WS-RETURN-MSG-OFF
+  2086            SET COULD-NOT-LOCK-FOR-UPDATE  TO TRUE
+  2087        END-IF
+  2088        GO TO 9200-WRITE-PROCESSING-EXIT
+  2089     END-IF
+  2090*****************************************************************
+  2091*    Did someone change the record while we were out ?
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  42
+* COCRDUPC.cbl
+  2092*****************************************************************
+  2093     PERFORM 9300-CHECK-CHANGE-IN-REC
+  2094        THRU 9300-CHECK-CHANGE-IN-REC-EXIT
+  2095     IF DATA-WAS-CHANGED-BEFORE-UPDATE
+  2096        GO TO 9200-WRITE-PROCESSING-EXIT
+  2097     END-IF
+  2098*****************************************************************
+  2099* Prepare the update
+  2100*****************************************************************
+  2101     INITIALIZE CARD-UPDATE-RECORD
+  2102     MOVE CCUP-NEW-CARDID             TO CARD-UPDATE-NUM
+  2103     MOVE CC-ACCT-ID-N                TO CARD-UPDATE-ACCT-ID
+  2104     MOVE CCUP-NEW-CVV-CD             TO CARD-CVV-CD-X
+  2105     MOVE CARD-CVV-CD-N               TO CARD-UPDATE-CVV-CD
+  2106     MOVE CCUP-NEW-CRDNAME            TO CARD-UPDATE-EMBOSSED-NAME
+  2107     STRING  CCUP-NEW-EXPYEAR
+  2108             '-'
+  2109             CCUP-NEW-EXPMON
+  2110             '-'
+  2111             CCUP-NEW-EXPDAY
+  2112             DELIMITED BY SIZE
+  2113        INTO CARD-UPDATE-EXPIRAION-DATE
+  2114     END-STRING
+  2115     MOVE CCUP-NEW-CRDSTCD            TO CARD-UPDATE-ACTIVE-STATUS
+  2116
+  2117     EXEC CICS
+  2118          REWRITE FILE(LIT-CARDFILENAME)
+  2119                  FROM(CARD-UPDATE-RECORD)
+  2120                  LENGTH(LENGTH OF CARD-UPDATE-RECORD)
+  2121                  RESP      (WS-RESP-CD)
+  2122                  RESP2     (WS-REAS-CD)
+  2123     END-EXEC.
+  2124
+  2125*****************************************************************
+  2126* Did the update succeed ?  *
+  2127*****************************************************************
+  2128     IF WS-RESP-CD EQUAL TO DFHRESP(NORMAL)
+  2129       CONTINUE
+  2130     ELSE
+  2131       SET LOCKED-BUT-UPDATE-FAILED    TO TRUE
+  2132     END-IF
+  2133     .
+  2134 9200-WRITE-PROCESSING-EXIT.
+  2135     EXIT
+  2136     .
+  2137
+  2138 9300-CHECK-CHANGE-IN-REC.
+  2139     INSPECT CARD-EMBOSSED-NAME
+  2140     CONVERTING LIT-LOWER
+  2141             TO LIT-UPPER
+  2142
+  2143     IF  CARD-CVV-CD              EQUAL  TO CCUP-OLD-CVV-CD
+  2144     AND CARD-EMBOSSED-NAME       EQUAL  TO CCUP-OLD-CRDNAME
+  2145     AND CARD-EXPIRAION-DATE(1:4) EQUAL  TO CCUP-OLD-EXPYEAR
+  2146     AND CARD-EXPIRAION-DATE(6:2) EQUAL  TO CCUP-OLD-EXPMON
+  2147     AND CARD-EXPIRAION-DATE(9:2) EQUAL  TO CCUP-OLD-EXPDAY
+  2148     AND CARD-ACTIVE-STATUS       EQUAL  TO CCUP-OLD-CRDSTCD
+  2149         CONTINUE
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  43
+* COCRDUPC.cbl
+  2150     ELSE
+  2151        SET DATA-WAS-CHANGED-BEFORE-UPDATE TO TRUE
+  2152        MOVE CARD-CVV-CD                 TO CCUP-OLD-CVV-CD
+  2153        MOVE CARD-EMBOSSED-NAME          TO CCUP-OLD-CRDNAME
+  2154        MOVE CARD-EXPIRAION-DATE(1:4)    TO CCUP-OLD-EXPYEAR
+  2155        MOVE CARD-EXPIRAION-DATE(6:2)    TO CCUP-OLD-EXPMON
+  2156        MOVE CARD-EXPIRAION-DATE(9:2)    TO CCUP-OLD-EXPDAY
+  2157        MOVE CARD-ACTIVE-STATUS          TO CCUP-OLD-CRDSTCD
+  2158        GO TO 9200-WRITE-PROCESSING-EXIT
+  2159     END-IF EXIT
+  2160     .
+  2161 9300-CHECK-CHANGE-IN-REC-EXIT.
+  2162     EXIT
+  2163     .
+  2164
+  2165******************************************************************
+  2166*Common code to store PFKey
+  2167******************************************************************
+  2168*COPY 'CSSTRPFY'
+  2169*    .
+**    COBCH0008S Unknown copybook CSSTRPFY specified  : COCRDUPC.cbl(1514,11,11)
+  2170                                                                  340000
+  2171 ABEND-ROUTINE.
+**    COBCH0301S Unrecognized verb  : COCRDUPC.cbl(1516,20,8)
+**    COBCH0010S Word starts or is continued in wrong area of source line  : COCRDUPC.cbl(1516,20,8)
+  2172
+  2173     IF ABEND-MSG EQUAL LOW-VALUES
+  2174        MOVE 'UNEXPECTED ABEND OCCURRED.' TO ABEND-MSG
+  2175     END-IF
+  2176
+  2177     MOVE LIT-THISPGM       TO ABEND-CULPRIT
+  2178
+  2179     EXEC CICS SEND
+  2180                      FROM (ABEND-DATA)
+  2181                      LENGTH(LENGTH OF ABEND-DATA)
+  2182                      NOHANDLE
+  2183                      ERASE
+  2184     END-EXEC
+  2185
+  2186     EXEC CICS HANDLE ABEND
+  2187          CANCEL
+  2188     END-EXEC
+  2189
+  2190     EXEC CICS ABEND
+  2191          ABCODE('9999')
+  2192     END-EXEC
+  2193     .
+  2194 ABEND-ROUTINE-EXIT.
+  2195     EXIT
+  2196     .
+  2197
+  2198*
+  2199* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:12:33 CDT
+  2200*
+*      ABEND-ROUTINE
+**    COBCH0498S Procedure name ABEND-ROUTINE undeclared, line 1665  : COCRDUPC.cbl(1010,40,28)
+*      ABEND-ROUTINE
+**    COBCH0498S Procedure name ABEND-ROUTINE undeclared, line 2200  : COCRDUPC.cbl(1545,24,12)
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  44
+* COCRDUPC.cbl
+*      YYYY-STORE-PFKEY-EXIT
+**    COBCH0498S Procedure name YYYY-STORE-PFKEY-EXIT undeclared, line 1047  : COCRDUPC.cbl(392,40,20)
+*      YYYY-STORE-PFKEY
+**    COBCH0498S Procedure name YYYY-STORE-PFKEY undeclared, line 1046  : COCRDUPC.cbl(391,35,20)
+*
+*
+* Errors
+* -Line- Col Code/severity Description
+*   2169  12    8-S        Unknown copybook CSSTRPFY specified
+*   2171  21  301-S        Unrecognized verb
+*   2171  21   10-S        Word starts or is continued in wrong area of source
+*                          line
+*                          *      ABEND-ROUTINE
+*   1665  41  498-S        Procedure name ABEND-ROUTINE undeclared, line 1665
+*                          *      ABEND-ROUTINE
+*   2200  25  498-S        Procedure name ABEND-ROUTINE undeclared, line 2200
+*                          *      YYYY-STORE-PFKEY-EXIT
+*   1047  41  498-S        Procedure name YYYY-STORE-PFKEY-EXIT undeclared,
+*                          line 1047
+*                          *      YYYY-STORE-PFKEY
+*   1046  36  498-S        Procedure name YYYY-STORE-PFKEY undeclared, line 1046
+* Micro Focus COBOL                  V9.0 revision 000 Compiler
+* (C) Copyright 1984-2024 Micro Focus or one of its affiliates.
+*                                                        REF GKR-081900000A0
+* Last message on page:   44
+* Total Messages:     7
+* Unrecoverable :     0                    Severe  :     7
+* Errors        :     0                    Warnings:     0
+* Informational :     0                    Flags   :     0
+* Data:        8553     Code:           0

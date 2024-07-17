@@ -1,0 +1,1227 @@
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   1
+* COUSR02C.cbl
+* Options: int("COUSR02C.int") verbose
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DI
+*          RFOLDER/COUSR02C.cbl.dir)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+* Setting: NOACCEPTREFRESH
+*          NOACU
+*          NOACUCOMMENT
+*          NOACUSYNC
+*          NOACU-UNDERSCORE
+*            ADV
+*            ALIGN"8 OPT"
+*            ALPHALITCONT"MARGIN"
+*            ALPHASTART"1"
+*            ALTER
+*          NOAMODE
+*            ANIM
+*            ANS85
+*            APOST
+*            AREACHECK
+*            ARITH"EXTEND"
+*            ARITHMETIC"ENTCOBOL"
+*            ASSIGN"EXTERNAL"
+*          NOASSIGN-PRINTER
+*          NOAUTOLOCK
+*          NOBELL
+*            BINLIT"BOOLEAN"
+*          NOBOUND
+*          NOBRIEF
+*          NOBS2000
+*            BWZSTAR
+*            BYTEMODEMOVE
+*            CALLFH"EXTFH"
+*          NOCALLRECOVERY
+*            CALLSORT"EXTSM"
+*            CANCEL
+*            CANCELLBR
+*            CHANGEMESSAGE"2000 N"
+*            CHARSET"EBCDIC"
+*            CHECKDIV"ENTCOBOL"
+*          NOCHECKREFMOD
+*          NOCICS
+*          NOCICS-CPY
+*          NOCICSOPTIMIZE
+*          NOCMPR2
+*            COBFSTATCONV
+*          NOCOBIDY
+*          NOCOBOL370
+*          NOCOBOLDIR
+*          NOCOMMANDLINELINKAGE
+*            COLLECTION"CardDemo"
+*          NOCOMP
+*            COMP"BINARY"
+*            COMP1"FLOAT"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   2
+* COUSR02C.cbl
+*            COMP2"FLOAT"
+*            COMP-5"2"
+*            COMP-6"2"
+*            CONFIRM
+*          NOCONVERTRET
+*            CONVSPACE
+*            COPYEXT"cpy,cbl"
+*            COPYLBR
+*            COPYLIST
+*            COPYLISTCOMMENT"7"
+*            COPYSEARCH"MF"
+*            CSI
+*            CURRENCY-SIGN"36"
+*            CURRENT-DATE"MMDDYY"
+*          NODATA
+*            DATACOMPRESS"0"
+*          NODATA-CONTEXT
+*          NODATAMAP
+*            DATE
+*            DBCHECK
+*            DBCS"3"
+*            DBCSSOSI"14""15"
+*            DBSPACE
+*            DE-EDIT"2"
+*            DEFAULTBYTE"0"
+*          NODEFAULTCALLS
+*            DETECTLOCK
+*          NODG
+*            DIALECT"ENTCOBOL"
+*          NODIRECTIVES-IN-COMMENTS
+*            DISPLAY"CONSOLE"
+*          NODISPLAYAT
+*            DISPLAYPICU"ANSI"
+*            DISPSIGN"COMPAT"
+*          NODOSVS
+*          NODOTNET
+*            DPCINDATA"XML"
+*            DPCINSUBSCRIPT
+*          NODYNAM
+*          NOEARLY-RELEASE
+*            EBCCOLSEQ"1"
+*            ECHO
+*          NOECHOALL
+*            ENTCOBOL
+*          NOEOF1A
+*            ERRFORMAT"2"
+*            ERRLIST"VERBOSE"
+*          NOERRQ
+*          NOEXECSQLFLAG
+*            EXITPROGRAM"ANSI"
+*          NOFASTINIT
+*            FASTSORT
+*            FCD3
+*          NOFCDALIGN
+*          NOFCDREG
+*            FDCLEAR"3"
+*          NOFILESHARE
+*            FILETYPE"0"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   3
+* COUSR02C.cbl
+*            FLAG"ENTCOBOL"
+*            FLAGAS"S"
+*          NOFLAGEUC
+*          NOFLAGMIG
+*          NOFLAGQ
+*            FLAGSINEDIT
+*          NOFLAGSTD
+*            FOLDCALLNAME"UPPER"
+*            FOLDCOPYNAME"UPPER"
+*            FORM"60"
+*            FP-ROUNDING"ENTCOBOL"
+*          NOHOSTARITHMETIC
+*            HOSTCONTZERO
+*            HOST-NUMCOMPARE
+*            HOST-NUMMOVE
+*            HOSTFD
+*          NOHOSTRW
+*          NOIBM-MS
+*            IBMCOMP
+*            IDENTIFIERLEN"30"
+*            IDXFORMAT"0"
+*          NOIGNOREEXEC
+*          NOIL
+*          NOILGEN
+*          NOILEMIT
+*            IMPLICITSCOPE
+*            INCFORMAT"PC"
+*            INDD"SYSIN 80 R"
+*          NOIDYSRCPATH
+*            INFORETURN"0"
+*          NOINITCALL
+*            INITIAL"1"
+*          NOINITPTR
+*          NOINITBYTYPE
+*            INT"COUSR02C.int"
+*            INTDATE"ANSI"
+*            INTLEVEL"9"
+*            IOCONV
+*          NOISO2002
+*          NOIXNLSKEY
+*          NOIXNUMKEY
+*          NOJAVACALLABLE
+*          NOJAVAGENPROGS
+*          NOJAVAGENSTRG
+*            JAVAOUTPUTPATH""
+*            JAVAPACKAGENAME"com.microfocus.COBOL"
+*          NOJVMGEN
+*            KEYCHECK
+*            KEYCOMPRESS"0"
+*          NOLIBRARIAN
+*          NOLINE-COUNT
+*            LIST"COUSR02C.lst"
+*            LISTPATH...
+*          ..."/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/LISTINGS/CO"
+*            LISTWIDTH"80"
+*            LITVAL-SIZE"4"
+*          NOLOCALSOURCEFORMAT
+*            LOCKTYPE"0"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   4
+* COUSR02C.cbl
+*            MAPNAME
+*          NOMAINFRAMEFLOATINGPOINT
+*          NOMAXERROR
+*            METHODDEFAULT"REFERENCE"
+*          NOMF
+*          NOMFCOMMENT
+*          NOMFSYNC
+*          NOMOVELENCHECK
+*          NOMS
+*          NOMVS
+*            NATIONAL"1"
+*            NATIVE"EBCDIC"
+*          NONATIVEFLOATINGPOINT
+*          NONCHAR
+*          NONLS
+*          NONLSCURRENCYLENGTH
+*            NSYMBOL"NATIONAL"
+*            NULLESCAPE
+*          NOODOOSVS
+*            ODOSLIDE
+*          NOOLDBLANKLINE
+*          NOOLDCOPY
+*          NOOLDINDEX
+*          NOOLDNEXTSENTENCE
+*          NOOLDREADINTO
+*          NOOLDSTRMIX
+*            OOCTRL"-C-E-G+L-P+Q+R-S+W"
+*          NOOPTIONAL-FILE
+*          NOOS390
+*            OSEXT""
+*          NOOSVS
+*            OUTDD"SYSOUT 121 R"
+*            P64
+*          NOPANVALET
+*            PANVALET-INCLUDES-IN-COMMENTS
+*            PERFORM-TYPE"ENTCOBOL"
+*          NOPREPLIST
+*          NOPREPROCESS
+*            PRESERVECASE
+*          NOPRINT-EXT
+*          NOPROFILE
+*          NOPROGID-COMMENT
+*          NOPROGID-INT-NAME
+*          NOPROTECT-LINKAGE
+*            PROTOTYPE"RELAXED"
+*            QUAL
+*            QUALPROC
+*          NOQUERY
+*          NOQUOTE
+*          NORAWLIST
+*            RDW
+*            RECMODE"ENTCOBOL"
+*          NOREENTRANT
+*          NOREF
+*          NOREFNO
+*            REMAINDER"2"
+*            REPLACE"NOKEEPSEQ"
+*            REPORT-LINE"256"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   5
+* COUSR02C.cbl
+*            RESEQ
+*          NORETRYLOCK
+*            REWRITE-LS
+*          NORM
+*          NORM-FILE-ERRORS
+*            RTNCODE-SIZE"2"
+*            RTNCODE-TYPE"COMP"
+*          NORWHARDPAGE
+*          NOSAA
+*          NOSEG
+*          NOSEQCHK
+*            SEQUENTIAL"RECORD"
+*          NOSERIAL
+*            SETTING"COL"
+*          NOSHAREOUTDD
+*          NOSHOW-DIR
+*            SIGN"EBCDIC"
+*            SIGN"TRAILING"
+*          NOSIGNDISCARD
+*          NOSIGNFIXUP
+*            SORTTYPE"DFSORT"
+*          NOSOURCEENCODING
+*            SOURCEFORMAT"FIXED"
+*            SOURCETABSTOP"4"
+*          NOSPZERO
+*          NOSSRANGE
+*            STDERR
+*            STICKY-LINKAGE"1"
+*          NOSTICKY-PERFORM
+*            SUPFF
+*            SWITCHTYPE"1"
+*            SYMBSTART"1"
+*            SYSPUNCH"80"
+*            TERMPAGE
+*          NOTESTCOVER
+*            TIME
+*          NOTRACE
+*          NOTRUNC
+*            TRUNCCALLNAME"8"
+*            TRUNCCOPY"8"
+*            TRUNCINC"10"
+*            UNICODE"PORTABLE"
+*            VERBOSE
+*          NOVISUALSTUDIO
+*          NOVSC2
+*          NOWARNASERROR
+*            WARNING"1"
+*            WEBSERVER"CGI"
+*          NOWRITELOCK
+*          NOWRITETHRU
+*          NOXMLGEN
+*            XMLPARSE"XMLSS"
+*          NOXOPEN
+*          NOXREF
+*            ZEROLENGTHFALSE
+*          NOZEROSEQ
+*            ZWB
+     1******************************************************************
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   6
+* COUSR02C.cbl
+     2* Program     : COUSR02C.CBL
+     3* Application : CardDemo
+     4* Type        : CICS COBOL Program
+     5* Function    : Update a user in USRSEC file
+     6******************************************************************
+     7 IDENTIFICATION DIVISION.
+     8 PROGRAM-ID. COUSR02C.
+     9 AUTHOR.     AWS.
+    10
+    11 ENVIRONMENT DIVISION.
+    12 CONFIGURATION SECTION.
+    13
+    14 DATA DIVISION.
+    15*----------------------------------------------------------------*
+    16*                     WORKING STORAGE SECTION
+    17*----------------------------------------------------------------*
+    18 WORKING-STORAGE SECTION.
+    19
+    20 01 WS-VARIABLES.
+    21   05 WS-PGMNAME                 PIC X(08) VALUE 'COUSR02C'.
+    22   05 WS-TRANID                  PIC X(04) VALUE 'CU02'.
+    23   05 WS-MESSAGE                 PIC X(80) VALUE SPACES.
+    24   05 WS-USRSEC-FILE             PIC X(08) VALUE 'USRSEC  '.
+    25   05 WS-ERR-FLG                 PIC X(01) VALUE 'N'.
+    26     88 ERR-FLG-ON                         VALUE 'Y'.
+    27     88 ERR-FLG-OFF                        VALUE 'N'.
+    28   05 WS-RESP-CD                 PIC S9(09) COMP VALUE ZEROS.
+    29   05 WS-REAS-CD                 PIC S9(09) COMP VALUE ZEROS.
+    30   05 WS-USR-MODIFIED            PIC X(01) VALUE 'N'.
+    31     88 USR-MODIFIED-YES                   VALUE 'Y'.
+    32     88 USR-MODIFIED-NO                    VALUE 'N'.
+    33
+    34*COPY COCOM01Y.
+    35******************************************************************
+    36* Communication area for CardDemo application programs
+    37******************************************************************
+    38 01 CARDDEMO-COMMAREA.
+    39    05 CDEMO-GENERAL-INFO.
+    40       10 CDEMO-FROM-TRANID             PIC X(04).
+    41       10 CDEMO-FROM-PROGRAM            PIC X(08).
+    42       10 CDEMO-TO-TRANID               PIC X(04).
+    43       10 CDEMO-TO-PROGRAM              PIC X(08).
+    44       10 CDEMO-USER-ID                 PIC X(08).
+    45       10 CDEMO-USER-TYPE               PIC X(01).
+    46          88 CDEMO-USRTYP-ADMIN         VALUE 'A'.
+    47          88 CDEMO-USRTYP-USER          VALUE 'U'.
+    48       10 CDEMO-PGM-CONTEXT             PIC 9(01).
+    49          88 CDEMO-PGM-ENTER            VALUE 0.
+    50          88 CDEMO-PGM-REENTER          VALUE 1.
+    51    05 CDEMO-CUSTOMER-INFO.
+    52       10 CDEMO-CUST-ID                 PIC 9(09).
+    53       10 CDEMO-CUST-FNAME              PIC X(25).
+    54       10 CDEMO-CUST-MNAME              PIC X(25).
+    55       10 CDEMO-CUST-LNAME              PIC X(25).
+    56    05 CDEMO-ACCOUNT-INFO.
+    57       10 CDEMO-ACCT-ID                 PIC 9(11).
+    58       10 CDEMO-ACCT-STATUS             PIC X(01).
+    59    05 CDEMO-CARD-INFO.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   7
+* COUSR02C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/COPYBOOKS/COCOM01Y.c)
+    60       10 CDEMO-CARD-NUM                PIC 9(16).
+    61    05 CDEMO-MORE-INFO.
+    62       10  CDEMO-LAST-MAP               PIC X(7).
+    63       10  CDEMO-LAST-MAPSET            PIC X(7).
+    64*
+    65* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:57 CDT
+    66*
+    67    05 CDEMO-CU02-INFO.
+    68       10 CDEMO-CU02-USRID-FIRST     PIC X(08).
+    69       10 CDEMO-CU02-USRID-LAST      PIC X(08).
+    70       10 CDEMO-CU02-PAGE-NUM        PIC 9(08).
+    71       10 CDEMO-CU02-NEXT-PAGE-FLG   PIC X(01) VALUE 'N'.
+    72          88 NEXT-PAGE-YES                     VALUE 'Y'.
+    73          88 NEXT-PAGE-NO                      VALUE 'N'.
+    74       10 CDEMO-CU02-USR-SEL-FLG     PIC X(01).
+    75       10 CDEMO-CU02-USR-SELECTED    PIC X(08).
+    76
+    77*COPY COUSR02.
+    78*   Micro Focus COBOL 2017  7.0.00247
+    79*   Micro Focus BMS Screen Painter
+    80*   MapSet Name   COUSR02
+    81*   Date Created  08/05/2022
+    82*   Time Created  16:44:46
+    83
+    84*  Input Data For Map COUSR2A
+    85   01 COUSR2AI.
+    86      03 FILLER                         PIC X(12).
+    87      03 TRNNAMEL                       PIC S9(4) COMP.
+    88      03 TRNNAMEF                       PIC X.
+    89      03 FILLER REDEFINES TRNNAMEF.
+    90         05 TRNNAMEA                       PIC X.
+    91      03 FILLER                         PIC X(4).
+    92      03 TRNNAMEI                       PIC X(4).
+    93      03 TITLE01L                       PIC S9(4) COMP.
+    94      03 TITLE01F                       PIC X.
+    95      03 FILLER REDEFINES TITLE01F.
+    96         05 TITLE01A                       PIC X.
+    97      03 FILLER                         PIC X(4).
+    98      03 TITLE01I                       PIC X(40).
+    99      03 CURDATEL                       PIC S9(4) COMP.
+   100      03 CURDATEF                       PIC X.
+   101      03 FILLER REDEFINES CURDATEF.
+   102         05 CURDATEA                       PIC X.
+   103      03 FILLER                         PIC X(4).
+   104      03 CURDATEI                       PIC X(8).
+   105      03 PGMNAMEL                       PIC S9(4) COMP.
+   106      03 PGMNAMEF                       PIC X.
+   107      03 FILLER REDEFINES PGMNAMEF.
+   108         05 PGMNAMEA                       PIC X.
+   109      03 FILLER                         PIC X(4).
+   110      03 PGMNAMEI                       PIC X(8).
+   111      03 TITLE02L                       PIC S9(4) COMP.
+   112      03 TITLE02F                       PIC X.
+   113      03 FILLER REDEFINES TITLE02F.
+   114         05 TITLE02A                       PIC X.
+   115      03 FILLER                         PIC X(4).
+   116      03 TITLE02I                       PIC X(40).
+   117      03 CURTIMEL                       PIC S9(4) COMP.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   8
+* COUSR02C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COUSR02.cpy)
+   118      03 CURTIMEF                       PIC X.
+   119      03 FILLER REDEFINES CURTIMEF.
+   120         05 CURTIMEA                       PIC X.
+   121      03 FILLER                         PIC X(4).
+   122      03 CURTIMEI                       PIC X(8).
+   123      03 USRIDINL                       PIC S9(4) COMP.
+   124      03 USRIDINF                       PIC X.
+   125      03 FILLER REDEFINES USRIDINF.
+   126         05 USRIDINA                       PIC X.
+   127      03 FILLER                         PIC X(4).
+   128      03 USRIDINI                       PIC X(8).
+   129      03 FNAMEL                         PIC S9(4) COMP.
+   130      03 FNAMEF                         PIC X.
+   131      03 FILLER REDEFINES FNAMEF.
+   132         05 FNAMEA                         PIC X.
+   133      03 FILLER                         PIC X(4).
+   134      03 FNAMEI                         PIC X(20).
+   135      03 LNAMEL                         PIC S9(4) COMP.
+   136      03 LNAMEF                         PIC X.
+   137      03 FILLER REDEFINES LNAMEF.
+   138         05 LNAMEA                         PIC X.
+   139      03 FILLER                         PIC X(4).
+   140      03 LNAMEI                         PIC X(20).
+   141      03 PASSWDL                        PIC S9(4) COMP.
+   142      03 PASSWDF                        PIC X.
+   143      03 FILLER REDEFINES PASSWDF.
+   144         05 PASSWDA                        PIC X.
+   145      03 FILLER                         PIC X(4).
+   146      03 PASSWDI                        PIC X(8).
+   147      03 USRTYPEL                       PIC S9(4) COMP.
+   148      03 USRTYPEF                       PIC X.
+   149      03 FILLER REDEFINES USRTYPEF.
+   150         05 USRTYPEA                       PIC X.
+   151      03 FILLER                         PIC X(4).
+   152      03 USRTYPEI                       PIC X(1).
+   153      03 ERRMSGL                        PIC S9(4) COMP.
+   154      03 ERRMSGF                        PIC X.
+   155      03 FILLER REDEFINES ERRMSGF.
+   156         05 ERRMSGA                        PIC X.
+   157      03 FILLER                         PIC X(4).
+   158      03 ERRMSGI                        PIC X(78).
+   159
+   160*  Output Data For Map COUSR2A
+   161   01 COUSR2AO REDEFINES COUSR2AI.
+   162      03 FILLER                         PIC X(12).
+   163      03 FILLER                         PIC X(3).
+   164      03 TRNNAMEC                       PIC X.
+   165      03 TRNNAMEP                       PIC X.
+   166      03 TRNNAMEH                       PIC X.
+   167      03 TRNNAMEV                       PIC X.
+   168      03 TRNNAMEO                       PIC X(4).
+   169      03 FILLER                         PIC X(3).
+   170      03 TITLE01C                       PIC X.
+   171      03 TITLE01P                       PIC X.
+   172      03 TITLE01H                       PIC X.
+   173      03 TITLE01V                       PIC X.
+   174      03 TITLE01O                       PIC X(40).
+   175      03 FILLER                         PIC X(3).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   9
+* COUSR02C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COUSR02.cpy)
+   176      03 CURDATEC                       PIC X.
+   177      03 CURDATEP                       PIC X.
+   178      03 CURDATEH                       PIC X.
+   179      03 CURDATEV                       PIC X.
+   180      03 CURDATEO                       PIC X(8).
+   181      03 FILLER                         PIC X(3).
+   182      03 PGMNAMEC                       PIC X.
+   183      03 PGMNAMEP                       PIC X.
+   184      03 PGMNAMEH                       PIC X.
+   185      03 PGMNAMEV                       PIC X.
+   186      03 PGMNAMEO                       PIC X(8).
+   187      03 FILLER                         PIC X(3).
+   188      03 TITLE02C                       PIC X.
+   189      03 TITLE02P                       PIC X.
+   190      03 TITLE02H                       PIC X.
+   191      03 TITLE02V                       PIC X.
+   192      03 TITLE02O                       PIC X(40).
+   193      03 FILLER                         PIC X(3).
+   194      03 CURTIMEC                       PIC X.
+   195      03 CURTIMEP                       PIC X.
+   196      03 CURTIMEH                       PIC X.
+   197      03 CURTIMEV                       PIC X.
+   198      03 CURTIMEO                       PIC X(8).
+   199      03 FILLER                         PIC X(3).
+   200      03 USRIDINC                       PIC X.
+   201      03 USRIDINP                       PIC X.
+   202      03 USRIDINH                       PIC X.
+   203      03 USRIDINV                       PIC X.
+   204      03 USRIDINO                       PIC X(8).
+   205      03 FILLER                         PIC X(3).
+   206      03 FNAMEC                         PIC X.
+   207      03 FNAMEP                         PIC X.
+   208      03 FNAMEH                         PIC X.
+   209      03 FNAMEV                         PIC X.
+   210      03 FNAMEO                         PIC X(20).
+   211      03 FILLER                         PIC X(3).
+   212      03 LNAMEC                         PIC X.
+   213      03 LNAMEP                         PIC X.
+   214      03 LNAMEH                         PIC X.
+   215      03 LNAMEV                         PIC X.
+   216      03 LNAMEO                         PIC X(20).
+   217      03 FILLER                         PIC X(3).
+   218      03 PASSWDC                        PIC X.
+   219      03 PASSWDP                        PIC X.
+   220      03 PASSWDH                        PIC X.
+   221      03 PASSWDV                        PIC X.
+   222      03 PASSWDO                        PIC X(8).
+   223      03 FILLER                         PIC X(3).
+   224      03 USRTYPEC                       PIC X.
+   225      03 USRTYPEP                       PIC X.
+   226      03 USRTYPEH                       PIC X.
+   227      03 USRTYPEV                       PIC X.
+   228      03 USRTYPEO                       PIC X(1).
+   229      03 FILLER                         PIC X(3).
+   230      03 ERRMSGC                        PIC X.
+   231      03 ERRMSGP                        PIC X.
+   232      03 ERRMSGH                        PIC X.
+   233      03 ERRMSGV                        PIC X.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  10
+* COUSR02C.cbl
+   234      03 ERRMSGO                        PIC X(78).
+   235
+   236
+   237*COPY COTTL01Y.
+   238 01 CCDA-SCREEN-TITLE.
+   239   05 CCDA-TITLE01    PIC X(40) VALUE
+   240      '      AWS Mainframe Modernization       '.
+   241   05 CCDA-TITLE02    PIC X(40) VALUE
+   242*     '  Credit Card Demo Application (CCDA)   '.
+   243      '              CardDemo                  '.
+   244   05 CCDA-THANK-YOU  PIC X(40) VALUE
+   245      'Thank you for using CCDA application... '.
+   246*
+   247* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   248*
+   249*COPY CSDAT01Y.
+   250 01 WS-DATE-TIME.
+   251   05 WS-CURDATE-DATA.
+   252     10  WS-CURDATE.
+   253       15  WS-CURDATE-YEAR         PIC 9(04).
+   254       15  WS-CURDATE-MONTH        PIC 9(02).
+   255       15  WS-CURDATE-DAY          PIC 9(02).
+   256     10 WS-CURDATE-N REDEFINES WS-CURDATE PIC 9(08).
+   257     10  WS-CURTIME.
+   258       15  WS-CURTIME-HOURS        PIC 9(02).
+   259       15  WS-CURTIME-MINUTE       PIC 9(02).
+   260       15  WS-CURTIME-SECOND       PIC 9(02).
+   261       15  WS-CURTIME-MILSEC       PIC 9(02).
+   262     10 WS-CURTIME-N REDEFINES WS-CURTIME PIC 9(08).
+   263   05 WS-CURDATE-MM-DD-YY.
+   264     10  WS-CURDATE-MM             PIC 9(02).
+   265     10  FILLER                    PIC X(01) VALUE '/'.
+   266     10  WS-CURDATE-DD             PIC 9(02).
+   267     10  FILLER                    PIC X(01) VALUE '/'.
+   268     10  WS-CURDATE-YY             PIC 9(02).
+   269   05 WS-CURTIME-HH-MM-SS.
+   270     10  WS-CURTIME-HH             PIC 9(02).
+   271     10  FILLER                    PIC X(01) VALUE ':'.
+   272     10  WS-CURTIME-MM             PIC 9(02).
+   273     10  FILLER                    PIC X(01) VALUE ':'.
+   274     10  WS-CURTIME-SS             PIC 9(02).
+   275   05 WS-TIMESTAMP.
+   276     10  WS-TIMESTAMP-DT-YYYY      PIC 9(04).
+   277     10  FILLER                    PIC X(01) VALUE '-'.
+   278     10  WS-TIMESTAMP-DT-MM        PIC 9(02).
+   279     10  FILLER                    PIC X(01) VALUE '-'.
+   280     10  WS-TIMESTAMP-DT-DD        PIC 9(02).
+   281     10  FILLER                    PIC X(01) VALUE ' '.
+   282     10  WS-TIMESTAMP-TM-HH        PIC 9(02).
+   283     10  FILLER                    PIC X(01) VALUE ':'.
+   284     10  WS-TIMESTAMP-TM-MM        PIC 9(02).
+   285     10  FILLER                    PIC X(01) VALUE ':'.
+   286     10  WS-TIMESTAMP-TM-SS        PIC 9(02).
+   287     10  FILLER                    PIC X(01) VALUE '.'.
+   288     10  WS-TIMESTAMP-TM-MS6       PIC 9(06).
+   289*
+   290* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   291*
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  11
+* COUSR02C.cbl
+   292*COPY CSMSG01Y.
+   293 01 CCDA-COMMON-MESSAGES.
+   294   05 CCDA-MSG-THANK-YOU         PIC X(50) VALUE
+   295        'Thank you for using CardDemo application...      '.
+   296   05 CCDA-MSG-INVALID-KEY       PIC X(50) VALUE
+   297        'Invalid key pressed. Please see below...         '.
+   298*
+   299* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   300*
+   301*COPY CSUSR01Y.
+   302 01 SEC-USER-DATA.
+   303   05 SEC-USR-ID                 PIC X(08).
+   304   05 SEC-USR-FNAME              PIC X(20).
+   305   05 SEC-USR-LNAME              PIC X(20).
+   306   05 SEC-USR-PWD                PIC X(08).
+   307   05 SEC-USR-TYPE               PIC X(01).
+   308   05 SEC-USR-FILLER             PIC X(23).
+   309*
+   310* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:59 CDT
+   311*
+   312
+   313*COPY DFHAID.
+   314*<CR_TAG_DEMO_BEGIN>
+   315*
+   316*  Copyright (C) 2024 Micro Focus or one of its affiliates.
+   317*  All rights reserved.
+   318*
+   319*  This sample code is supplied for demonstration purposes only
+   320*  on an "as is" basis and "is for use at your own risk".
+   321*
+   322*<CR_TAG_DEMO_END>
+   323*----------------------------------------------------------------*
+   324* dfhaid.cpy
+   325*----------------------------------------------------------------*
+   326 01  DFHAID.
+   327     02  DFHNULL         PIC X   VALUE IS LOW-VALUE.
+   328     02  DFHENTER        PIC X   VALUE IS ''''.
+   329     02  DFHCLEAR        PIC X   VALUE IS '_'.
+   330     02  DFHPEN          PIC X   VALUE IS '='.
+   331     02  DFHOPID         PIC X   VALUE IS 'W'.
+   332     02  DFHMSRE         PIC X   VALUE IS 'X'.
+   333     02  DFHSTRF         PIC X   VALUE IS ' '.
+   334     02  DFHTRIG         PIC X   VALUE IS '"'.
+   335     02  DFHPA1          PIC X   VALUE IS '%'.
+   336     02  DFHPA2          PIC X   VALUE IS '>'.
+   337     02  DFHPA3          PIC X   VALUE IS ','.
+   338     02  DFHPF1          PIC X   VALUE IS '1'.
+   339     02  DFHPF2          PIC X   VALUE IS '2'.
+   340     02  DFHPF3          PIC X   VALUE IS '3'.
+   341     02  DFHPF4          PIC X   VALUE IS '4'.
+   342     02  DFHPF5          PIC X   VALUE IS '5'.
+   343     02  DFHPF6          PIC X   VALUE IS '6'.
+   344     02  DFHPF7          PIC X   VALUE IS '7'.
+   345     02  DFHPF8          PIC X   VALUE IS '8'.
+   346     02  DFHPF9          PIC X   VALUE IS '9'.
+   347     02  DFHPF10         PIC X   VALUE IS ':'.
+   348     02  DFHPF11         PIC X   VALUE IS '#'.
+   349     02  DFHPF12         PIC X   VALUE IS '@'.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  12
+* COUSR02C.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHAID.cpy)
+   350     02  DFHPF13         PIC X   VALUE IS 'A'.
+   351     02  DFHPF14         PIC X   VALUE IS 'B'.
+   352     02  DFHPF15         PIC X   VALUE IS 'C'.
+   353     02  DFHPF16         PIC X   VALUE IS 'D'.
+   354     02  DFHPF17         PIC X   VALUE IS 'E'.
+   355     02  DFHPF18         PIC X   VALUE IS 'F'.
+   356     02  DFHPF19         PIC X   VALUE IS 'G'.
+   357     02  DFHPF20         PIC X   VALUE IS 'H'.
+   358     02  DFHPF21         PIC X   VALUE IS 'I'.
+   359     02  DFHPF22         PIC X   VALUE IS ' '.
+   360*    Note: CICS ECM alters the line above to...
+   361*          Value for ASCII  is X'5B'
+   362*          Value for EBCDIC is X'4A'
+   363     02  DFHPF23         PIC X   VALUE IS '.'.
+   364     02  DFHPF24         PIC X   VALUE IS '<'.
+   365*----------------------------------------------------------------*
+   366* dfhaid.cpy end
+   367*----------------------------------------------------------------*
+   368*COPY DFHBMSCA.
+   369*----------------------------------------------------------------*
+   370* dfhbmsca.cpy
+   371*<CR_TAG_DEMO_BEGIN>
+   372*
+   373*  Copyright (C) 2024 Micro Focus or one of its affiliates.
+   374*  All rights reserved.
+   375*
+   376*  This sample code is supplied for demonstration purposes only
+   377*  on an "as is" basis and "is for use at your own risk".
+   378*
+   379*<CR_TAG_DEMO_END>
+   380***---------------------------------------------------------*
+   381***CONTROL BLOCK NAME= DFHBMSCA                             *
+   382***                                                         *
+   383***NAME OF MATCHING ASSEMBLER CONTROL BLOCK = NONE          *
+   384***                                                         *
+   385***DESCRIPTIVE NAME = 3270 ATTRIBUTE VALUES                 *
+   386***                                                         *
+   387***FUNCTION =  Provides the values for 3270 attribute bytes *
+   388***            used by the BMS support.                     *
+   389***                                                         *
+   390***---------------------------------------------------------*
+   391 01      DFHBMSCA.
+   392*                                               X'1915'.
+   393   02    DFHBMPEM-BIN  PICTURE 9(4) COMP VALUE IS 6421.
+   394   02    FILLER REDEFINES DFHBMPEM-BIN.
+   395     03  DFHBMPEM  PICTURE X.
+   396     03  DFHBMPNL  PICTURE X.
+   397*                                               X'0C0D'.
+   398   02    DFHBMPFF-BIN  PICTURE 9(4) COMP VALUE IS 3085.
+   399   02    FILLER REDEFINES DFHBMPFF-BIN.
+   400     03  DFHBMPFF  PICTURE X.
+   401     03  DFHBMPCR  PICTURE X.
+   402   02    DFHBMASK  PICTURE X   VALUE  IS  '0'.
+   403   02    DFHBMUNP  PICTURE X   VALUE  IS  ' '.
+   404   02    DFHBMUNN  PICTURE X   VALUE  IS  '&'.
+   405   02    DFHBMPRO  PICTURE X   VALUE  IS  '-'.
+   406   02    DFHBMBRY  PICTURE X   VALUE  IS  'H'.
+   407   02    DFHBMDAR  PICTURE X   VALUE  IS  '<'.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  13
+* COUSR02C.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHBMSCA.cpy)
+   408   02    DFHBMFSE  PICTURE X   VALUE  IS  'A'.
+   409   02    DFHBMPRF  PICTURE X   VALUE  IS  '/'.
+   410   02    DFHBMASF  PICTURE X   VALUE  IS  '1'.
+   411   02    DFHBMASB  PICTURE X   VALUE  IS  '8'.
+   412*                                               X'0E0F'.
+   413   02    DFHBMPSO-BIN  PICTURE 9(4) COMP VALUE IS 3599.
+   414   02    FILLER REDEFINES DFHBMPSO-BIN.
+   415     03  DFHBMPSO  PICTURE X.
+   416     03  DFHBMPSI  PICTURE X.
+   417*                                               X'0080'.
+   418   02    DFHBMEOF-BIN  PICTURE 9(4) COMP VALUE IS 128.
+   419   02    FILLER REDEFINES DFHBMEOF-BIN.
+   420     03  FILLER    PICTURE X.
+   421     03  DFHBMEOF  PICTURE X.
+   422*                                               X'0282'.
+   423   02    DFHBMCUR-BIN  PICTURE 9(4) COMP VALUE IS 642.
+   424   02    FILLER REDEFINES DFHBMCUR-BIN.
+   425     03  DFHBMCUR  PICTURE X.
+   426     03  DFHBMEC   PICTURE X.
+   427*                                               X'0082'.
+   428   02    DFHBMFLG-BIN  PICTURE 9(4) COMP VALUE IS 130.
+   429       88    DFHERASE VALUES ARE 128, 130.
+   430       88    DFHCURSR VALUES ARE   2, 130.
+   431   02    FILLER REDEFINES DFHBMFLG-BIN.
+   432     03  FILLER    PICTURE X.
+   433     03  DFHBMFLG  PICTURE X.
+   434   02    DFHBMDET  PICTURE X   VALUE  IS  HIGH-VALUES.
+   435   02    FILLER    PICTURE X.
+   436*                                               X'0028'.
+   437   02    DFHSA-BIN  PICTURE 9(4) COMP VALUE IS 40.
+   438   02    FILLER REDEFINES DFHSA-BIN.
+   439     03  FILLER    PICTURE X.
+   440     03  DFHSA     PICTURE X.
+   441*                                               X'003F'.
+   442   02    DFHERROR-BIN  PICTURE 9(4) COMP VALUE IS 63.
+   443   02    FILLER REDEFINES DFHERROR-BIN.
+   444     03  FILLER    PICTURE X.
+   445     03  DFHERROR  PICTURE X.
+   446*                                               X'0042'.
+   447   02    DFHCOLOR-BIN  PICTURE 9(4) COMP VALUE IS 66.
+   448   02    FILLER REDEFINES DFHCOLOR-BIN.
+   449     03  FILLER    PICTURE X.
+   450     03  DFHCOLOR  PICTURE X.
+   451*                                               X'0043'.
+   452   02    DFHPS-BIN  PICTURE 9(4) COMP VALUE IS 67.
+   453   02    FILLER REDEFINES DFHPS-BIN.
+   454     03  FILLER    PICTURE X.
+   455     03  DFHPS     PICTURE X.
+   456*                                               X'0041'.
+   457   02    DFHHLT-BIN  PICTURE 9(4) COMP VALUE IS 65.
+   458   02    FILLER REDEFINES DFHHLT-BIN.
+   459     03  FILLER    PICTURE X.
+   460     03  DFHHLT    PICTURE X.
+   461*                                               X'00C0'.
+   462   02    DFH3270-BIN   PICTURE 9(4) COMP VALUE IS 192.
+   463   02    FILLER REDEFINES DFH3270-BIN.
+   464     03  FILLER    PICTURE X.
+   465     03  DFH3270   PICTURE X.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  14
+* COUSR02C.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHBMSCA.cpy)
+   466   02    DFHVAL    PICTURE X   VALUE  IS  'A'.
+   467   02    DFHOUTLN  PICTURE X   VALUE  IS  'B'.
+   468*                                               X'0046'.
+   469   02    DFHBKTRN-BIN  PICTURE 9(4) COMP VALUE IS 70.
+   470   02    FILLER REDEFINES DFHBKTRN-BIN.
+   471     03  FILLER    PICTURE X.
+   472     03  DFHBKTRN  PICTURE X.
+   473   02    DFHALL    PICTURE X   VALUE  IS  LOW-VALUES.
+   474   02    DFHDFT    PICTURE X   VALUE  IS  HIGH-VALUES.
+   475   02    DFHDFCOL  PICTURE X   VALUE  IS  LOW-VALUES.
+   476   02    DFHBLUE   PICTURE X   VALUE  IS  '1'.
+   477   02    DFHRED    PICTURE X   VALUE  IS  '2'.
+   478   02    DFHPINK   PICTURE X   VALUE  IS  '3'.
+   479   02    DFHGREEN  PICTURE X   VALUE  IS  '4'.
+   480   02    DFHTURQ   PICTURE X   VALUE  IS  '5'.
+   481   02    DFHYELLO  PICTURE X   VALUE  IS  '6'.
+   482   02    DFHNEUTR  PICTURE X   VALUE  IS  '7'.
+   483   02    DFHBASE   PICTURE X   VALUE  IS  LOW-VALUES.
+   484   02    DFHDFHI   PICTURE X   VALUE  IS  LOW-VALUES.
+   485   02    DFHBLINK  PICTURE X   VALUE  IS  '1'.
+   486   02    DFHREVRS  PICTURE X   VALUE  IS  '2'.
+   487   02    DFHUNDLN  PICTURE X   VALUE  IS  '4'.
+   488*                                               X'0402'.
+   489   02    DFHMFIL-BIN  PICTURE 9(4) COMP VALUE IS 1026.
+   490   02    FILLER REDEFINES DFHMFIL-BIN.
+   491     03  DFHMFIL   PICTURE X.
+   492     03  DFHMENT   PICTURE X.
+   493*                                               X'0601'.
+   494   02    DFHMFE-BIN  PICTURE 9(4) COMP VALUE IS 1537.
+   495   02    FILLER REDEFINES DFHMFE-BIN.
+   496     03  DFHMFE    PICTURE X.
+   497     03  DFHMT     PICTURE X.
+   498*                                               X'0503'.
+   499   02    DFHMFT-BIN  PICTURE 9(4) COMP VALUE IS 1283.
+   500   02    FILLER REDEFINES DFHMFT-BIN.
+   501     03  DFHMFT    PICTURE X.
+   502     03  DFHMET    PICTURE X.
+   503*                                               X'0007'.
+   504   02    DFHMFET-BIN  PICTURE 9(4) COMP VALUE IS 7.
+   505   02    FILLER REDEFINES DFHMFET-BIN.
+   506     03  FILLER    PICTURE X.
+   507     03  DFHMFET   PICTURE X.
+   508   02    DFHUNNOD  PICTURE X   VALUE  IS  '('.
+   509   02    DFHUNIMD  PICTURE X   VALUE  IS  'I'.
+   510   02    DFHUNNUM  PICTURE X   VALUE  IS  'J'.
+   511   02    DFHUNNUB  PICTURE X   VALUE  IS  'Q'.
+   512   02    DFHUNINT  PICTURE X   VALUE  IS  'R'.
+   513   02    DFHUNNON  PICTURE X   VALUE  IS  ')'.
+   514   02    DFHPROTI  PICTURE X   VALUE  IS  'Y'.
+   515   02    DFHPROTN  PICTURE X   VALUE  IS  '%'.
+   516   02    DFHDFFR   PICTURE X   VALUE  IS  LOW-VALUES.
+   517*                                               X'0102'.
+   518   02    DFHUNDER-BIN  PICTURE 9(4) COMP VALUE IS 258.
+   519   02    FILLER REDEFINES DFHUNDER-BIN.
+   520     03  DFHUNDER  PICTURE X.
+   521     03  DFHRIGHT  PICTURE X.
+   522*                                               X'0408'.
+   523   02    DFHOVER-BIN  PICTURE 9(4) COMP VALUE IS 1032.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  15
+* COUSR02C.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHBMSCA.cpy)
+   524   02    FILLER REDEFINES DFHOVER-BIN.
+   525     03  DFHOVER   PICTURE X.
+   526     03  DFHLEFT   PICTURE X.
+   527*                                               X'000F'.
+   528   02    DFHBOX-BIN   PICTURE 9(4) COMP VALUE IS 15.
+   529   02    FILLER REDEFINES DFHBOX-BIN.
+   530     03  FILLER    PICTURE X.
+   531     03  DFHBOX    PICTURE X.
+   532*                                               X'0001'.
+   533   02    DFHSOSI-BIN  PICTURE 9(4) COMP VALUE IS 1.
+   534   02    FILLER REDEFINES DFHSOSI-BIN.
+   535     03  FILLER    PICTURE X.
+   536     03  DFHSOSI   PICTURE X.
+   537   02    DFHTRANS  PICTURE X   VALUE  IS  '0'.
+   538   02    DFHOPAQ   PICTURE X   VALUE  IS  HIGH-VALUES.
+   539*----------------------------------------------------------------*
+   540* dfhbmsca.cpy end
+   541*----------------------------------------------------------------*
+   542
+   543*----------------------------------------------------------------*
+   544*                        LINKAGE SECTION
+   545*----------------------------------------------------------------*
+   546 LINKAGE SECTION.
+   547 01  DFHCOMMAREA.
+   548   05  LK-COMMAREA                           PIC X(01)
+   549       OCCURS 1 TO 32767 TIMES DEPENDING ON EIBCALEN.
+   550
+   551*----------------------------------------------------------------*
+   552*                       PROCEDURE DIVISION
+   553*----------------------------------------------------------------*
+   554 PROCEDURE DIVISION.
+   555 MAIN-PARA.
+   556
+   557     SET ERR-FLG-OFF     TO TRUE
+   558     SET USR-MODIFIED-NO TO TRUE
+   559
+   560     MOVE SPACES TO WS-MESSAGE
+   561                    ERRMSGO OF COUSR2AO
+   562
+   563     IF EIBCALEN = 0
+   564         MOVE 'COSGN00C' TO CDEMO-TO-PROGRAM
+   565         PERFORM RETURN-TO-PREV-SCREEN
+   566     ELSE
+   567         MOVE DFHCOMMAREA(1:EIBCALEN) TO CARDDEMO-COMMAREA
+   568         IF NOT CDEMO-PGM-REENTER
+   569             SET CDEMO-PGM-REENTER    TO TRUE
+   570             MOVE LOW-VALUES          TO COUSR2AO
+   571             MOVE -1       TO USRIDINL OF COUSR2AI
+   572             IF CDEMO-CU02-USR-SELECTED NOT =
+   573                                        SPACES AND LOW-VALUES
+   574                 MOVE CDEMO-CU02-USR-SELECTED TO
+   575                      USRIDINI OF COUSR2AI
+   576                 PERFORM PROCESS-ENTER-KEY
+   577             END-IF
+   578             PERFORM SEND-USRUPD-SCREEN
+   579         ELSE
+   580             PERFORM RECEIVE-USRUPD-SCREEN
+   581             EVALUATE EIBAID
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  16
+* COUSR02C.cbl
+   582                 WHEN DFHENTER
+   583                     PERFORM PROCESS-ENTER-KEY
+   584                 WHEN DFHPF3
+   585                     PERFORM UPDATE-USER-INFO
+   586                     IF CDEMO-FROM-PROGRAM = SPACES OR LOW-VALUES
+   587                         MOVE 'COADM01C' TO CDEMO-TO-PROGRAM
+   588                     ELSE
+   589                         MOVE CDEMO-FROM-PROGRAM TO
+   590                         CDEMO-TO-PROGRAM
+   591                     END-IF
+   592                     PERFORM RETURN-TO-PREV-SCREEN
+   593                 WHEN DFHPF4
+   594                     PERFORM CLEAR-CURRENT-SCREEN
+   595                 WHEN DFHPF5
+   596                     PERFORM UPDATE-USER-INFO
+   597                 WHEN DFHPF12
+   598                     MOVE 'COADM01C' TO CDEMO-TO-PROGRAM
+   599                     PERFORM RETURN-TO-PREV-SCREEN
+   600                 WHEN OTHER
+   601                     MOVE 'Y'                       TO WS-ERR-FLG
+   602                     MOVE CCDA-MSG-INVALID-KEY      TO WS-MESSAGE
+   603                     PERFORM SEND-USRUPD-SCREEN
+   604             END-EVALUATE
+   605         END-IF
+   606     END-IF
+   607
+   608     EXEC CICS RETURN
+   609               TRANSID (WS-TRANID)
+   610               COMMAREA (CARDDEMO-COMMAREA)
+   611     END-EXEC.
+   612
+   613*----------------------------------------------------------------*
+   614*                      PROCESS-ENTER-KEY
+   615*----------------------------------------------------------------*
+   616 PROCESS-ENTER-KEY.
+   617
+   618     EVALUATE TRUE
+   619         WHEN USRIDINI OF COUSR2AI = SPACES OR LOW-VALUES
+   620             MOVE 'Y'     TO WS-ERR-FLG
+   621             MOVE 'User ID can NOT be empty...' TO
+   622                             WS-MESSAGE
+   623             MOVE -1       TO USRIDINL OF COUSR2AI
+   624             PERFORM SEND-USRUPD-SCREEN
+   625         WHEN OTHER
+   626             MOVE -1       TO USRIDINL OF COUSR2AI
+   627             CONTINUE
+   628     END-EVALUATE
+   629
+   630     IF NOT ERR-FLG-ON
+   631         MOVE SPACES      TO FNAMEI   OF COUSR2AI
+   632                             LNAMEI   OF COUSR2AI
+   633                             PASSWDI  OF COUSR2AI
+   634                             USRTYPEI OF COUSR2AI
+   635         MOVE USRIDINI  OF COUSR2AI TO SEC-USR-ID
+   636         PERFORM READ-USER-SEC-FILE
+   637     END-IF.
+   638
+   639     IF NOT ERR-FLG-ON
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  17
+* COUSR02C.cbl
+   640         MOVE SEC-USR-FNAME      TO FNAMEI    OF COUSR2AI
+   641         MOVE SEC-USR-LNAME      TO LNAMEI    OF COUSR2AI
+   642         MOVE SEC-USR-PWD        TO PASSWDI   OF COUSR2AI
+   643         MOVE SEC-USR-TYPE       TO USRTYPEI  OF COUSR2AI
+   644         PERFORM SEND-USRUPD-SCREEN
+   645     END-IF.
+   646
+   647*----------------------------------------------------------------*
+   648*                      UPDATE-USER-INFO
+   649*----------------------------------------------------------------*
+   650 UPDATE-USER-INFO.
+   651
+   652     EVALUATE TRUE
+   653         WHEN USRIDINI OF COUSR2AI = SPACES OR LOW-VALUES
+   654             MOVE 'Y'     TO WS-ERR-FLG
+   655             MOVE 'User ID can NOT be empty...' TO
+   656                             WS-MESSAGE
+   657             MOVE -1       TO USRIDINL OF COUSR2AI
+   658             PERFORM SEND-USRUPD-SCREEN
+   659         WHEN FNAMEI OF COUSR2AI = SPACES OR LOW-VALUES
+   660             MOVE 'Y'     TO WS-ERR-FLG
+   661             MOVE 'First Name can NOT be empty...' TO
+   662                             WS-MESSAGE
+   663             MOVE -1       TO FNAMEL OF COUSR2AI
+   664             PERFORM SEND-USRUPD-SCREEN
+   665         WHEN LNAMEI OF COUSR2AI = SPACES OR LOW-VALUES
+   666             MOVE 'Y'     TO WS-ERR-FLG
+   667             MOVE 'Last Name can NOT be empty...' TO
+   668                             WS-MESSAGE
+   669             MOVE -1       TO LNAMEL OF COUSR2AI
+   670             PERFORM SEND-USRUPD-SCREEN
+   671         WHEN PASSWDI OF COUSR2AI = SPACES OR LOW-VALUES
+   672             MOVE 'Y'     TO WS-ERR-FLG
+   673             MOVE 'Password can NOT be empty...' TO
+   674                             WS-MESSAGE
+   675             MOVE -1       TO PASSWDL OF COUSR2AI
+   676             PERFORM SEND-USRUPD-SCREEN
+   677         WHEN USRTYPEI OF COUSR2AI = SPACES OR LOW-VALUES
+   678             MOVE 'Y'     TO WS-ERR-FLG
+   679             MOVE 'User Type can NOT be empty...' TO
+   680                             WS-MESSAGE
+   681             MOVE -1       TO USRTYPEL OF COUSR2AI
+   682             PERFORM SEND-USRUPD-SCREEN
+   683         WHEN OTHER
+   684             MOVE -1       TO FNAMEL OF COUSR2AI
+   685             CONTINUE
+   686     END-EVALUATE
+   687
+   688     IF NOT ERR-FLG-ON
+   689         MOVE USRIDINI  OF COUSR2AI TO SEC-USR-ID
+   690         PERFORM READ-USER-SEC-FILE
+   691
+   692         IF FNAMEI  OF COUSR2AI NOT = SEC-USR-FNAME
+   693             MOVE FNAMEI   OF COUSR2AI TO SEC-USR-FNAME
+   694             SET USR-MODIFIED-YES TO TRUE
+   695         END-IF
+   696         IF LNAMEI  OF COUSR2AI NOT = SEC-USR-LNAME
+   697             MOVE LNAMEI   OF COUSR2AI TO SEC-USR-LNAME
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  18
+* COUSR02C.cbl
+   698             SET USR-MODIFIED-YES TO TRUE
+   699         END-IF
+   700         IF PASSWDI  OF COUSR2AI NOT = SEC-USR-PWD
+   701             MOVE PASSWDI  OF COUSR2AI TO SEC-USR-PWD
+   702             SET USR-MODIFIED-YES TO TRUE
+   703         END-IF
+   704         IF USRTYPEI  OF COUSR2AI NOT = SEC-USR-TYPE
+   705             MOVE USRTYPEI OF COUSR2AI TO SEC-USR-TYPE
+   706             SET USR-MODIFIED-YES TO TRUE
+   707         END-IF
+   708
+   709         IF USR-MODIFIED-YES
+   710             PERFORM UPDATE-USER-SEC-FILE
+   711         ELSE
+   712             MOVE 'Please modify to update ...' TO
+   713                             WS-MESSAGE
+   714             MOVE DFHRED       TO ERRMSGC  OF COUSR2AO
+   715             PERFORM SEND-USRUPD-SCREEN
+   716         END-IF
+   717
+   718     END-IF.
+   719
+   720*----------------------------------------------------------------*
+   721*                      RETURN-TO-PREV-SCREEN
+   722*----------------------------------------------------------------*
+   723 RETURN-TO-PREV-SCREEN.
+   724
+   725     IF CDEMO-TO-PROGRAM = LOW-VALUES OR SPACES
+   726         MOVE 'COSGN00C' TO CDEMO-TO-PROGRAM
+   727     END-IF
+   728     MOVE WS-TRANID    TO CDEMO-FROM-TRANID
+   729     MOVE WS-PGMNAME   TO CDEMO-FROM-PROGRAM
+   730     MOVE ZEROS        TO CDEMO-PGM-CONTEXT
+   731     EXEC CICS
+   732         XCTL PROGRAM(CDEMO-TO-PROGRAM)
+   733         COMMAREA(CARDDEMO-COMMAREA)
+   734     END-EXEC.
+   735
+   736*----------------------------------------------------------------*
+   737*                      SEND-USRUPD-SCREEN
+   738*----------------------------------------------------------------*
+   739 SEND-USRUPD-SCREEN.
+   740
+   741     PERFORM POPULATE-HEADER-INFO
+   742
+   743     MOVE WS-MESSAGE TO ERRMSGO OF COUSR2AO
+   744
+   745     EXEC CICS SEND
+   746               MAP('COUSR2A')
+   747               MAPSET('COUSR02')
+   748               FROM(COUSR2AO)
+   749               ERASE
+   750               CURSOR
+   751     END-EXEC.
+   752
+   753*----------------------------------------------------------------*
+   754*                      RECEIVE-USRUPD-SCREEN
+   755*----------------------------------------------------------------*
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  19
+* COUSR02C.cbl
+   756 RECEIVE-USRUPD-SCREEN.
+   757
+   758     EXEC CICS RECEIVE
+   759               MAP('COUSR2A')
+   760               MAPSET('COUSR02')
+   761               INTO(COUSR2AI)
+   762               RESP(WS-RESP-CD)
+   763               RESP2(WS-REAS-CD)
+   764     END-EXEC.
+   765
+   766*----------------------------------------------------------------*
+   767*                      POPULATE-HEADER-INFO
+   768*----------------------------------------------------------------*
+   769 POPULATE-HEADER-INFO.
+   770
+   771     MOVE FUNCTION CURRENT-DATE  TO WS-CURDATE-DATA
+   772
+   773     MOVE CCDA-TITLE01           TO TITLE01O OF COUSR2AO
+   774     MOVE CCDA-TITLE02           TO TITLE02O OF COUSR2AO
+   775     MOVE WS-TRANID              TO TRNNAMEO OF COUSR2AO
+   776     MOVE WS-PGMNAME             TO PGMNAMEO OF COUSR2AO
+   777
+   778     MOVE WS-CURDATE-MONTH       TO WS-CURDATE-MM
+   779     MOVE WS-CURDATE-DAY         TO WS-CURDATE-DD
+   780     MOVE WS-CURDATE-YEAR(3:2)   TO WS-CURDATE-YY
+   781
+   782     MOVE WS-CURDATE-MM-DD-YY    TO CURDATEO OF COUSR2AO
+   783
+   784     MOVE WS-CURTIME-HOURS       TO WS-CURTIME-HH
+   785     MOVE WS-CURTIME-MINUTE      TO WS-CURTIME-MM
+   786     MOVE WS-CURTIME-SECOND      TO WS-CURTIME-SS
+   787
+   788     MOVE WS-CURTIME-HH-MM-SS    TO CURTIMEO OF COUSR2AO.
+   789
+   790*----------------------------------------------------------------*
+   791*                      READ-USER-SEC-FILE
+   792*----------------------------------------------------------------*
+   793 READ-USER-SEC-FILE.
+   794
+   795     EXEC CICS READ
+   796          DATASET   (WS-USRSEC-FILE)
+   797          INTO      (SEC-USER-DATA)
+   798          LENGTH    (LENGTH OF SEC-USER-DATA)
+   799          RIDFLD    (SEC-USR-ID)
+   800          KEYLENGTH (LENGTH OF SEC-USR-ID)
+   801          UPDATE
+   802          RESP      (WS-RESP-CD)
+   803          RESP2     (WS-REAS-CD)
+   804     END-EXEC.
+   805
+   806     EVALUATE WS-RESP-CD
+   807         WHEN DFHRESP(NORMAL)
+   808             CONTINUE
+   809             MOVE 'Press PF5 key to save your updates ...' TO
+   810                             WS-MESSAGE
+   811             MOVE DFHNEUTR       TO ERRMSGC  OF COUSR2AO
+   812             PERFORM SEND-USRUPD-SCREEN
+   813         WHEN DFHRESP(NOTFND)
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  20
+* COUSR02C.cbl
+   814             MOVE 'Y'     TO WS-ERR-FLG
+   815             MOVE 'User ID NOT found...' TO
+   816                             WS-MESSAGE
+   817             MOVE -1       TO USRIDINL OF COUSR2AI
+   818             PERFORM SEND-USRUPD-SCREEN
+   819         WHEN OTHER
+   820             DISPLAY 'RESP:' WS-RESP-CD 'REAS:' WS-REAS-CD
+   821             MOVE 'Y'     TO WS-ERR-FLG
+   822             MOVE 'Unable to lookup User...' TO
+   823                             WS-MESSAGE
+   824             MOVE -1       TO FNAMEL OF COUSR2AI
+   825             PERFORM SEND-USRUPD-SCREEN
+   826     END-EVALUATE.
+   827
+   828*----------------------------------------------------------------*
+   829*                      UPDATE-USER-SEC-FILE
+   830*----------------------------------------------------------------*
+   831 UPDATE-USER-SEC-FILE.
+   832
+   833     EXEC CICS REWRITE
+   834          DATASET   (WS-USRSEC-FILE)
+   835          FROM      (SEC-USER-DATA)
+   836          LENGTH    (LENGTH OF SEC-USER-DATA)
+   837          RESP      (WS-RESP-CD)
+   838          RESP2     (WS-REAS-CD)
+   839     END-EXEC.
+   840
+   841     EVALUATE WS-RESP-CD
+   842         WHEN DFHRESP(NORMAL)
+   843             MOVE SPACES             TO WS-MESSAGE
+   844             MOVE DFHGREEN           TO ERRMSGC  OF COUSR2AO
+   845             STRING 'User '     DELIMITED BY SIZE
+   846                    SEC-USR-ID  DELIMITED BY SPACE
+   847                    ' has been updated ...' DELIMITED BY SIZE
+   848               INTO WS-MESSAGE
+   849             PERFORM SEND-USRUPD-SCREEN
+   850         WHEN DFHRESP(NOTFND)
+   851             MOVE 'Y'     TO WS-ERR-FLG
+   852             MOVE 'User ID NOT found...' TO
+   853                             WS-MESSAGE
+   854             MOVE -1       TO USRIDINL OF COUSR2AI
+   855             PERFORM SEND-USRUPD-SCREEN
+   856         WHEN OTHER
+   857             DISPLAY 'RESP:' WS-RESP-CD 'REAS:' WS-REAS-CD
+   858             MOVE 'Y'     TO WS-ERR-FLG
+   859             MOVE 'Unable to Update User...' TO
+   860                             WS-MESSAGE
+   861             MOVE -1       TO FNAMEL OF COUSR2AI
+   862             PERFORM SEND-USRUPD-SCREEN
+   863     END-EVALUATE.
+   864
+   865*----------------------------------------------------------------*
+   866*                      CLEAR-CURRENT-SCREEN
+   867*----------------------------------------------------------------*
+   868 CLEAR-CURRENT-SCREEN.
+   869
+   870     PERFORM INITIALIZE-ALL-FIELDS.
+   871     PERFORM SEND-USRUPD-SCREEN.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  21
+* COUSR02C.cbl
+   872
+   873*----------------------------------------------------------------*
+   874*                      INITIALIZE-ALL-FIELDS
+   875*----------------------------------------------------------------*
+   876 INITIALIZE-ALL-FIELDS.
+   877
+   878     MOVE -1              TO USRIDINL OF COUSR2AI
+   879     MOVE SPACES          TO USRIDINI OF COUSR2AI
+   880                             FNAMEI   OF COUSR2AI
+   881                             LNAMEI   OF COUSR2AI
+   882                             PASSWDI  OF COUSR2AI
+   883                             USRTYPEI OF COUSR2AI
+   884                             WS-MESSAGE.
+   885*
+   886* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:12:34 CDT
+   887*
+*
+*
+* Errors
+* -Line- Col Code/severity Description
+* Micro Focus COBOL                  V9.0 revision 000 Compiler
+* (C) Copyright 1984-2024 Micro Focus or one of its affiliates.
+*                                                        REF GKR-081900000A0
+* Total Messages:     0
+* Data:        6624     Code:        4952

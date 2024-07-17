@@ -1,0 +1,468 @@
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   1
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT03C.cbl
+* Options: DELINT
+*          USE"C:\CrossPlatformBuild\CardDemo\RELEASE\LOADLIB\CBACT03C.cbl.dir"
+* Setting: NOACCEPTREFRESH
+*          NOACU
+*          NOACUCOMMENT
+*          NOACUSYNC
+*          NOACU-UNDERSCORE
+*            ADV
+*            ALIGN"8 OPT"
+*            ALPHALITCONT"MARGIN"
+*            ALPHASTART"1"
+*            ALTER
+*          NOAMODE
+*            ANIM
+*            ANS85
+*            APOST
+*            AREACHECK
+*            ARITH"EXTEND"
+*            ARITHMETIC"ENTCOBOL"
+*            ASSIGN"EXTERNAL"
+*          NOASSIGN-PRINTER
+*          NOAUTOLOCK
+*          NOBELL
+*            BINLIT"BOOLEAN"
+*          NOBOUND
+*          NOBRIEF
+*          NOBS2000
+*            BWZSTAR
+*            BYTEMODEMOVE
+*            CALLFH"EXTFH"
+*          NOCALLRECOVERY
+*            CALLSORT"EXTSM"
+*            CANCEL
+*            CANCELLBR
+*            CHANGEMESSAGE"677 N 1126 N 1152 N"
+*            CHARSET"EBCDIC"
+*            CHECKDIV"ENTCOBOL"
+*          NOCHECKREFMOD
+*          NOCICS
+*            CICS-CPY
+*          NOCICSOPTIMIZE
+*          NOCMPR2
+*            COBFSTATCONV
+*          NOCOBIDY
+*          NOCOBOL370
+*          NOCOBOLDIR
+*          NOCOMMANDLINELINKAGE
+*            COLLECTION"CardDemo"
+*          NOCOMP
+*            COMP"BINARY"
+*            COMP1"FLOAT"
+*            COMP2"FLOAT"
+*            COMP-5"2"
+*            COMP-6"2"
+*            CONFIRM
+*          NOCONVERTRET
+*            CONVSPACE
+*            COPYEXT"CBL,CPY"
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   2
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT03C.cbl
+*            COPYLBR
+*            COPYLIST
+*            COPYLISTCOMMENT"7"
+*            COPYSEARCH"MF"
+*            CSI
+*            CURRENCY-SIGN"36"
+*            CURRENT-DATE"MMDDYY"
+*          NODATA
+*            DATACOMPRESS"0"
+*          NODATA-CONTEXT
+*          NODATAMAP
+*            DATE
+*            DBCHECK
+*            DBCS"3"
+*            DBCSSOSI"14""15"
+*            DBSPACE
+*            DE-EDIT"2"
+*            DEFAULTBYTE"0"
+*          NODEFAULTCALLS
+*            DETECTLOCK
+*          NODG
+*            DIALECT"ENTCOBOL"
+*          NODIRECTIVES-IN-COMMENTS
+*            DISPLAY"CONSOLE"
+*          NODISPLAYAT
+*            DISPLAYPICU"ANSI"
+*            DISPSIGN"COMPAT"
+*          NODOSVS
+*          NODOTNET
+*            DPCINDATA"XML"
+*            DPCINSUBSCRIPT
+*          NODYNAM
+*          NOEARLY-RELEASE
+*            EBCCOLSEQ"1"
+*            ECHO
+*          NOECHOALL
+*            ENTCOBOL
+*            EOF1A
+*            ERRFORMAT"2"
+*            ERRLIST"VERBOSE"
+*          NOERRQ
+*          NOEXECSQLFLAG
+*            EXITPROGRAM"ANSI"
+*          NOFASTINIT
+*            FASTSORT
+*            FCD3
+*          NOFCDALIGN
+*          NOFCDREG
+*            FDCLEAR"3"
+*          NOFILESHARE
+*            FILETYPE"0"
+*            FLAG"ENTCOBOL"
+*            FLAGAS"S"
+*          NOFLAGEUC
+*          NOFLAGMIG
+*          NOFLAGQ
+*            FLAGSINEDIT
+*          NOFLAGSTD
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   3
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT03C.cbl
+*            FOLDCALLNAME"UPPER"
+*            FOLDCOPYNAME"UPPER"
+*            FORM"60"
+*            FP-ROUNDING"ENTCOBOL"
+*          NOHOSTARITHMETIC
+*            HOSTCONTZERO
+*            HOST-NUMCOMPARE
+*            HOST-NUMMOVE
+*            HOSTFD
+*          NOHOSTRW
+*            IBMCOMP
+*            IDENTIFIERLEN"30"
+*            IDXFORMAT"0"
+*          NOIGNOREEXEC
+*          NOIL
+*          NOILGEN
+*          NOILEMIT
+*            IMPLICITSCOPE
+*            INDD"SYSIN 80 R"
+*          NOIDYSRCPATH
+*            INFORETURN"0"
+*          NOINITCALL
+*            INITIAL"1"
+*          NOINITPTR
+*          NOINITBYTYPE
+*            INT"C:\CrossPlatformBuild\CardDemo\RELEASE\LOADLIB\CBACT03C.int"
+*            INTDATE"ANSI"
+*            INTLEVEL"9"
+*            IOCONV
+*          NOISO2002
+*          NOIXNLSKEY
+*          NOIXNUMKEY
+*          NOJVMGEN
+*            KEYCHECK
+*            KEYCOMPRESS"0"
+*          NOLIBRARIAN
+*          NOLINE-COUNT
+*            LIST"CBACT03C.lst"
+*            LISTPATH"C:\CrossPlatformBuild\CardDemo\LISTINGS"
+*            LISTWIDTH"80"
+*            LITVAL-SIZE"4"
+*          NOLOCALSOURCEFORMAT
+*            LOCKTYPE"0"
+*            MAPNAME
+*          NOMAINFRAMEFLOATINGPOINT
+*          NOMAXERROR
+*            METHODDEFAULT"REFERENCE"
+*          NOMF
+*          NOMFCOMMENT
+*          NOMFSYNC
+*          NOMOVELENCHECK
+*          NOMS
+*          NOMVS
+*            NATIONAL"1"
+*            NATIVE"EBCDIC"
+*          NONATIVEFLOATINGPOINT
+*          NONCHAR
+*          NONLS
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   4
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT03C.cbl
+*          NONLSCURRENCYLENGTH
+*            NSYMBOL"NATIONAL"
+*            NULLESCAPE
+*          NOODOOSVS
+*            ODOSLIDE
+*          NOOLDBLANKLINE
+*          NOOLDCOPY
+*          NOOLDINDEX
+*          NOOLDNEXTSENTENCE
+*          NOOLDREADINTO
+*          NOOLDSTRMIX
+*            OOCTRL"-C-E-G+L-P+Q+R-S+W"
+*          NOOPTIONAL-FILE
+*          NOOS390
+*            OSEXT"cbl"
+*          NOOSVS
+*            OUTDD"SYSOUT 121 R"
+*            P64
+*          NOPANVALET
+*            PANVALET-INCLUDES-IN-COMMENTS
+*          NOPC1
+*            PERFORM-TYPE"ENTCOBOL"
+*          NOPREPLIST
+*          NOPREPROCESS
+*            PRESERVECASE
+*          NOPRINT-EXT
+*          NOPROFILE
+*          NOPROGID-COMMENT
+*          NOPROGID-INT-NAME
+*          NOPROTECT-LINKAGE
+*            PROTOTYPE"RELAXED"
+*            QUAL
+*            QUALPROC
+*          NOQUERY
+*          NOQUOTE
+*          NORAWLIST
+*            RDW
+*            RECMODE"ENTCOBOL"
+*          NOREENTRANT
+*          NOREF
+*          NOREFNO
+*            REMAINDER"2"
+*            REPLACE"NOKEEPSEQ"
+*            REPORT-LINE"256"
+*            RESEQ
+*          NORETRYLOCK
+*            REWRITE-LS
+*          NORM
+*          NORM-FILE-ERRORS
+*            RTNCODE-SIZE"2"
+*            RTNCODE-TYPE"COMP"
+*          NORWHARDPAGE
+*          NOSAA
+*          NOSEG
+*          NOSEQCHK
+*            SEQUENTIAL"RECORD"
+*          NOSERIAL
+*            SETTING"COL"
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   5
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT03C.cbl
+*          NOSHAREOUTDD
+*          NOSHOW-DIR
+*            SIGN"EBCDIC"
+*            SIGN"TRAILING"
+*          NOSIGNDISCARD
+*          NOSIGNFIXUP
+*            SORTTYPE"DFSORT"
+*          NOSOURCEENCODING
+*            SOURCEFORMAT"FIXED"
+*            SOURCETABSTOP"4"
+*          NOSPZERO
+*          NOSSRANGE
+*            STDERR
+*            STICKY-LINKAGE"1"
+*          NOSTICKY-PERFORM
+*            SUPFF
+*            SWITCHTYPE"1"
+*            SYMBSTART"1"
+*            SYSPUNCH"80"
+*            TERMPAGE
+*          NOTESTCOVER
+*            TIME
+*          NOTRACE
+*          NOTRUNC
+*            TRUNCCALLNAME"8"
+*            TRUNCCOPY"8"
+*            TRUNCINC"10"
+*            UNICODE"PORTABLE"
+*            VERBOSE
+*          NOVISUALSTUDIO
+*          NOVSC2
+*          NOWARNASERROR
+*            WARNING"3"
+*            WEBSERVER"CGI"
+*          NOWRITELOCK
+*          NOWRITETHRU
+*          NOXMLGEN
+*            XMLPARSE"XMLSS"
+*          NOXOPEN
+*          NOXREF
+*            ZEROLENGTHFALSE
+*          NOZEROSEQ
+*            ZWB
+     1 IDENTIFICATION DIVISION.
+     2 PROGRAM-ID.    CBACT03C.
+     3 AUTHOR.        AWS.
+     4
+     5 ENVIRONMENT DIVISION.
+     6 INPUT-OUTPUT SECTION.
+     7 FILE-CONTROL.
+     8     SELECT XREFFILE-FILE ASSIGN TO   XREFFILE
+     9            ORGANIZATION IS INDEXED
+    10            ACCESS MODE  IS SEQUENTIAL
+    11            RECORD KEY   IS FD-XREF-CARD-NUM
+    12            FILE STATUS  IS XREFFILE-STATUS.
+    13*
+    14 DATA DIVISION.
+    15 FILE SECTION.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   6
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT03C.cbl
+    16 FD  XREFFILE-FILE.
+    17 01  FD-XREFFILE-REC.
+    18     05 FD-XREF-CARD-NUM                  PIC X(16).
+    19     05 FD-XREF-DATA                      PIC X(34).
+    20
+    21 WORKING-STORAGE SECTION.
+    22
+    23*****************************************************************
+    24*COPY CVACT03Y.
+    25*****************************************************************
+    26*    Data-structure for card xref (RECLN 50)
+    27*****************************************************************
+    28 01 CARD-XREF-RECORD.
+    29     05  XREF-CARD-NUM                     PIC X(16).
+    30     05  XREF-CUST-ID                      PIC 9(09).
+    31     05  XREF-ACCT-ID                      PIC 9(11).
+    32     05  FILLER                            PIC X(14).
+    33*
+    34* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:00 CDT
+    35*
+    36 01  XREFFILE-STATUS.
+    37     05  XREFFILE-STAT1      PIC X.
+    38     05  XREFFILE-STAT2      PIC X.
+    39
+    40 01  IO-STATUS.
+    41     05  IO-STAT1            PIC X.
+    42     05  IO-STAT2            PIC X.
+    43 01  TWO-BYTES-BINARY        PIC 9(4) BINARY.
+    44 01  TWO-BYTES-ALPHA         REDEFINES TWO-BYTES-BINARY.
+    45     05  TWO-BYTES-LEFT      PIC X.
+    46     05  TWO-BYTES-RIGHT     PIC X.
+    47 01  IO-STATUS-04.
+    48     05  IO-STATUS-0401      PIC 9   VALUE 0.
+    49     05  IO-STATUS-0403      PIC 999 VALUE 0.
+    50
+    51 01  APPL-RESULT             PIC S9(9)   COMP.
+    52     88  APPL-AOK            VALUE 0.
+    53     88  APPL-EOF            VALUE 16.
+    54
+    55 01  END-OF-FILE             PIC X(01)    VALUE 'N'.
+    56 01  ABCODE                  PIC S9(9) BINARY.
+    57 01  TIMING                  PIC S9(9) BINARY.
+    58
+    59*****************************************************************
+    60 PROCEDURE DIVISION.
+    61     DISPLAY 'START OF EXECUTION OF PROGRAM CBACT03C'.
+    62     PERFORM 0000-XREFFILE-OPEN.
+    63
+    64     PERFORM UNTIL END-OF-FILE = 'Y'
+    65         IF  END-OF-FILE = 'N'
+    66             PERFORM 1000-XREFFILE-GET-NEXT
+    67             IF  END-OF-FILE = 'N'
+    68                 DISPLAY CARD-XREF-RECORD
+    69             END-IF
+    70         END-IF
+    71     END-PERFORM.
+    72
+    73     PERFORM 9000-XREFFILE-CLOSE.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   7
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT03C.cbl
+    74
+    75     DISPLAY 'END OF EXECUTION OF PROGRAM CBACT03C'.
+    76
+    77     GOBACK.
+    78
+    79*****************************************************************
+    80* I/O ROUTINES TO ACCESS A KSDS, VSAM DATA SET...               *
+    81*****************************************************************
+    82 1000-XREFFILE-GET-NEXT.
+    83     READ XREFFILE-FILE INTO CARD-XREF-RECORD.
+    84     IF  XREFFILE-STATUS = '00'
+    85         MOVE 0 TO APPL-RESULT
+    86         DISPLAY CARD-XREF-RECORD
+    87     ELSE
+    88         IF  XREFFILE-STATUS = '10'
+    89             MOVE 16 TO APPL-RESULT
+    90         ELSE
+    91             MOVE 12 TO APPL-RESULT
+    92         END-IF
+    93     END-IF
+    94     IF  APPL-AOK
+    95         CONTINUE
+    96     ELSE
+    97         IF  APPL-EOF
+    98             MOVE 'Y' TO END-OF-FILE
+    99         ELSE
+   100             DISPLAY 'ERROR READING XREFFILE'
+   101             MOVE XREFFILE-STATUS TO IO-STATUS
+   102             PERFORM 9910-DISPLAY-IO-STATUS
+   103             PERFORM 9999-ABEND-PROGRAM
+   104         END-IF
+   105     END-IF
+   106     EXIT.
+   107*---------------------------------------------------------------*
+   108 0000-XREFFILE-OPEN.
+   109     MOVE 8 TO APPL-RESULT.
+   110     OPEN INPUT XREFFILE-FILE
+   111     IF  XREFFILE-STATUS = '00'
+   112         MOVE 0 TO APPL-RESULT
+   113     ELSE
+   114         MOVE 12 TO APPL-RESULT
+   115     END-IF
+   116     IF  APPL-AOK
+   117         CONTINUE
+   118     ELSE
+   119         DISPLAY 'ERROR OPENING XREFFILE'
+   120         MOVE XREFFILE-STATUS TO IO-STATUS
+   121         PERFORM 9910-DISPLAY-IO-STATUS
+   122         PERFORM 9999-ABEND-PROGRAM
+   123     END-IF
+   124     EXIT.
+   125*---------------------------------------------------------------*
+   126 9000-XREFFILE-CLOSE.
+   127     ADD 8 TO ZERO GIVING APPL-RESULT.
+   128     CLOSE XREFFILE-FILE
+   129     IF  XREFFILE-STATUS = '00'
+   130         SUBTRACT APPL-RESULT FROM APPL-RESULT
+   131     ELSE
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   8
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT03C.cbl
+   132         ADD 12 TO ZERO GIVING APPL-RESULT
+   133     END-IF
+   134     IF  APPL-AOK
+   135         CONTINUE
+   136     ELSE
+   137         DISPLAY 'ERROR CLOSING XREFFILE'
+   138         MOVE XREFFILE-STATUS TO IO-STATUS
+   139         PERFORM 9910-DISPLAY-IO-STATUS
+   140         PERFORM 9999-ABEND-PROGRAM
+   141     END-IF
+   142     EXIT.
+   143
+   144 9999-ABEND-PROGRAM.
+   145     DISPLAY 'ABENDING PROGRAM'
+   146     MOVE 0 TO TIMING
+   147     MOVE 999 TO ABCODE
+   148     CALL 'CEE3ABD'.
+   149
+   150*****************************************************************
+   151 9910-DISPLAY-IO-STATUS.
+   152     IF  IO-STATUS NOT NUMERIC
+   153     OR  IO-STAT1 = '9'
+   154         MOVE IO-STAT1 TO IO-STATUS-04(1:1)
+   155         MOVE 0        TO TWO-BYTES-BINARY
+   156         MOVE IO-STAT2 TO TWO-BYTES-RIGHT
+   157         MOVE TWO-BYTES-BINARY TO IO-STATUS-0403
+   158         DISPLAY 'FILE STATUS IS: NNNN' IO-STATUS-04
+   159     ELSE
+   160         MOVE '0000' TO IO-STATUS-04
+   161         MOVE IO-STATUS TO IO-STATUS-04(3:2)
+   162         DISPLAY 'FILE STATUS IS: NNNN' IO-STATUS-04
+   163     END-IF
+   164     EXIT.
+   165
+   166*
+   167* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:12:31 CDT
+   168*
+*
+*
+* Errors
+* -Line- Col Code/severity Description
+* Micro Focus COBOL                  V8.0 revision 000 Compiler
+* (C) Copyright 1984-2023 Micro Focus or one of its affiliates.
+*                                                        REF GKR-101800000A0
+* Total Messages:     0
+* Data:        3520     Code:        3938

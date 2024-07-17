@@ -1,0 +1,1133 @@
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   1
+* CBTRN02C.cbl
+* Options: int("CBTRN02C.int") verbose
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DI
+*          RFOLDER/CBTRN02C.cbl.dir)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+* Setting: NOACCEPTREFRESH
+*          NOACU
+*          NOACUCOMMENT
+*          NOACUSYNC
+*          NOACU-UNDERSCORE
+*            ADV
+*            ALIGN"8 OPT"
+*            ALPHALITCONT"MARGIN"
+*            ALPHASTART"1"
+*            ALTER
+*          NOAMODE
+*            ANIM
+*            ANS85
+*            APOST
+*            AREACHECK
+*            ARITH"EXTEND"
+*            ARITHMETIC"ENTCOBOL"
+*            ASSIGN"EXTERNAL"
+*          NOASSIGN-PRINTER
+*          NOAUTOLOCK
+*          NOBELL
+*            BINLIT"BOOLEAN"
+*          NOBOUND
+*          NOBRIEF
+*          NOBS2000
+*            BWZSTAR
+*            BYTEMODEMOVE
+*            CALLFH"EXTFH"
+*          NOCALLRECOVERY
+*            CALLSORT"EXTSM"
+*            CANCEL
+*            CANCELLBR
+*          NOCHANGEMESSAGE
+*            CHARSET"EBCDIC"
+*            CHECKDIV"ENTCOBOL"
+*          NOCHECKREFMOD
+*          NOCICS
+*            CICS-CPY
+*          NOCICSOPTIMIZE
+*          NOCMPR2
+*            COBFSTATCONV
+*          NOCOBIDY
+*          NOCOBOL370
+*          NOCOBOLDIR
+*          NOCOMMANDLINELINKAGE
+*            COLLECTION"CardDemo"
+*          NOCOMP
+*            COMP"BINARY"
+*            COMP1"FLOAT"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   2
+* CBTRN02C.cbl
+*            COMP2"FLOAT"
+*            COMP-5"2"
+*            COMP-6"2"
+*            CONFIRM
+*          NOCONVERTRET
+*            CONVSPACE
+*            COPYEXT"cpy,cbl"
+*            COPYLBR
+*            COPYLIST
+*            COPYLISTCOMMENT"7"
+*            COPYSEARCH"MF"
+*            CSI
+*            CURRENCY-SIGN"36"
+*            CURRENT-DATE"MMDDYY"
+*          NODATA
+*            DATACOMPRESS"0"
+*          NODATA-CONTEXT
+*          NODATAMAP
+*            DATE
+*            DBCHECK
+*            DBCS"3"
+*            DBCSSOSI"14""15"
+*            DBSPACE
+*            DE-EDIT"2"
+*            DEFAULTBYTE"0"
+*          NODEFAULTCALLS
+*            DETECTLOCK
+*          NODG
+*            DIALECT"ENTCOBOL"
+*          NODIRECTIVES-IN-COMMENTS
+*            DISPLAY"CONSOLE"
+*          NODISPLAYAT
+*            DISPLAYPICU"ANSI"
+*            DISPSIGN"COMPAT"
+*          NODOSVS
+*          NODOTNET
+*            DPCINDATA"XML"
+*            DPCINSUBSCRIPT
+*          NODYNAM
+*          NOEARLY-RELEASE
+*            EBCCOLSEQ"1"
+*            ECHO
+*          NOECHOALL
+*            ENTCOBOL
+*          NOEOF1A
+*            ERRFORMAT"2"
+*            ERRLIST"VERBOSE"
+*          NOERRQ
+*          NOEXECSQLFLAG
+*            EXITPROGRAM"ANSI"
+*          NOFASTINIT
+*            FASTSORT
+*            FCD3
+*          NOFCDALIGN
+*          NOFCDREG
+*            FDCLEAR"3"
+*          NOFILESHARE
+*            FILETYPE"0"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   3
+* CBTRN02C.cbl
+*            FLAG"ENTCOBOL"
+*            FLAGAS"S"
+*          NOFLAGEUC
+*          NOFLAGMIG
+*          NOFLAGQ
+*            FLAGSINEDIT
+*          NOFLAGSTD
+*            FOLDCALLNAME"UPPER"
+*            FOLDCOPYNAME"UPPER"
+*            FORM"60"
+*            FP-ROUNDING"ENTCOBOL"
+*          NOHOSTARITHMETIC
+*            HOSTCONTZERO
+*            HOST-NUMCOMPARE
+*            HOST-NUMMOVE
+*            HOSTFD
+*          NOHOSTRW
+*          NOIBM-MS
+*            IBMCOMP
+*            IDENTIFIERLEN"30"
+*            IDXFORMAT"0"
+*          NOIGNOREEXEC
+*          NOIL
+*          NOILGEN
+*          NOILEMIT
+*            IMPLICITSCOPE
+*            INCFORMAT"PC"
+*            INDD"SYSIN 80 R"
+*          NOIDYSRCPATH
+*            INFORETURN"0"
+*          NOINITCALL
+*            INITIAL"1"
+*          NOINITPTR
+*          NOINITBYTYPE
+*            INT"CBTRN02C.int"
+*            INTDATE"ANSI"
+*            INTLEVEL"9"
+*            IOCONV
+*          NOISO2002
+*          NOIXNLSKEY
+*          NOIXNUMKEY
+*          NOJAVACALLABLE
+*          NOJAVAGENPROGS
+*          NOJAVAGENSTRG
+*            JAVAOUTPUTPATH""
+*            JAVAPACKAGENAME"com.microfocus.COBOL"
+*          NOJVMGEN
+*            KEYCHECK
+*            KEYCOMPRESS"0"
+*          NOLIBRARIAN
+*          NOLINE-COUNT
+*            LIST"CBTRN02C.lst"
+*            LISTPATH...
+*          ..."/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/LISTINGS/CO"
+*            LISTWIDTH"80"
+*            LITVAL-SIZE"4"
+*          NOLOCALSOURCEFORMAT
+*            LOCKTYPE"0"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   4
+* CBTRN02C.cbl
+*            MAPNAME
+*          NOMAINFRAMEFLOATINGPOINT
+*          NOMAXERROR
+*            METHODDEFAULT"REFERENCE"
+*          NOMF
+*          NOMFCOMMENT
+*          NOMFSYNC
+*          NOMOVELENCHECK
+*          NOMS
+*          NOMVS
+*            NATIONAL"1"
+*            NATIVE"EBCDIC"
+*          NONATIVEFLOATINGPOINT
+*          NONCHAR
+*          NONLS
+*          NONLSCURRENCYLENGTH
+*            NSYMBOL"NATIONAL"
+*            NULLESCAPE
+*          NOODOOSVS
+*            ODOSLIDE
+*          NOOLDBLANKLINE
+*          NOOLDCOPY
+*          NOOLDINDEX
+*          NOOLDNEXTSENTENCE
+*          NOOLDREADINTO
+*          NOOLDSTRMIX
+*            OOCTRL"-C-E-G+L-P+Q+R-S+W"
+*          NOOPTIONAL-FILE
+*          NOOS390
+*            OSEXT""
+*          NOOSVS
+*            OUTDD"SYSOUT 121 R"
+*            P64
+*          NOPANVALET
+*            PANVALET-INCLUDES-IN-COMMENTS
+*            PERFORM-TYPE"ENTCOBOL"
+*          NOPREPLIST
+*          NOPREPROCESS
+*            PRESERVECASE
+*          NOPRINT-EXT
+*          NOPROFILE
+*          NOPROGID-COMMENT
+*          NOPROGID-INT-NAME
+*          NOPROTECT-LINKAGE
+*            PROTOTYPE"RELAXED"
+*            QUAL
+*            QUALPROC
+*          NOQUERY
+*          NOQUOTE
+*          NORAWLIST
+*            RDW
+*            RECMODE"ENTCOBOL"
+*          NOREENTRANT
+*          NOREF
+*          NOREFNO
+*            REMAINDER"2"
+*            REPLACE"NOKEEPSEQ"
+*            REPORT-LINE"256"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   5
+* CBTRN02C.cbl
+*            RESEQ
+*          NORETRYLOCK
+*            REWRITE-LS
+*          NORM
+*          NORM-FILE-ERRORS
+*            RTNCODE-SIZE"2"
+*            RTNCODE-TYPE"COMP"
+*          NORWHARDPAGE
+*          NOSAA
+*          NOSEG
+*          NOSEQCHK
+*            SEQUENTIAL"RECORD"
+*          NOSERIAL
+*            SETTING"COL"
+*          NOSHAREOUTDD
+*          NOSHOW-DIR
+*            SIGN"EBCDIC"
+*            SIGN"TRAILING"
+*          NOSIGNDISCARD
+*          NOSIGNFIXUP
+*            SORTTYPE"DFSORT"
+*          NOSOURCEENCODING
+*            SOURCEFORMAT"FIXED"
+*            SOURCETABSTOP"4"
+*          NOSPZERO
+*          NOSSRANGE
+*            STDERR
+*            STICKY-LINKAGE"1"
+*          NOSTICKY-PERFORM
+*            SUPFF
+*            SWITCHTYPE"1"
+*            SYMBSTART"1"
+*            SYSPUNCH"80"
+*            TERMPAGE
+*          NOTESTCOVER
+*            TIME
+*          NOTRACE
+*          NOTRUNC
+*            TRUNCCALLNAME"8"
+*            TRUNCCOPY"8"
+*            TRUNCINC"10"
+*            UNICODE"PORTABLE"
+*            VERBOSE
+*          NOVISUALSTUDIO
+*          NOVSC2
+*          NOWARNASERROR
+*            WARNING"1"
+*            WEBSERVER"CGI"
+*          NOWRITELOCK
+*          NOWRITETHRU
+*          NOXMLGEN
+*            XMLPARSE"XMLSS"
+*          NOXOPEN
+*          NOXREF
+*            ZEROLENGTHFALSE
+*          NOZEROSEQ
+*            ZWB
+     1 IDENTIFICATION DIVISION.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   6
+* CBTRN02C.cbl
+     2 PROGRAM-ID.    CBTRN02C.
+     3 AUTHOR.        AWS.
+     4* This is a transaction posting program.
+     5
+     6 ENVIRONMENT DIVISION.
+     7 INPUT-OUTPUT SECTION.
+     8 FILE-CONTROL.
+     9     SELECT DALYTRAN-FILE ASSIGN TO DALYTRAN
+    10            ORGANIZATION IS SEQUENTIAL
+    11            ACCESS MODE  IS SEQUENTIAL
+    12            FILE STATUS  IS DALYTRAN-STATUS.
+    13
+    14     SELECT TRANSACT-FILE ASSIGN TO TRANFILE
+    15            ORGANIZATION IS INDEXED
+    16            ACCESS MODE  IS RANDOM
+    17            RECORD KEY   IS FD-TRANS-ID
+    18            FILE STATUS  IS TRANFILE-STATUS.
+    19
+    20     SELECT XREF-FILE ASSIGN TO   XREFFILE
+    21            ORGANIZATION IS INDEXED
+    22            ACCESS MODE  IS RANDOM
+    23            RECORD KEY   IS FD-XREF-CARD-NUM
+    24            FILE STATUS  IS XREFFILE-STATUS.
+    25
+    26     SELECT DALYREJS-FILE ASSIGN TO DALYREJS
+    27            ORGANIZATION IS SEQUENTIAL
+    28            ACCESS MODE  IS SEQUENTIAL
+    29            FILE STATUS  IS DALYREJS-STATUS.
+    30
+    31     SELECT ACCOUNT-FILE ASSIGN TO ACCTFILE
+    32            ORGANIZATION IS INDEXED
+    33            ACCESS MODE  IS RANDOM
+    34            RECORD KEY   IS FD-ACCT-ID
+    35            FILE STATUS  IS ACCTFILE-STATUS.
+    36
+    37     SELECT TCATBAL-FILE ASSIGN TO TCATBALF
+    38            ORGANIZATION IS INDEXED
+    39            ACCESS MODE  IS RANDOM
+    40            RECORD KEY   IS FD-TRAN-CAT-KEY
+    41            FILE STATUS  IS TCATBALF-STATUS.
+    42
+    43*
+    44 DATA DIVISION.
+    45 FILE SECTION.
+    46 FD  DALYTRAN-FILE.
+    47 01  FD-TRAN-RECORD.
+    48     05 FD-TRAN-ID                        PIC X(16).
+    49     05 FD-CUST-DATA                      PIC X(334).
+    50
+    51 FD  TRANSACT-FILE.
+    52 01  FD-TRANFILE-REC.
+    53     05 FD-TRANS-ID                       PIC X(16).
+    54     05 FD-ACCT-DATA                      PIC X(334).
+    55
+    56 FD  XREF-FILE.
+    57 01  FD-XREFFILE-REC.
+    58     05 FD-XREF-CARD-NUM                  PIC X(16).
+    59     05 FD-XREF-DATA                      PIC X(34).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   7
+* CBTRN02C.cbl
+    60
+    61 FD  DALYREJS-FILE.
+    62 01  FD-REJS-RECORD.
+    63     05 FD-REJECT-RECORD                  PIC X(350).
+    64     05 FD-VALIDATION-TRAILER             PIC X(80).
+    65
+    66 FD  ACCOUNT-FILE.
+    67 01  FD-ACCTFILE-REC.
+    68     05 FD-ACCT-ID                        PIC 9(11).
+    69     05 FD-ACCT-DATA                      PIC X(289).
+    70
+    71 FD  TCATBAL-FILE.
+    72 01  FD-TRAN-CAT-BAL-RECORD.
+    73     05 FD-TRAN-CAT-KEY.
+    74        10 FD-TRANCAT-ACCT-ID             PIC 9(11).
+    75        10 FD-TRANCAT-TYPE-CD             PIC X(02).
+    76        10 FD-TRANCAT-CD                  PIC 9(04).
+    77     05 FD-FD-TRAN-CAT-DATA               PIC X(33).
+    78
+    79 WORKING-STORAGE SECTION.
+    80
+    81*****************************************************************
+    82*COPY CVTRA06Y.
+    83*****************************************************************
+    84*    Data-structure for DALYTRANsaction record (RECLN = 350)
+    85*****************************************************************
+    86 01  DALYTRAN-RECORD.
+    87     05  DALYTRAN-ID                             PIC X(16).
+    88     05  DALYTRAN-TYPE-CD                        PIC X(02).
+    89     05  DALYTRAN-CAT-CD                         PIC 9(04).
+    90     05  DALYTRAN-SOURCE                         PIC X(10).
+    91     05  DALYTRAN-DESC                           PIC X(100).
+    92     05  DALYTRAN-AMT                            PIC S9(09)V99.
+    93     05  DALYTRAN-MERCHANT-ID                    PIC 9(09).
+    94     05  DALYTRAN-MERCHANT-NAME                  PIC X(50).
+    95     05  DALYTRAN-MERCHANT-CITY                  PIC X(50).
+    96     05  DALYTRAN-MERCHANT-ZIP                   PIC X(10).
+    97     05  DALYTRAN-CARD-NUM                       PIC X(16).
+    98     05  DALYTRAN-ORIG-TS                        PIC X(26).
+    99     05  DALYTRAN-PROC-TS                        PIC X(26).
+   100     05  FILLER                                  PIC X(20).
+   101*
+   102* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:01 CDT
+   103*
+   104 01  DALYTRAN-STATUS.
+   105     05  DALYTRAN-STAT1      PIC X.
+   106     05  DALYTRAN-STAT2      PIC X.
+   107
+   108*COPY CVTRA05Y.
+   109*****************************************************************
+   110*    Data-structure for TRANsaction record (RECLN = 350)
+   111*****************************************************************
+   112 01  TRAN-RECORD.
+   113     05  TRAN-ID                                 PIC X(16).
+   114     05  TRAN-TYPE-CD                            PIC X(02).
+   115     05  TRAN-CAT-CD                             PIC 9(04).
+   116     05  TRAN-SOURCE                             PIC X(10).
+   117     05  TRAN-DESC                               PIC X(100).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   8
+* CBTRN02C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/COPYBOOKS/CVTRA05Y.c)
+   118     05  TRAN-AMT                                PIC S9(09)V99.
+   119     05  TRAN-MERCHANT-ID                        PIC 9(09).
+   120     05  TRAN-MERCHANT-NAME                      PIC X(50).
+   121     05  TRAN-MERCHANT-CITY                      PIC X(50).
+   122     05  TRAN-MERCHANT-ZIP                       PIC X(10).
+   123     05  TRAN-CARD-NUM                           PIC X(16).
+   124     05  TRAN-ORIG-TS                            PIC X(26).
+   125     05  TRAN-PROC-TS                            PIC X(26).
+   126     05  FILLER                                  PIC X(20).
+   127*
+   128* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:01 CDT
+   129*
+   130 01  TRANFILE-STATUS.
+   131     05  TRANFILE-STAT1      PIC X.
+   132     05  TRANFILE-STAT2      PIC X.
+   133
+   134*COPY CVACT03Y.
+   135*****************************************************************
+   136*    Data-structure for card xref (RECLN 50)
+   137*****************************************************************
+   138 01 CARD-XREF-RECORD.
+   139     05  XREF-CARD-NUM                     PIC X(16).
+   140     05  XREF-CUST-ID                      PIC 9(09).
+   141     05  XREF-ACCT-ID                      PIC 9(11).
+   142     05  FILLER                            PIC X(14).
+   143*
+   144* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:00 CDT
+   145*
+   146 01  XREFFILE-STATUS.
+   147     05  XREFFILE-STAT1      PIC X.
+   148     05  XREFFILE-STAT2      PIC X.
+   149
+   150 01  DALYREJS-STATUS.
+   151     05  DALYREJS-STAT1      PIC X.
+   152     05  DALYREJS-STAT2      PIC X.
+   153
+   154*COPY CVACT01Y.
+   155*****************************************************************
+   156*    Data-structure for  account entity (RECLN 300)
+   157*****************************************************************
+   158 01  ACCOUNT-RECORD.
+   159     05  ACCT-ID                           PIC 9(11).
+   160     05  ACCT-ACTIVE-STATUS                PIC X(01).
+   161     05  ACCT-CURR-BAL                     PIC S9(10)V99.
+   162     05  ACCT-CREDIT-LIMIT                 PIC S9(10)V99.
+   163     05  ACCT-CASH-CREDIT-LIMIT            PIC S9(10)V99.
+   164     05  ACCT-OPEN-DATE                    PIC X(10).
+   165     05  ACCT-EXPIRAION-DATE               PIC X(10).
+   166     05  ACCT-REISSUE-DATE                 PIC X(10).
+   167     05  ACCT-CURR-CYC-CREDIT              PIC S9(10)V99.
+   168     05  ACCT-CURR-CYC-DEBIT               PIC S9(10)V99.
+   169     05  ACCT-ADDR-ZIP                     PIC X(10).
+   170     05  ACCT-GROUP-ID                     PIC X(10).
+   171     05  FILLER                            PIC X(178).
+   172*
+   173* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:59 CDT
+   174*
+   175 01  ACCTFILE-STATUS.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   9
+* CBTRN02C.cbl
+   176     05  ACCTFILE-STAT1      PIC X.
+   177     05  ACCTFILE-STAT2      PIC X.
+   178
+   179*COPY CVTRA01Y.
+   180*****************************************************************
+   181*    Data-structure for transaction category balance (RECLN = 50)
+   182*****************************************************************
+   183 01  TRAN-CAT-BAL-RECORD.
+   184     05  TRAN-CAT-KEY.
+   185        10 TRANCAT-ACCT-ID                       PIC 9(11).
+   186        10 TRANCAT-TYPE-CD                       PIC X(02).
+   187        10 TRANCAT-CD                            PIC 9(04).
+   188     05  TRAN-CAT-BAL                            PIC S9(09)V99.
+   189     05  FILLER                                  PIC X(22).
+   190*
+   191* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:00 CDT
+   192*
+   193 01  TCATBALF-STATUS.
+   194     05  TCATBALF-STAT1      PIC X.
+   195     05  TCATBALF-STAT2      PIC X.
+   196
+   197 01  IO-STATUS.
+   198     05  IO-STAT1            PIC X.
+   199     05  IO-STAT2            PIC X.
+   200 01  TWO-BYTES-BINARY        PIC 9(4) BINARY.
+   201 01  TWO-BYTES-ALPHA         REDEFINES TWO-BYTES-BINARY.
+   202     05  TWO-BYTES-LEFT      PIC X.
+   203     05  TWO-BYTES-RIGHT     PIC X.
+   204 01  IO-STATUS-04.
+   205     05  IO-STATUS-0401      PIC 9   VALUE 0.
+   206     05  IO-STATUS-0403      PIC 999 VALUE 0.
+   207
+   208 01  APPL-RESULT             PIC S9(9)   COMP.
+   209     88  APPL-AOK            VALUE 0.
+   210     88  APPL-EOF            VALUE 16.
+   211
+   212 01  END-OF-FILE             PIC X(01)    VALUE 'N'.
+   213 01  ABCODE                  PIC S9(9) BINARY.
+   214 01  TIMING                  PIC S9(9) BINARY.
+   215* T I M E S T A M P   D B 2  X(26)     EEEE-MM-DD-UU.MM.SS.HH0000
+   216 01  COBOL-TS.
+   217     05 COB-YYYY                  PIC X(04).
+   218     05 COB-MM                    PIC X(02).
+   219     05 COB-DD                    PIC X(02).
+   220     05 COB-HH                    PIC X(02).
+   221     05 COB-MIN                   PIC X(02).
+   222     05 COB-SS                    PIC X(02).
+   223     05 COB-MIL                   PIC X(02).
+   224     05 COB-REST                  PIC X(05).
+   225 01  DB2-FORMAT-TS                PIC X(26).
+   226 01  FILLER REDEFINES DB2-FORMAT-TS.
+   227     06 DB2-YYYY                  PIC X(004).                      E
+   228     06 DB2-STREEP-1              PIC X.                           -
+   229     06 DB2-MM                    PIC X(002).                      M
+   230     06 DB2-STREEP-2              PIC X.                           -
+   231     06 DB2-DD                    PIC X(002).                      D
+   232     06 DB2-STREEP-3              PIC X.                           -
+   233     06 DB2-HH                    PIC X(002).                      U
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  10
+* CBTRN02C.cbl
+   234     06 DB2-DOT-1                 PIC X.
+   235     06 DB2-MIN                   PIC X(002).
+   236     06 DB2-DOT-2                 PIC X.
+   237     06 DB2-SS                    PIC X(002).
+   238     06 DB2-DOT-3                 PIC X.
+   239     06 DB2-MIL                   PIC 9(002).
+   240     06 DB2-REST                  PIC X(04).
+   241
+   242  01 REJECT-RECORD.
+   243     05 REJECT-TRAN-DATA          PIC X(350).
+   244     05 VALIDATION-TRAILER        PIC X(80).
+   245
+   246  01 WS-VALIDATION-TRAILER.
+   247     05 WS-VALIDATION-FAIL-REASON      PIC 9(04).
+   248     05 WS-VALIDATION-FAIL-REASON-DESC PIC X(76).
+   249
+   250  01 WS-COUNTERS.
+   251     05 WS-TRANSACTION-COUNT          PIC 9(09) VALUE 0.
+   252     05 WS-REJECT-COUNT               PIC 9(09) VALUE 0.
+   253     05 WS-TEMP-BAL                   PIC S9(09)V99.
+   254
+   255  01 WS-FLAGS.
+   256     05 WS-CREATE-TRANCAT-REC         PIC X(01) VALUE 'N'.
+   257
+   258*****************************************************************
+   259 PROCEDURE DIVISION.
+   260     DISPLAY 'START OF EXECUTION OF PROGRAM CBTRN02C'.
+   261     PERFORM 0000-DALYTRAN-OPEN.
+   262     PERFORM 0100-TRANFILE-OPEN.
+   263     PERFORM 0200-XREFFILE-OPEN.
+   264     PERFORM 0300-DALYREJS-OPEN.
+   265     PERFORM 0400-ACCTFILE-OPEN.
+   266     PERFORM 0500-TCATBALF-OPEN.
+   267
+   268     PERFORM UNTIL END-OF-FILE = 'Y'
+   269         IF  END-OF-FILE = 'N'
+   270             PERFORM 1000-DALYTRAN-GET-NEXT
+   271             IF  END-OF-FILE = 'N'
+   272               ADD 1 TO WS-TRANSACTION-COUNT
+   273*              DISPLAY DALYTRAN-RECORD
+   274               MOVE 0 TO WS-VALIDATION-FAIL-REASON
+   275               MOVE SPACES TO WS-VALIDATION-FAIL-REASON-DESC
+   276               PERFORM 1500-VALIDATE-TRAN
+   277               IF WS-VALIDATION-FAIL-REASON = 0
+   278                 PERFORM 2000-POST-TRANSACTION
+   279               ELSE
+   280                 ADD 1 TO WS-REJECT-COUNT
+   281                 PERFORM 2500-WRITE-REJECT-REC
+   282               END-IF
+   283             END-IF
+   284         END-IF
+   285     END-PERFORM.
+   286
+   287     PERFORM 9000-DALYTRAN-CLOSE.
+   288     PERFORM 9100-TRANFILE-CLOSE.
+   289     PERFORM 9200-XREFFILE-CLOSE.
+   290     PERFORM 9300-DALYREJS-CLOSE.
+   291     PERFORM 9400-ACCTFILE-CLOSE.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  11
+* CBTRN02C.cbl
+   292     PERFORM 9500-TCATBALF-CLOSE.
+   293     DISPLAY 'TRANSACTIONS PROCESSED :' WS-TRANSACTION-COUNT
+   294     DISPLAY 'TRANSACTIONS REJECTED  :' WS-REJECT-COUNT
+   295     IF WS-REJECT-COUNT > 0
+   296        MOVE 4 TO RETURN-CODE
+   297     END-IF
+   298     DISPLAY 'END OF EXECUTION OF PROGRAM CBTRN02C'.
+   299
+   300     GOBACK.
+   301*---------------------------------------------------------------*
+   302 0000-DALYTRAN-OPEN.
+   303     MOVE 8 TO APPL-RESULT.
+   304     OPEN INPUT DALYTRAN-FILE
+   305     IF  DALYTRAN-STATUS = '00'
+   306         MOVE 0 TO APPL-RESULT
+   307     ELSE
+   308         MOVE 12 TO APPL-RESULT
+   309     END-IF
+   310     IF  APPL-AOK
+   311         CONTINUE
+   312     ELSE
+   313         DISPLAY 'ERROR OPENING DALYTRAN'
+   314         MOVE DALYTRAN-STATUS TO IO-STATUS
+   315         PERFORM 9910-DISPLAY-IO-STATUS
+   316         PERFORM 9999-ABEND-PROGRAM
+   317     END-IF
+   318     EXIT.
+   319*---------------------------------------------------------------*
+   320 0100-TRANFILE-OPEN.
+   321     MOVE 8 TO APPL-RESULT.
+   322     OPEN OUTPUT TRANSACT-FILE
+   323     IF  TRANFILE-STATUS = '00'
+   324         MOVE 0 TO APPL-RESULT
+   325     ELSE
+   326         MOVE 12 TO APPL-RESULT
+   327     END-IF
+   328     IF  APPL-AOK
+   329         CONTINUE
+   330     ELSE
+   331         DISPLAY 'ERROR OPENING TRANSACTION FILE'
+   332         MOVE TRANFILE-STATUS TO IO-STATUS
+   333         PERFORM 9910-DISPLAY-IO-STATUS
+   334         PERFORM 9999-ABEND-PROGRAM
+   335     END-IF
+   336     EXIT.
+   337
+   338*---------------------------------------------------------------*
+   339 0200-XREFFILE-OPEN.
+   340     MOVE 8 TO APPL-RESULT.
+   341     OPEN INPUT XREF-FILE
+   342     IF  XREFFILE-STATUS = '00'
+   343         MOVE 0 TO APPL-RESULT
+   344     ELSE
+   345         MOVE 12 TO APPL-RESULT
+   346     END-IF
+   347     IF  APPL-AOK
+   348         CONTINUE
+   349     ELSE
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  12
+* CBTRN02C.cbl
+   350         DISPLAY 'ERROR OPENING CROSS REF FILE'
+   351         MOVE XREFFILE-STATUS TO IO-STATUS
+   352         PERFORM 9910-DISPLAY-IO-STATUS
+   353         PERFORM 9999-ABEND-PROGRAM
+   354     END-IF
+   355     EXIT.
+   356*---------------------------------------------------------------*
+   357 0300-DALYREJS-OPEN.
+   358     MOVE 8 TO APPL-RESULT.
+   359     OPEN OUTPUT DALYREJS-FILE
+   360     IF  DALYREJS-STATUS = '00'
+   361         MOVE 0 TO APPL-RESULT
+   362     ELSE
+   363         MOVE 12 TO APPL-RESULT
+   364     END-IF
+   365     IF  APPL-AOK
+   366         CONTINUE
+   367     ELSE
+   368         DISPLAY 'ERROR OPENING DALY REJECTS FILE'
+   369         MOVE DALYREJS-STATUS TO IO-STATUS
+   370         PERFORM 9910-DISPLAY-IO-STATUS
+   371         PERFORM 9999-ABEND-PROGRAM
+   372     END-IF
+   373     EXIT.
+   374*---------------------------------------------------------------*
+   375 0400-ACCTFILE-OPEN.
+   376     MOVE 8 TO APPL-RESULT.
+   377     OPEN I-O  ACCOUNT-FILE
+   378     IF  ACCTFILE-STATUS = '00'
+   379         MOVE 0 TO APPL-RESULT
+   380     ELSE
+   381         MOVE 12 TO APPL-RESULT
+   382     END-IF
+   383     IF  APPL-AOK
+   384         CONTINUE
+   385     ELSE
+   386         DISPLAY 'ERROR OPENING ACCOUNT MASTER FILE'
+   387         MOVE ACCTFILE-STATUS TO IO-STATUS
+   388         PERFORM 9910-DISPLAY-IO-STATUS
+   389         PERFORM 9999-ABEND-PROGRAM
+   390     END-IF
+   391     EXIT.
+   392*---------------------------------------------------------------*
+   393 0500-TCATBALF-OPEN.
+   394     MOVE 8 TO APPL-RESULT.
+   395     OPEN I-O  TCATBAL-FILE
+   396     IF  TCATBALF-STATUS = '00'
+   397         MOVE 0 TO APPL-RESULT
+   398     ELSE
+   399         MOVE 12 TO APPL-RESULT
+   400     END-IF
+   401     IF  APPL-AOK
+   402         CONTINUE
+   403     ELSE
+   404         DISPLAY 'ERROR OPENING TRANSACTION BALANCE FILE'
+   405         MOVE TCATBALF-STATUS TO IO-STATUS
+   406         PERFORM 9910-DISPLAY-IO-STATUS
+   407         PERFORM 9999-ABEND-PROGRAM
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  13
+* CBTRN02C.cbl
+   408     END-IF
+   409     EXIT.
+   410*---------------------------------------------------------------*
+   411 1000-DALYTRAN-GET-NEXT.
+   412     READ DALYTRAN-FILE INTO DALYTRAN-RECORD.
+   413     IF  DALYTRAN-STATUS = '00'
+   414         MOVE 0 TO APPL-RESULT
+   415*        DISPLAY DALYTRAN-RECORD
+   416     ELSE
+   417         IF  DALYTRAN-STATUS = '10'
+   418             MOVE 16 TO APPL-RESULT
+   419         ELSE
+   420             MOVE 12 TO APPL-RESULT
+   421         END-IF
+   422     END-IF
+   423     IF  APPL-AOK
+   424         CONTINUE
+   425     ELSE
+   426         IF  APPL-EOF
+   427             MOVE 'Y' TO END-OF-FILE
+   428         ELSE
+   429             DISPLAY 'ERROR READING DALYTRAN FILE'
+   430             MOVE DALYTRAN-STATUS TO IO-STATUS
+   431             PERFORM 9910-DISPLAY-IO-STATUS
+   432             PERFORM 9999-ABEND-PROGRAM
+   433         END-IF
+   434     END-IF
+   435     EXIT.
+   436 1500-VALIDATE-TRAN.
+   437     PERFORM 1500-A-LOOKUP-XREF.
+   438     IF WS-VALIDATION-FAIL-REASON = 0
+   439        PERFORM 1500-B-LOOKUP-ACCT
+   440     ELSE
+   441        CONTINUE
+   442     END-IF
+   443* ADD MORE VALIDATIONS HERE
+   444     EXIT.
+   445
+   446 1500-A-LOOKUP-XREF.
+   447*    DISPLAY 'CARD NUMBER: ' DALYTRAN-CARD-NUM
+   448     MOVE DALYTRAN-CARD-NUM TO FD-XREF-CARD-NUM
+   449     READ XREF-FILE INTO CARD-XREF-RECORD
+   450        INVALID KEY
+   451          MOVE 100 TO WS-VALIDATION-FAIL-REASON
+   452          MOVE 'INVALID CARD NUMBER FOUND'
+   453            TO WS-VALIDATION-FAIL-REASON-DESC
+   454        NOT INVALID KEY
+   455*           DISPLAY 'ACCOUNT RECORD FOUND'
+   456            CONTINUE
+   457     END-READ
+   458     EXIT.
+   459 1500-B-LOOKUP-ACCT.
+   460     MOVE XREF-ACCT-ID TO FD-ACCT-ID
+   461     READ ACCOUNT-FILE INTO ACCOUNT-RECORD
+   462        INVALID KEY
+   463          MOVE 101 TO WS-VALIDATION-FAIL-REASON
+   464          MOVE 'ACCOUNT RECORD NOT FOUND'
+   465            TO WS-VALIDATION-FAIL-REASON-DESC
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  14
+* CBTRN02C.cbl
+   466        NOT INVALID KEY
+   467*         DISPLAY 'ACCT-CREDIT-LIMIT:' ACCT-CREDIT-LIMIT
+   468*         DISPLAY 'TRAN-AMT         :' DALYTRAN-AMT
+   469          COMPUTE WS-TEMP-BAL = ACCT-CURR-CYC-CREDIT
+   470                              - ACCT-CURR-CYC-DEBIT
+   471                              + DALYTRAN-AMT
+   472
+   473          IF ACCT-CREDIT-LIMIT >= WS-TEMP-BAL
+   474            CONTINUE
+   475          ELSE
+   476            MOVE 102 TO WS-VALIDATION-FAIL-REASON
+   477            MOVE 'OVERLIMIT TRANSACTION'
+   478              TO WS-VALIDATION-FAIL-REASON-DESC
+   479          END-IF
+   480          IF ACCT-EXPIRAION-DATE >= DALYTRAN-ORIG-TS (1:10)
+   481            CONTINUE
+   482          ELSE
+   483            MOVE 103 TO WS-VALIDATION-FAIL-REASON
+   484            MOVE 'TRANSACTION RECEIVED AFTER ACCT EXPIRATION'
+   485              TO WS-VALIDATION-FAIL-REASON-DESC
+   486          END-IF
+   487     END-READ
+   488     EXIT.
+   489*---------------------------------------------------------------*
+   490 2000-POST-TRANSACTION.
+   491     MOVE  DALYTRAN-ID            TO    TRAN-ID
+   492     MOVE  DALYTRAN-TYPE-CD       TO    TRAN-TYPE-CD
+   493     MOVE  DALYTRAN-CAT-CD        TO    TRAN-CAT-CD
+   494     MOVE  DALYTRAN-SOURCE        TO    TRAN-SOURCE
+   495     MOVE  DALYTRAN-DESC          TO    TRAN-DESC
+   496     MOVE  DALYTRAN-AMT           TO    TRAN-AMT
+   497     MOVE  DALYTRAN-MERCHANT-ID   TO    TRAN-MERCHANT-ID
+   498     MOVE  DALYTRAN-MERCHANT-NAME TO    TRAN-MERCHANT-NAME
+   499     MOVE  DALYTRAN-MERCHANT-CITY TO    TRAN-MERCHANT-CITY
+   500     MOVE  DALYTRAN-MERCHANT-ZIP  TO    TRAN-MERCHANT-ZIP
+   501     MOVE  DALYTRAN-CARD-NUM      TO    TRAN-CARD-NUM
+   502     MOVE  DALYTRAN-ORIG-TS       TO    TRAN-ORIG-TS
+   503     PERFORM Z-GET-DB2-FORMAT-TIMESTAMP
+   504     MOVE  DB2-FORMAT-TS          TO    TRAN-PROC-TS
+   505
+   506     PERFORM 2700-UPDATE-TCATBAL
+   507     PERFORM 2800-UPDATE-ACCOUNT-REC
+   508     PERFORM 2900-WRITE-TRANSACTION-FILE
+   509
+   510     EXIT.
+   511
+   512 2500-WRITE-REJECT-REC.
+   513     MOVE DALYTRAN-RECORD TO REJECT-TRAN-DATA
+   514     MOVE WS-VALIDATION-TRAILER TO VALIDATION-TRAILER
+   515*     DISPLAY '***' REJECT-RECORD
+   516     MOVE 8 TO APPL-RESULT
+   517     WRITE FD-REJS-RECORD FROM REJECT-RECORD
+   518     IF DALYREJS-STATUS = '00'
+   519         MOVE 0 TO  APPL-RESULT
+   520     ELSE
+   521         MOVE 12 TO APPL-RESULT
+   522     END-IF
+   523     IF  APPL-AOK
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  15
+* CBTRN02C.cbl
+   524         CONTINUE
+   525     ELSE
+   526         DISPLAY 'ERROR WRITING TO REJECTS FILE'
+   527         MOVE DALYREJS-STATUS  TO IO-STATUS
+   528         PERFORM 9910-DISPLAY-IO-STATUS
+   529         PERFORM 9999-ABEND-PROGRAM
+   530     END-IF
+   531     EXIT.
+   532*---------------------------------------------------------------*
+   533 2700-UPDATE-TCATBAL.
+   534* Update the balances in transaction balance file.
+   535     MOVE XREF-ACCT-ID TO FD-TRANCAT-ACCT-ID
+   536     MOVE DALYTRAN-TYPE-CD TO FD-TRANCAT-TYPE-CD
+   537     MOVE DALYTRAN-CAT-CD TO FD-TRANCAT-CD
+   538
+   539     MOVE 'N' TO WS-CREATE-TRANCAT-REC
+   540     READ TCATBAL-FILE INTO TRAN-CAT-BAL-RECORD
+   541        INVALID KEY
+   542          DISPLAY 'TCATBAL record not found for key : '
+   543             FD-TRAN-CAT-KEY '.. Creating.'
+   544          MOVE 'Y' TO WS-CREATE-TRANCAT-REC
+   545     END-READ.
+   546
+   547     IF  TCATBALF-STATUS = '00'  OR '23'
+   548         MOVE 0 TO APPL-RESULT
+   549     ELSE
+   550         MOVE 12 TO APPL-RESULT
+   551     END-IF
+   552     IF  APPL-AOK
+   553         CONTINUE
+   554     ELSE
+   555         DISPLAY 'ERROR READING TRANSACTION BALANCE FILE'
+   556         MOVE TCATBALF-STATUS TO IO-STATUS
+   557         PERFORM 9910-DISPLAY-IO-STATUS
+   558         PERFORM 9999-ABEND-PROGRAM
+   559     END-IF.
+   560
+   561     IF WS-CREATE-TRANCAT-REC = 'Y'
+   562        PERFORM 2700-A-CREATE-TCATBAL-REC
+   563     ELSE
+   564        PERFORM 2700-B-UPDATE-TCATBAL-REC
+   565     END-IF
+   566
+   567     EXIT.
+   568*---------------------------------------------------------------*
+   569 2700-A-CREATE-TCATBAL-REC.
+   570     INITIALIZE TRAN-CAT-BAL-RECORD
+   571     MOVE XREF-ACCT-ID TO TRANCAT-ACCT-ID
+   572     MOVE DALYTRAN-TYPE-CD TO TRANCAT-TYPE-CD
+   573     MOVE DALYTRAN-CAT-CD TO TRANCAT-CD
+   574     ADD DALYTRAN-AMT TO TRAN-CAT-BAL
+   575
+   576     WRITE FD-TRAN-CAT-BAL-RECORD FROM TRAN-CAT-BAL-RECORD
+   577
+   578     IF  TCATBALF-STATUS = '00'
+   579         MOVE 0 TO APPL-RESULT
+   580     ELSE
+   581         MOVE 12 TO APPL-RESULT
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  16
+* CBTRN02C.cbl
+   582     END-IF
+   583     IF  APPL-AOK
+   584         CONTINUE
+   585     ELSE
+   586         DISPLAY 'ERROR WRITING TRANSACTION BALANCE FILE'
+   587         MOVE TCATBALF-STATUS TO IO-STATUS
+   588         PERFORM 9910-DISPLAY-IO-STATUS
+   589         PERFORM 9999-ABEND-PROGRAM
+   590     END-IF.
+   591*---------------------------------------------------------------*
+   592 2700-B-UPDATE-TCATBAL-REC.
+   593     ADD DALYTRAN-AMT TO TRAN-CAT-BAL
+   594     REWRITE FD-TRAN-CAT-BAL-RECORD FROM TRAN-CAT-BAL-RECORD
+   595
+   596     IF  TCATBALF-STATUS = '00'
+   597         MOVE 0 TO APPL-RESULT
+   598     ELSE
+   599         MOVE 12 TO APPL-RESULT
+   600     END-IF
+   601     IF  APPL-AOK
+   602         CONTINUE
+   603     ELSE
+   604         DISPLAY 'ERROR REWRITING TRANSACTION BALANCE FILE'
+   605         MOVE TCATBALF-STATUS TO IO-STATUS
+   606         PERFORM 9910-DISPLAY-IO-STATUS
+   607         PERFORM 9999-ABEND-PROGRAM
+   608     END-IF.
+   609
+   610*---------------------------------------------------------------*
+   611 2800-UPDATE-ACCOUNT-REC.
+   612* Update the balances in account record to reflect posted trans.
+   613     ADD DALYTRAN-AMT  TO ACCT-CURR-BAL
+   614     IF DALYTRAN-AMT >= 0
+   615        ADD DALYTRAN-AMT TO ACCT-CURR-CYC-CREDIT
+   616     ELSE
+   617        ADD DALYTRAN-AMT TO ACCT-CURR-CYC-DEBIT
+   618     END-IF
+   619
+   620     REWRITE FD-ACCTFILE-REC FROM  ACCOUNT-RECORD
+   621        INVALID KEY
+   622          MOVE 109 TO WS-VALIDATION-FAIL-REASON
+   623          MOVE 'ACCOUNT RECORD NOT FOUND'
+   624            TO WS-VALIDATION-FAIL-REASON-DESC
+   625     END-REWRITE.
+   626     EXIT.
+   627*---------------------------------------------------------------*
+   628 2900-WRITE-TRANSACTION-FILE.
+   629     MOVE 8 TO  APPL-RESULT.
+   630     WRITE FD-TRANFILE-REC FROM TRAN-RECORD
+   631
+   632     IF  TRANFILE-STATUS = '00'
+   633         MOVE 0 TO  APPL-RESULT
+   634     ELSE
+   635         MOVE 12 TO APPL-RESULT
+   636     END-IF
+   637     IF  APPL-AOK
+   638         CONTINUE
+   639     ELSE
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  17
+* CBTRN02C.cbl
+   640         DISPLAY 'ERROR WRITING TO TRANSACTION FILE'
+   641         MOVE TRANFILE-STATUS  TO IO-STATUS
+   642         PERFORM 9910-DISPLAY-IO-STATUS
+   643         PERFORM 9999-ABEND-PROGRAM
+   644     END-IF
+   645     EXIT.
+   646
+   647*---------------------------------------------------------------*
+   648 9000-DALYTRAN-CLOSE.
+   649     MOVE 8 TO  APPL-RESULT.
+   650     CLOSE DALYTRAN-FILE
+   651     IF  DALYTRAN-STATUS = '00'
+   652         MOVE 0 TO APPL-RESULT
+   653     ELSE
+   654         MOVE 12 TO APPL-RESULT
+   655     END-IF
+   656     IF  APPL-AOK
+   657         CONTINUE
+   658     ELSE
+   659         DISPLAY 'ERROR CLOSING DALYTRAN FILE'
+   660         MOVE DALYTRAN-STATUS TO IO-STATUS
+   661         PERFORM 9910-DISPLAY-IO-STATUS
+   662         PERFORM 9999-ABEND-PROGRAM
+   663     END-IF
+   664     EXIT.
+   665*---------------------------------------------------------------*
+   666 9100-TRANFILE-CLOSE.
+   667     MOVE 8 TO  APPL-RESULT.
+   668     CLOSE TRANSACT-FILE
+   669     IF  TRANFILE-STATUS = '00'
+   670         MOVE 0 TO  APPL-RESULT
+   671     ELSE
+   672         MOVE 12 TO APPL-RESULT
+   673     END-IF
+   674     IF  APPL-AOK
+   675         CONTINUE
+   676     ELSE
+   677         DISPLAY 'ERROR CLOSING TRANSACTION FILE'
+   678         MOVE TRANFILE-STATUS  TO IO-STATUS
+   679         PERFORM 9910-DISPLAY-IO-STATUS
+   680         PERFORM 9999-ABEND-PROGRAM
+   681     END-IF
+   682     EXIT.
+   683
+   684*---------------------------------------------------------------*
+   685 9200-XREFFILE-CLOSE.
+   686     MOVE 8 TO APPL-RESULT.
+   687     CLOSE XREF-FILE
+   688     IF  XREFFILE-STATUS = '00'
+   689         MOVE 0 TO APPL-RESULT
+   690     ELSE
+   691         MOVE 12 TO APPL-RESULT
+   692     END-IF
+   693     IF  APPL-AOK
+   694         CONTINUE
+   695     ELSE
+   696         DISPLAY 'ERROR CLOSING CROSS REF FILE'
+   697         MOVE XREFFILE-STATUS TO IO-STATUS
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  18
+* CBTRN02C.cbl
+   698         PERFORM 9910-DISPLAY-IO-STATUS
+   699         PERFORM 9999-ABEND-PROGRAM
+   700     END-IF
+   701     EXIT.
+   702*---------------------------------------------------------------*
+   703 9300-DALYREJS-CLOSE.
+   704     MOVE 8 TO APPL-RESULT.
+   705     CLOSE DALYREJS-FILE
+   706     IF  DALYREJS-STATUS = '00'
+   707         MOVE 0 TO APPL-RESULT
+   708     ELSE
+   709         MOVE 12 TO APPL-RESULT
+   710     END-IF
+   711     IF  APPL-AOK
+   712         CONTINUE
+   713     ELSE
+   714         DISPLAY 'ERROR CLOSING DAILY REJECTS FILE'
+   715         MOVE XREFFILE-STATUS TO IO-STATUS
+   716         PERFORM 9910-DISPLAY-IO-STATUS
+   717         PERFORM 9999-ABEND-PROGRAM
+   718     END-IF
+   719     EXIT.
+   720*---------------------------------------------------------------*
+   721 9400-ACCTFILE-CLOSE.
+   722     MOVE 8 TO APPL-RESULT.
+   723     CLOSE ACCOUNT-FILE
+   724     IF  ACCTFILE-STATUS  = '00'
+   725         MOVE 0 TO APPL-RESULT
+   726     ELSE
+   727         MOVE 12 TO APPL-RESULT
+   728     END-IF
+   729     IF  APPL-AOK
+   730         CONTINUE
+   731     ELSE
+   732         DISPLAY 'ERROR CLOSING ACCOUNT FILE'
+   733         MOVE ACCTFILE-STATUS  TO IO-STATUS
+   734         PERFORM 9910-DISPLAY-IO-STATUS
+   735         PERFORM 9999-ABEND-PROGRAM
+   736     END-IF
+   737     EXIT.
+   738
+   739*---------------------------------------------------------------*
+   740 9500-TCATBALF-CLOSE.
+   741     MOVE 8 TO APPL-RESULT.
+   742     CLOSE TCATBAL-FILE
+   743     IF  TCATBALF-STATUS  = '00'
+   744         MOVE 0 TO APPL-RESULT
+   745     ELSE
+   746         MOVE 12 TO APPL-RESULT
+   747     END-IF
+   748     IF  APPL-AOK
+   749         CONTINUE
+   750     ELSE
+   751         DISPLAY 'ERROR CLOSING TRANSACTION BALANCE FILE'
+   752         MOVE TCATBALF-STATUS  TO IO-STATUS
+   753         PERFORM 9910-DISPLAY-IO-STATUS
+   754         PERFORM 9999-ABEND-PROGRAM
+   755     END-IF
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  19
+* CBTRN02C.cbl
+   756     EXIT.
+   757
+   758 Z-GET-DB2-FORMAT-TIMESTAMP.
+   759     MOVE FUNCTION CURRENT-DATE TO COBOL-TS
+   760     MOVE COB-YYYY TO DB2-YYYY
+   761     MOVE COB-MM   TO DB2-MM
+   762     MOVE COB-DD   TO DB2-DD
+   763     MOVE COB-HH   TO DB2-HH
+   764     MOVE COB-MIN  TO DB2-MIN
+   765     MOVE COB-SS   TO DB2-SS
+   766     MOVE COB-MIL  TO DB2-MIL
+   767     MOVE '0000'   TO DB2-REST
+   768     MOVE '-' TO DB2-STREEP-1 DB2-STREEP-2 DB2-STREEP-3
+   769     MOVE '.' TO DB2-DOT-1 DB2-DOT-2 DB2-DOT-3
+   770*    DISPLAY 'DB2-TIMESTAMP = ' DB2-FORMAT-TS
+   771     EXIT.
+   772
+   773 9999-ABEND-PROGRAM.
+   774     DISPLAY 'ABENDING PROGRAM'
+   775     MOVE 0 TO TIMING
+   776     MOVE 999 TO ABCODE
+   777     CALL 'CEE3ABD'.
+   778
+   779*****************************************************************
+   780 9910-DISPLAY-IO-STATUS.
+   781     IF  IO-STATUS NOT NUMERIC
+   782     OR  IO-STAT1 = '9'
+   783         MOVE IO-STAT1 TO IO-STATUS-04(1:1)
+   784         MOVE 0        TO TWO-BYTES-BINARY
+   785         MOVE IO-STAT2 TO TWO-BYTES-RIGHT
+   786         MOVE TWO-BYTES-BINARY TO IO-STATUS-0403
+   787         DISPLAY 'FILE STATUS IS: NNNN' IO-STATUS-04
+   788     ELSE
+   789         MOVE '0000' TO IO-STATUS-04
+   790         MOVE IO-STATUS TO IO-STATUS-04(3:2)
+   791         DISPLAY 'FILE STATUS IS: NNNN' IO-STATUS-04
+   792     END-IF
+   793     EXIT.
+   794
+   795*
+   796* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:12:32 CDT
+   797*
+*
+*
+* Errors
+* -Line- Col Code/severity Description
+* Micro Focus COBOL                  V9.0 revision 000 Compiler
+* (C) Copyright 1984-2024 Micro Focus or one of its affiliates.
+*                                                        REF GKR-081900000A0
+* Total Messages:     0
+* Data:        7840     Code:       12805

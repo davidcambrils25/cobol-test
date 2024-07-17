@@ -1,0 +1,10 @@
+#"C:\Program Files (x86)\Micro Focus\Enterprise Developer\bin64\cobol.exe" C:\CrossPlatformBuild\CardDemo\COBOL\CBCUS01C.cbl DELINT USEC:\CrossPlatformBuild\CardDemo\RELEASE\LOADLIB\CBCUS01C.cbl.dir ;
+^C:\CrossPlatformBuild\CardDemo\COBOL\CBCUS01C.cbl
+!C:\CrossPlatformBuild\CardDemo\COBOL\CVCUS01Y.CBL
+?C:\CrossPlatformBuild\CardDemo\COBOL\CVCUS01Y.CBL
+!C:\CrossPlatformBuild\CardDemo\COBOL\CVCUS01Y.CPY
+?C:\CrossPlatformBuild\CardDemo\COBOL\CVCUS01Y.CPY
+!$COBCPY\CVCUS01Y.CBL
+?$COBCPY\CVCUS01Y.CBL
+!$COBCPY\CVCUS01Y.CPY
++C:\CrossPlatformBuild\CardDemo\COPYBOOKS\CVCUS01Y.CPY

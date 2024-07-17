@@ -1,0 +1,1031 @@
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   1
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+* Options: DELINT
+*          USE"C:\CrossPlatformBuild\CardDemo\RELEASE\LOADLIB\CBACT04C.cbl.dir"
+* Setting: NOACCEPTREFRESH
+*          NOACU
+*          NOACUCOMMENT
+*          NOACUSYNC
+*          NOACU-UNDERSCORE
+*            ADV
+*            ALIGN"8 OPT"
+*            ALPHALITCONT"MARGIN"
+*            ALPHASTART"1"
+*            ALTER
+*          NOAMODE
+*            ANIM
+*            ANS85
+*            APOST
+*            AREACHECK
+*            ARITH"EXTEND"
+*            ARITHMETIC"ENTCOBOL"
+*            ASSIGN"EXTERNAL"
+*          NOASSIGN-PRINTER
+*          NOAUTOLOCK
+*          NOBELL
+*            BINLIT"BOOLEAN"
+*          NOBOUND
+*          NOBRIEF
+*          NOBS2000
+*            BWZSTAR
+*            BYTEMODEMOVE
+*            CALLFH"EXTFH"
+*          NOCALLRECOVERY
+*            CALLSORT"EXTSM"
+*            CANCEL
+*            CANCELLBR
+*            CHANGEMESSAGE"677 N 1126 N 1152 N"
+*            CHARSET"EBCDIC"
+*            CHECKDIV"ENTCOBOL"
+*          NOCHECKREFMOD
+*          NOCICS
+*            CICS-CPY
+*          NOCICSOPTIMIZE
+*          NOCMPR2
+*            COBFSTATCONV
+*          NOCOBIDY
+*          NOCOBOL370
+*          NOCOBOLDIR
+*          NOCOMMANDLINELINKAGE
+*            COLLECTION"CardDemo"
+*          NOCOMP
+*            COMP"BINARY"
+*            COMP1"FLOAT"
+*            COMP2"FLOAT"
+*            COMP-5"2"
+*            COMP-6"2"
+*            CONFIRM
+*          NOCONVERTRET
+*            CONVSPACE
+*            COPYEXT"CBL,CPY"
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   2
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+*            COPYLBR
+*            COPYLIST
+*            COPYLISTCOMMENT"7"
+*            COPYSEARCH"MF"
+*            CSI
+*            CURRENCY-SIGN"36"
+*            CURRENT-DATE"MMDDYY"
+*          NODATA
+*            DATACOMPRESS"0"
+*          NODATA-CONTEXT
+*          NODATAMAP
+*            DATE
+*            DBCHECK
+*            DBCS"3"
+*            DBCSSOSI"14""15"
+*            DBSPACE
+*            DE-EDIT"2"
+*            DEFAULTBYTE"0"
+*          NODEFAULTCALLS
+*            DETECTLOCK
+*          NODG
+*            DIALECT"ENTCOBOL"
+*          NODIRECTIVES-IN-COMMENTS
+*            DISPLAY"CONSOLE"
+*          NODISPLAYAT
+*            DISPLAYPICU"ANSI"
+*            DISPSIGN"COMPAT"
+*          NODOSVS
+*          NODOTNET
+*            DPCINDATA"XML"
+*            DPCINSUBSCRIPT
+*          NODYNAM
+*          NOEARLY-RELEASE
+*            EBCCOLSEQ"1"
+*            ECHO
+*          NOECHOALL
+*            ENTCOBOL
+*            EOF1A
+*            ERRFORMAT"2"
+*            ERRLIST"VERBOSE"
+*          NOERRQ
+*          NOEXECSQLFLAG
+*            EXITPROGRAM"ANSI"
+*          NOFASTINIT
+*            FASTSORT
+*            FCD3
+*          NOFCDALIGN
+*          NOFCDREG
+*            FDCLEAR"3"
+*          NOFILESHARE
+*            FILETYPE"0"
+*            FLAG"ENTCOBOL"
+*            FLAGAS"S"
+*          NOFLAGEUC
+*          NOFLAGMIG
+*          NOFLAGQ
+*            FLAGSINEDIT
+*          NOFLAGSTD
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   3
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+*            FOLDCALLNAME"UPPER"
+*            FOLDCOPYNAME"UPPER"
+*            FORM"60"
+*            FP-ROUNDING"ENTCOBOL"
+*          NOHOSTARITHMETIC
+*            HOSTCONTZERO
+*            HOST-NUMCOMPARE
+*            HOST-NUMMOVE
+*            HOSTFD
+*          NOHOSTRW
+*            IBMCOMP
+*            IDENTIFIERLEN"30"
+*            IDXFORMAT"0"
+*          NOIGNOREEXEC
+*          NOIL
+*          NOILGEN
+*          NOILEMIT
+*            IMPLICITSCOPE
+*            INDD"SYSIN 80 R"
+*          NOIDYSRCPATH
+*            INFORETURN"0"
+*          NOINITCALL
+*            INITIAL"1"
+*          NOINITPTR
+*          NOINITBYTYPE
+*            INT"C:\CrossPlatformBuild\CardDemo\RELEASE\LOADLIB\CBACT04C.int"
+*            INTDATE"ANSI"
+*            INTLEVEL"9"
+*            IOCONV
+*          NOISO2002
+*          NOIXNLSKEY
+*          NOIXNUMKEY
+*          NOJVMGEN
+*            KEYCHECK
+*            KEYCOMPRESS"0"
+*          NOLIBRARIAN
+*          NOLINE-COUNT
+*            LIST"CBACT04C.lst"
+*            LISTPATH"C:\CrossPlatformBuild\CardDemo\LISTINGS"
+*            LISTWIDTH"80"
+*            LITVAL-SIZE"4"
+*          NOLOCALSOURCEFORMAT
+*            LOCKTYPE"0"
+*            MAPNAME
+*          NOMAINFRAMEFLOATINGPOINT
+*          NOMAXERROR
+*            METHODDEFAULT"REFERENCE"
+*          NOMF
+*          NOMFCOMMENT
+*          NOMFSYNC
+*          NOMOVELENCHECK
+*          NOMS
+*          NOMVS
+*            NATIONAL"1"
+*            NATIVE"EBCDIC"
+*          NONATIVEFLOATINGPOINT
+*          NONCHAR
+*          NONLS
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   4
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+*          NONLSCURRENCYLENGTH
+*            NSYMBOL"NATIONAL"
+*            NULLESCAPE
+*          NOODOOSVS
+*            ODOSLIDE
+*          NOOLDBLANKLINE
+*          NOOLDCOPY
+*          NOOLDINDEX
+*          NOOLDNEXTSENTENCE
+*          NOOLDREADINTO
+*          NOOLDSTRMIX
+*            OOCTRL"-C-E-G+L-P+Q+R-S+W"
+*          NOOPTIONAL-FILE
+*          NOOS390
+*            OSEXT"cbl"
+*          NOOSVS
+*            OUTDD"SYSOUT 121 R"
+*            P64
+*          NOPANVALET
+*            PANVALET-INCLUDES-IN-COMMENTS
+*          NOPC1
+*            PERFORM-TYPE"ENTCOBOL"
+*          NOPREPLIST
+*          NOPREPROCESS
+*            PRESERVECASE
+*          NOPRINT-EXT
+*          NOPROFILE
+*          NOPROGID-COMMENT
+*          NOPROGID-INT-NAME
+*          NOPROTECT-LINKAGE
+*            PROTOTYPE"RELAXED"
+*            QUAL
+*            QUALPROC
+*          NOQUERY
+*          NOQUOTE
+*          NORAWLIST
+*            RDW
+*            RECMODE"ENTCOBOL"
+*          NOREENTRANT
+*          NOREF
+*          NOREFNO
+*            REMAINDER"2"
+*            REPLACE"NOKEEPSEQ"
+*            REPORT-LINE"256"
+*            RESEQ
+*          NORETRYLOCK
+*            REWRITE-LS
+*          NORM
+*          NORM-FILE-ERRORS
+*            RTNCODE-SIZE"2"
+*            RTNCODE-TYPE"COMP"
+*          NORWHARDPAGE
+*          NOSAA
+*          NOSEG
+*          NOSEQCHK
+*            SEQUENTIAL"RECORD"
+*          NOSERIAL
+*            SETTING"COL"
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   5
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+*          NOSHAREOUTDD
+*          NOSHOW-DIR
+*            SIGN"EBCDIC"
+*            SIGN"TRAILING"
+*          NOSIGNDISCARD
+*          NOSIGNFIXUP
+*            SORTTYPE"DFSORT"
+*          NOSOURCEENCODING
+*            SOURCEFORMAT"FIXED"
+*            SOURCETABSTOP"4"
+*          NOSPZERO
+*          NOSSRANGE
+*            STDERR
+*            STICKY-LINKAGE"1"
+*          NOSTICKY-PERFORM
+*            SUPFF
+*            SWITCHTYPE"1"
+*            SYMBSTART"1"
+*            SYSPUNCH"80"
+*            TERMPAGE
+*          NOTESTCOVER
+*            TIME
+*          NOTRACE
+*          NOTRUNC
+*            TRUNCCALLNAME"8"
+*            TRUNCCOPY"8"
+*            TRUNCINC"10"
+*            UNICODE"PORTABLE"
+*            VERBOSE
+*          NOVISUALSTUDIO
+*          NOVSC2
+*          NOWARNASERROR
+*            WARNING"3"
+*            WEBSERVER"CGI"
+*          NOWRITELOCK
+*          NOWRITETHRU
+*          NOXMLGEN
+*            XMLPARSE"XMLSS"
+*          NOXOPEN
+*          NOXREF
+*            ZEROLENGTHFALSE
+*          NOZEROSEQ
+*            ZWB
+     1 IDENTIFICATION DIVISION.
+     2 PROGRAM-ID.    CBACT04C.
+     3 AUTHOR.        AWS.
+     4* This is a interest calculator program.
+     5
+     6 ENVIRONMENT DIVISION.
+     7 INPUT-OUTPUT SECTION.
+     8 FILE-CONTROL.
+     9     SELECT TCATBAL-FILE ASSIGN TO TCATBALF
+    10            ORGANIZATION IS INDEXED
+    11            ACCESS MODE  IS SEQUENTIAL
+    12            RECORD KEY   IS FD-TRAN-CAT-KEY
+    13            FILE STATUS  IS TCATBALF-STATUS.
+    14
+    15     SELECT XREF-FILE ASSIGN TO   XREFFILE
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   6
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+    16            ORGANIZATION IS INDEXED
+    17            ACCESS MODE  IS RANDOM
+    18            RECORD KEY   IS FD-XREF-CARD-NUM
+    19            ALTERNATE RECORD KEY IS FD-XREF-ACCT-ID
+    20            FILE STATUS  IS XREFFILE-STATUS.
+    21
+    22     SELECT ACCOUNT-FILE ASSIGN TO ACCTFILE
+    23            ORGANIZATION IS INDEXED
+    24            ACCESS MODE  IS RANDOM
+    25            RECORD KEY   IS FD-ACCT-ID
+    26            FILE STATUS  IS ACCTFILE-STATUS.
+    27
+    28     SELECT DISCGRP-FILE ASSIGN TO DISCGRP
+    29            ORGANIZATION IS INDEXED
+    30            ACCESS MODE  IS RANDOM
+    31            RECORD KEY   IS FD-DISCGRP-KEY
+    32            FILE STATUS  IS DISCGRP-STATUS.
+    33
+    34     SELECT TRANSACT-FILE ASSIGN TO TRANSACT
+    35            ORGANIZATION IS SEQUENTIAL
+    36            ACCESS MODE  IS SEQUENTIAL
+    37            FILE STATUS  IS TRANFILE-STATUS.
+    38
+    39*
+    40 DATA DIVISION.
+    41 FILE SECTION.
+    42 FD  TCATBAL-FILE.
+    43 01  FD-TRAN-CAT-BAL-RECORD.
+    44     05 FD-TRAN-CAT-KEY.
+    45        10 FD-TRANCAT-ACCT-ID             PIC 9(11).
+    46        10 FD-TRANCAT-TYPE-CD             PIC X(02).
+    47        10 FD-TRANCAT-CD                  PIC 9(04).
+    48     05 FD-FD-TRAN-CAT-DATA               PIC X(33).
+    49
+    50 FD  XREF-FILE.
+    51 01  FD-XREFFILE-REC.
+    52     05 FD-XREF-CARD-NUM                  PIC X(16).
+    53     05 FD-XREF-CUST-NUM                  PIC 9(09).
+    54     05 FD-XREF-ACCT-ID                   PIC 9(11).
+    55     05 FD-XREF-FILLER                    PIC X(14).
+    56
+    57 FD  DISCGRP-FILE.
+    58 01  FD-DISCGRP-REC.
+    59     05 FD-DISCGRP-KEY.
+    60        10 FD-DIS-ACCT-GROUP-ID           PIC X(10).
+    61        10 FD-DIS-TRAN-TYPE-CD            PIC X(02).
+    62        10 FD-DIS-TRAN-CAT-CD             PIC 9(04).
+    63     05 FD-DISCGRP-DATA                   PIC X(34).
+    64
+    65 FD  ACCOUNT-FILE.
+    66 01  FD-ACCTFILE-REC.
+    67     05 FD-ACCT-ID                        PIC 9(11).
+    68     05 FD-ACCT-DATA                      PIC X(289).
+    69
+    70 FD  TRANSACT-FILE.
+    71 01  FD-TRANFILE-REC.
+    72     05 FD-TRANS-ID                       PIC X(16).
+    73     05 FD-ACCT-DATA                      PIC X(334).
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   7
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+    74
+    75 WORKING-STORAGE SECTION.
+    76
+    77*****************************************************************
+    78*COPY CVTRA01Y.
+    79*****************************************************************
+    80*    Data-structure for transaction category balance (RECLN = 50)
+    81*****************************************************************
+    82 01  TRAN-CAT-BAL-RECORD.
+    83     05  TRAN-CAT-KEY.
+    84        10 TRANCAT-ACCT-ID                       PIC 9(11).
+    85        10 TRANCAT-TYPE-CD                       PIC X(02).
+    86        10 TRANCAT-CD                            PIC 9(04).
+    87     05  TRAN-CAT-BAL                            PIC S9(09)V99.
+    88     05  FILLER                                  PIC X(22).
+    89*
+    90* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:00 CDT
+    91*
+    92 01  TCATBALF-STATUS.
+    93     05  TCATBALF-STAT1      PIC X.
+    94     05  TCATBALF-STAT2      PIC X.
+    95
+    96*COPY CVACT03Y.
+    97*****************************************************************
+    98*    Data-structure for card xref (RECLN 50)
+    99*****************************************************************
+   100 01 CARD-XREF-RECORD.
+   101     05  XREF-CARD-NUM                     PIC X(16).
+   102     05  XREF-CUST-ID                      PIC 9(09).
+   103     05  XREF-ACCT-ID                      PIC 9(11).
+   104     05  FILLER                            PIC X(14).
+   105*
+   106* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:00 CDT
+   107*
+   108 01  XREFFILE-STATUS.
+   109     05  XREFFILE-STAT1      PIC X.
+   110     05  XREFFILE-STAT2      PIC X.
+   111
+   112*COPY CVTRA02Y.
+   113*****************************************************************
+   114*    Data-structure for disclosure group (RECLN = 50)
+   115*****************************************************************
+   116 01  DIS-GROUP-RECORD.
+   117     05  DIS-GROUP-KEY.
+   118        10 DIS-ACCT-GROUP-ID                     PIC X(10).
+   119        10 DIS-TRAN-TYPE-CD                      PIC X(02).
+   120        10 DIS-TRAN-CAT-CD                       PIC 9(04).
+   121     05  DIS-INT-RATE                            PIC S9(04)V99.
+   122     05  FILLER                                  PIC X(28).
+   123*
+   124* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:00 CDT
+   125*
+   126 01  DISCGRP-STATUS.
+   127     05 DISCGRP-STAT1        PIC X.
+   128     05 DISCGRP-STAT2        PIC X.
+   129
+   130*COPY CVACT01Y.
+   131*****************************************************************
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   8
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl (C:\CrossPlatformBuild\Card)
+   132*    Data-structure for  account entity (RECLN 300)
+   133*****************************************************************
+   134 01  ACCOUNT-RECORD.
+   135     05  ACCT-ID                           PIC 9(11).
+   136     05  ACCT-ACTIVE-STATUS                PIC X(01).
+   137     05  ACCT-CURR-BAL                     PIC S9(10)V99.
+   138     05  ACCT-CREDIT-LIMIT                 PIC S9(10)V99.
+   139     05  ACCT-CASH-CREDIT-LIMIT            PIC S9(10)V99.
+   140     05  ACCT-OPEN-DATE                    PIC X(10).
+   141     05  ACCT-EXPIRAION-DATE               PIC X(10).
+   142     05  ACCT-REISSUE-DATE                 PIC X(10).
+   143     05  ACCT-CURR-CYC-CREDIT              PIC S9(10)V99.
+   144     05  ACCT-CURR-CYC-DEBIT               PIC S9(10)V99.
+   145     05  ACCT-ADDR-ZIP                     PIC X(10).
+   146     05  ACCT-GROUP-ID                     PIC X(10).
+   147     05  FILLER                            PIC X(178).
+   148*
+   149* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:59 CDT
+   150*
+   151 01  ACCTFILE-STATUS.
+   152     05  ACCTFILE-STAT1      PIC X.
+   153     05  ACCTFILE-STAT2      PIC X.
+   154
+   155*COPY CVTRA05Y.
+   156*****************************************************************
+   157*    Data-structure for TRANsaction record (RECLN = 350)
+   158*****************************************************************
+   159 01  TRAN-RECORD.
+   160     05  TRAN-ID                                 PIC X(16).
+   161     05  TRAN-TYPE-CD                            PIC X(02).
+   162     05  TRAN-CAT-CD                             PIC 9(04).
+   163     05  TRAN-SOURCE                             PIC X(10).
+   164     05  TRAN-DESC                               PIC X(100).
+   165     05  TRAN-AMT                                PIC S9(09)V99.
+   166     05  TRAN-MERCHANT-ID                        PIC 9(09).
+   167     05  TRAN-MERCHANT-NAME                      PIC X(50).
+   168     05  TRAN-MERCHANT-CITY                      PIC X(50).
+   169     05  TRAN-MERCHANT-ZIP                       PIC X(10).
+   170     05  TRAN-CARD-NUM                           PIC X(16).
+   171     05  TRAN-ORIG-TS                            PIC X(26).
+   172     05  TRAN-PROC-TS                            PIC X(26).
+   173     05  FILLER                                  PIC X(20).
+   174*
+   175* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:16:01 CDT
+   176*
+   177 01  TRANFILE-STATUS.
+   178     05  TRANFILE-STAT1      PIC X.
+   179     05  TRANFILE-STAT2      PIC X.
+   180
+   181 01  IO-STATUS.
+   182     05  IO-STAT1            PIC X.
+   183     05  IO-STAT2            PIC X.
+   184 01  TWO-BYTES-BINARY        PIC 9(4) BINARY.
+   185 01  TWO-BYTES-ALPHA         REDEFINES TWO-BYTES-BINARY.
+   186     05  TWO-BYTES-LEFT      PIC X.
+   187     05  TWO-BYTES-RIGHT     PIC X.
+   188 01  IO-STATUS-04.
+   189     05  IO-STATUS-0401      PIC 9   VALUE 0.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   9
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+   190     05  IO-STATUS-0403      PIC 999 VALUE 0.
+   191
+   192 01  APPL-RESULT             PIC S9(9)   COMP.
+   193     88  APPL-AOK            VALUE 0.
+   194     88  APPL-EOF            VALUE 16.
+   195
+   196 01  END-OF-FILE             PIC X(01)    VALUE 'N'.
+   197 01  ABCODE                  PIC S9(9) BINARY.
+   198 01  TIMING                  PIC S9(9) BINARY.
+   199* T I M E S T A M P   D B 2  X(26)     EEEE-MM-DD-UU.MM.SS.HH0000
+   200 01  COBOL-TS.
+   201     05 COB-YYYY                  PIC X(04).
+   202     05 COB-MM                    PIC X(02).
+   203     05 COB-DD                    PIC X(02).
+   204     05 COB-HH                    PIC X(02).
+   205     05 COB-MIN                   PIC X(02).
+   206     05 COB-SS                    PIC X(02).
+   207     05 COB-MIL                   PIC X(02).
+   208     05 COB-REST                  PIC X(05).
+   209 01  DB2-FORMAT-TS                PIC X(26).
+   210 01  FILLER REDEFINES DB2-FORMAT-TS.
+   211     06 DB2-YYYY                  PIC X(004).                      E
+   212     06 DB2-STREEP-1              PIC X.                           -
+   213     06 DB2-MM                    PIC X(002).                      M
+   214     06 DB2-STREEP-2              PIC X.                           -
+   215     06 DB2-DD                    PIC X(002).                      D
+   216     06 DB2-STREEP-3              PIC X.                           -
+   217     06 DB2-HH                    PIC X(002).                      U
+   218     06 DB2-DOT-1                 PIC X.
+   219     06 DB2-MIN                   PIC X(002).
+   220     06 DB2-DOT-2                 PIC X.
+   221     06 DB2-SS                    PIC X(002).
+   222     06 DB2-DOT-3                 PIC X.
+   223     06 DB2-MIL                   PIC 9(002).
+   224     06 DB2-REST                  PIC X(04).
+   225 01 WS-MISC-VARS.
+   226     05 WS-LAST-ACCT-NUM          PIC X(11) VALUE SPACES.
+   227     05 WS-MONTHLY-INT            PIC S9(09)V99.
+   228     05 WS-TOTAL-INT              PIC S9(09)V99.
+   229     05 WS-FIRST-TIME             PIC X(01) VALUE 'Y'.
+   230 01 WS-COUNTERS.
+   231     05 WS-RECORD-COUNT           PIC 9(09) VALUE 0.
+   232     05 WS-TRANID-SUFFIX          PIC 9(06) VALUE 0.
+   233
+   234 LINKAGE SECTION.
+   235 01  EXTERNAL-PARMS.
+   236     05  PARM-LENGTH         PIC S9(04) COMP.
+   237     05  PARM-DATE           PIC X(10).
+   238*****************************************************************
+   239 PROCEDURE DIVISION USING EXTERNAL-PARMS.
+   240     DISPLAY 'START OF EXECUTION OF PROGRAM CBACT04C'.
+   241     PERFORM 0000-TCATBALF-OPEN.
+   242     PERFORM 0100-XREFFILE-OPEN.
+   243     PERFORM 0200-DISCGRP-OPEN.
+   244     PERFORM 0300-ACCTFILE-OPEN.
+   245     PERFORM 0400-TRANFILE-OPEN.
+   246
+   247     PERFORM UNTIL END-OF-FILE = 'Y'
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  10
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+   248         IF  END-OF-FILE = 'N'
+   249             PERFORM 1000-TCATBALF-GET-NEXT
+   250             IF  END-OF-FILE = 'N'
+   251               ADD 1 TO WS-RECORD-COUNT
+   252               DISPLAY TRAN-CAT-BAL-RECORD
+   253               IF TRANCAT-ACCT-ID NOT = WS-LAST-ACCT-NUM
+   254                 IF WS-FIRST-TIME NOT = 'Y'
+   255                    PERFORM 1050-UPDATE-ACCOUNT
+   256                 ELSE
+   257                    MOVE 'N' TO WS-FIRST-TIME
+   258                 END-IF
+   259                 MOVE 0 TO WS-TOTAL-INT
+   260                 MOVE TRANCAT-ACCT-ID TO WS-LAST-ACCT-NUM
+   261                 MOVE TRANCAT-ACCT-ID TO FD-ACCT-ID
+   262                 PERFORM 1100-GET-ACCT-DATA
+   263                 MOVE TRANCAT-ACCT-ID TO FD-XREF-ACCT-ID
+   264                 PERFORM 1110-GET-XREF-DATA
+   265               END-IF
+   266*              DISPLAY 'ACCT-GROUP-ID: ' ACCT-GROUP-ID
+   267*              DISPLAY 'TRANCAT-CD: ' TRANCAT-CD
+   268*              DISPLAY 'TRANCAT-TYPE-CD: ' TRANCAT-TYPE-CD
+   269               MOVE ACCT-GROUP-ID TO FD-DIS-ACCT-GROUP-ID
+   270               MOVE TRANCAT-CD TO FD-DIS-TRAN-CAT-CD
+   271               MOVE TRANCAT-TYPE-CD TO FD-DIS-TRAN-TYPE-CD
+   272               PERFORM 1200-GET-INTEREST-RATE
+   273               IF DIS-INT-RATE NOT = 0
+   274                 PERFORM 1300-COMPUTE-INTEREST
+   275                 PERFORM 1400-COMPUTE-FEES
+   276               END-IF
+   277             END-IF
+   278         ELSE
+   279              PERFORM 1050-UPDATE-ACCOUNT
+   280         END-IF
+   281     END-PERFORM.
+   282
+   283     PERFORM 9000-TCATBALF-CLOSE.
+   284     PERFORM 9100-XREFFILE-CLOSE.
+   285     PERFORM 9200-DISCGRP-CLOSE.
+   286     PERFORM 9300-ACCTFILE-CLOSE.
+   287     PERFORM 9400-TRANFILE-CLOSE.
+   288
+   289     DISPLAY 'END OF EXECUTION OF PROGRAM CBACT04C'.
+   290
+   291     GOBACK.
+   292*---------------------------------------------------------------*
+   293 0000-TCATBALF-OPEN.
+   294     MOVE 8 TO APPL-RESULT.
+   295     OPEN INPUT TCATBAL-FILE
+   296     IF  TCATBALF-STATUS = '00'
+   297         MOVE 0 TO APPL-RESULT
+   298     ELSE
+   299         MOVE 12 TO APPL-RESULT
+   300     END-IF
+   301     IF  APPL-AOK
+   302         CONTINUE
+   303     ELSE
+   304         DISPLAY 'ERROR OPENING TRANSACTION CATEGORY BALANCE'
+   305         MOVE TCATBALF-STATUS TO IO-STATUS
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  11
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+   306         PERFORM 9910-DISPLAY-IO-STATUS
+   307         PERFORM 9999-ABEND-PROGRAM
+   308     END-IF
+   309     EXIT.
+   310*---------------------------------------------------------------*
+   311 0100-XREFFILE-OPEN.
+   312     MOVE 8 TO APPL-RESULT.
+   313     OPEN INPUT XREF-FILE
+   314     IF  XREFFILE-STATUS = '00'
+   315         MOVE 0 TO APPL-RESULT
+   316     ELSE
+   317         MOVE 12 TO APPL-RESULT
+   318     END-IF
+   319     IF  APPL-AOK
+   320         CONTINUE
+   321     ELSE
+   322         DISPLAY 'ERROR OPENING CROSS REF FILE'   XREFFILE-STATUS
+   323         MOVE XREFFILE-STATUS TO IO-STATUS
+   324         PERFORM 9910-DISPLAY-IO-STATUS
+   325         PERFORM 9999-ABEND-PROGRAM
+   326     END-IF
+   327     EXIT.
+   328*---------------------------------------------------------------*
+   329 0200-DISCGRP-OPEN.
+   330     MOVE 8 TO APPL-RESULT.
+   331     OPEN INPUT DISCGRP-FILE
+   332     IF  DISCGRP-STATUS = '00'
+   333         MOVE 0 TO APPL-RESULT
+   334     ELSE
+   335         MOVE 12 TO APPL-RESULT
+   336     END-IF
+   337     IF  APPL-AOK
+   338         CONTINUE
+   339     ELSE
+   340         DISPLAY 'ERROR OPENING DALY REJECTS FILE'
+   341         MOVE DISCGRP-STATUS TO IO-STATUS
+   342         PERFORM 9910-DISPLAY-IO-STATUS
+   343         PERFORM 9999-ABEND-PROGRAM
+   344     END-IF
+   345     EXIT.
+   346
+   347*---------------------------------------------------------------*
+   348 0300-ACCTFILE-OPEN.
+   349     MOVE 8 TO APPL-RESULT.
+   350     OPEN I-O ACCOUNT-FILE
+   351     IF  ACCTFILE-STATUS = '00'
+   352         MOVE 0 TO APPL-RESULT
+   353     ELSE
+   354         MOVE 12 TO APPL-RESULT
+   355     END-IF
+   356     IF  APPL-AOK
+   357         CONTINUE
+   358     ELSE
+   359         DISPLAY 'ERROR OPENING ACCOUNT MASTER FILE'
+   360         MOVE ACCTFILE-STATUS TO IO-STATUS
+   361         PERFORM 9910-DISPLAY-IO-STATUS
+   362         PERFORM 9999-ABEND-PROGRAM
+   363     END-IF
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  12
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+   364     EXIT.
+   365*---------------------------------------------------------------*
+   366 0400-TRANFILE-OPEN.
+   367     MOVE 8 TO APPL-RESULT.
+   368     OPEN OUTPUT TRANSACT-FILE
+   369     IF  TRANFILE-STATUS = '00'
+   370         MOVE 0 TO APPL-RESULT
+   371     ELSE
+   372         MOVE 12 TO APPL-RESULT
+   373     END-IF
+   374     IF  APPL-AOK
+   375         CONTINUE
+   376     ELSE
+   377         DISPLAY 'ERROR OPENING TRANSACTION FILE'
+   378         MOVE TRANFILE-STATUS TO IO-STATUS
+   379         PERFORM 9910-DISPLAY-IO-STATUS
+   380         PERFORM 9999-ABEND-PROGRAM
+   381     END-IF
+   382     EXIT.
+   383*---------------------------------------------------------------*
+   384 1000-TCATBALF-GET-NEXT.
+   385     READ TCATBAL-FILE INTO TRAN-CAT-BAL-RECORD.
+   386     IF  TCATBALF-STATUS  = '00'
+   387         MOVE 0 TO APPL-RESULT
+   388     ELSE
+   389         IF  TCATBALF-STATUS  = '10'
+   390             MOVE 16 TO APPL-RESULT
+   391         ELSE
+   392             MOVE 12 TO APPL-RESULT
+   393         END-IF
+   394     END-IF
+   395     IF  APPL-AOK
+   396         CONTINUE
+   397     ELSE
+   398         IF  APPL-EOF
+   399             MOVE 'Y' TO END-OF-FILE
+   400         ELSE
+   401             DISPLAY 'ERROR READING TRANSACTION CATEGORY FILE'
+   402             MOVE TCATBALF-STATUS TO IO-STATUS
+   403             PERFORM 9910-DISPLAY-IO-STATUS
+   404             PERFORM 9999-ABEND-PROGRAM
+   405         END-IF
+   406     END-IF
+   407     EXIT.
+   408*---------------------------------------------------------------*
+   409 1050-UPDATE-ACCOUNT.
+   410* Update the balances in account record to reflect posted trans.
+   411     ADD WS-TOTAL-INT  TO ACCT-CURR-BAL
+   412     MOVE 0 TO ACCT-CURR-CYC-CREDIT
+   413     MOVE 0 TO ACCT-CURR-CYC-DEBIT
+   414
+   415     REWRITE FD-ACCTFILE-REC FROM  ACCOUNT-RECORD
+   416     IF  ACCTFILE-STATUS  = '00'
+   417         MOVE 0 TO APPL-RESULT
+   418     ELSE
+   419         MOVE 12 TO APPL-RESULT
+   420     END-IF
+   421     IF  APPL-AOK
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  13
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+   422         CONTINUE
+   423     ELSE
+   424         DISPLAY 'ERROR RE-WRITING ACCOUNT FILE'
+   425         MOVE ACCTFILE-STATUS  TO IO-STATUS
+   426         PERFORM 9910-DISPLAY-IO-STATUS
+   427         PERFORM 9999-ABEND-PROGRAM
+   428     END-IF
+   429     EXIT.
+   430*---------------------------------------------------------------*
+   431 1100-GET-ACCT-DATA.
+   432     READ ACCOUNT-FILE INTO ACCOUNT-RECORD
+   433         INVALID KEY
+   434            DISPLAY 'ACCOUNT NOT FOUND: ' FD-ACCT-ID
+   435     END-READ
+   436
+   437     IF  ACCTFILE-STATUS  = '00'
+   438         MOVE 0 TO APPL-RESULT
+   439     ELSE
+   440         MOVE 12 TO APPL-RESULT
+   441     END-IF
+   442     IF  APPL-AOK
+   443         CONTINUE
+   444     ELSE
+   445         DISPLAY 'ERROR READING ACCOUNT FILE'
+   446         MOVE ACCTFILE-STATUS  TO IO-STATUS
+   447         PERFORM 9910-DISPLAY-IO-STATUS
+   448         PERFORM 9999-ABEND-PROGRAM
+   449     END-IF
+   450     EXIT.
+   451*---------------------------------------------------------------*
+   452 1110-GET-XREF-DATA.
+   453     READ XREF-FILE INTO CARD-XREF-RECORD
+   454      KEY IS FD-XREF-ACCT-ID
+   455         INVALID KEY
+   456            DISPLAY 'ACCOUNT NOT FOUND: ' FD-XREF-ACCT-ID
+   457     END-READ
+   458
+   459     IF  XREFFILE-STATUS   = '00'
+   460         MOVE 0 TO APPL-RESULT
+   461     ELSE
+   462         MOVE 12 TO APPL-RESULT
+   463     END-IF
+   464     IF  APPL-AOK
+   465         CONTINUE
+   466     ELSE
+   467         DISPLAY 'ERROR READING XREF FILE'
+   468         MOVE XREFFILE-STATUS  TO IO-STATUS
+   469         PERFORM 9910-DISPLAY-IO-STATUS
+   470         PERFORM 9999-ABEND-PROGRAM
+   471     END-IF
+   472     EXIT.
+   473*---------------------------------------------------------------*
+   474 1200-GET-INTEREST-RATE.
+   475     READ DISCGRP-FILE INTO DIS-GROUP-RECORD
+   476          INVALID KEY
+   477             DISPLAY 'DISCLOSURE GROUP RECORD MISSING'
+   478             DISPLAY 'TRY WITH DEFAULT GROUP CODE'
+   479     END-READ.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  14
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+   480
+   481     IF  DISCGRP-STATUS  = '00'  OR '23'
+   482         MOVE 0 TO APPL-RESULT
+   483     ELSE
+   484         MOVE 12 TO APPL-RESULT
+   485     END-IF
+   486
+   487     IF  APPL-AOK
+   488         CONTINUE
+   489     ELSE
+   490         DISPLAY 'ERROR READING DISCLOSURE GROUP FILE'
+   491         MOVE DISCGRP-STATUS  TO IO-STATUS
+   492         PERFORM 9910-DISPLAY-IO-STATUS
+   493         PERFORM 9999-ABEND-PROGRAM
+   494     END-IF
+   495     IF  DISCGRP-STATUS  = '23'
+   496         MOVE 'DEFAULT' TO FD-DIS-ACCT-GROUP-ID
+   497         PERFORM 1200-A-GET-DEFAULT-INT-RATE
+   498     END-IF
+   499     EXIT.
+   500
+   501*---------------------------------------------------------------*
+   502 1200-A-GET-DEFAULT-INT-RATE.
+   503     READ DISCGRP-FILE INTO DIS-GROUP-RECORD
+   504
+   505     IF  DISCGRP-STATUS  = '00'
+   506         MOVE 0 TO APPL-RESULT
+   507     ELSE
+   508         MOVE 12 TO APPL-RESULT
+   509     END-IF
+   510
+   511     IF  APPL-AOK
+   512         CONTINUE
+   513     ELSE
+   514         DISPLAY 'ERROR READING DEFAULT DISCLOSURE GROUP'
+   515         MOVE DISCGRP-STATUS  TO IO-STATUS
+   516         PERFORM 9910-DISPLAY-IO-STATUS
+   517         PERFORM 9999-ABEND-PROGRAM
+   518     END-IF
+   519     EXIT.
+   520*---------------------------------------------------------------*
+   521 1300-COMPUTE-INTEREST.
+   522
+   523     COMPUTE WS-MONTHLY-INT
+   524      = ( TRAN-CAT-BAL * DIS-INT-RATE) / 1200
+   525
+   526     ADD WS-MONTHLY-INT  TO WS-TOTAL-INT
+   527     PERFORM 1300-B-WRITE-TX.
+   528
+   529     EXIT.
+   530
+   531*---------------------------------------------------------------*
+   532 1300-B-WRITE-TX.
+   533     ADD 1 TO WS-TRANID-SUFFIX
+   534
+   535     STRING PARM-DATE,
+   536            WS-TRANID-SUFFIX
+   537       DELIMITED BY SIZE
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  15
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+   538       INTO TRAN-ID
+   539     END-STRING.
+   540
+   541     MOVE '01'                 TO TRAN-TYPE-CD
+   542     MOVE '05'                 TO TRAN-CAT-CD
+   543     MOVE 'System'             TO TRAN-SOURCE
+   544     STRING 'Int. for a/c ' ,
+   545            ACCT-ID
+   546            DELIMITED BY SIZE
+   547      INTO TRAN-DESC
+   548     END-STRING
+   549     MOVE WS-MONTHLY-INT       TO TRAN-AMT
+   550     MOVE 0                    TO TRAN-MERCHANT-ID
+   551     MOVE SPACES               TO TRAN-MERCHANT-NAME
+   552     MOVE SPACES               TO TRAN-MERCHANT-CITY
+   553     MOVE SPACES               TO TRAN-MERCHANT-ZIP
+   554     MOVE XREF-CARD-NUM        TO TRAN-CARD-NUM
+   555     PERFORM Z-GET-DB2-FORMAT-TIMESTAMP
+   556     MOVE DB2-FORMAT-TS        TO TRAN-ORIG-TS
+   557     MOVE DB2-FORMAT-TS        TO TRAN-PROC-TS
+   558
+   559     WRITE FD-TRANFILE-REC FROM TRAN-RECORD
+   560     IF  TRANFILE-STATUS   = '00'
+   561         MOVE 0 TO APPL-RESULT
+   562     ELSE
+   563         MOVE 12 TO APPL-RESULT
+   564     END-IF
+   565
+   566     IF  APPL-AOK
+   567         CONTINUE
+   568     ELSE
+   569         DISPLAY 'ERROR WRITING TRANSACTION RECORD'
+   570         MOVE TRANFILE-STATUS   TO IO-STATUS
+   571         PERFORM 9910-DISPLAY-IO-STATUS
+   572         PERFORM 9999-ABEND-PROGRAM
+   573     END-IF
+   574     EXIT.
+   575
+   576*---------------------------------------------------------------*
+   577 1400-COMPUTE-FEES.
+   578* To be implemented
+   579     EXIT.
+   580*---------------------------------------------------------------*
+   581 9000-TCATBALF-CLOSE.
+   582     MOVE 8 TO  APPL-RESULT.
+   583     CLOSE TCATBAL-FILE
+   584     IF  TCATBALF-STATUS = '00'
+   585         MOVE 0 TO  APPL-RESULT
+   586     ELSE
+   587         MOVE 12 TO APPL-RESULT
+   588     END-IF
+   589     IF  APPL-AOK
+   590         CONTINUE
+   591     ELSE
+   592         DISPLAY 'ERROR CLOSING TRANSACTION BALANCE FILE'
+   593         MOVE TCATBALF-STATUS  TO IO-STATUS
+   594         PERFORM 9910-DISPLAY-IO-STATUS
+   595         PERFORM 9999-ABEND-PROGRAM
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  16
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+   596     END-IF
+   597     EXIT.
+   598
+   599*---------------------------------------------------------------*
+   600 9100-XREFFILE-CLOSE.
+   601     MOVE 8 TO APPL-RESULT.
+   602     CLOSE XREF-FILE
+   603     IF  XREFFILE-STATUS = '00'
+   604         MOVE 0 TO APPL-RESULT
+   605     ELSE
+   606         MOVE 12 TO APPL-RESULT
+   607     END-IF
+   608     IF  APPL-AOK
+   609         CONTINUE
+   610     ELSE
+   611         DISPLAY 'ERROR CLOSING CROSS REF FILE'
+   612         MOVE XREFFILE-STATUS TO IO-STATUS
+   613         PERFORM 9910-DISPLAY-IO-STATUS
+   614         PERFORM 9999-ABEND-PROGRAM
+   615     END-IF
+   616     EXIT.
+   617*---------------------------------------------------------------*
+   618 9200-DISCGRP-CLOSE.
+   619     MOVE 8 TO APPL-RESULT.
+   620     CLOSE DISCGRP-FILE
+   621     IF  DISCGRP-STATUS = '00'
+   622         MOVE 0 TO APPL-RESULT
+   623     ELSE
+   624         MOVE 12 TO APPL-RESULT
+   625     END-IF
+   626     IF  APPL-AOK
+   627         CONTINUE
+   628     ELSE
+   629         DISPLAY 'ERROR CLOSING DISCLOSURE GROUP FILE'
+   630         MOVE DISCGRP-STATUS TO IO-STATUS
+   631         PERFORM 9910-DISPLAY-IO-STATUS
+   632         PERFORM 9999-ABEND-PROGRAM
+   633     END-IF
+   634     EXIT.
+   635*---------------------------------------------------------------*
+   636 9300-ACCTFILE-CLOSE.
+   637     MOVE 8 TO APPL-RESULT.
+   638     CLOSE ACCOUNT-FILE
+   639     IF  ACCTFILE-STATUS  = '00'
+   640         MOVE 0 TO APPL-RESULT
+   641     ELSE
+   642         MOVE 12 TO APPL-RESULT
+   643     END-IF
+   644     IF  APPL-AOK
+   645         CONTINUE
+   646     ELSE
+   647         DISPLAY 'ERROR CLOSING ACCOUNT FILE'
+   648         MOVE ACCTFILE-STATUS  TO IO-STATUS
+   649         PERFORM 9910-DISPLAY-IO-STATUS
+   650         PERFORM 9999-ABEND-PROGRAM
+   651     END-IF
+   652     EXIT.
+   653
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  17
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+   654 9400-TRANFILE-CLOSE.
+   655     MOVE 8 TO APPL-RESULT.
+   656     CLOSE TRANSACT-FILE
+   657     IF  TRANFILE-STATUS  = '00'
+   658         MOVE 0 TO APPL-RESULT
+   659     ELSE
+   660         MOVE 12 TO APPL-RESULT
+   661     END-IF
+   662     IF  APPL-AOK
+   663         CONTINUE
+   664     ELSE
+   665         DISPLAY 'ERROR CLOSING TRANSACTION FILE'
+   666         MOVE TRANFILE-STATUS  TO IO-STATUS
+   667         PERFORM 9910-DISPLAY-IO-STATUS
+   668         PERFORM 9999-ABEND-PROGRAM
+   669     END-IF
+   670     EXIT.
+   671
+   672 Z-GET-DB2-FORMAT-TIMESTAMP.
+   673     MOVE FUNCTION CURRENT-DATE TO COBOL-TS
+   674     MOVE COB-YYYY TO DB2-YYYY
+   675     MOVE COB-MM   TO DB2-MM
+   676     MOVE COB-DD   TO DB2-DD
+   677     MOVE COB-HH   TO DB2-HH
+   678     MOVE COB-MIN  TO DB2-MIN
+   679     MOVE COB-SS   TO DB2-SS
+   680     MOVE COB-MIL  TO DB2-MIL
+   681     MOVE '0000'   TO DB2-REST
+   682     MOVE '-' TO DB2-STREEP-1 DB2-STREEP-2 DB2-STREEP-3
+   683     MOVE '.' TO DB2-DOT-1 DB2-DOT-2 DB2-DOT-3
+   684*    DISPLAY 'DB2-TIMESTAMP = ' DB2-FORMAT-TS
+   685     EXIT.
+   686
+   687 9999-ABEND-PROGRAM.
+   688     DISPLAY 'ABENDING PROGRAM'
+   689     MOVE 0 TO TIMING
+   690     MOVE 999 TO ABCODE
+   691     CALL 'CEE3ABD'.
+   692
+   693*****************************************************************
+   694 9910-DISPLAY-IO-STATUS.
+   695     IF  IO-STATUS NOT NUMERIC
+   696     OR  IO-STAT1 = '9'
+   697         MOVE IO-STAT1 TO IO-STATUS-04(1:1)
+   698         MOVE 0        TO TWO-BYTES-BINARY
+   699         MOVE IO-STAT2 TO TWO-BYTES-RIGHT
+   700         MOVE TWO-BYTES-BINARY TO IO-STATUS-0403
+   701         DISPLAY 'FILE STATUS IS: NNNN' IO-STATUS-04
+   702     ELSE
+   703         MOVE '0000' TO IO-STATUS-04
+   704         MOVE IO-STATUS TO IO-STATUS-04(3:2)
+   705         DISPLAY 'FILE STATUS IS: NNNN' IO-STATUS-04
+   706     END-IF
+   707     EXIT.
+   708
+   709*
+   710* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:12:31 CDT
+   711*
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  18
+* C:\CrossPlatformBuild\CardDemo\COBOL\CBACT04C.cbl
+*
+*
+* Errors
+* -Line- Col Code/severity Description
+* Micro Focus COBOL                  V8.0 revision 000 Compiler
+* (C) Copyright 1984-2023 Micro Focus or one of its affiliates.
+*                                                        REF GKR-101800000A0
+* Total Messages:     0
+* Data:        6592     Code:       11997

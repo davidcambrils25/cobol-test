@@ -1,0 +1,1215 @@
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   1
+* COADM01C.cbl
+* Options: int("COADM01C.int") verbose
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DI
+*          RFOLDER/COADM01C.cbl.dir)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+*          USE(/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/DIRECTIVES/DE
+*          FAULTDIR/DUMMY.DIR)
+* Setting: NOACCEPTREFRESH
+*          NOACU
+*          NOACUCOMMENT
+*          NOACUSYNC
+*          NOACU-UNDERSCORE
+*            ADV
+*            ALIGN"8 OPT"
+*            ALPHALITCONT"MARGIN"
+*            ALPHASTART"1"
+*            ALTER
+*          NOAMODE
+*            ANIM
+*            ANS85
+*            APOST
+*            AREACHECK
+*            ARITH"EXTEND"
+*            ARITHMETIC"ENTCOBOL"
+*            ASSIGN"EXTERNAL"
+*          NOASSIGN-PRINTER
+*          NOAUTOLOCK
+*          NOBELL
+*            BINLIT"BOOLEAN"
+*          NOBOUND
+*          NOBRIEF
+*          NOBS2000
+*            BWZSTAR
+*            BYTEMODEMOVE
+*            CALLFH"EXTFH"
+*          NOCALLRECOVERY
+*            CALLSORT"EXTSM"
+*            CANCEL
+*            CANCELLBR
+*            CHANGEMESSAGE"2000 N"
+*            CHARSET"EBCDIC"
+*            CHECKDIV"ENTCOBOL"
+*          NOCHECKREFMOD
+*          NOCICS
+*          NOCICS-CPY
+*          NOCICSOPTIMIZE
+*          NOCMPR2
+*            COBFSTATCONV
+*          NOCOBIDY
+*          NOCOBOL370
+*          NOCOBOLDIR
+*          NOCOMMANDLINELINKAGE
+*            COLLECTION"CardDemo"
+*          NOCOMP
+*            COMP"BINARY"
+*            COMP1"FLOAT"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   2
+* COADM01C.cbl
+*            COMP2"FLOAT"
+*            COMP-5"2"
+*            COMP-6"2"
+*            CONFIRM
+*          NOCONVERTRET
+*            CONVSPACE
+*            COPYEXT"cpy,cbl"
+*            COPYLBR
+*            COPYLIST
+*            COPYLISTCOMMENT"7"
+*            COPYSEARCH"MF"
+*            CSI
+*            CURRENCY-SIGN"36"
+*            CURRENT-DATE"MMDDYY"
+*          NODATA
+*            DATACOMPRESS"0"
+*          NODATA-CONTEXT
+*          NODATAMAP
+*            DATE
+*            DBCHECK
+*            DBCS"3"
+*            DBCSSOSI"14""15"
+*            DBSPACE
+*            DE-EDIT"2"
+*            DEFAULTBYTE"0"
+*          NODEFAULTCALLS
+*            DETECTLOCK
+*          NODG
+*            DIALECT"ENTCOBOL"
+*          NODIRECTIVES-IN-COMMENTS
+*            DISPLAY"CONSOLE"
+*          NODISPLAYAT
+*            DISPLAYPICU"ANSI"
+*            DISPSIGN"COMPAT"
+*          NODOSVS
+*          NODOTNET
+*            DPCINDATA"XML"
+*            DPCINSUBSCRIPT
+*          NODYNAM
+*          NOEARLY-RELEASE
+*            EBCCOLSEQ"1"
+*            ECHO
+*          NOECHOALL
+*            ENTCOBOL
+*          NOEOF1A
+*            ERRFORMAT"2"
+*            ERRLIST"VERBOSE"
+*          NOERRQ
+*          NOEXECSQLFLAG
+*            EXITPROGRAM"ANSI"
+*          NOFASTINIT
+*            FASTSORT
+*            FCD3
+*          NOFCDALIGN
+*          NOFCDREG
+*            FDCLEAR"3"
+*          NOFILESHARE
+*            FILETYPE"0"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   3
+* COADM01C.cbl
+*            FLAG"ENTCOBOL"
+*            FLAGAS"S"
+*          NOFLAGEUC
+*          NOFLAGMIG
+*          NOFLAGQ
+*            FLAGSINEDIT
+*          NOFLAGSTD
+*            FOLDCALLNAME"UPPER"
+*            FOLDCOPYNAME"UPPER"
+*            FORM"60"
+*            FP-ROUNDING"ENTCOBOL"
+*          NOHOSTARITHMETIC
+*            HOSTCONTZERO
+*            HOST-NUMCOMPARE
+*            HOST-NUMMOVE
+*            HOSTFD
+*          NOHOSTRW
+*          NOIBM-MS
+*            IBMCOMP
+*            IDENTIFIERLEN"30"
+*            IDXFORMAT"0"
+*          NOIGNOREEXEC
+*          NOIL
+*          NOILGEN
+*          NOILEMIT
+*            IMPLICITSCOPE
+*            INCFORMAT"PC"
+*            INDD"SYSIN 80 R"
+*          NOIDYSRCPATH
+*            INFORETURN"0"
+*          NOINITCALL
+*            INITIAL"1"
+*          NOINITPTR
+*          NOINITBYTYPE
+*            INT"COADM01C.int"
+*            INTDATE"ANSI"
+*            INTLEVEL"9"
+*            IOCONV
+*          NOISO2002
+*          NOIXNLSKEY
+*          NOIXNUMKEY
+*          NOJAVACALLABLE
+*          NOJAVAGENPROGS
+*          NOJAVAGENSTRG
+*            JAVAOUTPUTPATH""
+*            JAVAPACKAGENAME"com.microfocus.COBOL"
+*          NOJVMGEN
+*            KEYCHECK
+*            KEYCOMPRESS"0"
+*          NOLIBRARIAN
+*          NOLINE-COUNT
+*            LIST"COADM01C.lst"
+*            LISTPATH...
+*          ..."/home/ec2-user/CrossPlatformBuild/CardDemo/UXBUILD/LISTINGS/CO"
+*            LISTWIDTH"80"
+*            LITVAL-SIZE"4"
+*          NOLOCALSOURCEFORMAT
+*            LOCKTYPE"0"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   4
+* COADM01C.cbl
+*            MAPNAME
+*          NOMAINFRAMEFLOATINGPOINT
+*          NOMAXERROR
+*            METHODDEFAULT"REFERENCE"
+*          NOMF
+*          NOMFCOMMENT
+*          NOMFSYNC
+*          NOMOVELENCHECK
+*          NOMS
+*          NOMVS
+*            NATIONAL"1"
+*            NATIVE"EBCDIC"
+*          NONATIVEFLOATINGPOINT
+*          NONCHAR
+*          NONLS
+*          NONLSCURRENCYLENGTH
+*            NSYMBOL"NATIONAL"
+*            NULLESCAPE
+*          NOODOOSVS
+*            ODOSLIDE
+*          NOOLDBLANKLINE
+*          NOOLDCOPY
+*          NOOLDINDEX
+*          NOOLDNEXTSENTENCE
+*          NOOLDREADINTO
+*          NOOLDSTRMIX
+*            OOCTRL"-C-E-G+L-P+Q+R-S+W"
+*          NOOPTIONAL-FILE
+*          NOOS390
+*            OSEXT""
+*          NOOSVS
+*            OUTDD"SYSOUT 121 R"
+*            P64
+*          NOPANVALET
+*            PANVALET-INCLUDES-IN-COMMENTS
+*            PERFORM-TYPE"ENTCOBOL"
+*          NOPREPLIST
+*          NOPREPROCESS
+*            PRESERVECASE
+*          NOPRINT-EXT
+*          NOPROFILE
+*          NOPROGID-COMMENT
+*          NOPROGID-INT-NAME
+*          NOPROTECT-LINKAGE
+*            PROTOTYPE"RELAXED"
+*            QUAL
+*            QUALPROC
+*          NOQUERY
+*          NOQUOTE
+*          NORAWLIST
+*            RDW
+*            RECMODE"ENTCOBOL"
+*          NOREENTRANT
+*          NOREF
+*          NOREFNO
+*            REMAINDER"2"
+*            REPLACE"NOKEEPSEQ"
+*            REPORT-LINE"256"
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   5
+* COADM01C.cbl
+*            RESEQ
+*          NORETRYLOCK
+*            REWRITE-LS
+*          NORM
+*          NORM-FILE-ERRORS
+*            RTNCODE-SIZE"2"
+*            RTNCODE-TYPE"COMP"
+*          NORWHARDPAGE
+*          NOSAA
+*          NOSEG
+*          NOSEQCHK
+*            SEQUENTIAL"RECORD"
+*          NOSERIAL
+*            SETTING"COL"
+*          NOSHAREOUTDD
+*          NOSHOW-DIR
+*            SIGN"EBCDIC"
+*            SIGN"TRAILING"
+*          NOSIGNDISCARD
+*          NOSIGNFIXUP
+*            SORTTYPE"DFSORT"
+*          NOSOURCEENCODING
+*            SOURCEFORMAT"FIXED"
+*            SOURCETABSTOP"4"
+*          NOSPZERO
+*          NOSSRANGE
+*            STDERR
+*            STICKY-LINKAGE"1"
+*          NOSTICKY-PERFORM
+*            SUPFF
+*            SWITCHTYPE"1"
+*            SYMBSTART"1"
+*            SYSPUNCH"80"
+*            TERMPAGE
+*          NOTESTCOVER
+*            TIME
+*          NOTRACE
+*          NOTRUNC
+*            TRUNCCALLNAME"8"
+*            TRUNCCOPY"8"
+*            TRUNCINC"10"
+*            UNICODE"PORTABLE"
+*            VERBOSE
+*          NOVISUALSTUDIO
+*          NOVSC2
+*          NOWARNASERROR
+*            WARNING"1"
+*            WEBSERVER"CGI"
+*          NOWRITELOCK
+*          NOWRITETHRU
+*          NOXMLGEN
+*            XMLPARSE"XMLSS"
+*          NOXOPEN
+*          NOXREF
+*            ZEROLENGTHFALSE
+*          NOZEROSEQ
+*            ZWB
+     1******************************************************************
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   6
+* COADM01C.cbl
+     2* Program     : COADM01C.CBL
+     3* Application : CardDemo
+     4* Type        : CICS COBOL Program
+     5* Function    : Admin Menu for Admin users
+     6******************************************************************
+     7 IDENTIFICATION DIVISION.
+     8 PROGRAM-ID. COADM01C.
+     9 AUTHOR.     AWS.
+    10
+    11 ENVIRONMENT DIVISION.
+    12 CONFIGURATION SECTION.
+    13
+    14 DATA DIVISION.
+    15*----------------------------------------------------------------*
+    16*                     WORKING STORAGE SECTION
+    17*----------------------------------------------------------------*
+    18 WORKING-STORAGE SECTION.
+    19
+    20 01 WS-VARIABLES.
+    21   05 WS-PGMNAME                 PIC X(08) VALUE 'COADM01C'.
+    22   05 WS-TRANID                  PIC X(04) VALUE 'CA00'.
+    23   05 WS-MESSAGE                 PIC X(80) VALUE SPACES.
+    24   05 WS-USRSEC-FILE             PIC X(08) VALUE 'USRSEC  '.
+    25   05 WS-ERR-FLG                 PIC X(01) VALUE 'N'.
+    26     88 ERR-FLG-ON                         VALUE 'Y'.
+    27     88 ERR-FLG-OFF                        VALUE 'N'.
+    28   05 WS-RESP-CD                 PIC S9(09) COMP VALUE ZEROS.
+    29   05 WS-REAS-CD                 PIC S9(09) COMP VALUE ZEROS.
+    30   05 WS-OPTION-X                PIC X(02) JUST RIGHT.
+    31   05 WS-OPTION                  PIC 9(02) VALUE 0.
+    32   05 WS-IDX                     PIC S9(04) COMP VALUE ZEROS.
+    33   05 WS-ADMIN-OPT-TXT           PIC X(40) VALUE SPACES.
+    34
+    35*COPY COCOM01Y.
+    36******************************************************************
+    37* Communication area for CardDemo application programs
+    38******************************************************************
+    39 01 CARDDEMO-COMMAREA.
+    40    05 CDEMO-GENERAL-INFO.
+    41       10 CDEMO-FROM-TRANID             PIC X(04).
+    42       10 CDEMO-FROM-PROGRAM            PIC X(08).
+    43       10 CDEMO-TO-TRANID               PIC X(04).
+    44       10 CDEMO-TO-PROGRAM              PIC X(08).
+    45       10 CDEMO-USER-ID                 PIC X(08).
+    46       10 CDEMO-USER-TYPE               PIC X(01).
+    47          88 CDEMO-USRTYP-ADMIN         VALUE 'A'.
+    48          88 CDEMO-USRTYP-USER          VALUE 'U'.
+    49       10 CDEMO-PGM-CONTEXT             PIC 9(01).
+    50          88 CDEMO-PGM-ENTER            VALUE 0.
+    51          88 CDEMO-PGM-REENTER          VALUE 1.
+    52    05 CDEMO-CUSTOMER-INFO.
+    53       10 CDEMO-CUST-ID                 PIC 9(09).
+    54       10 CDEMO-CUST-FNAME              PIC X(25).
+    55       10 CDEMO-CUST-MNAME              PIC X(25).
+    56       10 CDEMO-CUST-LNAME              PIC X(25).
+    57    05 CDEMO-ACCOUNT-INFO.
+    58       10 CDEMO-ACCT-ID                 PIC 9(11).
+    59       10 CDEMO-ACCT-STATUS             PIC X(01).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   7
+* COADM01C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/COPYBOOKS/COCOM01Y.c)
+    60    05 CDEMO-CARD-INFO.
+    61       10 CDEMO-CARD-NUM                PIC 9(16).
+    62    05 CDEMO-MORE-INFO.
+    63       10  CDEMO-LAST-MAP               PIC X(7).
+    64       10  CDEMO-LAST-MAPSET            PIC X(7).
+    65*
+    66* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:57 CDT
+    67*
+    68*COPY COADM02Y.
+    69******************************************************************
+    70* CardDemo - Admin Menu Options
+    71******************************************************************
+    72 01 CARDDEMO-ADMIN-MENU-OPTIONS.
+    73   05 CDEMO-ADMIN-OPT-COUNT           PIC 9(02) VALUE 4.
+    74
+    75   05 CDEMO-ADMIN-OPTIONS-DATA.
+    76
+    77     10 FILLER                        PIC 9(02) VALUE 1.
+    78     10 FILLER                        PIC X(35) VALUE
+    79         'User List (Security)               '.
+    80     10 FILLER                        PIC X(08) VALUE 'COUSR00C'.
+    81
+    82     10 FILLER                        PIC 9(02) VALUE 2.
+    83     10 FILLER                        PIC X(35) VALUE
+    84         'User Add (Security)                '.
+    85     10 FILLER                        PIC X(08) VALUE 'COUSR01C'.
+    86
+    87     10 FILLER                        PIC 9(02) VALUE 3.
+    88     10 FILLER                        PIC X(35) VALUE
+    89         'User Update (Security)             '.
+    90     10 FILLER                        PIC X(08) VALUE 'COUSR02C'.
+    91
+    92     10 FILLER                        PIC 9(02) VALUE 4.
+    93     10 FILLER                        PIC X(35) VALUE
+    94         'User Delete (Security)             '.
+    95     10 FILLER                        PIC X(08) VALUE 'COUSR03C'.
+    96     10 FILLER                        PIC X(225).
+    97
+    98
+    99   05 CDEMO-ADMIN-OPTIONS REDEFINES CDEMO-ADMIN-OPTIONS-DATA.
+   100     10 CDEMO-ADMIN-OPT OCCURS 9 TIMES.
+   101       15 CDEMO-ADMIN-OPT-NUM           PIC 9(02).
+   102       15 CDEMO-ADMIN-OPT-NAME          PIC X(35).
+   103       15 CDEMO-ADMIN-OPT-PGMNAME       PIC X(08).
+   104*
+   105* Ver: CardDemo_v1.0-26-g42273c1-79 Date: 2022-07-20 16:59:12 CDT
+   106*
+   107
+   108*COPY COADM01.
+   109*   Micro Focus COBOL 2017  7.0.00247
+   110*   Micro Focus BMS Screen Painter
+   111*   MapSet Name   COADM01
+   112*   Date Created  08/05/2022
+   113*   Time Created  16:44:44
+   114
+   115*  Input Data For Map COADM1A
+   116   01 COADM1AI.
+   117      03 FILLER                         PIC X(12).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   8
+* COADM01C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COADM01.cpy)
+   118      03 TRNNAMEL                       PIC S9(4) COMP.
+   119      03 TRNNAMEF                       PIC X.
+   120      03 FILLER REDEFINES TRNNAMEF.
+   121         05 TRNNAMEA                       PIC X.
+   122      03 FILLER                         PIC X(4).
+   123      03 TRNNAMEI                       PIC X(4).
+   124      03 TITLE01L                       PIC S9(4) COMP.
+   125      03 TITLE01F                       PIC X.
+   126      03 FILLER REDEFINES TITLE01F.
+   127         05 TITLE01A                       PIC X.
+   128      03 FILLER                         PIC X(4).
+   129      03 TITLE01I                       PIC X(40).
+   130      03 CURDATEL                       PIC S9(4) COMP.
+   131      03 CURDATEF                       PIC X.
+   132      03 FILLER REDEFINES CURDATEF.
+   133         05 CURDATEA                       PIC X.
+   134      03 FILLER                         PIC X(4).
+   135      03 CURDATEI                       PIC X(8).
+   136      03 PGMNAMEL                       PIC S9(4) COMP.
+   137      03 PGMNAMEF                       PIC X.
+   138      03 FILLER REDEFINES PGMNAMEF.
+   139         05 PGMNAMEA                       PIC X.
+   140      03 FILLER                         PIC X(4).
+   141      03 PGMNAMEI                       PIC X(8).
+   142      03 TITLE02L                       PIC S9(4) COMP.
+   143      03 TITLE02F                       PIC X.
+   144      03 FILLER REDEFINES TITLE02F.
+   145         05 TITLE02A                       PIC X.
+   146      03 FILLER                         PIC X(4).
+   147      03 TITLE02I                       PIC X(40).
+   148      03 CURTIMEL                       PIC S9(4) COMP.
+   149      03 CURTIMEF                       PIC X.
+   150      03 FILLER REDEFINES CURTIMEF.
+   151         05 CURTIMEA                       PIC X.
+   152      03 FILLER                         PIC X(4).
+   153      03 CURTIMEI                       PIC X(8).
+   154      03 OPTN001L                       PIC S9(4) COMP.
+   155      03 OPTN001F                       PIC X.
+   156      03 FILLER REDEFINES OPTN001F.
+   157         05 OPTN001A                       PIC X.
+   158      03 FILLER                         PIC X(4).
+   159      03 OPTN001I                       PIC X(40).
+   160      03 OPTN002L                       PIC S9(4) COMP.
+   161      03 OPTN002F                       PIC X.
+   162      03 FILLER REDEFINES OPTN002F.
+   163         05 OPTN002A                       PIC X.
+   164      03 FILLER                         PIC X(4).
+   165      03 OPTN002I                       PIC X(40).
+   166      03 OPTN003L                       PIC S9(4) COMP.
+   167      03 OPTN003F                       PIC X.
+   168      03 FILLER REDEFINES OPTN003F.
+   169         05 OPTN003A                       PIC X.
+   170      03 FILLER                         PIC X(4).
+   171      03 OPTN003I                       PIC X(40).
+   172      03 OPTN004L                       PIC S9(4) COMP.
+   173      03 OPTN004F                       PIC X.
+   174      03 FILLER REDEFINES OPTN004F.
+   175         05 OPTN004A                       PIC X.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page   9
+* COADM01C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COADM01.cpy)
+   176      03 FILLER                         PIC X(4).
+   177      03 OPTN004I                       PIC X(40).
+   178      03 OPTN005L                       PIC S9(4) COMP.
+   179      03 OPTN005F                       PIC X.
+   180      03 FILLER REDEFINES OPTN005F.
+   181         05 OPTN005A                       PIC X.
+   182      03 FILLER                         PIC X(4).
+   183      03 OPTN005I                       PIC X(40).
+   184      03 OPTN006L                       PIC S9(4) COMP.
+   185      03 OPTN006F                       PIC X.
+   186      03 FILLER REDEFINES OPTN006F.
+   187         05 OPTN006A                       PIC X.
+   188      03 FILLER                         PIC X(4).
+   189      03 OPTN006I                       PIC X(40).
+   190      03 OPTN007L                       PIC S9(4) COMP.
+   191      03 OPTN007F                       PIC X.
+   192      03 FILLER REDEFINES OPTN007F.
+   193         05 OPTN007A                       PIC X.
+   194      03 FILLER                         PIC X(4).
+   195      03 OPTN007I                       PIC X(40).
+   196      03 OPTN008L                       PIC S9(4) COMP.
+   197      03 OPTN008F                       PIC X.
+   198      03 FILLER REDEFINES OPTN008F.
+   199         05 OPTN008A                       PIC X.
+   200      03 FILLER                         PIC X(4).
+   201      03 OPTN008I                       PIC X(40).
+   202      03 OPTN009L                       PIC S9(4) COMP.
+   203      03 OPTN009F                       PIC X.
+   204      03 FILLER REDEFINES OPTN009F.
+   205         05 OPTN009A                       PIC X.
+   206      03 FILLER                         PIC X(4).
+   207      03 OPTN009I                       PIC X(40).
+   208      03 OPTN010L                       PIC S9(4) COMP.
+   209      03 OPTN010F                       PIC X.
+   210      03 FILLER REDEFINES OPTN010F.
+   211         05 OPTN010A                       PIC X.
+   212      03 FILLER                         PIC X(4).
+   213      03 OPTN010I                       PIC X(40).
+   214      03 OPTN011L                       PIC S9(4) COMP.
+   215      03 OPTN011F                       PIC X.
+   216      03 FILLER REDEFINES OPTN011F.
+   217         05 OPTN011A                       PIC X.
+   218      03 FILLER                         PIC X(4).
+   219      03 OPTN011I                       PIC X(40).
+   220      03 OPTN012L                       PIC S9(4) COMP.
+   221      03 OPTN012F                       PIC X.
+   222      03 FILLER REDEFINES OPTN012F.
+   223         05 OPTN012A                       PIC X.
+   224      03 FILLER                         PIC X(4).
+   225      03 OPTN012I                       PIC X(40).
+   226      03 OPTIONL                        PIC S9(4) COMP.
+   227      03 OPTIONF                        PIC X.
+   228      03 FILLER REDEFINES OPTIONF.
+   229         05 OPTIONA                        PIC X.
+   230      03 FILLER                         PIC X(4).
+   231      03 OPTIONI                        PIC X(2).
+   232      03 ERRMSGL                        PIC S9(4) COMP.
+   233      03 ERRMSGF                        PIC X.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  10
+* COADM01C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COADM01.cpy)
+   234      03 FILLER REDEFINES ERRMSGF.
+   235         05 ERRMSGA                        PIC X.
+   236      03 FILLER                         PIC X(4).
+   237      03 ERRMSGI                        PIC X(78).
+   238
+   239*  Output Data For Map COADM1A
+   240   01 COADM1AO REDEFINES COADM1AI.
+   241      03 FILLER                         PIC X(12).
+   242      03 FILLER                         PIC X(3).
+   243      03 TRNNAMEC                       PIC X.
+   244      03 TRNNAMEP                       PIC X.
+   245      03 TRNNAMEH                       PIC X.
+   246      03 TRNNAMEV                       PIC X.
+   247      03 TRNNAMEO                       PIC X(4).
+   248      03 FILLER                         PIC X(3).
+   249      03 TITLE01C                       PIC X.
+   250      03 TITLE01P                       PIC X.
+   251      03 TITLE01H                       PIC X.
+   252      03 TITLE01V                       PIC X.
+   253      03 TITLE01O                       PIC X(40).
+   254      03 FILLER                         PIC X(3).
+   255      03 CURDATEC                       PIC X.
+   256      03 CURDATEP                       PIC X.
+   257      03 CURDATEH                       PIC X.
+   258      03 CURDATEV                       PIC X.
+   259      03 CURDATEO                       PIC X(8).
+   260      03 FILLER                         PIC X(3).
+   261      03 PGMNAMEC                       PIC X.
+   262      03 PGMNAMEP                       PIC X.
+   263      03 PGMNAMEH                       PIC X.
+   264      03 PGMNAMEV                       PIC X.
+   265      03 PGMNAMEO                       PIC X(8).
+   266      03 FILLER                         PIC X(3).
+   267      03 TITLE02C                       PIC X.
+   268      03 TITLE02P                       PIC X.
+   269      03 TITLE02H                       PIC X.
+   270      03 TITLE02V                       PIC X.
+   271      03 TITLE02O                       PIC X(40).
+   272      03 FILLER                         PIC X(3).
+   273      03 CURTIMEC                       PIC X.
+   274      03 CURTIMEP                       PIC X.
+   275      03 CURTIMEH                       PIC X.
+   276      03 CURTIMEV                       PIC X.
+   277      03 CURTIMEO                       PIC X(8).
+   278      03 FILLER                         PIC X(3).
+   279      03 OPTN001C                       PIC X.
+   280      03 OPTN001P                       PIC X.
+   281      03 OPTN001H                       PIC X.
+   282      03 OPTN001V                       PIC X.
+   283      03 OPTN001O                       PIC X(40).
+   284      03 FILLER                         PIC X(3).
+   285      03 OPTN002C                       PIC X.
+   286      03 OPTN002P                       PIC X.
+   287      03 OPTN002H                       PIC X.
+   288      03 OPTN002V                       PIC X.
+   289      03 OPTN002O                       PIC X(40).
+   290      03 FILLER                         PIC X(3).
+   291      03 OPTN003C                       PIC X.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  11
+* COADM01C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COADM01.cpy)
+   292      03 OPTN003P                       PIC X.
+   293      03 OPTN003H                       PIC X.
+   294      03 OPTN003V                       PIC X.
+   295      03 OPTN003O                       PIC X(40).
+   296      03 FILLER                         PIC X(3).
+   297      03 OPTN004C                       PIC X.
+   298      03 OPTN004P                       PIC X.
+   299      03 OPTN004H                       PIC X.
+   300      03 OPTN004V                       PIC X.
+   301      03 OPTN004O                       PIC X(40).
+   302      03 FILLER                         PIC X(3).
+   303      03 OPTN005C                       PIC X.
+   304      03 OPTN005P                       PIC X.
+   305      03 OPTN005H                       PIC X.
+   306      03 OPTN005V                       PIC X.
+   307      03 OPTN005O                       PIC X(40).
+   308      03 FILLER                         PIC X(3).
+   309      03 OPTN006C                       PIC X.
+   310      03 OPTN006P                       PIC X.
+   311      03 OPTN006H                       PIC X.
+   312      03 OPTN006V                       PIC X.
+   313      03 OPTN006O                       PIC X(40).
+   314      03 FILLER                         PIC X(3).
+   315      03 OPTN007C                       PIC X.
+   316      03 OPTN007P                       PIC X.
+   317      03 OPTN007H                       PIC X.
+   318      03 OPTN007V                       PIC X.
+   319      03 OPTN007O                       PIC X(40).
+   320      03 FILLER                         PIC X(3).
+   321      03 OPTN008C                       PIC X.
+   322      03 OPTN008P                       PIC X.
+   323      03 OPTN008H                       PIC X.
+   324      03 OPTN008V                       PIC X.
+   325      03 OPTN008O                       PIC X(40).
+   326      03 FILLER                         PIC X(3).
+   327      03 OPTN009C                       PIC X.
+   328      03 OPTN009P                       PIC X.
+   329      03 OPTN009H                       PIC X.
+   330      03 OPTN009V                       PIC X.
+   331      03 OPTN009O                       PIC X(40).
+   332      03 FILLER                         PIC X(3).
+   333      03 OPTN010C                       PIC X.
+   334      03 OPTN010P                       PIC X.
+   335      03 OPTN010H                       PIC X.
+   336      03 OPTN010V                       PIC X.
+   337      03 OPTN010O                       PIC X(40).
+   338      03 FILLER                         PIC X(3).
+   339      03 OPTN011C                       PIC X.
+   340      03 OPTN011P                       PIC X.
+   341      03 OPTN011H                       PIC X.
+   342      03 OPTN011V                       PIC X.
+   343      03 OPTN011O                       PIC X(40).
+   344      03 FILLER                         PIC X(3).
+   345      03 OPTN012C                       PIC X.
+   346      03 OPTN012P                       PIC X.
+   347      03 OPTN012H                       PIC X.
+   348      03 OPTN012V                       PIC X.
+   349      03 OPTN012O                       PIC X(40).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  12
+* COADM01C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/BMSCOPY/COADM01.cpy)
+   350      03 FILLER                         PIC X(3).
+   351      03 OPTIONC                        PIC X.
+   352      03 OPTIONP                        PIC X.
+   353      03 OPTIONH                        PIC X.
+   354      03 OPTIONV                        PIC X.
+   355      03 OPTIONO                        PIC X(2).
+   356      03 FILLER                         PIC X(3).
+   357      03 ERRMSGC                        PIC X.
+   358      03 ERRMSGP                        PIC X.
+   359      03 ERRMSGH                        PIC X.
+   360      03 ERRMSGV                        PIC X.
+   361      03 ERRMSGO                        PIC X(78).
+   362
+   363
+   364*COPY COTTL01Y.
+   365 01 CCDA-SCREEN-TITLE.
+   366   05 CCDA-TITLE01    PIC X(40) VALUE
+   367      '      AWS Mainframe Modernization       '.
+   368   05 CCDA-TITLE02    PIC X(40) VALUE
+   369*     '  Credit Card Demo Application (CCDA)   '.
+   370      '              CardDemo                  '.
+   371   05 CCDA-THANK-YOU  PIC X(40) VALUE
+   372      'Thank you for using CCDA application... '.
+   373*
+   374* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   375*
+   376*COPY CSDAT01Y.
+   377 01 WS-DATE-TIME.
+   378   05 WS-CURDATE-DATA.
+   379     10  WS-CURDATE.
+   380       15  WS-CURDATE-YEAR         PIC 9(04).
+   381       15  WS-CURDATE-MONTH        PIC 9(02).
+   382       15  WS-CURDATE-DAY          PIC 9(02).
+   383     10 WS-CURDATE-N REDEFINES WS-CURDATE PIC 9(08).
+   384     10  WS-CURTIME.
+   385       15  WS-CURTIME-HOURS        PIC 9(02).
+   386       15  WS-CURTIME-MINUTE       PIC 9(02).
+   387       15  WS-CURTIME-SECOND       PIC 9(02).
+   388       15  WS-CURTIME-MILSEC       PIC 9(02).
+   389     10 WS-CURTIME-N REDEFINES WS-CURTIME PIC 9(08).
+   390   05 WS-CURDATE-MM-DD-YY.
+   391     10  WS-CURDATE-MM             PIC 9(02).
+   392     10  FILLER                    PIC X(01) VALUE '/'.
+   393     10  WS-CURDATE-DD             PIC 9(02).
+   394     10  FILLER                    PIC X(01) VALUE '/'.
+   395     10  WS-CURDATE-YY             PIC 9(02).
+   396   05 WS-CURTIME-HH-MM-SS.
+   397     10  WS-CURTIME-HH             PIC 9(02).
+   398     10  FILLER                    PIC X(01) VALUE ':'.
+   399     10  WS-CURTIME-MM             PIC 9(02).
+   400     10  FILLER                    PIC X(01) VALUE ':'.
+   401     10  WS-CURTIME-SS             PIC 9(02).
+   402   05 WS-TIMESTAMP.
+   403     10  WS-TIMESTAMP-DT-YYYY      PIC 9(04).
+   404     10  FILLER                    PIC X(01) VALUE '-'.
+   405     10  WS-TIMESTAMP-DT-MM        PIC 9(02).
+   406     10  FILLER                    PIC X(01) VALUE '-'.
+   407     10  WS-TIMESTAMP-DT-DD        PIC 9(02).
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  13
+* COADM01C.cbl (/home/ec2-user/CrossPlatformBuild/CardDemo/COPYBOOKS/CSDAT01Y.c)
+   408     10  FILLER                    PIC X(01) VALUE ' '.
+   409     10  WS-TIMESTAMP-TM-HH        PIC 9(02).
+   410     10  FILLER                    PIC X(01) VALUE ':'.
+   411     10  WS-TIMESTAMP-TM-MM        PIC 9(02).
+   412     10  FILLER                    PIC X(01) VALUE ':'.
+   413     10  WS-TIMESTAMP-TM-SS        PIC 9(02).
+   414     10  FILLER                    PIC X(01) VALUE '.'.
+   415     10  WS-TIMESTAMP-TM-MS6       PIC 9(06).
+   416*
+   417* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   418*
+   419*COPY CSMSG01Y.
+   420 01 CCDA-COMMON-MESSAGES.
+   421   05 CCDA-MSG-THANK-YOU         PIC X(50) VALUE
+   422        'Thank you for using CardDemo application...      '.
+   423   05 CCDA-MSG-INVALID-KEY       PIC X(50) VALUE
+   424        'Invalid key pressed. Please see below...         '.
+   425*
+   426* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   427*
+   428*COPY CSUSR01Y.
+   429 01 SEC-USER-DATA.
+   430   05 SEC-USR-ID                 PIC X(08).
+   431   05 SEC-USR-FNAME              PIC X(20).
+   432   05 SEC-USR-LNAME              PIC X(20).
+   433   05 SEC-USR-PWD                PIC X(08).
+   434   05 SEC-USR-TYPE               PIC X(01).
+   435   05 SEC-USR-FILLER             PIC X(23).
+   436*
+   437* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:59 CDT
+   438*
+   439
+   440*COPY DFHAID.
+   441*<CR_TAG_DEMO_BEGIN>
+   442*
+   443*  Copyright (C) 2024 Micro Focus or one of its affiliates.
+   444*  All rights reserved.
+   445*
+   446*  This sample code is supplied for demonstration purposes only
+   447*  on an "as is" basis and "is for use at your own risk".
+   448*
+   449*<CR_TAG_DEMO_END>
+   450*----------------------------------------------------------------*
+   451* dfhaid.cpy
+   452*----------------------------------------------------------------*
+   453 01  DFHAID.
+   454     02  DFHNULL         PIC X   VALUE IS LOW-VALUE.
+   455     02  DFHENTER        PIC X   VALUE IS ''''.
+   456     02  DFHCLEAR        PIC X   VALUE IS '_'.
+   457     02  DFHPEN          PIC X   VALUE IS '='.
+   458     02  DFHOPID         PIC X   VALUE IS 'W'.
+   459     02  DFHMSRE         PIC X   VALUE IS 'X'.
+   460     02  DFHSTRF         PIC X   VALUE IS ' '.
+   461     02  DFHTRIG         PIC X   VALUE IS '"'.
+   462     02  DFHPA1          PIC X   VALUE IS '%'.
+   463     02  DFHPA2          PIC X   VALUE IS '>'.
+   464     02  DFHPA3          PIC X   VALUE IS ','.
+   465     02  DFHPF1          PIC X   VALUE IS '1'.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  14
+* COADM01C.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHAID.cpy)
+   466     02  DFHPF2          PIC X   VALUE IS '2'.
+   467     02  DFHPF3          PIC X   VALUE IS '3'.
+   468     02  DFHPF4          PIC X   VALUE IS '4'.
+   469     02  DFHPF5          PIC X   VALUE IS '5'.
+   470     02  DFHPF6          PIC X   VALUE IS '6'.
+   471     02  DFHPF7          PIC X   VALUE IS '7'.
+   472     02  DFHPF8          PIC X   VALUE IS '8'.
+   473     02  DFHPF9          PIC X   VALUE IS '9'.
+   474     02  DFHPF10         PIC X   VALUE IS ':'.
+   475     02  DFHPF11         PIC X   VALUE IS '#'.
+   476     02  DFHPF12         PIC X   VALUE IS '@'.
+   477     02  DFHPF13         PIC X   VALUE IS 'A'.
+   478     02  DFHPF14         PIC X   VALUE IS 'B'.
+   479     02  DFHPF15         PIC X   VALUE IS 'C'.
+   480     02  DFHPF16         PIC X   VALUE IS 'D'.
+   481     02  DFHPF17         PIC X   VALUE IS 'E'.
+   482     02  DFHPF18         PIC X   VALUE IS 'F'.
+   483     02  DFHPF19         PIC X   VALUE IS 'G'.
+   484     02  DFHPF20         PIC X   VALUE IS 'H'.
+   485     02  DFHPF21         PIC X   VALUE IS 'I'.
+   486     02  DFHPF22         PIC X   VALUE IS ' '.
+   487*    Note: CICS ECM alters the line above to...
+   488*          Value for ASCII  is X'5B'
+   489*          Value for EBCDIC is X'4A'
+   490     02  DFHPF23         PIC X   VALUE IS '.'.
+   491     02  DFHPF24         PIC X   VALUE IS '<'.
+   492*----------------------------------------------------------------*
+   493* dfhaid.cpy end
+   494*----------------------------------------------------------------*
+   495*COPY DFHBMSCA.
+   496*----------------------------------------------------------------*
+   497* dfhbmsca.cpy
+   498*<CR_TAG_DEMO_BEGIN>
+   499*
+   500*  Copyright (C) 2024 Micro Focus or one of its affiliates.
+   501*  All rights reserved.
+   502*
+   503*  This sample code is supplied for demonstration purposes only
+   504*  on an "as is" basis and "is for use at your own risk".
+   505*
+   506*<CR_TAG_DEMO_END>
+   507***---------------------------------------------------------*
+   508***CONTROL BLOCK NAME= DFHBMSCA                             *
+   509***                                                         *
+   510***NAME OF MATCHING ASSEMBLER CONTROL BLOCK = NONE          *
+   511***                                                         *
+   512***DESCRIPTIVE NAME = 3270 ATTRIBUTE VALUES                 *
+   513***                                                         *
+   514***FUNCTION =  Provides the values for 3270 attribute bytes *
+   515***            used by the BMS support.                     *
+   516***                                                         *
+   517***---------------------------------------------------------*
+   518 01      DFHBMSCA.
+   519*                                               X'1915'.
+   520   02    DFHBMPEM-BIN  PICTURE 9(4) COMP VALUE IS 6421.
+   521   02    FILLER REDEFINES DFHBMPEM-BIN.
+   522     03  DFHBMPEM  PICTURE X.
+   523     03  DFHBMPNL  PICTURE X.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  15
+* COADM01C.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHBMSCA.cpy)
+   524*                                               X'0C0D'.
+   525   02    DFHBMPFF-BIN  PICTURE 9(4) COMP VALUE IS 3085.
+   526   02    FILLER REDEFINES DFHBMPFF-BIN.
+   527     03  DFHBMPFF  PICTURE X.
+   528     03  DFHBMPCR  PICTURE X.
+   529   02    DFHBMASK  PICTURE X   VALUE  IS  '0'.
+   530   02    DFHBMUNP  PICTURE X   VALUE  IS  ' '.
+   531   02    DFHBMUNN  PICTURE X   VALUE  IS  '&'.
+   532   02    DFHBMPRO  PICTURE X   VALUE  IS  '-'.
+   533   02    DFHBMBRY  PICTURE X   VALUE  IS  'H'.
+   534   02    DFHBMDAR  PICTURE X   VALUE  IS  '<'.
+   535   02    DFHBMFSE  PICTURE X   VALUE  IS  'A'.
+   536   02    DFHBMPRF  PICTURE X   VALUE  IS  '/'.
+   537   02    DFHBMASF  PICTURE X   VALUE  IS  '1'.
+   538   02    DFHBMASB  PICTURE X   VALUE  IS  '8'.
+   539*                                               X'0E0F'.
+   540   02    DFHBMPSO-BIN  PICTURE 9(4) COMP VALUE IS 3599.
+   541   02    FILLER REDEFINES DFHBMPSO-BIN.
+   542     03  DFHBMPSO  PICTURE X.
+   543     03  DFHBMPSI  PICTURE X.
+   544*                                               X'0080'.
+   545   02    DFHBMEOF-BIN  PICTURE 9(4) COMP VALUE IS 128.
+   546   02    FILLER REDEFINES DFHBMEOF-BIN.
+   547     03  FILLER    PICTURE X.
+   548     03  DFHBMEOF  PICTURE X.
+   549*                                               X'0282'.
+   550   02    DFHBMCUR-BIN  PICTURE 9(4) COMP VALUE IS 642.
+   551   02    FILLER REDEFINES DFHBMCUR-BIN.
+   552     03  DFHBMCUR  PICTURE X.
+   553     03  DFHBMEC   PICTURE X.
+   554*                                               X'0082'.
+   555   02    DFHBMFLG-BIN  PICTURE 9(4) COMP VALUE IS 130.
+   556       88    DFHERASE VALUES ARE 128, 130.
+   557       88    DFHCURSR VALUES ARE   2, 130.
+   558   02    FILLER REDEFINES DFHBMFLG-BIN.
+   559     03  FILLER    PICTURE X.
+   560     03  DFHBMFLG  PICTURE X.
+   561   02    DFHBMDET  PICTURE X   VALUE  IS  HIGH-VALUES.
+   562   02    FILLER    PICTURE X.
+   563*                                               X'0028'.
+   564   02    DFHSA-BIN  PICTURE 9(4) COMP VALUE IS 40.
+   565   02    FILLER REDEFINES DFHSA-BIN.
+   566     03  FILLER    PICTURE X.
+   567     03  DFHSA     PICTURE X.
+   568*                                               X'003F'.
+   569   02    DFHERROR-BIN  PICTURE 9(4) COMP VALUE IS 63.
+   570   02    FILLER REDEFINES DFHERROR-BIN.
+   571     03  FILLER    PICTURE X.
+   572     03  DFHERROR  PICTURE X.
+   573*                                               X'0042'.
+   574   02    DFHCOLOR-BIN  PICTURE 9(4) COMP VALUE IS 66.
+   575   02    FILLER REDEFINES DFHCOLOR-BIN.
+   576     03  FILLER    PICTURE X.
+   577     03  DFHCOLOR  PICTURE X.
+   578*                                               X'0043'.
+   579   02    DFHPS-BIN  PICTURE 9(4) COMP VALUE IS 67.
+   580   02    FILLER REDEFINES DFHPS-BIN.
+   581     03  FILLER    PICTURE X.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  16
+* COADM01C.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHBMSCA.cpy)
+   582     03  DFHPS     PICTURE X.
+   583*                                               X'0041'.
+   584   02    DFHHLT-BIN  PICTURE 9(4) COMP VALUE IS 65.
+   585   02    FILLER REDEFINES DFHHLT-BIN.
+   586     03  FILLER    PICTURE X.
+   587     03  DFHHLT    PICTURE X.
+   588*                                               X'00C0'.
+   589   02    DFH3270-BIN   PICTURE 9(4) COMP VALUE IS 192.
+   590   02    FILLER REDEFINES DFH3270-BIN.
+   591     03  FILLER    PICTURE X.
+   592     03  DFH3270   PICTURE X.
+   593   02    DFHVAL    PICTURE X   VALUE  IS  'A'.
+   594   02    DFHOUTLN  PICTURE X   VALUE  IS  'B'.
+   595*                                               X'0046'.
+   596   02    DFHBKTRN-BIN  PICTURE 9(4) COMP VALUE IS 70.
+   597   02    FILLER REDEFINES DFHBKTRN-BIN.
+   598     03  FILLER    PICTURE X.
+   599     03  DFHBKTRN  PICTURE X.
+   600   02    DFHALL    PICTURE X   VALUE  IS  LOW-VALUES.
+   601   02    DFHDFT    PICTURE X   VALUE  IS  HIGH-VALUES.
+   602   02    DFHDFCOL  PICTURE X   VALUE  IS  LOW-VALUES.
+   603   02    DFHBLUE   PICTURE X   VALUE  IS  '1'.
+   604   02    DFHRED    PICTURE X   VALUE  IS  '2'.
+   605   02    DFHPINK   PICTURE X   VALUE  IS  '3'.
+   606   02    DFHGREEN  PICTURE X   VALUE  IS  '4'.
+   607   02    DFHTURQ   PICTURE X   VALUE  IS  '5'.
+   608   02    DFHYELLO  PICTURE X   VALUE  IS  '6'.
+   609   02    DFHNEUTR  PICTURE X   VALUE  IS  '7'.
+   610   02    DFHBASE   PICTURE X   VALUE  IS  LOW-VALUES.
+   611   02    DFHDFHI   PICTURE X   VALUE  IS  LOW-VALUES.
+   612   02    DFHBLINK  PICTURE X   VALUE  IS  '1'.
+   613   02    DFHREVRS  PICTURE X   VALUE  IS  '2'.
+   614   02    DFHUNDLN  PICTURE X   VALUE  IS  '4'.
+   615*                                               X'0402'.
+   616   02    DFHMFIL-BIN  PICTURE 9(4) COMP VALUE IS 1026.
+   617   02    FILLER REDEFINES DFHMFIL-BIN.
+   618     03  DFHMFIL   PICTURE X.
+   619     03  DFHMENT   PICTURE X.
+   620*                                               X'0601'.
+   621   02    DFHMFE-BIN  PICTURE 9(4) COMP VALUE IS 1537.
+   622   02    FILLER REDEFINES DFHMFE-BIN.
+   623     03  DFHMFE    PICTURE X.
+   624     03  DFHMT     PICTURE X.
+   625*                                               X'0503'.
+   626   02    DFHMFT-BIN  PICTURE 9(4) COMP VALUE IS 1283.
+   627   02    FILLER REDEFINES DFHMFT-BIN.
+   628     03  DFHMFT    PICTURE X.
+   629     03  DFHMET    PICTURE X.
+   630*                                               X'0007'.
+   631   02    DFHMFET-BIN  PICTURE 9(4) COMP VALUE IS 7.
+   632   02    FILLER REDEFINES DFHMFET-BIN.
+   633     03  FILLER    PICTURE X.
+   634     03  DFHMFET   PICTURE X.
+   635   02    DFHUNNOD  PICTURE X   VALUE  IS  '('.
+   636   02    DFHUNIMD  PICTURE X   VALUE  IS  'I'.
+   637   02    DFHUNNUM  PICTURE X   VALUE  IS  'J'.
+   638   02    DFHUNNUB  PICTURE X   VALUE  IS  'Q'.
+   639   02    DFHUNINT  PICTURE X   VALUE  IS  'R'.
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  17
+* COADM01C.cbl (/opt/microfocus/EnterpriseBuildTools/cpylib/DFHBMSCA.cpy)
+   640   02    DFHUNNON  PICTURE X   VALUE  IS  ')'.
+   641   02    DFHPROTI  PICTURE X   VALUE  IS  'Y'.
+   642   02    DFHPROTN  PICTURE X   VALUE  IS  '%'.
+   643   02    DFHDFFR   PICTURE X   VALUE  IS  LOW-VALUES.
+   644*                                               X'0102'.
+   645   02    DFHUNDER-BIN  PICTURE 9(4) COMP VALUE IS 258.
+   646   02    FILLER REDEFINES DFHUNDER-BIN.
+   647     03  DFHUNDER  PICTURE X.
+   648     03  DFHRIGHT  PICTURE X.
+   649*                                               X'0408'.
+   650   02    DFHOVER-BIN  PICTURE 9(4) COMP VALUE IS 1032.
+   651   02    FILLER REDEFINES DFHOVER-BIN.
+   652     03  DFHOVER   PICTURE X.
+   653     03  DFHLEFT   PICTURE X.
+   654*                                               X'000F'.
+   655   02    DFHBOX-BIN   PICTURE 9(4) COMP VALUE IS 15.
+   656   02    FILLER REDEFINES DFHBOX-BIN.
+   657     03  FILLER    PICTURE X.
+   658     03  DFHBOX    PICTURE X.
+   659*                                               X'0001'.
+   660   02    DFHSOSI-BIN  PICTURE 9(4) COMP VALUE IS 1.
+   661   02    FILLER REDEFINES DFHSOSI-BIN.
+   662     03  FILLER    PICTURE X.
+   663     03  DFHSOSI   PICTURE X.
+   664   02    DFHTRANS  PICTURE X   VALUE  IS  '0'.
+   665   02    DFHOPAQ   PICTURE X   VALUE  IS  HIGH-VALUES.
+   666*----------------------------------------------------------------*
+   667* dfhbmsca.cpy end
+   668*----------------------------------------------------------------*
+   669
+   670*----------------------------------------------------------------*
+   671*                        LINKAGE SECTION
+   672*----------------------------------------------------------------*
+   673 LINKAGE SECTION.
+   674 01  DFHCOMMAREA.
+   675   05  LK-COMMAREA                           PIC X(01)
+   676       OCCURS 1 TO 32767 TIMES DEPENDING ON EIBCALEN.
+   677
+   678*----------------------------------------------------------------*
+   679*                       PROCEDURE DIVISION
+   680*----------------------------------------------------------------*
+   681 PROCEDURE DIVISION.
+   682 MAIN-PARA.
+   683
+   684     SET ERR-FLG-OFF TO TRUE
+   685
+   686     MOVE SPACES TO WS-MESSAGE
+   687                    ERRMSGO OF COADM1AO
+   688
+   689     IF EIBCALEN = 0
+   690         MOVE 'COSGN00C' TO CDEMO-FROM-PROGRAM
+   691         PERFORM RETURN-TO-SIGNON-SCREEN
+   692     ELSE
+   693         MOVE DFHCOMMAREA(1:EIBCALEN) TO CARDDEMO-COMMAREA
+   694         IF NOT CDEMO-PGM-REENTER
+   695             SET CDEMO-PGM-REENTER    TO TRUE
+   696             MOVE LOW-VALUES          TO COADM1AO
+   697             PERFORM SEND-MENU-SCREEN
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  18
+* COADM01C.cbl
+   698         ELSE
+   699             PERFORM RECEIVE-MENU-SCREEN
+   700             EVALUATE EIBAID
+   701                 WHEN DFHENTER
+   702                     PERFORM PROCESS-ENTER-KEY
+   703                 WHEN DFHPF3
+   704                     MOVE 'COSGN00C' TO CDEMO-TO-PROGRAM
+   705                     PERFORM RETURN-TO-SIGNON-SCREEN
+   706                 WHEN OTHER
+   707                     MOVE 'Y'                       TO WS-ERR-FLG
+   708                     MOVE CCDA-MSG-INVALID-KEY      TO WS-MESSAGE
+   709                     PERFORM SEND-MENU-SCREEN
+   710             END-EVALUATE
+   711         END-IF
+   712     END-IF
+   713
+   714     EXEC CICS RETURN
+   715               TRANSID (WS-TRANID)
+   716               COMMAREA (CARDDEMO-COMMAREA)
+   717     END-EXEC.
+   718
+   719*----------------------------------------------------------------*
+   720*                      PROCESS-ENTER-KEY
+   721*----------------------------------------------------------------*
+   722 PROCESS-ENTER-KEY.
+   723
+   724     PERFORM VARYING WS-IDX
+   725             FROM LENGTH OF OPTIONI OF COADM1AI BY -1 UNTIL
+   726             OPTIONI OF COADM1AI(WS-IDX:1) NOT = SPACES OR
+   727             WS-IDX = 1
+   728     END-PERFORM
+   729     MOVE OPTIONI OF COADM1AI(1:WS-IDX) TO WS-OPTION-X
+   730     INSPECT WS-OPTION-X REPLACING ALL ' ' BY '0'
+   731     MOVE WS-OPTION-X              TO WS-OPTION
+   732     MOVE WS-OPTION                TO OPTIONO OF COADM1AO
+   733
+   734     IF WS-OPTION IS NOT NUMERIC OR
+   735        WS-OPTION > CDEMO-ADMIN-OPT-COUNT OR
+   736        WS-OPTION = ZEROS
+   737         MOVE 'Y'     TO WS-ERR-FLG
+   738         MOVE 'Please enter a valid option number...' TO
+   739                                 WS-MESSAGE
+   740         PERFORM SEND-MENU-SCREEN
+   741     END-IF
+   742
+   743
+   744     IF NOT ERR-FLG-ON
+   745         IF CDEMO-ADMIN-OPT-PGMNAME(WS-OPTION)(1:5) NOT = 'DUMMY'
+   746             MOVE WS-TRANID    TO CDEMO-FROM-TRANID
+   747             MOVE WS-PGMNAME   TO CDEMO-FROM-PROGRAM
+   748             MOVE ZEROS        TO CDEMO-PGM-CONTEXT
+   749             EXEC CICS
+   750                 XCTL PROGRAM(CDEMO-ADMIN-OPT-PGMNAME(WS-OPTION))
+   751                 COMMAREA(CARDDEMO-COMMAREA)
+   752             END-EXEC
+   753         END-IF
+   754         MOVE SPACES             TO WS-MESSAGE
+   755         MOVE DFHGREEN           TO ERRMSGC  OF COADM1AO
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  19
+* COADM01C.cbl
+   756         STRING 'This option '       DELIMITED BY SIZE
+   757*                CDEMO-ADMIN-OPT-NAME(WS-OPTION)
+   758*                                DELIMITED BY SIZE
+   759                 'is coming soon ...'   DELIMITED BY SIZE
+   760            INTO WS-MESSAGE
+   761         PERFORM SEND-MENU-SCREEN
+   762     END-IF.
+   763
+   764*----------------------------------------------------------------*
+   765*                      RETURN-TO-SIGNON-SCREEN
+   766*----------------------------------------------------------------*
+   767 RETURN-TO-SIGNON-SCREEN.
+   768
+   769     IF CDEMO-TO-PROGRAM = LOW-VALUES OR SPACES
+   770         MOVE 'COSGN00C' TO CDEMO-TO-PROGRAM
+   771     END-IF
+   772     EXEC CICS
+   773         XCTL PROGRAM(CDEMO-TO-PROGRAM)
+   774     END-EXEC.
+   775
+   776*----------------------------------------------------------------*
+   777*                      SEND-MENU-SCREEN
+   778*----------------------------------------------------------------*
+   779 SEND-MENU-SCREEN.
+   780
+   781     PERFORM POPULATE-HEADER-INFO
+   782     PERFORM BUILD-MENU-OPTIONS
+   783
+   784     MOVE WS-MESSAGE TO ERRMSGO OF COADM1AO
+   785
+   786     EXEC CICS SEND
+   787               MAP('COADM1A')
+   788               MAPSET('COADM01')
+   789               FROM(COADM1AO)
+   790               ERASE
+   791     END-EXEC.
+   792
+   793*----------------------------------------------------------------*
+   794*                      RECEIVE-MENU-SCREEN
+   795*----------------------------------------------------------------*
+   796 RECEIVE-MENU-SCREEN.
+   797
+   798     EXEC CICS RECEIVE
+   799               MAP('COADM1A')
+   800               MAPSET('COADM01')
+   801               INTO(COADM1AI)
+   802               RESP(WS-RESP-CD)
+   803               RESP2(WS-REAS-CD)
+   804     END-EXEC.
+   805
+   806*----------------------------------------------------------------*
+   807*                      POPULATE-HEADER-INFO
+   808*----------------------------------------------------------------*
+   809 POPULATE-HEADER-INFO.
+   810
+   811     MOVE FUNCTION CURRENT-DATE  TO WS-CURDATE-DATA
+   812
+   813     MOVE CCDA-TITLE01           TO TITLE01O OF COADM1AO
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  20
+* COADM01C.cbl
+   814     MOVE CCDA-TITLE02           TO TITLE02O OF COADM1AO
+   815     MOVE WS-TRANID              TO TRNNAMEO OF COADM1AO
+   816     MOVE WS-PGMNAME             TO PGMNAMEO OF COADM1AO
+   817
+   818     MOVE WS-CURDATE-MONTH       TO WS-CURDATE-MM
+   819     MOVE WS-CURDATE-DAY         TO WS-CURDATE-DD
+   820     MOVE WS-CURDATE-YEAR(3:2)   TO WS-CURDATE-YY
+   821
+   822     MOVE WS-CURDATE-MM-DD-YY    TO CURDATEO OF COADM1AO
+   823
+   824     MOVE WS-CURTIME-HOURS       TO WS-CURTIME-HH
+   825     MOVE WS-CURTIME-MINUTE      TO WS-CURTIME-MM
+   826     MOVE WS-CURTIME-SECOND      TO WS-CURTIME-SS
+   827
+   828     MOVE WS-CURTIME-HH-MM-SS    TO CURTIMEO OF COADM1AO.
+   829
+   830*----------------------------------------------------------------*
+   831*                      BUILD-MENU-OPTIONS
+   832*----------------------------------------------------------------*
+   833 BUILD-MENU-OPTIONS.
+   834
+   835     PERFORM VARYING WS-IDX FROM 1 BY 1 UNTIL
+   836                     WS-IDX > CDEMO-ADMIN-OPT-COUNT
+   837
+   838         MOVE SPACES             TO WS-ADMIN-OPT-TXT
+   839
+   840         STRING CDEMO-ADMIN-OPT-NUM(WS-IDX)  DELIMITED BY SIZE
+   841                '. '                         DELIMITED BY SIZE
+   842                CDEMO-ADMIN-OPT-NAME(WS-IDX) DELIMITED BY SIZE
+   843           INTO WS-ADMIN-OPT-TXT
+   844
+   845         EVALUATE WS-IDX
+   846             WHEN 1
+   847                 MOVE WS-ADMIN-OPT-TXT TO OPTN001O
+   848             WHEN 2
+   849                 MOVE WS-ADMIN-OPT-TXT TO OPTN002O
+   850             WHEN 3
+   851                 MOVE WS-ADMIN-OPT-TXT TO OPTN003O
+   852             WHEN 4
+   853                 MOVE WS-ADMIN-OPT-TXT TO OPTN004O
+   854             WHEN 5
+   855                 MOVE WS-ADMIN-OPT-TXT TO OPTN005O
+   856             WHEN 6
+   857                 MOVE WS-ADMIN-OPT-TXT TO OPTN006O
+   858             WHEN 7
+   859                 MOVE WS-ADMIN-OPT-TXT TO OPTN007O
+   860             WHEN 8
+   861                 MOVE WS-ADMIN-OPT-TXT TO OPTN008O
+   862             WHEN 9
+   863                 MOVE WS-ADMIN-OPT-TXT TO OPTN009O
+   864             WHEN 10
+   865                 MOVE WS-ADMIN-OPT-TXT TO OPTN010O
+   866             WHEN OTHER
+   867                 CONTINUE
+   868         END-EVALUATE
+   869
+   870     END-PERFORM.
+   871
+* Micro Focus COBOL                  V9.0 revision 000 12-Jul-24 07:58 Page  21
+* COADM01C.cbl
+   872
+   873*
+   874* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:12:32 CDT
+   875*
+*
+*
+* Errors
+* -Line- Col Code/severity Description
+* Micro Focus COBOL                  V9.0 revision 000 Compiler
+* (C) Copyright 1984-2024 Micro Focus or one of its affiliates.
+*                                                        REF GKR-081900000A0
+* Total Messages:     0
+* Data:        6336     Code:        2973

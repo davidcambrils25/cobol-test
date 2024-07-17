@@ -1,0 +1,2 @@
+#"C:\Program Files (x86)\Micro Focus\Enterprise Developer\bin64\cobol.exe" "C:\CrossPlatformBuild\CardDemo\COBOL - Copy\COACTVWC.cbl" DELINT USEC:\CrossPlatformBuild\CardDemo\RELEASE\LOADLIB\COACTVWC.cbl.dir ;
+^"C:\CrossPlatformBuild\CardDemo\COBOL - Copy\COACTVWC.cbl"

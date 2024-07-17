@@ -1,0 +1,2098 @@
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   1
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+* Options: DELINT
+*          USE"C:\CrossPlatformBuild\CardDemo\RELEASE\LOADLIB\COUSR00C.cbl.dir"
+* Setting: NOACCEPTREFRESH
+*          NOACU
+*          NOACUCOMMENT
+*          NOACUSYNC
+*          NOACU-UNDERSCORE
+*            ADV
+*            ALIGN"8 OPT"
+*            ALPHALITCONT"MARGIN"
+*            ALPHASTART"1"
+*            ALTER
+*          NOAMODE
+*            ANIM
+*            ANS85
+*            APOST
+*            AREACHECK
+*            ARITH"EXTEND"
+*            ARITHMETIC"ENTCOBOL"
+*            ASSIGN"EXTERNAL"
+*          NOASSIGN-PRINTER
+*          NOAUTOLOCK
+*          NOBELL
+*            BINLIT"BOOLEAN"
+*          NOBOUND
+*          NOBRIEF
+*          NOBS2000
+*            BWZSTAR
+*            BYTEMODEMOVE
+*            CALLFH"EXTFH"
+*          NOCALLRECOVERY
+*            CALLSORT"EXTSM"
+*            CANCEL
+*            CANCELLBR
+*            CHANGEMESSAGE"677 N 1126 N 1152 N 2000 N"
+*            CHARSET"EBCDIC"
+*            CHECKDIV"ENTCOBOL"
+*          NOCHECKREFMOD
+*          NOCICS
+*          NOCICS-CPY
+*          NOCICSOPTIMIZE
+*          NOCMPR2
+*            COBFSTATCONV
+*          NOCOBIDY
+*          NOCOBOL370
+*          NOCOBOLDIR
+*          NOCOMMANDLINELINKAGE
+*            COLLECTION"CardDemo"
+*          NOCOMP
+*            COMP"BINARY"
+*            COMP1"FLOAT"
+*            COMP2"FLOAT"
+*            COMP-5"2"
+*            COMP-6"2"
+*            CONFIRM
+*          NOCONVERTRET
+*            CONVSPACE
+*            COPYEXT"CBL,CPY"
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   2
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+*            COPYLBR
+*            COPYLIST
+*            COPYLISTCOMMENT"7"
+*            COPYSEARCH"MF"
+*            CSI
+*            CURRENCY-SIGN"36"
+*            CURRENT-DATE"MMDDYY"
+*          NODATA
+*            DATACOMPRESS"0"
+*          NODATA-CONTEXT
+*          NODATAMAP
+*            DATE
+*            DBCHECK
+*            DBCS"3"
+*            DBCSSOSI"14""15"
+*            DBSPACE
+*            DE-EDIT"2"
+*            DEFAULTBYTE"0"
+*          NODEFAULTCALLS
+*            DETECTLOCK
+*          NODG
+*            DIALECT"ENTCOBOL"
+*          NODIRECTIVES-IN-COMMENTS
+*            DISPLAY"CONSOLE"
+*          NODISPLAYAT
+*            DISPLAYPICU"ANSI"
+*            DISPSIGN"COMPAT"
+*          NODOSVS
+*          NODOTNET
+*            DPCINDATA"XML"
+*            DPCINSUBSCRIPT
+*          NODYNAM
+*          NOEARLY-RELEASE
+*            EBCCOLSEQ"1"
+*            ECHO
+*          NOECHOALL
+*            ENTCOBOL
+*            EOF1A
+*            ERRFORMAT"2"
+*            ERRLIST"VERBOSE"
+*          NOERRQ
+*          NOEXECSQLFLAG
+*            EXITPROGRAM"ANSI"
+*          NOFASTINIT
+*            FASTSORT
+*            FCD3
+*          NOFCDALIGN
+*          NOFCDREG
+*            FDCLEAR"3"
+*          NOFILESHARE
+*            FILETYPE"0"
+*            FLAG"ENTCOBOL"
+*            FLAGAS"S"
+*          NOFLAGEUC
+*          NOFLAGMIG
+*          NOFLAGQ
+*            FLAGSINEDIT
+*          NOFLAGSTD
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   3
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+*            FOLDCALLNAME"UPPER"
+*            FOLDCOPYNAME"UPPER"
+*            FORM"60"
+*            FP-ROUNDING"ENTCOBOL"
+*          NOHOSTARITHMETIC
+*            HOSTCONTZERO
+*            HOST-NUMCOMPARE
+*            HOST-NUMMOVE
+*            HOSTFD
+*          NOHOSTRW
+*            IBMCOMP
+*            IDENTIFIERLEN"30"
+*            IDXFORMAT"0"
+*          NOIGNOREEXEC
+*          NOIL
+*          NOILGEN
+*          NOILEMIT
+*            IMPLICITSCOPE
+*            INDD"SYSIN 80 R"
+*          NOIDYSRCPATH
+*            INFORETURN"0"
+*          NOINITCALL
+*            INITIAL"1"
+*          NOINITPTR
+*          NOINITBYTYPE
+*            INT"C:\CrossPlatformBuild\CardDemo\RELEASE\LOADLIB\COUSR00C.int"
+*            INTDATE"ANSI"
+*            INTLEVEL"9"
+*            IOCONV
+*          NOISO2002
+*          NOIXNLSKEY
+*          NOIXNUMKEY
+*          NOJVMGEN
+*            KEYCHECK
+*            KEYCOMPRESS"0"
+*          NOLIBRARIAN
+*          NOLINE-COUNT
+*            LIST"COUSR00C.lst"
+*            LISTPATH"C:\CrossPlatformBuild\CardDemo\LISTINGS"
+*            LISTWIDTH"80"
+*            LITVAL-SIZE"4"
+*          NOLOCALSOURCEFORMAT
+*            LOCKTYPE"0"
+*            MAPNAME
+*          NOMAINFRAMEFLOATINGPOINT
+*          NOMAXERROR
+*            METHODDEFAULT"REFERENCE"
+*          NOMF
+*          NOMFCOMMENT
+*          NOMFSYNC
+*          NOMOVELENCHECK
+*          NOMS
+*          NOMVS
+*            NATIONAL"1"
+*            NATIVE"EBCDIC"
+*          NONATIVEFLOATINGPOINT
+*          NONCHAR
+*          NONLS
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   4
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+*          NONLSCURRENCYLENGTH
+*            NSYMBOL"NATIONAL"
+*            NULLESCAPE
+*          NOODOOSVS
+*            ODOSLIDE
+*          NOOLDBLANKLINE
+*          NOOLDCOPY
+*          NOOLDINDEX
+*          NOOLDNEXTSENTENCE
+*          NOOLDREADINTO
+*          NOOLDSTRMIX
+*            OOCTRL"-C-E-G+L-P+Q+R-S+W"
+*          NOOPTIONAL-FILE
+*          NOOS390
+*            OSEXT"cbl"
+*          NOOSVS
+*            OUTDD"SYSOUT 121 R"
+*            P64
+*          NOPANVALET
+*            PANVALET-INCLUDES-IN-COMMENTS
+*          NOPC1
+*            PERFORM-TYPE"ENTCOBOL"
+*          NOPREPLIST
+*          NOPREPROCESS
+*            PRESERVECASE
+*          NOPRINT-EXT
+*          NOPROFILE
+*          NOPROGID-COMMENT
+*          NOPROGID-INT-NAME
+*          NOPROTECT-LINKAGE
+*            PROTOTYPE"RELAXED"
+*            QUAL
+*            QUALPROC
+*          NOQUERY
+*          NOQUOTE
+*          NORAWLIST
+*            RDW
+*            RECMODE"ENTCOBOL"
+*          NOREENTRANT
+*          NOREF
+*          NOREFNO
+*            REMAINDER"2"
+*            REPLACE"NOKEEPSEQ"
+*            REPORT-LINE"256"
+*            RESEQ
+*          NORETRYLOCK
+*            REWRITE-LS
+*          NORM
+*          NORM-FILE-ERRORS
+*            RTNCODE-SIZE"2"
+*            RTNCODE-TYPE"COMP"
+*          NORWHARDPAGE
+*          NOSAA
+*          NOSEG
+*          NOSEQCHK
+*            SEQUENTIAL"RECORD"
+*          NOSERIAL
+*            SETTING"COL"
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   5
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+*          NOSHAREOUTDD
+*          NOSHOW-DIR
+*            SIGN"EBCDIC"
+*            SIGN"TRAILING"
+*          NOSIGNDISCARD
+*          NOSIGNFIXUP
+*            SORTTYPE"DFSORT"
+*          NOSOURCEENCODING
+*            SOURCEFORMAT"FIXED"
+*            SOURCETABSTOP"4"
+*          NOSPZERO
+*          NOSSRANGE
+*            STDERR
+*            STICKY-LINKAGE"1"
+*          NOSTICKY-PERFORM
+*            SUPFF
+*            SWITCHTYPE"1"
+*            SYMBSTART"1"
+*            SYSPUNCH"80"
+*            TERMPAGE
+*          NOTESTCOVER
+*            TIME
+*          NOTRACE
+*          NOTRUNC
+*            TRUNCCALLNAME"8"
+*            TRUNCCOPY"8"
+*            TRUNCINC"10"
+*            UNICODE"PORTABLE"
+*            VERBOSE
+*          NOVISUALSTUDIO
+*          NOVSC2
+*          NOWARNASERROR
+*            WARNING"3"
+*            WEBSERVER"CGI"
+*          NOWRITELOCK
+*          NOWRITETHRU
+*          NOXMLGEN
+*            XMLPARSE"XMLSS"
+*          NOXOPEN
+*          NOXREF
+*            ZEROLENGTHFALSE
+*          NOZEROSEQ
+*            ZWB
+     1******************************************************************
+     2* Program     : COUSR00C.CBL
+     3* Application : CardDemo
+     4* Type        : CICS COBOL Program
+     5* Function    : List all users from USRSEC file
+     6******************************************************************
+     7 IDENTIFICATION DIVISION.
+     8 PROGRAM-ID. COUSR00C.
+     9 AUTHOR.     AWS.
+    10
+    11 ENVIRONMENT DIVISION.
+    12 CONFIGURATION SECTION.
+    13
+    14 DATA DIVISION.
+    15*----------------------------------------------------------------*
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   6
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+    16*                     WORKING STORAGE SECTION
+    17*----------------------------------------------------------------*
+    18 WORKING-STORAGE SECTION.
+    19
+    20 01 WS-VARIABLES.
+    21   05 WS-PGMNAME                 PIC X(08) VALUE 'COUSR00C'.
+    22   05 WS-TRANID                  PIC X(04) VALUE 'CU00'.
+    23   05 WS-MESSAGE                 PIC X(80) VALUE SPACES.
+    24   05 WS-USRSEC-FILE             PIC X(08) VALUE 'USRSEC  '.
+    25   05 WS-ERR-FLG                 PIC X(01) VALUE 'N'.
+    26     88 ERR-FLG-ON                         VALUE 'Y'.
+    27     88 ERR-FLG-OFF                        VALUE 'N'.
+    28   05 WS-USER-SEC-EOF            PIC X(01) VALUE 'N'.
+    29     88 USER-SEC-EOF                       VALUE 'Y'.
+    30     88 USER-SEC-NOT-EOF                   VALUE 'N'.
+    31   05 WS-SEND-ERASE-FLG          PIC X(01) VALUE 'Y'.
+    32     88 SEND-ERASE-YES                     VALUE 'Y'.
+    33     88 SEND-ERASE-NO                      VALUE 'N'.
+    34
+    35   05 WS-RESP-CD                 PIC S9(09) COMP VALUE ZEROS.
+    36   05 WS-REAS-CD                 PIC S9(09) COMP VALUE ZEROS.
+    37   05 WS-REC-COUNT               PIC S9(04) COMP VALUE ZEROS.
+    38   05 WS-IDX                     PIC S9(04) COMP VALUE ZEROS.
+    39   05 WS-PAGE-NUM                PIC S9(04) COMP VALUE ZEROS.
+    40
+    41 01 WS-USER-DATA.
+    42   02 USER-REC OCCURS 10 TIMES.
+    43     05 USER-SEL                   PIC X(01).
+    44     05 FILLER                     PIC X(02).
+    45     05 USER-ID                    PIC X(08).
+    46     05 FILLER                     PIC X(02).
+    47     05 USER-NAME                  PIC X(25).
+    48     05 FILLER                     PIC X(02).
+    49     05 USER-TYPE                  PIC X(08).
+    50
+    51*COPY COCOM01Y.
+    52******************************************************************
+    53* Communication area for CardDemo application programs
+    54******************************************************************
+    55 01 CARDDEMO-COMMAREA.
+    56    05 CDEMO-GENERAL-INFO.
+    57       10 CDEMO-FROM-TRANID             PIC X(04).
+    58       10 CDEMO-FROM-PROGRAM            PIC X(08).
+    59       10 CDEMO-TO-TRANID               PIC X(04).
+    60       10 CDEMO-TO-PROGRAM              PIC X(08).
+    61       10 CDEMO-USER-ID                 PIC X(08).
+    62       10 CDEMO-USER-TYPE               PIC X(01).
+    63          88 CDEMO-USRTYP-ADMIN         VALUE 'A'.
+    64          88 CDEMO-USRTYP-USER          VALUE 'U'.
+    65       10 CDEMO-PGM-CONTEXT             PIC 9(01).
+    66          88 CDEMO-PGM-ENTER            VALUE 0.
+    67          88 CDEMO-PGM-REENTER          VALUE 1.
+    68    05 CDEMO-CUSTOMER-INFO.
+    69       10 CDEMO-CUST-ID                 PIC 9(09).
+    70       10 CDEMO-CUST-FNAME              PIC X(25).
+    71       10 CDEMO-CUST-MNAME              PIC X(25).
+    72       10 CDEMO-CUST-LNAME              PIC X(25).
+    73    05 CDEMO-ACCOUNT-INFO.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   7
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+    74       10 CDEMO-ACCT-ID                 PIC 9(11).
+    75       10 CDEMO-ACCT-STATUS             PIC X(01).
+    76    05 CDEMO-CARD-INFO.
+    77       10 CDEMO-CARD-NUM                PIC 9(16).
+    78    05 CDEMO-MORE-INFO.
+    79       10  CDEMO-LAST-MAP               PIC X(7).
+    80       10  CDEMO-LAST-MAPSET            PIC X(7).
+    81*
+    82* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:57 CDT
+    83*
+    84    05 CDEMO-CU00-INFO.
+    85       10 CDEMO-CU00-USRID-FIRST     PIC X(08).
+    86       10 CDEMO-CU00-USRID-LAST      PIC X(08).
+    87       10 CDEMO-CU00-PAGE-NUM        PIC 9(08).
+    88       10 CDEMO-CU00-NEXT-PAGE-FLG   PIC X(01) VALUE 'N'.
+    89          88 NEXT-PAGE-YES                     VALUE 'Y'.
+    90          88 NEXT-PAGE-NO                      VALUE 'N'.
+    91       10 CDEMO-CU00-USR-SEL-FLG     PIC X(01).
+    92       10 CDEMO-CU00-USR-SELECTED    PIC X(08).
+    93*COPY COUSR00.
+    94*   Micro Focus COBOL 2017  7.0.00247
+    95*   Micro Focus BMS Screen Painter
+    96*   MapSet Name   COUSR00
+    97*   Date Created  08/05/2022
+    98*   Time Created  16:44:45
+    99
+   100*  Input Data For Map COUSR0A
+   101   01 COUSR0AI.
+   102      03 FILLER                         PIC X(12).
+   103      03 TRNNAMEL                       PIC S9(4) COMP.
+   104      03 TRNNAMEF                       PIC X.
+   105      03 FILLER REDEFINES TRNNAMEF.
+   106         05 TRNNAMEA                       PIC X.
+   107      03 FILLER                         PIC X(4).
+   108      03 TRNNAMEI                       PIC X(4).
+   109      03 TITLE01L                       PIC S9(4) COMP.
+   110      03 TITLE01F                       PIC X.
+   111      03 FILLER REDEFINES TITLE01F.
+   112         05 TITLE01A                       PIC X.
+   113      03 FILLER                         PIC X(4).
+   114      03 TITLE01I                       PIC X(40).
+   115      03 CURDATEL                       PIC S9(4) COMP.
+   116      03 CURDATEF                       PIC X.
+   117      03 FILLER REDEFINES CURDATEF.
+   118         05 CURDATEA                       PIC X.
+   119      03 FILLER                         PIC X(4).
+   120      03 CURDATEI                       PIC X(8).
+   121      03 PGMNAMEL                       PIC S9(4) COMP.
+   122      03 PGMNAMEF                       PIC X.
+   123      03 FILLER REDEFINES PGMNAMEF.
+   124         05 PGMNAMEA                       PIC X.
+   125      03 FILLER                         PIC X(4).
+   126      03 PGMNAMEI                       PIC X(8).
+   127      03 TITLE02L                       PIC S9(4) COMP.
+   128      03 TITLE02F                       PIC X.
+   129      03 FILLER REDEFINES TITLE02F.
+   130         05 TITLE02A                       PIC X.
+   131      03 FILLER                         PIC X(4).
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   8
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   132      03 TITLE02I                       PIC X(40).
+   133      03 CURTIMEL                       PIC S9(4) COMP.
+   134      03 CURTIMEF                       PIC X.
+   135      03 FILLER REDEFINES CURTIMEF.
+   136         05 CURTIMEA                       PIC X.
+   137      03 FILLER                         PIC X(4).
+   138      03 CURTIMEI                       PIC X(8).
+   139      03 PAGENUML                       PIC S9(4) COMP.
+   140      03 PAGENUMF                       PIC X.
+   141      03 FILLER REDEFINES PAGENUMF.
+   142         05 PAGENUMA                       PIC X.
+   143      03 FILLER                         PIC X(4).
+   144      03 PAGENUMI                       PIC X(8).
+   145      03 USRIDINL                       PIC S9(4) COMP.
+   146      03 USRIDINF                       PIC X.
+   147      03 FILLER REDEFINES USRIDINF.
+   148         05 USRIDINA                       PIC X.
+   149      03 FILLER                         PIC X(4).
+   150      03 USRIDINI                       PIC X(8).
+   151      03 SEL0001L                       PIC S9(4) COMP.
+   152      03 SEL0001F                       PIC X.
+   153      03 FILLER REDEFINES SEL0001F.
+   154         05 SEL0001A                       PIC X.
+   155      03 FILLER                         PIC X(4).
+   156      03 SEL0001I                       PIC X(1).
+   157      03 USRID01L                       PIC S9(4) COMP.
+   158      03 USRID01F                       PIC X.
+   159      03 FILLER REDEFINES USRID01F.
+   160         05 USRID01A                       PIC X.
+   161      03 FILLER                         PIC X(4).
+   162      03 USRID01I                       PIC X(8).
+   163      03 FNAME01L                       PIC S9(4) COMP.
+   164      03 FNAME01F                       PIC X.
+   165      03 FILLER REDEFINES FNAME01F.
+   166         05 FNAME01A                       PIC X.
+   167      03 FILLER                         PIC X(4).
+   168      03 FNAME01I                       PIC X(20).
+   169      03 LNAME01L                       PIC S9(4) COMP.
+   170      03 LNAME01F                       PIC X.
+   171      03 FILLER REDEFINES LNAME01F.
+   172         05 LNAME01A                       PIC X.
+   173      03 FILLER                         PIC X(4).
+   174      03 LNAME01I                       PIC X(20).
+   175      03 UTYPE01L                       PIC S9(4) COMP.
+   176      03 UTYPE01F                       PIC X.
+   177      03 FILLER REDEFINES UTYPE01F.
+   178         05 UTYPE01A                       PIC X.
+   179      03 FILLER                         PIC X(4).
+   180      03 UTYPE01I                       PIC X(1).
+   181      03 SEL0002L                       PIC S9(4) COMP.
+   182      03 SEL0002F                       PIC X.
+   183      03 FILLER REDEFINES SEL0002F.
+   184         05 SEL0002A                       PIC X.
+   185      03 FILLER                         PIC X(4).
+   186      03 SEL0002I                       PIC X(1).
+   187      03 USRID02L                       PIC S9(4) COMP.
+   188      03 USRID02F                       PIC X.
+   189      03 FILLER REDEFINES USRID02F.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page   9
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   190         05 USRID02A                       PIC X.
+   191      03 FILLER                         PIC X(4).
+   192      03 USRID02I                       PIC X(8).
+   193      03 FNAME02L                       PIC S9(4) COMP.
+   194      03 FNAME02F                       PIC X.
+   195      03 FILLER REDEFINES FNAME02F.
+   196         05 FNAME02A                       PIC X.
+   197      03 FILLER                         PIC X(4).
+   198      03 FNAME02I                       PIC X(20).
+   199      03 LNAME02L                       PIC S9(4) COMP.
+   200      03 LNAME02F                       PIC X.
+   201      03 FILLER REDEFINES LNAME02F.
+   202         05 LNAME02A                       PIC X.
+   203      03 FILLER                         PIC X(4).
+   204      03 LNAME02I                       PIC X(20).
+   205      03 UTYPE02L                       PIC S9(4) COMP.
+   206      03 UTYPE02F                       PIC X.
+   207      03 FILLER REDEFINES UTYPE02F.
+   208         05 UTYPE02A                       PIC X.
+   209      03 FILLER                         PIC X(4).
+   210      03 UTYPE02I                       PIC X(1).
+   211      03 SEL0003L                       PIC S9(4) COMP.
+   212      03 SEL0003F                       PIC X.
+   213      03 FILLER REDEFINES SEL0003F.
+   214         05 SEL0003A                       PIC X.
+   215      03 FILLER                         PIC X(4).
+   216      03 SEL0003I                       PIC X(1).
+   217      03 USRID03L                       PIC S9(4) COMP.
+   218      03 USRID03F                       PIC X.
+   219      03 FILLER REDEFINES USRID03F.
+   220         05 USRID03A                       PIC X.
+   221      03 FILLER                         PIC X(4).
+   222      03 USRID03I                       PIC X(8).
+   223      03 FNAME03L                       PIC S9(4) COMP.
+   224      03 FNAME03F                       PIC X.
+   225      03 FILLER REDEFINES FNAME03F.
+   226         05 FNAME03A                       PIC X.
+   227      03 FILLER                         PIC X(4).
+   228      03 FNAME03I                       PIC X(20).
+   229      03 LNAME03L                       PIC S9(4) COMP.
+   230      03 LNAME03F                       PIC X.
+   231      03 FILLER REDEFINES LNAME03F.
+   232         05 LNAME03A                       PIC X.
+   233      03 FILLER                         PIC X(4).
+   234      03 LNAME03I                       PIC X(20).
+   235      03 UTYPE03L                       PIC S9(4) COMP.
+   236      03 UTYPE03F                       PIC X.
+   237      03 FILLER REDEFINES UTYPE03F.
+   238         05 UTYPE03A                       PIC X.
+   239      03 FILLER                         PIC X(4).
+   240      03 UTYPE03I                       PIC X(1).
+   241      03 SEL0004L                       PIC S9(4) COMP.
+   242      03 SEL0004F                       PIC X.
+   243      03 FILLER REDEFINES SEL0004F.
+   244         05 SEL0004A                       PIC X.
+   245      03 FILLER                         PIC X(4).
+   246      03 SEL0004I                       PIC X(1).
+   247      03 USRID04L                       PIC S9(4) COMP.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  10
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   248      03 USRID04F                       PIC X.
+   249      03 FILLER REDEFINES USRID04F.
+   250         05 USRID04A                       PIC X.
+   251      03 FILLER                         PIC X(4).
+   252      03 USRID04I                       PIC X(8).
+   253      03 FNAME04L                       PIC S9(4) COMP.
+   254      03 FNAME04F                       PIC X.
+   255      03 FILLER REDEFINES FNAME04F.
+   256         05 FNAME04A                       PIC X.
+   257      03 FILLER                         PIC X(4).
+   258      03 FNAME04I                       PIC X(20).
+   259      03 LNAME04L                       PIC S9(4) COMP.
+   260      03 LNAME04F                       PIC X.
+   261      03 FILLER REDEFINES LNAME04F.
+   262         05 LNAME04A                       PIC X.
+   263      03 FILLER                         PIC X(4).
+   264      03 LNAME04I                       PIC X(20).
+   265      03 UTYPE04L                       PIC S9(4) COMP.
+   266      03 UTYPE04F                       PIC X.
+   267      03 FILLER REDEFINES UTYPE04F.
+   268         05 UTYPE04A                       PIC X.
+   269      03 FILLER                         PIC X(4).
+   270      03 UTYPE04I                       PIC X(1).
+   271      03 SEL0005L                       PIC S9(4) COMP.
+   272      03 SEL0005F                       PIC X.
+   273      03 FILLER REDEFINES SEL0005F.
+   274         05 SEL0005A                       PIC X.
+   275      03 FILLER                         PIC X(4).
+   276      03 SEL0005I                       PIC X(1).
+   277      03 USRID05L                       PIC S9(4) COMP.
+   278      03 USRID05F                       PIC X.
+   279      03 FILLER REDEFINES USRID05F.
+   280         05 USRID05A                       PIC X.
+   281      03 FILLER                         PIC X(4).
+   282      03 USRID05I                       PIC X(8).
+   283      03 FNAME05L                       PIC S9(4) COMP.
+   284      03 FNAME05F                       PIC X.
+   285      03 FILLER REDEFINES FNAME05F.
+   286         05 FNAME05A                       PIC X.
+   287      03 FILLER                         PIC X(4).
+   288      03 FNAME05I                       PIC X(20).
+   289      03 LNAME05L                       PIC S9(4) COMP.
+   290      03 LNAME05F                       PIC X.
+   291      03 FILLER REDEFINES LNAME05F.
+   292         05 LNAME05A                       PIC X.
+   293      03 FILLER                         PIC X(4).
+   294      03 LNAME05I                       PIC X(20).
+   295      03 UTYPE05L                       PIC S9(4) COMP.
+   296      03 UTYPE05F                       PIC X.
+   297      03 FILLER REDEFINES UTYPE05F.
+   298         05 UTYPE05A                       PIC X.
+   299      03 FILLER                         PIC X(4).
+   300      03 UTYPE05I                       PIC X(1).
+   301      03 SEL0006L                       PIC S9(4) COMP.
+   302      03 SEL0006F                       PIC X.
+   303      03 FILLER REDEFINES SEL0006F.
+   304         05 SEL0006A                       PIC X.
+   305      03 FILLER                         PIC X(4).
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  11
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   306      03 SEL0006I                       PIC X(1).
+   307      03 USRID06L                       PIC S9(4) COMP.
+   308      03 USRID06F                       PIC X.
+   309      03 FILLER REDEFINES USRID06F.
+   310         05 USRID06A                       PIC X.
+   311      03 FILLER                         PIC X(4).
+   312      03 USRID06I                       PIC X(8).
+   313      03 FNAME06L                       PIC S9(4) COMP.
+   314      03 FNAME06F                       PIC X.
+   315      03 FILLER REDEFINES FNAME06F.
+   316         05 FNAME06A                       PIC X.
+   317      03 FILLER                         PIC X(4).
+   318      03 FNAME06I                       PIC X(20).
+   319      03 LNAME06L                       PIC S9(4) COMP.
+   320      03 LNAME06F                       PIC X.
+   321      03 FILLER REDEFINES LNAME06F.
+   322         05 LNAME06A                       PIC X.
+   323      03 FILLER                         PIC X(4).
+   324      03 LNAME06I                       PIC X(20).
+   325      03 UTYPE06L                       PIC S9(4) COMP.
+   326      03 UTYPE06F                       PIC X.
+   327      03 FILLER REDEFINES UTYPE06F.
+   328         05 UTYPE06A                       PIC X.
+   329      03 FILLER                         PIC X(4).
+   330      03 UTYPE06I                       PIC X(1).
+   331      03 SEL0007L                       PIC S9(4) COMP.
+   332      03 SEL0007F                       PIC X.
+   333      03 FILLER REDEFINES SEL0007F.
+   334         05 SEL0007A                       PIC X.
+   335      03 FILLER                         PIC X(4).
+   336      03 SEL0007I                       PIC X(1).
+   337      03 USRID07L                       PIC S9(4) COMP.
+   338      03 USRID07F                       PIC X.
+   339      03 FILLER REDEFINES USRID07F.
+   340         05 USRID07A                       PIC X.
+   341      03 FILLER                         PIC X(4).
+   342      03 USRID07I                       PIC X(8).
+   343      03 FNAME07L                       PIC S9(4) COMP.
+   344      03 FNAME07F                       PIC X.
+   345      03 FILLER REDEFINES FNAME07F.
+   346         05 FNAME07A                       PIC X.
+   347      03 FILLER                         PIC X(4).
+   348      03 FNAME07I                       PIC X(20).
+   349      03 LNAME07L                       PIC S9(4) COMP.
+   350      03 LNAME07F                       PIC X.
+   351      03 FILLER REDEFINES LNAME07F.
+   352         05 LNAME07A                       PIC X.
+   353      03 FILLER                         PIC X(4).
+   354      03 LNAME07I                       PIC X(20).
+   355      03 UTYPE07L                       PIC S9(4) COMP.
+   356      03 UTYPE07F                       PIC X.
+   357      03 FILLER REDEFINES UTYPE07F.
+   358         05 UTYPE07A                       PIC X.
+   359      03 FILLER                         PIC X(4).
+   360      03 UTYPE07I                       PIC X(1).
+   361      03 SEL0008L                       PIC S9(4) COMP.
+   362      03 SEL0008F                       PIC X.
+   363      03 FILLER REDEFINES SEL0008F.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  12
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   364         05 SEL0008A                       PIC X.
+   365      03 FILLER                         PIC X(4).
+   366      03 SEL0008I                       PIC X(1).
+   367      03 USRID08L                       PIC S9(4) COMP.
+   368      03 USRID08F                       PIC X.
+   369      03 FILLER REDEFINES USRID08F.
+   370         05 USRID08A                       PIC X.
+   371      03 FILLER                         PIC X(4).
+   372      03 USRID08I                       PIC X(8).
+   373      03 FNAME08L                       PIC S9(4) COMP.
+   374      03 FNAME08F                       PIC X.
+   375      03 FILLER REDEFINES FNAME08F.
+   376         05 FNAME08A                       PIC X.
+   377      03 FILLER                         PIC X(4).
+   378      03 FNAME08I                       PIC X(20).
+   379      03 LNAME08L                       PIC S9(4) COMP.
+   380      03 LNAME08F                       PIC X.
+   381      03 FILLER REDEFINES LNAME08F.
+   382         05 LNAME08A                       PIC X.
+   383      03 FILLER                         PIC X(4).
+   384      03 LNAME08I                       PIC X(20).
+   385      03 UTYPE08L                       PIC S9(4) COMP.
+   386      03 UTYPE08F                       PIC X.
+   387      03 FILLER REDEFINES UTYPE08F.
+   388         05 UTYPE08A                       PIC X.
+   389      03 FILLER                         PIC X(4).
+   390      03 UTYPE08I                       PIC X(1).
+   391      03 SEL0009L                       PIC S9(4) COMP.
+   392      03 SEL0009F                       PIC X.
+   393      03 FILLER REDEFINES SEL0009F.
+   394         05 SEL0009A                       PIC X.
+   395      03 FILLER                         PIC X(4).
+   396      03 SEL0009I                       PIC X(1).
+   397      03 USRID09L                       PIC S9(4) COMP.
+   398      03 USRID09F                       PIC X.
+   399      03 FILLER REDEFINES USRID09F.
+   400         05 USRID09A                       PIC X.
+   401      03 FILLER                         PIC X(4).
+   402      03 USRID09I                       PIC X(8).
+   403      03 FNAME09L                       PIC S9(4) COMP.
+   404      03 FNAME09F                       PIC X.
+   405      03 FILLER REDEFINES FNAME09F.
+   406         05 FNAME09A                       PIC X.
+   407      03 FILLER                         PIC X(4).
+   408      03 FNAME09I                       PIC X(20).
+   409      03 LNAME09L                       PIC S9(4) COMP.
+   410      03 LNAME09F                       PIC X.
+   411      03 FILLER REDEFINES LNAME09F.
+   412         05 LNAME09A                       PIC X.
+   413      03 FILLER                         PIC X(4).
+   414      03 LNAME09I                       PIC X(20).
+   415      03 UTYPE09L                       PIC S9(4) COMP.
+   416      03 UTYPE09F                       PIC X.
+   417      03 FILLER REDEFINES UTYPE09F.
+   418         05 UTYPE09A                       PIC X.
+   419      03 FILLER                         PIC X(4).
+   420      03 UTYPE09I                       PIC X(1).
+   421      03 SEL0010L                       PIC S9(4) COMP.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  13
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   422      03 SEL0010F                       PIC X.
+   423      03 FILLER REDEFINES SEL0010F.
+   424         05 SEL0010A                       PIC X.
+   425      03 FILLER                         PIC X(4).
+   426      03 SEL0010I                       PIC X(1).
+   427      03 USRID10L                       PIC S9(4) COMP.
+   428      03 USRID10F                       PIC X.
+   429      03 FILLER REDEFINES USRID10F.
+   430         05 USRID10A                       PIC X.
+   431      03 FILLER                         PIC X(4).
+   432      03 USRID10I                       PIC X(8).
+   433      03 FNAME10L                       PIC S9(4) COMP.
+   434      03 FNAME10F                       PIC X.
+   435      03 FILLER REDEFINES FNAME10F.
+   436         05 FNAME10A                       PIC X.
+   437      03 FILLER                         PIC X(4).
+   438      03 FNAME10I                       PIC X(20).
+   439      03 LNAME10L                       PIC S9(4) COMP.
+   440      03 LNAME10F                       PIC X.
+   441      03 FILLER REDEFINES LNAME10F.
+   442         05 LNAME10A                       PIC X.
+   443      03 FILLER                         PIC X(4).
+   444      03 LNAME10I                       PIC X(20).
+   445      03 UTYPE10L                       PIC S9(4) COMP.
+   446      03 UTYPE10F                       PIC X.
+   447      03 FILLER REDEFINES UTYPE10F.
+   448         05 UTYPE10A                       PIC X.
+   449      03 FILLER                         PIC X(4).
+   450      03 UTYPE10I                       PIC X(1).
+   451      03 ERRMSGL                        PIC S9(4) COMP.
+   452      03 ERRMSGF                        PIC X.
+   453      03 FILLER REDEFINES ERRMSGF.
+   454         05 ERRMSGA                        PIC X.
+   455      03 FILLER                         PIC X(4).
+   456      03 ERRMSGI                        PIC X(78).
+   457
+   458*  Output Data For Map COUSR0A
+   459   01 COUSR0AO REDEFINES COUSR0AI.
+   460      03 FILLER                         PIC X(12).
+   461      03 FILLER                         PIC X(3).
+   462      03 TRNNAMEC                       PIC X.
+   463      03 TRNNAMEP                       PIC X.
+   464      03 TRNNAMEH                       PIC X.
+   465      03 TRNNAMEV                       PIC X.
+   466      03 TRNNAMEO                       PIC X(4).
+   467      03 FILLER                         PIC X(3).
+   468      03 TITLE01C                       PIC X.
+   469      03 TITLE01P                       PIC X.
+   470      03 TITLE01H                       PIC X.
+   471      03 TITLE01V                       PIC X.
+   472      03 TITLE01O                       PIC X(40).
+   473      03 FILLER                         PIC X(3).
+   474      03 CURDATEC                       PIC X.
+   475      03 CURDATEP                       PIC X.
+   476      03 CURDATEH                       PIC X.
+   477      03 CURDATEV                       PIC X.
+   478      03 CURDATEO                       PIC X(8).
+   479      03 FILLER                         PIC X(3).
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  14
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   480      03 PGMNAMEC                       PIC X.
+   481      03 PGMNAMEP                       PIC X.
+   482      03 PGMNAMEH                       PIC X.
+   483      03 PGMNAMEV                       PIC X.
+   484      03 PGMNAMEO                       PIC X(8).
+   485      03 FILLER                         PIC X(3).
+   486      03 TITLE02C                       PIC X.
+   487      03 TITLE02P                       PIC X.
+   488      03 TITLE02H                       PIC X.
+   489      03 TITLE02V                       PIC X.
+   490      03 TITLE02O                       PIC X(40).
+   491      03 FILLER                         PIC X(3).
+   492      03 CURTIMEC                       PIC X.
+   493      03 CURTIMEP                       PIC X.
+   494      03 CURTIMEH                       PIC X.
+   495      03 CURTIMEV                       PIC X.
+   496      03 CURTIMEO                       PIC X(8).
+   497      03 FILLER                         PIC X(3).
+   498      03 PAGENUMC                       PIC X.
+   499      03 PAGENUMP                       PIC X.
+   500      03 PAGENUMH                       PIC X.
+   501      03 PAGENUMV                       PIC X.
+   502      03 PAGENUMO                       PIC X(8).
+   503      03 FILLER                         PIC X(3).
+   504      03 USRIDINC                       PIC X.
+   505      03 USRIDINP                       PIC X.
+   506      03 USRIDINH                       PIC X.
+   507      03 USRIDINV                       PIC X.
+   508      03 USRIDINO                       PIC X(8).
+   509      03 FILLER                         PIC X(3).
+   510      03 SEL0001C                       PIC X.
+   511      03 SEL0001P                       PIC X.
+   512      03 SEL0001H                       PIC X.
+   513      03 SEL0001V                       PIC X.
+   514      03 SEL0001O                       PIC X(1).
+   515      03 FILLER                         PIC X(3).
+   516      03 USRID01C                       PIC X.
+   517      03 USRID01P                       PIC X.
+   518      03 USRID01H                       PIC X.
+   519      03 USRID01V                       PIC X.
+   520      03 USRID01O                       PIC X(8).
+   521      03 FILLER                         PIC X(3).
+   522      03 FNAME01C                       PIC X.
+   523      03 FNAME01P                       PIC X.
+   524      03 FNAME01H                       PIC X.
+   525      03 FNAME01V                       PIC X.
+   526      03 FNAME01O                       PIC X(20).
+   527      03 FILLER                         PIC X(3).
+   528      03 LNAME01C                       PIC X.
+   529      03 LNAME01P                       PIC X.
+   530      03 LNAME01H                       PIC X.
+   531      03 LNAME01V                       PIC X.
+   532      03 LNAME01O                       PIC X(20).
+   533      03 FILLER                         PIC X(3).
+   534      03 UTYPE01C                       PIC X.
+   535      03 UTYPE01P                       PIC X.
+   536      03 UTYPE01H                       PIC X.
+   537      03 UTYPE01V                       PIC X.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  15
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   538      03 UTYPE01O                       PIC X(1).
+   539      03 FILLER                         PIC X(3).
+   540      03 SEL0002C                       PIC X.
+   541      03 SEL0002P                       PIC X.
+   542      03 SEL0002H                       PIC X.
+   543      03 SEL0002V                       PIC X.
+   544      03 SEL0002O                       PIC X(1).
+   545      03 FILLER                         PIC X(3).
+   546      03 USRID02C                       PIC X.
+   547      03 USRID02P                       PIC X.
+   548      03 USRID02H                       PIC X.
+   549      03 USRID02V                       PIC X.
+   550      03 USRID02O                       PIC X(8).
+   551      03 FILLER                         PIC X(3).
+   552      03 FNAME02C                       PIC X.
+   553      03 FNAME02P                       PIC X.
+   554      03 FNAME02H                       PIC X.
+   555      03 FNAME02V                       PIC X.
+   556      03 FNAME02O                       PIC X(20).
+   557      03 FILLER                         PIC X(3).
+   558      03 LNAME02C                       PIC X.
+   559      03 LNAME02P                       PIC X.
+   560      03 LNAME02H                       PIC X.
+   561      03 LNAME02V                       PIC X.
+   562      03 LNAME02O                       PIC X(20).
+   563      03 FILLER                         PIC X(3).
+   564      03 UTYPE02C                       PIC X.
+   565      03 UTYPE02P                       PIC X.
+   566      03 UTYPE02H                       PIC X.
+   567      03 UTYPE02V                       PIC X.
+   568      03 UTYPE02O                       PIC X(1).
+   569      03 FILLER                         PIC X(3).
+   570      03 SEL0003C                       PIC X.
+   571      03 SEL0003P                       PIC X.
+   572      03 SEL0003H                       PIC X.
+   573      03 SEL0003V                       PIC X.
+   574      03 SEL0003O                       PIC X(1).
+   575      03 FILLER                         PIC X(3).
+   576      03 USRID03C                       PIC X.
+   577      03 USRID03P                       PIC X.
+   578      03 USRID03H                       PIC X.
+   579      03 USRID03V                       PIC X.
+   580      03 USRID03O                       PIC X(8).
+   581      03 FILLER                         PIC X(3).
+   582      03 FNAME03C                       PIC X.
+   583      03 FNAME03P                       PIC X.
+   584      03 FNAME03H                       PIC X.
+   585      03 FNAME03V                       PIC X.
+   586      03 FNAME03O                       PIC X(20).
+   587      03 FILLER                         PIC X(3).
+   588      03 LNAME03C                       PIC X.
+   589      03 LNAME03P                       PIC X.
+   590      03 LNAME03H                       PIC X.
+   591      03 LNAME03V                       PIC X.
+   592      03 LNAME03O                       PIC X(20).
+   593      03 FILLER                         PIC X(3).
+   594      03 UTYPE03C                       PIC X.
+   595      03 UTYPE03P                       PIC X.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  16
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   596      03 UTYPE03H                       PIC X.
+   597      03 UTYPE03V                       PIC X.
+   598      03 UTYPE03O                       PIC X(1).
+   599      03 FILLER                         PIC X(3).
+   600      03 SEL0004C                       PIC X.
+   601      03 SEL0004P                       PIC X.
+   602      03 SEL0004H                       PIC X.
+   603      03 SEL0004V                       PIC X.
+   604      03 SEL0004O                       PIC X(1).
+   605      03 FILLER                         PIC X(3).
+   606      03 USRID04C                       PIC X.
+   607      03 USRID04P                       PIC X.
+   608      03 USRID04H                       PIC X.
+   609      03 USRID04V                       PIC X.
+   610      03 USRID04O                       PIC X(8).
+   611      03 FILLER                         PIC X(3).
+   612      03 FNAME04C                       PIC X.
+   613      03 FNAME04P                       PIC X.
+   614      03 FNAME04H                       PIC X.
+   615      03 FNAME04V                       PIC X.
+   616      03 FNAME04O                       PIC X(20).
+   617      03 FILLER                         PIC X(3).
+   618      03 LNAME04C                       PIC X.
+   619      03 LNAME04P                       PIC X.
+   620      03 LNAME04H                       PIC X.
+   621      03 LNAME04V                       PIC X.
+   622      03 LNAME04O                       PIC X(20).
+   623      03 FILLER                         PIC X(3).
+   624      03 UTYPE04C                       PIC X.
+   625      03 UTYPE04P                       PIC X.
+   626      03 UTYPE04H                       PIC X.
+   627      03 UTYPE04V                       PIC X.
+   628      03 UTYPE04O                       PIC X(1).
+   629      03 FILLER                         PIC X(3).
+   630      03 SEL0005C                       PIC X.
+   631      03 SEL0005P                       PIC X.
+   632      03 SEL0005H                       PIC X.
+   633      03 SEL0005V                       PIC X.
+   634      03 SEL0005O                       PIC X(1).
+   635      03 FILLER                         PIC X(3).
+   636      03 USRID05C                       PIC X.
+   637      03 USRID05P                       PIC X.
+   638      03 USRID05H                       PIC X.
+   639      03 USRID05V                       PIC X.
+   640      03 USRID05O                       PIC X(8).
+   641      03 FILLER                         PIC X(3).
+   642      03 FNAME05C                       PIC X.
+   643      03 FNAME05P                       PIC X.
+   644      03 FNAME05H                       PIC X.
+   645      03 FNAME05V                       PIC X.
+   646      03 FNAME05O                       PIC X(20).
+   647      03 FILLER                         PIC X(3).
+   648      03 LNAME05C                       PIC X.
+   649      03 LNAME05P                       PIC X.
+   650      03 LNAME05H                       PIC X.
+   651      03 LNAME05V                       PIC X.
+   652      03 LNAME05O                       PIC X(20).
+   653      03 FILLER                         PIC X(3).
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  17
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   654      03 UTYPE05C                       PIC X.
+   655      03 UTYPE05P                       PIC X.
+   656      03 UTYPE05H                       PIC X.
+   657      03 UTYPE05V                       PIC X.
+   658      03 UTYPE05O                       PIC X(1).
+   659      03 FILLER                         PIC X(3).
+   660      03 SEL0006C                       PIC X.
+   661      03 SEL0006P                       PIC X.
+   662      03 SEL0006H                       PIC X.
+   663      03 SEL0006V                       PIC X.
+   664      03 SEL0006O                       PIC X(1).
+   665      03 FILLER                         PIC X(3).
+   666      03 USRID06C                       PIC X.
+   667      03 USRID06P                       PIC X.
+   668      03 USRID06H                       PIC X.
+   669      03 USRID06V                       PIC X.
+   670      03 USRID06O                       PIC X(8).
+   671      03 FILLER                         PIC X(3).
+   672      03 FNAME06C                       PIC X.
+   673      03 FNAME06P                       PIC X.
+   674      03 FNAME06H                       PIC X.
+   675      03 FNAME06V                       PIC X.
+   676      03 FNAME06O                       PIC X(20).
+   677      03 FILLER                         PIC X(3).
+   678      03 LNAME06C                       PIC X.
+   679      03 LNAME06P                       PIC X.
+   680      03 LNAME06H                       PIC X.
+   681      03 LNAME06V                       PIC X.
+   682      03 LNAME06O                       PIC X(20).
+   683      03 FILLER                         PIC X(3).
+   684      03 UTYPE06C                       PIC X.
+   685      03 UTYPE06P                       PIC X.
+   686      03 UTYPE06H                       PIC X.
+   687      03 UTYPE06V                       PIC X.
+   688      03 UTYPE06O                       PIC X(1).
+   689      03 FILLER                         PIC X(3).
+   690      03 SEL0007C                       PIC X.
+   691      03 SEL0007P                       PIC X.
+   692      03 SEL0007H                       PIC X.
+   693      03 SEL0007V                       PIC X.
+   694      03 SEL0007O                       PIC X(1).
+   695      03 FILLER                         PIC X(3).
+   696      03 USRID07C                       PIC X.
+   697      03 USRID07P                       PIC X.
+   698      03 USRID07H                       PIC X.
+   699      03 USRID07V                       PIC X.
+   700      03 USRID07O                       PIC X(8).
+   701      03 FILLER                         PIC X(3).
+   702      03 FNAME07C                       PIC X.
+   703      03 FNAME07P                       PIC X.
+   704      03 FNAME07H                       PIC X.
+   705      03 FNAME07V                       PIC X.
+   706      03 FNAME07O                       PIC X(20).
+   707      03 FILLER                         PIC X(3).
+   708      03 LNAME07C                       PIC X.
+   709      03 LNAME07P                       PIC X.
+   710      03 LNAME07H                       PIC X.
+   711      03 LNAME07V                       PIC X.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  18
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   712      03 LNAME07O                       PIC X(20).
+   713      03 FILLER                         PIC X(3).
+   714      03 UTYPE07C                       PIC X.
+   715      03 UTYPE07P                       PIC X.
+   716      03 UTYPE07H                       PIC X.
+   717      03 UTYPE07V                       PIC X.
+   718      03 UTYPE07O                       PIC X(1).
+   719      03 FILLER                         PIC X(3).
+   720      03 SEL0008C                       PIC X.
+   721      03 SEL0008P                       PIC X.
+   722      03 SEL0008H                       PIC X.
+   723      03 SEL0008V                       PIC X.
+   724      03 SEL0008O                       PIC X(1).
+   725      03 FILLER                         PIC X(3).
+   726      03 USRID08C                       PIC X.
+   727      03 USRID08P                       PIC X.
+   728      03 USRID08H                       PIC X.
+   729      03 USRID08V                       PIC X.
+   730      03 USRID08O                       PIC X(8).
+   731      03 FILLER                         PIC X(3).
+   732      03 FNAME08C                       PIC X.
+   733      03 FNAME08P                       PIC X.
+   734      03 FNAME08H                       PIC X.
+   735      03 FNAME08V                       PIC X.
+   736      03 FNAME08O                       PIC X(20).
+   737      03 FILLER                         PIC X(3).
+   738      03 LNAME08C                       PIC X.
+   739      03 LNAME08P                       PIC X.
+   740      03 LNAME08H                       PIC X.
+   741      03 LNAME08V                       PIC X.
+   742      03 LNAME08O                       PIC X(20).
+   743      03 FILLER                         PIC X(3).
+   744      03 UTYPE08C                       PIC X.
+   745      03 UTYPE08P                       PIC X.
+   746      03 UTYPE08H                       PIC X.
+   747      03 UTYPE08V                       PIC X.
+   748      03 UTYPE08O                       PIC X(1).
+   749      03 FILLER                         PIC X(3).
+   750      03 SEL0009C                       PIC X.
+   751      03 SEL0009P                       PIC X.
+   752      03 SEL0009H                       PIC X.
+   753      03 SEL0009V                       PIC X.
+   754      03 SEL0009O                       PIC X(1).
+   755      03 FILLER                         PIC X(3).
+   756      03 USRID09C                       PIC X.
+   757      03 USRID09P                       PIC X.
+   758      03 USRID09H                       PIC X.
+   759      03 USRID09V                       PIC X.
+   760      03 USRID09O                       PIC X(8).
+   761      03 FILLER                         PIC X(3).
+   762      03 FNAME09C                       PIC X.
+   763      03 FNAME09P                       PIC X.
+   764      03 FNAME09H                       PIC X.
+   765      03 FNAME09V                       PIC X.
+   766      03 FNAME09O                       PIC X(20).
+   767      03 FILLER                         PIC X(3).
+   768      03 LNAME09C                       PIC X.
+   769      03 LNAME09P                       PIC X.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  19
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   770      03 LNAME09H                       PIC X.
+   771      03 LNAME09V                       PIC X.
+   772      03 LNAME09O                       PIC X(20).
+   773      03 FILLER                         PIC X(3).
+   774      03 UTYPE09C                       PIC X.
+   775      03 UTYPE09P                       PIC X.
+   776      03 UTYPE09H                       PIC X.
+   777      03 UTYPE09V                       PIC X.
+   778      03 UTYPE09O                       PIC X(1).
+   779      03 FILLER                         PIC X(3).
+   780      03 SEL0010C                       PIC X.
+   781      03 SEL0010P                       PIC X.
+   782      03 SEL0010H                       PIC X.
+   783      03 SEL0010V                       PIC X.
+   784      03 SEL0010O                       PIC X(1).
+   785      03 FILLER                         PIC X(3).
+   786      03 USRID10C                       PIC X.
+   787      03 USRID10P                       PIC X.
+   788      03 USRID10H                       PIC X.
+   789      03 USRID10V                       PIC X.
+   790      03 USRID10O                       PIC X(8).
+   791      03 FILLER                         PIC X(3).
+   792      03 FNAME10C                       PIC X.
+   793      03 FNAME10P                       PIC X.
+   794      03 FNAME10H                       PIC X.
+   795      03 FNAME10V                       PIC X.
+   796      03 FNAME10O                       PIC X(20).
+   797      03 FILLER                         PIC X(3).
+   798      03 LNAME10C                       PIC X.
+   799      03 LNAME10P                       PIC X.
+   800      03 LNAME10H                       PIC X.
+   801      03 LNAME10V                       PIC X.
+   802      03 LNAME10O                       PIC X(20).
+   803      03 FILLER                         PIC X(3).
+   804      03 UTYPE10C                       PIC X.
+   805      03 UTYPE10P                       PIC X.
+   806      03 UTYPE10H                       PIC X.
+   807      03 UTYPE10V                       PIC X.
+   808      03 UTYPE10O                       PIC X(1).
+   809      03 FILLER                         PIC X(3).
+   810      03 ERRMSGC                        PIC X.
+   811      03 ERRMSGP                        PIC X.
+   812      03 ERRMSGH                        PIC X.
+   813      03 ERRMSGV                        PIC X.
+   814      03 ERRMSGO                        PIC X(78).
+   815
+   816
+   817*COPY COTTL01Y.
+   818 01 CCDA-SCREEN-TITLE.
+   819   05 CCDA-TITLE01    PIC X(40) VALUE
+   820      '      AWS Mainframe Modernization       '.
+   821   05 CCDA-TITLE02    PIC X(40) VALUE
+   822*     '  Credit Card Demo Application (CCDA)   '.
+   823      '              CardDemo                  '.
+   824   05 CCDA-THANK-YOU  PIC X(40) VALUE
+   825      'Thank you for using CCDA application... '.
+   826*
+   827* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  20
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+   828*
+   829*COPY CSDAT01Y.
+   830 01 WS-DATE-TIME.
+   831   05 WS-CURDATE-DATA.
+   832     10  WS-CURDATE.
+   833       15  WS-CURDATE-YEAR         PIC 9(04).
+   834       15  WS-CURDATE-MONTH        PIC 9(02).
+   835       15  WS-CURDATE-DAY          PIC 9(02).
+   836     10 WS-CURDATE-N REDEFINES WS-CURDATE PIC 9(08).
+   837     10  WS-CURTIME.
+   838       15  WS-CURTIME-HOURS        PIC 9(02).
+   839       15  WS-CURTIME-MINUTE       PIC 9(02).
+   840       15  WS-CURTIME-SECOND       PIC 9(02).
+   841       15  WS-CURTIME-MILSEC       PIC 9(02).
+   842     10 WS-CURTIME-N REDEFINES WS-CURTIME PIC 9(08).
+   843   05 WS-CURDATE-MM-DD-YY.
+   844     10  WS-CURDATE-MM             PIC 9(02).
+   845     10  FILLER                    PIC X(01) VALUE '/'.
+   846     10  WS-CURDATE-DD             PIC 9(02).
+   847     10  FILLER                    PIC X(01) VALUE '/'.
+   848     10  WS-CURDATE-YY             PIC 9(02).
+   849   05 WS-CURTIME-HH-MM-SS.
+   850     10  WS-CURTIME-HH             PIC 9(02).
+   851     10  FILLER                    PIC X(01) VALUE ':'.
+   852     10  WS-CURTIME-MM             PIC 9(02).
+   853     10  FILLER                    PIC X(01) VALUE ':'.
+   854     10  WS-CURTIME-SS             PIC 9(02).
+   855   05 WS-TIMESTAMP.
+   856     10  WS-TIMESTAMP-DT-YYYY      PIC 9(04).
+   857     10  FILLER                    PIC X(01) VALUE '-'.
+   858     10  WS-TIMESTAMP-DT-MM        PIC 9(02).
+   859     10  FILLER                    PIC X(01) VALUE '-'.
+   860     10  WS-TIMESTAMP-DT-DD        PIC 9(02).
+   861     10  FILLER                    PIC X(01) VALUE ' '.
+   862     10  WS-TIMESTAMP-TM-HH        PIC 9(02).
+   863     10  FILLER                    PIC X(01) VALUE ':'.
+   864     10  WS-TIMESTAMP-TM-MM        PIC 9(02).
+   865     10  FILLER                    PIC X(01) VALUE ':'.
+   866     10  WS-TIMESTAMP-TM-SS        PIC 9(02).
+   867     10  FILLER                    PIC X(01) VALUE '.'.
+   868     10  WS-TIMESTAMP-TM-MS6       PIC 9(06).
+   869*
+   870* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   871*
+   872*COPY CSMSG01Y.
+   873 01 CCDA-COMMON-MESSAGES.
+   874   05 CCDA-MSG-THANK-YOU         PIC X(50) VALUE
+   875        'Thank you for using CardDemo application...      '.
+   876   05 CCDA-MSG-INVALID-KEY       PIC X(50) VALUE
+   877        'Invalid key pressed. Please see below...         '.
+   878*
+   879* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:58 CDT
+   880*
+   881*COPY CSUSR01Y.
+   882 01 SEC-USER-DATA.
+   883   05 SEC-USR-ID                 PIC X(08).
+   884   05 SEC-USR-FNAME              PIC X(20).
+   885   05 SEC-USR-LNAME              PIC X(20).
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  21
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl (C:\CrossPlatformBuild\Card)
+   886   05 SEC-USR-PWD                PIC X(08).
+   887   05 SEC-USR-TYPE               PIC X(01).
+   888   05 SEC-USR-FILLER             PIC X(23).
+   889*
+   890* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:15:59 CDT
+   891*
+   892
+   893*COPY DFHAID.
+   894*<CR_TAG_DEMO_BEGIN>
+   895*
+   896*  Copyright (C) 2023 Micro Focus or one of its affiliates.
+   897*  All rights reserved.
+   898*
+   899*  This sample code is supplied for demonstration purposes only
+   900*  on an "as is" basis and "is for use at your own risk".
+   901*
+   902*<CR_TAG_DEMO_END>
+   903*----------------------------------------------------------------*
+   904* dfhaid.cpy
+   905*----------------------------------------------------------------*
+   906 01  DFHAID.
+   907     02  DFHNULL         PIC X   VALUE IS LOW-VALUE.
+   908     02  DFHENTER        PIC X   VALUE IS ''''.
+   909     02  DFHCLEAR        PIC X   VALUE IS '_'.
+   910     02  DFHPEN          PIC X   VALUE IS '='.
+   911     02  DFHOPID         PIC X   VALUE IS 'W'.
+   912     02  DFHMSRE         PIC X   VALUE IS 'X'.
+   913     02  DFHSTRF         PIC X   VALUE IS ' '.
+   914     02  DFHTRIG         PIC X   VALUE IS '"'.
+   915     02  DFHPA1          PIC X   VALUE IS '%'.
+   916     02  DFHPA2          PIC X   VALUE IS '>'.
+   917     02  DFHPA3          PIC X   VALUE IS ','.
+   918     02  DFHPF1          PIC X   VALUE IS '1'.
+   919     02  DFHPF2          PIC X   VALUE IS '2'.
+   920     02  DFHPF3          PIC X   VALUE IS '3'.
+   921     02  DFHPF4          PIC X   VALUE IS '4'.
+   922     02  DFHPF5          PIC X   VALUE IS '5'.
+   923     02  DFHPF6          PIC X   VALUE IS '6'.
+   924     02  DFHPF7          PIC X   VALUE IS '7'.
+   925     02  DFHPF8          PIC X   VALUE IS '8'.
+   926     02  DFHPF9          PIC X   VALUE IS '9'.
+   927     02  DFHPF10         PIC X   VALUE IS ':'.
+   928     02  DFHPF11         PIC X   VALUE IS '#'.
+   929     02  DFHPF12         PIC X   VALUE IS '@'.
+   930     02  DFHPF13         PIC X   VALUE IS 'A'.
+   931     02  DFHPF14         PIC X   VALUE IS 'B'.
+   932     02  DFHPF15         PIC X   VALUE IS 'C'.
+   933     02  DFHPF16         PIC X   VALUE IS 'D'.
+   934     02  DFHPF17         PIC X   VALUE IS 'E'.
+   935     02  DFHPF18         PIC X   VALUE IS 'F'.
+   936     02  DFHPF19         PIC X   VALUE IS 'G'.
+   937     02  DFHPF20         PIC X   VALUE IS 'H'.
+   938     02  DFHPF21         PIC X   VALUE IS 'I'.
+   939     02  DFHPF22         PIC X   VALUE IS ' '.
+   940*    Note: CICS ECM alters the line above to...
+   941*          Value for ASCII  is X'5B'
+   942*          Value for EBCDIC is X'4A'
+   943     02  DFHPF23         PIC X   VALUE IS '.'.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  22
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+   944     02  DFHPF24         PIC X   VALUE IS '<'.
+   945*----------------------------------------------------------------*
+   946* dfhaid.cpy end
+   947*----------------------------------------------------------------*
+   948*COPY DFHBMSCA.
+   949*----------------------------------------------------------------*
+   950* dfhbmsca.cpy
+   951*<CR_TAG_DEMO_BEGIN>
+   952*
+   953*  Copyright (C) 2023 Micro Focus or one of its affiliates.
+   954*  All rights reserved.
+   955*
+   956*  This sample code is supplied for demonstration purposes only
+   957*  on an "as is" basis and "is for use at your own risk".
+   958*
+   959*<CR_TAG_DEMO_END>
+   960***---------------------------------------------------------*
+   961***CONTROL BLOCK NAME= DFHBMSCA                             *
+   962***                                                         *
+   963***NAME OF MATCHING ASSEMBLER CONTROL BLOCK = NONE          *
+   964***                                                         *
+   965***DESCRIPTIVE NAME = 3270 ATTRIBUTE VALUES                 *
+   966***                                                         *
+   967***FUNCTION =  Provides the values for 3270 attribute bytes *
+   968***            used by the BMS support.                     *
+   969***                                                         *
+   970***---------------------------------------------------------*
+   971 01      DFHBMSCA.
+   972*                                               X'1915'.
+   973   02    DFHBMPEM-BIN  PICTURE 9(4) COMP VALUE IS 6421.
+   974   02    FILLER REDEFINES DFHBMPEM-BIN.
+   975     03  DFHBMPEM  PICTURE X.
+   976     03  DFHBMPNL  PICTURE X.
+   977*                                               X'0C0D'.
+   978   02    DFHBMPFF-BIN  PICTURE 9(4) COMP VALUE IS 3085.
+   979   02    FILLER REDEFINES DFHBMPFF-BIN.
+   980     03  DFHBMPFF  PICTURE X.
+   981     03  DFHBMPCR  PICTURE X.
+   982   02    DFHBMASK  PICTURE X   VALUE  IS  '0'.
+   983   02    DFHBMUNP  PICTURE X   VALUE  IS  ' '.
+   984   02    DFHBMUNN  PICTURE X   VALUE  IS  '&'.
+   985   02    DFHBMPRO  PICTURE X   VALUE  IS  '-'.
+   986   02    DFHBMBRY  PICTURE X   VALUE  IS  'H'.
+   987   02    DFHBMDAR  PICTURE X   VALUE  IS  '<'.
+   988   02    DFHBMFSE  PICTURE X   VALUE  IS  'A'.
+   989   02    DFHBMPRF  PICTURE X   VALUE  IS  '/'.
+   990   02    DFHBMASF  PICTURE X   VALUE  IS  '1'.
+   991   02    DFHBMASB  PICTURE X   VALUE  IS  '8'.
+   992*                                               X'0E0F'.
+   993   02    DFHBMPSO-BIN  PICTURE 9(4) COMP VALUE IS 3599.
+   994   02    FILLER REDEFINES DFHBMPSO-BIN.
+   995     03  DFHBMPSO  PICTURE X.
+   996     03  DFHBMPSI  PICTURE X.
+   997*                                               X'0080'.
+   998   02    DFHBMEOF-BIN  PICTURE 9(4) COMP VALUE IS 128.
+   999   02    FILLER REDEFINES DFHBMEOF-BIN.
+  1000     03  FILLER    PICTURE X.
+  1001     03  DFHBMEOF  PICTURE X.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  23
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl ("C:\Program)
+  1002*                                               X'0282'.
+  1003   02    DFHBMCUR-BIN  PICTURE 9(4) COMP VALUE IS 642.
+  1004   02    FILLER REDEFINES DFHBMCUR-BIN.
+  1005     03  DFHBMCUR  PICTURE X.
+  1006     03  DFHBMEC   PICTURE X.
+  1007*                                               X'0082'.
+  1008   02    DFHBMFLG-BIN  PICTURE 9(4) COMP VALUE IS 130.
+  1009       88    DFHERASE VALUES ARE 128, 130.
+  1010       88    DFHCURSR VALUES ARE   2, 130.
+  1011   02    FILLER REDEFINES DFHBMFLG-BIN.
+  1012     03  FILLER    PICTURE X.
+  1013     03  DFHBMFLG  PICTURE X.
+  1014   02    DFHBMDET  PICTURE X   VALUE  IS  HIGH-VALUES.
+  1015   02    FILLER    PICTURE X.
+  1016*                                               X'0028'.
+  1017   02    DFHSA-BIN  PICTURE 9(4) COMP VALUE IS 40.
+  1018   02    FILLER REDEFINES DFHSA-BIN.
+  1019     03  FILLER    PICTURE X.
+  1020     03  DFHSA     PICTURE X.
+  1021*                                               X'003F'.
+  1022   02    DFHERROR-BIN  PICTURE 9(4) COMP VALUE IS 63.
+  1023   02    FILLER REDEFINES DFHERROR-BIN.
+  1024     03  FILLER    PICTURE X.
+  1025     03  DFHERROR  PICTURE X.
+  1026*                                               X'0042'.
+  1027   02    DFHCOLOR-BIN  PICTURE 9(4) COMP VALUE IS 66.
+  1028   02    FILLER REDEFINES DFHCOLOR-BIN.
+  1029     03  FILLER    PICTURE X.
+  1030     03  DFHCOLOR  PICTURE X.
+  1031*                                               X'0043'.
+  1032   02    DFHPS-BIN  PICTURE 9(4) COMP VALUE IS 67.
+  1033   02    FILLER REDEFINES DFHPS-BIN.
+  1034     03  FILLER    PICTURE X.
+  1035     03  DFHPS     PICTURE X.
+  1036*                                               X'0041'.
+  1037   02    DFHHLT-BIN  PICTURE 9(4) COMP VALUE IS 65.
+  1038   02    FILLER REDEFINES DFHHLT-BIN.
+  1039     03  FILLER    PICTURE X.
+  1040     03  DFHHLT    PICTURE X.
+  1041*                                               X'00C0'.
+  1042   02    DFH3270-BIN   PICTURE 9(4) COMP VALUE IS 192.
+  1043   02    FILLER REDEFINES DFH3270-BIN.
+  1044     03  FILLER    PICTURE X.
+  1045     03  DFH3270   PICTURE X.
+  1046   02    DFHVAL    PICTURE X   VALUE  IS  'A'.
+  1047   02    DFHOUTLN  PICTURE X   VALUE  IS  'B'.
+  1048*                                               X'0046'.
+  1049   02    DFHBKTRN-BIN  PICTURE 9(4) COMP VALUE IS 70.
+  1050   02    FILLER REDEFINES DFHBKTRN-BIN.
+  1051     03  FILLER    PICTURE X.
+  1052     03  DFHBKTRN  PICTURE X.
+  1053   02    DFHALL    PICTURE X   VALUE  IS  LOW-VALUES.
+  1054   02    DFHDFT    PICTURE X   VALUE  IS  HIGH-VALUES.
+  1055   02    DFHDFCOL  PICTURE X   VALUE  IS  LOW-VALUES.
+  1056   02    DFHBLUE   PICTURE X   VALUE  IS  '1'.
+  1057   02    DFHRED    PICTURE X   VALUE  IS  '2'.
+  1058   02    DFHPINK   PICTURE X   VALUE  IS  '3'.
+  1059   02    DFHGREEN  PICTURE X   VALUE  IS  '4'.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  24
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl ("C:\Program)
+  1060   02    DFHTURQ   PICTURE X   VALUE  IS  '5'.
+  1061   02    DFHYELLO  PICTURE X   VALUE  IS  '6'.
+  1062   02    DFHNEUTR  PICTURE X   VALUE  IS  '7'.
+  1063   02    DFHBASE   PICTURE X   VALUE  IS  LOW-VALUES.
+  1064   02    DFHDFHI   PICTURE X   VALUE  IS  LOW-VALUES.
+  1065   02    DFHBLINK  PICTURE X   VALUE  IS  '1'.
+  1066   02    DFHREVRS  PICTURE X   VALUE  IS  '2'.
+  1067   02    DFHUNDLN  PICTURE X   VALUE  IS  '4'.
+  1068*                                               X'0402'.
+  1069   02    DFHMFIL-BIN  PICTURE 9(4) COMP VALUE IS 1026.
+  1070   02    FILLER REDEFINES DFHMFIL-BIN.
+  1071     03  DFHMFIL   PICTURE X.
+  1072     03  DFHMENT   PICTURE X.
+  1073*                                               X'0601'.
+  1074   02    DFHMFE-BIN  PICTURE 9(4) COMP VALUE IS 1537.
+  1075   02    FILLER REDEFINES DFHMFE-BIN.
+  1076     03  DFHMFE    PICTURE X.
+  1077     03  DFHMT     PICTURE X.
+  1078*                                               X'0503'.
+  1079   02    DFHMFT-BIN  PICTURE 9(4) COMP VALUE IS 1283.
+  1080   02    FILLER REDEFINES DFHMFT-BIN.
+  1081     03  DFHMFT    PICTURE X.
+  1082     03  DFHMET    PICTURE X.
+  1083*                                               X'0007'.
+  1084   02    DFHMFET-BIN  PICTURE 9(4) COMP VALUE IS 7.
+  1085   02    FILLER REDEFINES DFHMFET-BIN.
+  1086     03  FILLER    PICTURE X.
+  1087     03  DFHMFET   PICTURE X.
+  1088   02    DFHUNNOD  PICTURE X   VALUE  IS  '('.
+  1089   02    DFHUNIMD  PICTURE X   VALUE  IS  'I'.
+  1090   02    DFHUNNUM  PICTURE X   VALUE  IS  'J'.
+  1091   02    DFHUNNUB  PICTURE X   VALUE  IS  'Q'.
+  1092   02    DFHUNINT  PICTURE X   VALUE  IS  'R'.
+  1093   02    DFHUNNON  PICTURE X   VALUE  IS  ')'.
+  1094   02    DFHPROTI  PICTURE X   VALUE  IS  'Y'.
+  1095   02    DFHPROTN  PICTURE X   VALUE  IS  '%'.
+  1096   02    DFHDFFR   PICTURE X   VALUE  IS  LOW-VALUES.
+  1097*                                               X'0102'.
+  1098   02    DFHUNDER-BIN  PICTURE 9(4) COMP VALUE IS 258.
+  1099   02    FILLER REDEFINES DFHUNDER-BIN.
+  1100     03  DFHUNDER  PICTURE X.
+  1101     03  DFHRIGHT  PICTURE X.
+  1102*                                               X'0408'.
+  1103   02    DFHOVER-BIN  PICTURE 9(4) COMP VALUE IS 1032.
+  1104   02    FILLER REDEFINES DFHOVER-BIN.
+  1105     03  DFHOVER   PICTURE X.
+  1106     03  DFHLEFT   PICTURE X.
+  1107*                                               X'000F'.
+  1108   02    DFHBOX-BIN   PICTURE 9(4) COMP VALUE IS 15.
+  1109   02    FILLER REDEFINES DFHBOX-BIN.
+  1110     03  FILLER    PICTURE X.
+  1111     03  DFHBOX    PICTURE X.
+  1112*                                               X'0001'.
+  1113   02    DFHSOSI-BIN  PICTURE 9(4) COMP VALUE IS 1.
+  1114   02    FILLER REDEFINES DFHSOSI-BIN.
+  1115     03  FILLER    PICTURE X.
+  1116     03  DFHSOSI   PICTURE X.
+  1117   02    DFHTRANS  PICTURE X   VALUE  IS  '0'.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  25
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1118   02    DFHOPAQ   PICTURE X   VALUE  IS  HIGH-VALUES.
+  1119*----------------------------------------------------------------*
+  1120* dfhbmsca.cpy end
+  1121*----------------------------------------------------------------*
+  1122
+  1123*----------------------------------------------------------------*
+  1124*                        LINKAGE SECTION
+  1125*----------------------------------------------------------------*
+  1126 LINKAGE SECTION.
+  1127 01  DFHCOMMAREA.
+  1128   05  LK-COMMAREA                           PIC X(01)
+  1129       OCCURS 1 TO 32767 TIMES DEPENDING ON EIBCALEN.
+  1130
+  1131*----------------------------------------------------------------*
+  1132*                       PROCEDURE DIVISION
+  1133*----------------------------------------------------------------*
+  1134 PROCEDURE DIVISION.
+  1135 MAIN-PARA.
+  1136
+  1137     SET ERR-FLG-OFF TO TRUE
+  1138     SET USER-SEC-NOT-EOF TO TRUE
+  1139     SET NEXT-PAGE-NO TO TRUE
+  1140     SET SEND-ERASE-YES TO TRUE
+  1141
+  1142     MOVE SPACES TO WS-MESSAGE
+  1143                    ERRMSGO OF COUSR0AO
+  1144
+  1145     MOVE -1       TO USRIDINL OF COUSR0AI
+  1146
+  1147     IF EIBCALEN = 0
+  1148         MOVE 'COSGN00C' TO CDEMO-TO-PROGRAM
+  1149         PERFORM RETURN-TO-PREV-SCREEN
+  1150     ELSE
+  1151         MOVE DFHCOMMAREA(1:EIBCALEN) TO CARDDEMO-COMMAREA
+  1152         IF NOT CDEMO-PGM-REENTER
+  1153             SET CDEMO-PGM-REENTER    TO TRUE
+  1154             MOVE LOW-VALUES          TO COUSR0AO
+  1155             PERFORM PROCESS-ENTER-KEY
+  1156             PERFORM SEND-USRLST-SCREEN
+  1157         ELSE
+  1158             PERFORM RECEIVE-USRLST-SCREEN
+  1159             EVALUATE EIBAID
+  1160                 WHEN DFHENTER
+  1161                     PERFORM PROCESS-ENTER-KEY
+  1162                 WHEN DFHPF3
+  1163                     MOVE 'COADM01C' TO CDEMO-TO-PROGRAM
+  1164                     PERFORM RETURN-TO-PREV-SCREEN
+  1165                 WHEN DFHPF7
+  1166                     PERFORM PROCESS-PF7-KEY
+  1167                 WHEN DFHPF8
+  1168                     PERFORM PROCESS-PF8-KEY
+  1169                 WHEN OTHER
+  1170                     MOVE 'Y'                       TO WS-ERR-FLG
+  1171                     MOVE -1       TO USRIDINL OF COUSR0AI
+  1172                     MOVE CCDA-MSG-INVALID-KEY      TO WS-MESSAGE
+  1173                     PERFORM SEND-USRLST-SCREEN
+  1174             END-EVALUATE
+  1175         END-IF
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  26
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1176     END-IF
+  1177
+  1178     EXEC CICS RETURN
+  1179               TRANSID (WS-TRANID)
+  1180               COMMAREA (CARDDEMO-COMMAREA)
+  1181     END-EXEC.
+  1182
+  1183*----------------------------------------------------------------*
+  1184*                      PROCESS-ENTER-KEY
+  1185*----------------------------------------------------------------*
+  1186 PROCESS-ENTER-KEY.
+  1187
+  1188     EVALUATE TRUE
+  1189         WHEN SEL0001I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1190             MOVE SEL0001I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1191             MOVE USRID01I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1192         WHEN SEL0002I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1193             MOVE SEL0002I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1194             MOVE USRID02I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1195         WHEN SEL0003I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1196             MOVE SEL0003I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1197             MOVE USRID03I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1198         WHEN SEL0004I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1199             MOVE SEL0004I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1200             MOVE USRID04I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1201         WHEN SEL0005I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1202             MOVE SEL0005I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1203             MOVE USRID05I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1204         WHEN SEL0006I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1205             MOVE SEL0006I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1206             MOVE USRID06I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1207         WHEN SEL0007I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1208             MOVE SEL0007I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1209             MOVE USRID07I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1210         WHEN SEL0008I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1211             MOVE SEL0008I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1212             MOVE USRID08I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1213         WHEN SEL0009I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1214             MOVE SEL0009I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1215             MOVE USRID09I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1216         WHEN SEL0010I OF COUSR0AI NOT = SPACES AND LOW-VALUES
+  1217             MOVE SEL0010I OF COUSR0AI TO CDEMO-CU00-USR-SEL-FLG
+  1218             MOVE USRID10I OF COUSR0AI TO CDEMO-CU00-USR-SELECTED
+  1219         WHEN OTHER
+  1220             MOVE SPACES   TO CDEMO-CU00-USR-SEL-FLG
+  1221             MOVE SPACES   TO CDEMO-CU00-USR-SELECTED
+  1222     END-EVALUATE
+  1223
+  1224     IF (CDEMO-CU00-USR-SEL-FLG NOT = SPACES AND LOW-VALUES) AND
+  1225        (CDEMO-CU00-USR-SELECTED NOT = SPACES AND LOW-VALUES)
+  1226         EVALUATE CDEMO-CU00-USR-SEL-FLG
+  1227             WHEN 'U'
+  1228             WHEN 'u'
+  1229                  MOVE 'COUSR02C'   TO CDEMO-TO-PROGRAM
+  1230                  MOVE WS-TRANID    TO CDEMO-FROM-TRANID
+  1231                  MOVE WS-PGMNAME   TO CDEMO-FROM-PROGRAM
+  1232                  MOVE 0        TO CDEMO-PGM-CONTEXT
+  1233                  EXEC CICS
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  27
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1234                      XCTL PROGRAM(CDEMO-TO-PROGRAM)
+  1235                      COMMAREA(CARDDEMO-COMMAREA)
+  1236                  END-EXEC
+  1237             WHEN 'D'
+  1238             WHEN 'd'
+  1239                  MOVE 'COUSR03C'   TO CDEMO-TO-PROGRAM
+  1240                  MOVE WS-TRANID    TO CDEMO-FROM-TRANID
+  1241                  MOVE WS-PGMNAME   TO CDEMO-FROM-PROGRAM
+  1242                  MOVE 0        TO CDEMO-PGM-CONTEXT
+  1243                  EXEC CICS
+  1244                      XCTL PROGRAM(CDEMO-TO-PROGRAM)
+  1245                      COMMAREA(CARDDEMO-COMMAREA)
+  1246                  END-EXEC
+  1247             WHEN OTHER
+  1248                 MOVE
+  1249                 'Invalid selection. Valid values are U and D' TO
+  1250                                 WS-MESSAGE
+  1251                 MOVE -1       TO USRIDINL OF COUSR0AI
+  1252         END-EVALUATE
+  1253     END-IF
+  1254
+  1255     IF USRIDINI OF COUSR0AI = SPACES OR LOW-VALUES
+  1256         MOVE LOW-VALUES TO SEC-USR-ID
+  1257     ELSE
+  1258         MOVE USRIDINI  OF COUSR0AI TO SEC-USR-ID
+  1259     END-IF
+  1260
+  1261     MOVE -1       TO USRIDINL OF COUSR0AI
+  1262
+  1263
+  1264     MOVE 0       TO CDEMO-CU00-PAGE-NUM
+  1265     PERFORM PROCESS-PAGE-FORWARD
+  1266
+  1267     IF NOT ERR-FLG-ON
+  1268         MOVE SPACE   TO USRIDINO  OF COUSR0AO
+  1269     END-IF.
+  1270
+  1271*----------------------------------------------------------------*
+  1272*                      PROCESS-PF7-KEY
+  1273*----------------------------------------------------------------*
+  1274 PROCESS-PF7-KEY.
+  1275
+  1276     IF CDEMO-CU00-USRID-FIRST = SPACES OR LOW-VALUES
+  1277         MOVE LOW-VALUES TO SEC-USR-ID
+  1278     ELSE
+  1279         MOVE CDEMO-CU00-USRID-FIRST TO SEC-USR-ID
+  1280     END-IF
+  1281
+  1282     SET NEXT-PAGE-YES TO TRUE
+  1283     MOVE -1       TO USRIDINL OF COUSR0AI
+  1284
+  1285     IF CDEMO-CU00-PAGE-NUM > 1
+  1286         PERFORM PROCESS-PAGE-BACKWARD
+  1287     ELSE
+  1288         MOVE 'You are already at the top of the page...' TO
+  1289                         WS-MESSAGE
+  1290         SET SEND-ERASE-NO TO TRUE
+  1291         PERFORM SEND-USRLST-SCREEN
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  28
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1292     END-IF.
+  1293
+  1294*----------------------------------------------------------------*
+  1295*                      PROCESS-PF8-KEY
+  1296*----------------------------------------------------------------*
+  1297 PROCESS-PF8-KEY.
+  1298
+  1299     IF CDEMO-CU00-USRID-LAST = SPACES OR LOW-VALUES
+  1300         MOVE HIGH-VALUES TO SEC-USR-ID
+  1301     ELSE
+  1302         MOVE CDEMO-CU00-USRID-LAST TO SEC-USR-ID
+  1303     END-IF
+  1304
+  1305     MOVE -1       TO USRIDINL OF COUSR0AI
+  1306
+  1307     IF NEXT-PAGE-YES
+  1308         PERFORM PROCESS-PAGE-FORWARD
+  1309     ELSE
+  1310         MOVE 'You are already at the bottom of the page...' TO
+  1311                         WS-MESSAGE
+  1312         SET SEND-ERASE-NO TO TRUE
+  1313         PERFORM SEND-USRLST-SCREEN
+  1314     END-IF.
+  1315
+  1316*----------------------------------------------------------------*
+  1317*                      PROCESS-PAGE-FORWARD
+  1318*----------------------------------------------------------------*
+  1319 PROCESS-PAGE-FORWARD.
+  1320
+  1321     PERFORM STARTBR-USER-SEC-FILE
+  1322
+  1323     IF NOT ERR-FLG-ON
+  1324
+  1325         IF EIBAID NOT = DFHENTER AND DFHPF7 AND DFHPF3
+  1326             PERFORM READNEXT-USER-SEC-FILE
+  1327         END-IF
+  1328
+  1329         IF USER-SEC-NOT-EOF AND ERR-FLG-OFF
+  1330         PERFORM VARYING WS-IDX FROM 1 BY 1 UNTIL WS-IDX > 10
+  1331             PERFORM INITIALIZE-USER-DATA
+  1332         END-PERFORM
+  1333         END-IF
+  1334
+  1335         MOVE 1             TO  WS-IDX
+  1336
+  1337         PERFORM UNTIL WS-IDX >= 11 OR USER-SEC-EOF OR ERR-FLG-ON
+  1338             PERFORM READNEXT-USER-SEC-FILE
+  1339             IF USER-SEC-NOT-EOF AND ERR-FLG-OFF
+  1340                 PERFORM POPULATE-USER-DATA
+  1341                 COMPUTE WS-IDX = WS-IDX + 1
+  1342             END-IF
+  1343         END-PERFORM
+  1344
+  1345         IF USER-SEC-NOT-EOF AND ERR-FLG-OFF
+  1346             COMPUTE CDEMO-CU00-PAGE-NUM =
+  1347                     CDEMO-CU00-PAGE-NUM + 1
+  1348             PERFORM READNEXT-USER-SEC-FILE
+  1349             IF USER-SEC-NOT-EOF AND ERR-FLG-OFF
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  29
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1350                 SET NEXT-PAGE-YES TO TRUE
+  1351             ELSE
+  1352                 SET NEXT-PAGE-NO TO TRUE
+  1353             END-IF
+  1354         ELSE
+  1355             SET NEXT-PAGE-NO TO TRUE
+  1356             IF WS-IDX > 1
+  1357                 COMPUTE CDEMO-CU00-PAGE-NUM = CDEMO-CU00-PAGE-NUM
+  1358                  + 1
+  1359             END-IF
+  1360         END-IF
+  1361
+  1362         PERFORM ENDBR-USER-SEC-FILE
+  1363
+  1364         MOVE CDEMO-CU00-PAGE-NUM TO PAGENUMI  OF COUSR0AI
+  1365         MOVE SPACE   TO USRIDINO  OF COUSR0AO
+  1366         PERFORM SEND-USRLST-SCREEN
+  1367
+  1368     END-IF.
+  1369
+  1370*----------------------------------------------------------------*
+  1371*                      PROCESS-PAGE-BACKWARD
+  1372*----------------------------------------------------------------*
+  1373 PROCESS-PAGE-BACKWARD.
+  1374
+  1375     PERFORM STARTBR-USER-SEC-FILE
+  1376
+  1377     IF NOT ERR-FLG-ON
+  1378
+  1379         IF EIBAID NOT = DFHENTER  AND DFHPF8
+  1380             PERFORM READPREV-USER-SEC-FILE
+  1381         END-IF
+  1382
+  1383         IF USER-SEC-NOT-EOF AND ERR-FLG-OFF
+  1384         PERFORM VARYING WS-IDX FROM 1 BY 1 UNTIL WS-IDX > 10
+  1385             PERFORM INITIALIZE-USER-DATA
+  1386         END-PERFORM
+  1387         END-IF
+  1388
+  1389         MOVE 10          TO  WS-IDX
+  1390
+  1391         PERFORM UNTIL WS-IDX <= 0 OR USER-SEC-EOF OR ERR-FLG-ON
+  1392             PERFORM READPREV-USER-SEC-FILE
+  1393             IF USER-SEC-NOT-EOF AND ERR-FLG-OFF
+  1394                 PERFORM POPULATE-USER-DATA
+  1395                 COMPUTE WS-IDX = WS-IDX - 1
+  1396             END-IF
+  1397         END-PERFORM
+  1398
+  1399         IF USER-SEC-NOT-EOF AND ERR-FLG-OFF
+  1400         PERFORM READPREV-USER-SEC-FILE
+  1401         IF NEXT-PAGE-YES
+  1402             IF USER-SEC-NOT-EOF AND ERR-FLG-OFF AND
+  1403                 CDEMO-CU00-PAGE-NUM > 1
+  1404                 SUBTRACT 1 FROM CDEMO-CU00-PAGE-NUM
+  1405             ELSE
+  1406                 MOVE 1 TO CDEMO-CU00-PAGE-NUM
+  1407             END-IF
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  30
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1408         END-IF
+  1409         END-IF
+  1410
+  1411         PERFORM ENDBR-USER-SEC-FILE
+  1412
+  1413         MOVE CDEMO-CU00-PAGE-NUM TO PAGENUMI  OF COUSR0AI
+  1414         PERFORM SEND-USRLST-SCREEN
+  1415
+  1416     END-IF.
+  1417
+  1418*----------------------------------------------------------------*
+  1419*                      POPULATE-USER-DATA
+  1420*----------------------------------------------------------------*
+  1421 POPULATE-USER-DATA.
+  1422
+  1423     EVALUATE WS-IDX
+  1424         WHEN 1
+  1425             MOVE SEC-USR-ID    TO USRID01I OF COUSR0AI
+  1426                                   CDEMO-CU00-USRID-FIRST
+  1427             MOVE SEC-USR-FNAME TO FNAME01I OF COUSR0AI
+  1428             MOVE SEC-USR-LNAME TO LNAME01I OF COUSR0AI
+  1429             MOVE SEC-USR-TYPE  TO UTYPE01I OF COUSR0AI
+  1430         WHEN 2
+  1431             MOVE SEC-USR-ID    TO USRID02I OF COUSR0AI
+  1432             MOVE SEC-USR-FNAME TO FNAME02I OF COUSR0AI
+  1433             MOVE SEC-USR-LNAME TO LNAME02I OF COUSR0AI
+  1434             MOVE SEC-USR-TYPE  TO UTYPE02I OF COUSR0AI
+  1435         WHEN 3
+  1436             MOVE SEC-USR-ID    TO USRID03I OF COUSR0AI
+  1437             MOVE SEC-USR-FNAME TO FNAME03I OF COUSR0AI
+  1438             MOVE SEC-USR-LNAME TO LNAME03I OF COUSR0AI
+  1439             MOVE SEC-USR-TYPE  TO UTYPE03I OF COUSR0AI
+  1440         WHEN 4
+  1441             MOVE SEC-USR-ID    TO USRID04I OF COUSR0AI
+  1442             MOVE SEC-USR-FNAME TO FNAME04I OF COUSR0AI
+  1443             MOVE SEC-USR-LNAME TO LNAME04I OF COUSR0AI
+  1444             MOVE SEC-USR-TYPE  TO UTYPE04I OF COUSR0AI
+  1445         WHEN 5
+  1446             MOVE SEC-USR-ID    TO USRID05I OF COUSR0AI
+  1447             MOVE SEC-USR-FNAME TO FNAME05I OF COUSR0AI
+  1448             MOVE SEC-USR-LNAME TO LNAME05I OF COUSR0AI
+  1449             MOVE SEC-USR-TYPE  TO UTYPE05I OF COUSR0AI
+  1450         WHEN 6
+  1451             MOVE SEC-USR-ID    TO USRID06I OF COUSR0AI
+  1452             MOVE SEC-USR-FNAME TO FNAME06I OF COUSR0AI
+  1453             MOVE SEC-USR-LNAME TO LNAME06I OF COUSR0AI
+  1454             MOVE SEC-USR-TYPE  TO UTYPE06I OF COUSR0AI
+  1455         WHEN 7
+  1456             MOVE SEC-USR-ID    TO USRID07I OF COUSR0AI
+  1457             MOVE SEC-USR-FNAME TO FNAME07I OF COUSR0AI
+  1458             MOVE SEC-USR-LNAME TO LNAME07I OF COUSR0AI
+  1459             MOVE SEC-USR-TYPE  TO UTYPE07I OF COUSR0AI
+  1460         WHEN 8
+  1461             MOVE SEC-USR-ID    TO USRID08I OF COUSR0AI
+  1462             MOVE SEC-USR-FNAME TO FNAME08I OF COUSR0AI
+  1463             MOVE SEC-USR-LNAME TO LNAME08I OF COUSR0AI
+  1464             MOVE SEC-USR-TYPE  TO UTYPE08I OF COUSR0AI
+  1465         WHEN 9
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  31
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1466             MOVE SEC-USR-ID    TO USRID09I OF COUSR0AI
+  1467             MOVE SEC-USR-FNAME TO FNAME09I OF COUSR0AI
+  1468             MOVE SEC-USR-LNAME TO LNAME09I OF COUSR0AI
+  1469             MOVE SEC-USR-TYPE  TO UTYPE09I OF COUSR0AI
+  1470         WHEN 10
+  1471             MOVE SEC-USR-ID    TO USRID10I OF COUSR0AI
+  1472                                   CDEMO-CU00-USRID-LAST
+  1473             MOVE SEC-USR-FNAME TO FNAME10I OF COUSR0AI
+  1474             MOVE SEC-USR-LNAME TO LNAME10I OF COUSR0AI
+  1475             MOVE SEC-USR-TYPE  TO UTYPE10I OF COUSR0AI
+  1476         WHEN OTHER
+  1477             CONTINUE
+  1478     END-EVALUATE.
+  1479
+  1480*----------------------------------------------------------------*
+  1481*                      INITIALIZE-USER-DATA
+  1482*----------------------------------------------------------------*
+  1483 INITIALIZE-USER-DATA.
+  1484
+  1485     EVALUATE WS-IDX
+  1486         WHEN 1
+  1487             MOVE SPACES TO USRID01I OF COUSR0AI
+  1488             MOVE SPACES TO FNAME01I OF COUSR0AI
+  1489             MOVE SPACES TO LNAME01I OF COUSR0AI
+  1490             MOVE SPACES TO UTYPE01I OF COUSR0AI
+  1491         WHEN 2
+  1492             MOVE SPACES TO USRID02I OF COUSR0AI
+  1493             MOVE SPACES TO FNAME02I OF COUSR0AI
+  1494             MOVE SPACES TO LNAME02I OF COUSR0AI
+  1495             MOVE SPACES TO UTYPE02I OF COUSR0AI
+  1496         WHEN 3
+  1497             MOVE SPACES TO USRID03I OF COUSR0AI
+  1498             MOVE SPACES TO FNAME03I OF COUSR0AI
+  1499             MOVE SPACES TO LNAME03I OF COUSR0AI
+  1500             MOVE SPACES TO UTYPE03I OF COUSR0AI
+  1501         WHEN 4
+  1502             MOVE SPACES TO USRID04I OF COUSR0AI
+  1503             MOVE SPACES TO FNAME04I OF COUSR0AI
+  1504             MOVE SPACES TO LNAME04I OF COUSR0AI
+  1505             MOVE SPACES TO UTYPE04I OF COUSR0AI
+  1506         WHEN 5
+  1507             MOVE SPACES TO USRID05I OF COUSR0AI
+  1508             MOVE SPACES TO FNAME05I OF COUSR0AI
+  1509             MOVE SPACES TO LNAME05I OF COUSR0AI
+  1510             MOVE SPACES TO UTYPE05I OF COUSR0AI
+  1511         WHEN 6
+  1512             MOVE SPACES TO USRID06I OF COUSR0AI
+  1513             MOVE SPACES TO FNAME06I OF COUSR0AI
+  1514             MOVE SPACES TO LNAME06I OF COUSR0AI
+  1515             MOVE SPACES TO UTYPE06I OF COUSR0AI
+  1516         WHEN 7
+  1517             MOVE SPACES TO USRID07I OF COUSR0AI
+  1518             MOVE SPACES TO FNAME07I OF COUSR0AI
+  1519             MOVE SPACES TO LNAME07I OF COUSR0AI
+  1520             MOVE SPACES TO UTYPE07I OF COUSR0AI
+  1521         WHEN 8
+  1522             MOVE SPACES TO USRID08I OF COUSR0AI
+  1523             MOVE SPACES TO FNAME08I OF COUSR0AI
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  32
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1524             MOVE SPACES TO LNAME08I OF COUSR0AI
+  1525             MOVE SPACES TO UTYPE08I OF COUSR0AI
+  1526         WHEN 9
+  1527             MOVE SPACES TO USRID09I OF COUSR0AI
+  1528             MOVE SPACES TO FNAME09I OF COUSR0AI
+  1529             MOVE SPACES TO LNAME09I OF COUSR0AI
+  1530             MOVE SPACES TO UTYPE09I OF COUSR0AI
+  1531         WHEN 10
+  1532             MOVE SPACES TO USRID10I OF COUSR0AI
+  1533             MOVE SPACES TO FNAME10I OF COUSR0AI
+  1534             MOVE SPACES TO LNAME10I OF COUSR0AI
+  1535             MOVE SPACES TO UTYPE10I OF COUSR0AI
+  1536         WHEN OTHER
+  1537             CONTINUE
+  1538     END-EVALUATE.
+  1539
+  1540*----------------------------------------------------------------*
+  1541*                      RETURN-TO-PREV-SCREEN
+  1542*----------------------------------------------------------------*
+  1543 RETURN-TO-PREV-SCREEN.
+  1544
+  1545     IF CDEMO-TO-PROGRAM = LOW-VALUES OR SPACES
+  1546         MOVE 'COSGN00C' TO CDEMO-TO-PROGRAM
+  1547     END-IF
+  1548     MOVE WS-TRANID    TO CDEMO-FROM-TRANID
+  1549     MOVE WS-PGMNAME   TO CDEMO-FROM-PROGRAM
+  1550     MOVE ZEROS        TO CDEMO-PGM-CONTEXT
+  1551     EXEC CICS
+  1552         XCTL PROGRAM(CDEMO-TO-PROGRAM)
+  1553         COMMAREA(CARDDEMO-COMMAREA)
+  1554     END-EXEC.
+  1555
+  1556*----------------------------------------------------------------*
+  1557*                      SEND-USRLST-SCREEN
+  1558*----------------------------------------------------------------*
+  1559 SEND-USRLST-SCREEN.
+  1560
+  1561     PERFORM POPULATE-HEADER-INFO
+  1562
+  1563     MOVE WS-MESSAGE TO ERRMSGO OF COUSR0AO
+  1564
+  1565     IF SEND-ERASE-YES
+  1566         EXEC CICS SEND
+  1567                   MAP('COUSR0A')
+  1568                   MAPSET('COUSR00')
+  1569                   FROM(COUSR0AO)
+  1570                   ERASE
+  1571                   CURSOR
+  1572         END-EXEC
+  1573     ELSE
+  1574         EXEC CICS SEND
+  1575                   MAP('COUSR0A')
+  1576                   MAPSET('COUSR00')
+  1577                   FROM(COUSR0AO)
+  1578*                  ERASE
+  1579                   CURSOR
+  1580         END-EXEC
+  1581     END-IF.
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  33
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1582
+  1583*----------------------------------------------------------------*
+  1584*                      RECEIVE-USRLST-SCREEN
+  1585*----------------------------------------------------------------*
+  1586 RECEIVE-USRLST-SCREEN.
+  1587
+  1588     EXEC CICS RECEIVE
+  1589               MAP('COUSR0A')
+  1590               MAPSET('COUSR00')
+  1591               INTO(COUSR0AI)
+  1592               RESP(WS-RESP-CD)
+  1593               RESP2(WS-REAS-CD)
+  1594     END-EXEC.
+  1595
+  1596*----------------------------------------------------------------*
+  1597*                      POPULATE-HEADER-INFO
+  1598*----------------------------------------------------------------*
+  1599 POPULATE-HEADER-INFO.
+  1600
+  1601     MOVE FUNCTION CURRENT-DATE  TO WS-CURDATE-DATA
+  1602
+  1603     MOVE CCDA-TITLE01           TO TITLE01O OF COUSR0AO
+  1604     MOVE CCDA-TITLE02           TO TITLE02O OF COUSR0AO
+  1605     MOVE WS-TRANID              TO TRNNAMEO OF COUSR0AO
+  1606     MOVE WS-PGMNAME             TO PGMNAMEO OF COUSR0AO
+  1607
+  1608     MOVE WS-CURDATE-MONTH       TO WS-CURDATE-MM
+  1609     MOVE WS-CURDATE-DAY         TO WS-CURDATE-DD
+  1610     MOVE WS-CURDATE-YEAR(3:2)   TO WS-CURDATE-YY
+  1611
+  1612     MOVE WS-CURDATE-MM-DD-YY    TO CURDATEO OF COUSR0AO
+  1613
+  1614     MOVE WS-CURTIME-HOURS       TO WS-CURTIME-HH
+  1615     MOVE WS-CURTIME-MINUTE      TO WS-CURTIME-MM
+  1616     MOVE WS-CURTIME-SECOND      TO WS-CURTIME-SS
+  1617
+  1618     MOVE WS-CURTIME-HH-MM-SS    TO CURTIMEO OF COUSR0AO.
+  1619
+  1620*----------------------------------------------------------------*
+  1621*                      STARTBR-USER-SEC-FILE
+  1622*----------------------------------------------------------------*
+  1623 STARTBR-USER-SEC-FILE.
+  1624
+  1625     EXEC CICS STARTBR
+  1626          DATASET   (WS-USRSEC-FILE)
+  1627          RIDFLD    (SEC-USR-ID)
+  1628          KEYLENGTH (LENGTH OF SEC-USR-ID)
+  1629*         GTEQ
+  1630          RESP      (WS-RESP-CD)
+  1631          RESP2     (WS-REAS-CD)
+  1632     END-EXEC.
+  1633
+  1634     EVALUATE WS-RESP-CD
+  1635         WHEN DFHRESP(NORMAL)
+  1636             CONTINUE
+  1637         WHEN DFHRESP(NOTFND)
+  1638             CONTINUE
+  1639             SET USER-SEC-EOF TO TRUE
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  34
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1640             MOVE 'You are at the top of the page...' TO
+  1641                             WS-MESSAGE
+  1642             MOVE -1       TO USRIDINL OF COUSR0AI
+  1643             PERFORM SEND-USRLST-SCREEN
+  1644         WHEN OTHER
+  1645             DISPLAY 'RESP:' WS-RESP-CD 'REAS:' WS-REAS-CD
+  1646             MOVE 'Y'     TO WS-ERR-FLG
+  1647             MOVE 'Unable to lookup User...' TO
+  1648                             WS-MESSAGE
+  1649             MOVE -1       TO USRIDINL OF COUSR0AI
+  1650             PERFORM SEND-USRLST-SCREEN
+  1651     END-EVALUATE.
+  1652
+  1653*----------------------------------------------------------------*
+  1654*                      READNEXT-USER-SEC-FILE
+  1655*----------------------------------------------------------------*
+  1656 READNEXT-USER-SEC-FILE.
+  1657
+  1658     EXEC CICS READNEXT
+  1659          DATASET   (WS-USRSEC-FILE)
+  1660          INTO      (SEC-USER-DATA)
+  1661          LENGTH    (LENGTH OF SEC-USER-DATA)
+  1662          RIDFLD    (SEC-USR-ID)
+  1663          KEYLENGTH (LENGTH OF SEC-USR-ID)
+  1664          RESP      (WS-RESP-CD)
+  1665          RESP2     (WS-REAS-CD)
+  1666     END-EXEC.
+**    COBEC1321I LENGTH argument should be (area), accepted (value)    : C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl(614,19,19)
+  1667
+  1668     EVALUATE WS-RESP-CD
+  1669         WHEN DFHRESP(NORMAL)
+  1670             CONTINUE
+  1671         WHEN DFHRESP(ENDFILE)
+  1672             CONTINUE
+  1673             SET USER-SEC-EOF TO TRUE
+  1674             MOVE 'You have reached the bottom of the page...' TO
+  1675                             WS-MESSAGE
+  1676             MOVE -1       TO USRIDINL OF COUSR0AI
+  1677             PERFORM SEND-USRLST-SCREEN
+  1678         WHEN OTHER
+  1679             DISPLAY 'RESP:' WS-RESP-CD 'REAS:' WS-REAS-CD
+  1680             MOVE 'Y'     TO WS-ERR-FLG
+  1681             MOVE 'Unable to lookup User...' TO
+  1682                             WS-MESSAGE
+  1683             MOVE -1       TO USRIDINL OF COUSR0AI
+  1684             PERFORM SEND-USRLST-SCREEN
+  1685     END-EVALUATE.
+  1686
+  1687*----------------------------------------------------------------*
+  1688*                      READPREV-USER-SEC-FILE
+  1689*----------------------------------------------------------------*
+  1690 READPREV-USER-SEC-FILE.
+  1691
+  1692     EXEC CICS READPREV
+  1693          DATASET   (WS-USRSEC-FILE)
+  1694          INTO      (SEC-USER-DATA)
+  1695          LENGTH    (LENGTH OF SEC-USER-DATA)
+  1696          RIDFLD    (SEC-USR-ID)
+* Micro Focus COBOL                  V8.0 revision 000 14-Mar-24 15:59 Page  35
+* C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl
+  1697          KEYLENGTH (LENGTH OF SEC-USR-ID)
+  1698          RESP      (WS-RESP-CD)
+  1699          RESP2     (WS-REAS-CD)
+  1700     END-EXEC.
+**    COBEC1321I LENGTH argument should be (area), accepted (value)    : C:\CrossPlatformBuild\CardDemo\COBOL\COUSR00C.cbl(648,19,19)
+  1701
+  1702     EVALUATE WS-RESP-CD
+  1703         WHEN DFHRESP(NORMAL)
+  1704             CONTINUE
+  1705         WHEN DFHRESP(ENDFILE)
+  1706             CONTINUE
+  1707             SET USER-SEC-EOF TO TRUE
+  1708             MOVE 'You have reached the top of the page...' TO
+  1709                             WS-MESSAGE
+  1710             MOVE -1       TO USRIDINL OF COUSR0AI
+  1711             PERFORM SEND-USRLST-SCREEN
+  1712         WHEN OTHER
+  1713             DISPLAY 'RESP:' WS-RESP-CD 'REAS:' WS-REAS-CD
+  1714             MOVE 'Y'     TO WS-ERR-FLG
+  1715             MOVE 'Unable to lookup User...' TO
+  1716                             WS-MESSAGE
+  1717             MOVE -1       TO USRIDINL OF COUSR0AI
+  1718             PERFORM SEND-USRLST-SCREEN
+  1719     END-EVALUATE.
+  1720
+  1721*----------------------------------------------------------------*
+  1722*                      ENDBR-USER-SEC-FILE
+  1723*----------------------------------------------------------------*
+  1724 ENDBR-USER-SEC-FILE.
+  1725
+  1726     EXEC CICS ENDBR
+  1727          DATASET   (WS-USRSEC-FILE)
+  1728     END-EXEC.
+  1729
+  1730*
+  1731* Ver: CardDemo_v1.0-15-g27d6c6f-68 Date: 2022-07-19 23:12:34 CDT
+  1732*
+*
+*
+* Errors
+* -Line- Col Code/severity Description
+*   1666  20  801-I        External Compiler Module message
+*                          EC1321 LENGTH argument should be (area), accepted
+*                          (value)
+*   1700  20  801-I        External Compiler Module message
+*                          EC1321 LENGTH argument should be (area), accepted
+*                          (value)
+* Micro Focus COBOL                  V8.0 revision 000 Compiler
+* (C) Copyright 1984-2023 Micro Focus or one of its affiliates.
+*                                                        REF GKR-101800000A0
+* Last message on page:   35
+* Total Messages:     2
+* Unrecoverable :     0                    Severe  :     0
+* Errors        :     0                    Warnings:     0
+* Informational :     2                    Flags   :     0
+* Data:        7888     Code:        7937
