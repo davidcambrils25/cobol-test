@@ -12,6 +12,8 @@ jobs:
   build-artifacts:
     runs-on: cobol
     steps:
+      - name: Checkout Main Repository    #¿Utilizar sparse-checkout para bajarse ficheros determinados, como Copybooks?
+        uses: actions/checkout@v2
       # - name: Determine changed files and update binary versions
       #   run: |
       #     cd ${{ github.workspace }}/${{ env.REPO_NAME }}/cicd_scripts/
