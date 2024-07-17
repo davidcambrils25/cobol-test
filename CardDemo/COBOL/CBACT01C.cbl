@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.                                                 
        PROGRAM-ID.    CBACT01C.                                                 
-       AUTHOR.        AWS-test.                                                      
+       AUTHOR.        AWS-test                                                      
                                                                                 
        ENVIRONMENT DIVISION.                                                    
        INPUT-OUTPUT SECTION.                                                    
