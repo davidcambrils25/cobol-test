@@ -24,7 +24,7 @@ jobs:
         env:
           BINARY_NAME: CBACT01C #test
         run: |
-          VERSION=$(yq e '.binaries[] | select(.name == "${BINARY_NAME}").version' ./artifacts_version.yml)
+          VERSION=$(yq e '.binaries[] | select(.name == "$BINARY_NAME").version' ./artifacts_version.yml)
           echo "Binary version: $VERSION"
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
           echo $GITHUB_ENV
