@@ -2,7 +2,7 @@
 
 echo $BINARY_NAME
 
-CHANGED_FILES=$(git show --pretty="" --name-only HEAD)
+CHANGED_FILES=$(git show --pretty="" --name-only HEAD | grep '\.cbl$')
 cd ..
 for file in $CHANGED_FILES; do
   if [[ "$file" == *".cbl"* ]]; then
