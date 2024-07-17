@@ -21,7 +21,9 @@ jobs:
         id: output_version
         run: |
           pwd
-          ls
+          ls -lrt
+          cd cobol-test
+          ls -lrt
           VERSION=$(yq e '.binaries[] | select(.name == "CBACT01C").version' ./artifacts_version.yml)
           echo "Binary version: $VERSION"
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
