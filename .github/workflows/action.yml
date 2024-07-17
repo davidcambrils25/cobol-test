@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout Main Repository    #¿Utilizar sparse-checkout para bajarse ficheros determinados, como Copybooks?
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
       - name: Determine changed files and update binary versions
         run: |
           cd cicd_scripts/
