@@ -4,7 +4,7 @@
 
 echo $BINARY_NAME
 
-CHANGED_FILES=$(git diff --name-only HEAD^ HEAD)
+CHANGED_FILES=$(git show --pretty="" --name-only HEAD)
 for file in $CHANGED_FILES; do
   if [[ "$file" == *".cbl"* ]]; then
     BINARY_NAME=$(basename "$file" .cbl)
