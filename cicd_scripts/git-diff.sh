@@ -2,7 +2,7 @@
 
 echo $BINARY_NAME
 
-CHANGED_FILES=$(git show --pretty="" --name-only HEAD)
+CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD)
 cat $CHANGED_FILES
 cd ..
 for file in $CHANGED_FILES; do
