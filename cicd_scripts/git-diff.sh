@@ -25,7 +25,6 @@ for file in $CHANGED_FILES; do
     yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"version\": \"$NEW_VERSION\", \"sources\": []}]" -i ./artifacts_version.yml
   else
     NON_COBOL_FILES+=("$file")
-    echo $NON_COBOL_FILES
   fi
 done
 
