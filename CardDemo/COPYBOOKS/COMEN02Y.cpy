@@ -1,7 +1,7 @@
       ******************************************************************
       * CardDemo - Admin Menu Options
       ******************************************************************
-       01 CARDDEMO-MAIN-MENU-OPTIONS.
+       01 CARDDEMO-MAIN-MENU-OPTIONS
 
          05 CDEMO-MENU-OPT-COUNT           PIC 9(02) VALUE 10.
 

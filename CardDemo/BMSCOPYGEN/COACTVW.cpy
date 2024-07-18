@@ -1,5 +1,5 @@
       *   Micro Focus COBOL 2017  8.0.00245
-      *   Micro Focus BMS Screen Painter.
+      *   Micro Focus BMS Screen Painter
       *   MapSet Name   COACTVW
       *   Date Created  03/05/2024
       *   Time Created  18:45:26
