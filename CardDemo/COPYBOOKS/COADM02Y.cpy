@@ -35,4 +35,4 @@
              15 CDEMO-ADMIN-OPT-PGMNAME       PIC X(08).
       *
       * Ver: CardDemo_v1.0-26-g42273c1-79 Date: 2022-07-20 16:59:12 CDT
-      **
+      *
