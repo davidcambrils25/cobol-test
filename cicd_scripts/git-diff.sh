@@ -22,7 +22,7 @@ for file in $CHANGED_FILES; do
       NEW_VERSION=$((CURRENT_VERSION + 1))
     fi
     # Create new entry in the YAML file
-    yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"version\": \"$NEW_VERSION\", \"sources\": []}]" -i ./artifacts_version.yml
+    yq e "(.binaries[] | select(.name == \"$BINARY_NAME\" and .version == \"$NEW_VERSION\")).sources += [\"$SOURCE_FILE\"]" -i ./artifacts_version.yml
   else
     NON_COBOL_FILES+=("$file")
   fi
