@@ -20,9 +20,11 @@ for file in $CHANGED_FILES; do
       yq e "(.binaries[] | select(.name==\"$BINARY_NAME\").version) = \"$NEW_VERSION\"" -i ./artifacts_version.yml
     fi
   else
-    SOURCE_FILE=$(basename "$file")
-    # Use yq to add the file's basename to the sources array of the identified binary (for cobol dependency files)
-    yq e "(.binaries[] | select(.name == \"$BINARY_NAME\").sources) += [\"$SOURCE_FILE\"]" -i ./artifacts_version.yml
+    if [ -n "$BINARY_NAME" ]; then
+      SOURCE_FILE=$(basename "$file")
+      # Use yq to add the file's basename to the sources array of the identified binary (for cobol dependency files)
+      yq e "(.binaries[] | select(.name == \"$BINARY_NAME\").sources) += [\"$SOURCE_FILE\"]" -i ./artifacts_version.yml
+    fi
   fi
 done
 cat ./artifacts_version.yml
