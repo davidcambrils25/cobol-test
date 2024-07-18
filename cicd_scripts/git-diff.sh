@@ -16,14 +16,16 @@ for file in $CHANGED_FILES; do
     CURRENT_VERSION=$(yq e ".binaries[] | select(.name==\"$BINARY_NAME\").version" ./artifacts_version.yml)
     if [ -z "$CURRENT_VERSION" ]; then
       # If the binary does not exist, add it with version 1
-      yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"version\": 1}]" -i ./artifacts_version.yml
+      NEW_VERSION=1
     else
       # Increment the version number
       NEW_VERSION=$((CURRENT_VERSION + 1))
-      yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"version\": \"$NEW_VERSION\"}]" -i ./artifacts_version.yml
     fi
+    # Create new entry in the YAML file
+    yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"version\": \"$NEW_VERSION\", \"sources\": []}]" -i ./artifacts_version.yml
   else
     NON_COBOL_FILES+=("$file")
+    echo $NON_COBOL_FILES
   fi
 done
 
@@ -38,7 +40,3 @@ done
 cat ./artifacts_version.yml
 
 #TODO: hacer el push de los cambios
-
-
-#TODO
-#hacer el push de los cambios

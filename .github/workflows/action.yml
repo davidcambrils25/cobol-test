@@ -5,9 +5,6 @@ on:
         branches:
         - main
 
-env:
-  BINARY_NAME: CBACT01C #test
-
 jobs:
   build-artifacts:
     runs-on: cobol
