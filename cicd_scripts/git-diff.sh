@@ -21,8 +21,8 @@ for file in $CHANGED_FILES; do
       # Increment the version number
       NEW_VERSION=$((CURRENT_VERSION + 1))
     fi
-    # Add a new entry for the binary with the new version
-    yq e ".binaries += [{name: \"$BINARY_NAME\", version: \"$NEW_VERSION\", sources: []}]" -i ./artifacts_version.yml
+    # Create new entry in the YAML file
+    yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"version\": \"$NEW_VERSION\", \"sources\": []}]" -i ./artifacts_version.yml
   else
     NON_COBOL_FILES+=("$file")
   fi
@@ -32,7 +32,8 @@ done
 for file in "${NON_COBOL_FILES[@]}"; do
   if [ -n "$BINARY_NAME" ]; then
     SOURCE_FILE=$(basename "$file")
-    yq e "(.binaries[] | select(.name == \"$BINARY_NAME\").sources) += [\"$SOURCE_FILE\"]" -i ./artifacts_version.yml
+    # Ensure to add non-COBOL files only to the latest version of the binary
+    yq e "(.binaries[] | select(.name == \"$BINARY_NAME\" and .version == \"$NEW_VERSION\")).sources += [\"$SOURCE_FILE\"]" -i ./artifacts_version.yml
   fi
 done
 
