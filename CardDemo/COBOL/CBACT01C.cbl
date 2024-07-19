@@ -1,5 +1,5 @@
        IDENTIFICATION DIVISION.                                                 
-       PROGRAM-ID.    CBACT01C.                                                 
+       PROGRAM-ID.    CBACT01C. :                                               
        AUTHOR.        AWS-test                                                     
                                                                                 
        ENVIRONMENT DIVISION.                                                    
