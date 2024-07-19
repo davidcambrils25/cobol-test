@@ -24,18 +24,21 @@ jobs:
           git config --global user.name "davidruedasalas"
           git config --global user.email "davidruedasalas@gmail.com"
 
-      - name: Stage Changes
-        run: git add .
-  
-      - name: Commit Changes
+      - name: Check for changes
+        id: check_changes
         run: |
-          pwd 
+          git diff --exit-code ./artifacts_version.yaml
+          if [ $? -eq 1 ]; then
+            echo "CHANGES_FOUND=true" >> $GITHUB_ENV
+          else
+            echo "CHANGES_FOUND=false" >> $GITHUB_ENV
+          fi
+        
+      - name: Commit changes
+        if: env.CHANGES_FOUND == 'true'
+        run: |
+          git add ./artifacts_version.yaml
           git commit -m "Automated updated artifacts_version.yaml by GitHub Actions workflow"
-  
-      - name: Push Changes
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-        run: |
           git push https://davidruedasalas:${{ secrets.GH_PAT }}@github.com/davidcambrils25/cobol-test.git
 
       - name: Extract Binary version
