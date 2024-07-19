@@ -13,6 +13,7 @@ for file in $CHANGED_FILES; do
     # Process the COBOL file
     BINARY_NAME=$(basename "$file" .cbl)
     echo $BINARY_NAME
+    echo "BINARY_NAME=${BINARY_NAME}" >> $GITHUB_ENV
     CURRENT_VERSION=$(yq e ".binaries[] | select(.name==\"$BINARY_NAME\").version" ./artifacts_version.yml)
     if [ -z "$CURRENT_VERSION" ]; then
       # If the binary does not exist, add it with version 1

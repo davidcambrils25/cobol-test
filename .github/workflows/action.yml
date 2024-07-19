@@ -17,16 +17,26 @@ jobs:
         run: |
           cd cicd_scripts/
           chmod +x git-diff.sh
-          ./git-diff.sh "${{ env.BINARY_NAME }}"
+          ./git-diff.sh
 
-      # - name: Extract Binary version
-      #   id: output_version
-      #   env:
-      #     BINAR_NAME: CBA #test
-      #   run: |
-      #     VERSION=$(yq e '.binaries[] | select(.name == "${{ env.BINARY_NAME }}").version' ./artifacts_version.yml)
-      #     echo "VERSION=${VERSION}" >> $GITHUB_ENV
-      #     echo "Binary version: $VERSION"
-      #     echo $GITHUB_ENV
-      #     echo $BINAR_NAME
+      - name: Stage Changes
+        run: git add .
+  
+      - name: Commit Changes
+        run: git commit -m "Automated updated artifacts_version.yaml by GitHub Actions workflow"
+  
+      - name: Push Changes
+        run: |
+          git push https://davidruedasalas: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@github.com/davidcambrils25/cobol-test.git
+
+      - name: Extract Binary version
+        id: output_version
+        env:
+          BINAR_NAME: CBA #test
+        run: |
+          echo ${{ env.BINARY_NAME }}
+          VERSION=$(yq e '.binaries[] | select(.name == "${{ env.BINARY_NAME }}").version' ./artifacts_version.yml)
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          echo "Binary version: $VERSION"
+          echo $GITHUB_ENV
 
