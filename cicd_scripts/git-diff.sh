@@ -14,7 +14,8 @@ for file in $CHANGED_FILES; do
     BINARY_NAME=$(basename "$file" .cbl)
     echo $BINARY_NAME
     echo "BINARY_NAME=${BINARY_NAME}" >> $GITHUB_ENV
-    CURRENT_VERSION=$(yq e ".binaries[] | select(.name==\"$BINARY_NAME\").version" ./artifacts_version.yml)
+    #CURRENT_VERSION=$(yq e ".binaries[] | select(.name==\"$BINARY_NAME\").version" ./artifacts_version.yml)
+    CURRENT_VERSION=$(yq e ".binaries[] | select(.name == env.BINARY_NAME) | .version" ./artifacts_version.yml | sort -V | tail -n1)
     if [ -z "$CURRENT_VERSION" ]; then
       # If the binary does not exist, add it with version 1
       NEW_VERSION=1
@@ -22,6 +23,7 @@ for file in $CHANGED_FILES; do
       # Increment the version number
       NEW_VERSION=$((CURRENT_VERSION + 1))
     fi
+    echo "NEW_VERSION=${NEW_VERSION}" >> $GITHUB_ENV
     # Create new entry in the YAML file
     yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"version\": \"$NEW_VERSION\", \"sources\": []}]" -i ./artifacts_version.yml
   else
