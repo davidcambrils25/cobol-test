@@ -24,6 +24,7 @@ for file in $CHANGED_FILES; do
       NEW_VERSION=$((CURRENT_VERSION + 1))
     fi
     echo "NEW_VERSION=${NEW_VERSION}" >> $GITHUB_ENV
+    echo "versioon: ${NEW_VERSION}"
     # Create new entry in the YAML file
     yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"version\": \"$NEW_VERSION\", \"sources\": []}]" -i ./artifacts_version.yml
   else
