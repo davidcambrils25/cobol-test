@@ -2,7 +2,7 @@
       * Program     : COADM01C.CBL
       * Application : CardDemo
       * Type        : CICS COBOL Program
-      * Function    : Admin Menu for Admin users
+      * Function    : Admin Menu for Admin users.
       ******************************************************************
        IDENTIFICATION DIVISION.
        PROGRAM-ID. COADM01C.

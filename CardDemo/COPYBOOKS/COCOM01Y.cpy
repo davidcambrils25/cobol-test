@@ -1,5 +1,5 @@
       ******************************************************************
-      * Communication area for CardDemo application programs
+      * Communication area for CardDemo application programs.
       ******************************************************************
        01 CARDDEMO-COMMAREA.
           05 CDEMO-GENERAL-INFO.
