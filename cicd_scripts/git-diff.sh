@@ -15,7 +15,7 @@ for file in $CHANGED_FILES; do
     echo $BINARY_NAME
     echo "BINARY_NAME=${BINARY_NAME}" >> $GITHUB_ENV
     #CURRENT_VERSION=$(yq e ".binaries[] | select(.name==\"$BINARY_NAME\").version" ./artifacts_version.yml)
-    CURRENT_VERSION=$(yq e ".binaries[] | select(.name == $BINARY_NAME) | .version" ./artifacts_version.yml | sort -V | tail -n1)
+    CURRENT_VERSION=$(yq e ".binaries[] | select(.name == \"$BINARY_NAME\") | .version" ./artifacts_version.yml | sort -V | tail -n1)
     if [ -z "$CURRENT_VERSION" ]; then
       # If the binary does not exist, add it with version 1
       NEW_VERSION=1

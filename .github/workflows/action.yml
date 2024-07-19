@@ -43,9 +43,12 @@ jobs:
 
       - name: Extract Binary version
         id: output_version
+        env:
+          BINARY_NAME: ${{ env.BINARY_NAME }}
+          NEW_VERSION: ${{ env.NEW_VERSION }}
         run: |
           echo ${{ env.BINARY_NAME }}
-          VERSION=$(yq e ".binaries[] | select(.name == env.BINARY_NAME) | .versions[] | select(.version == env.NEW_VERSION)" ./artifacts_version.yml)
+          VERSION=$(yq e ".binaries[] | select(.name == \"$BINARY_NAME\") | .versions[] | select(.version == \"$NEW_VERSION\")" ./artifacts_version.yml)
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
           echo "Binary version: $VERSION"
 
