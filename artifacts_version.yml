@@ -1,6 +1,8 @@
 global_version: 1.0
-
 binaries:
   - name: CBACT01C
     version: 2
     sources: [test1.yml, test2.yml]
+  - name: CBACT01C
+    version: "3"
+    sources: [action.yml]
