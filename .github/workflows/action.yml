@@ -28,13 +28,14 @@ jobs:
         run: git add .
   
       - name: Commit Changes
-        run: git commit -m "Automated updated artifacts_version.yaml by GitHub Actions workflow"
+        run: |
+          pwd 
+          git commit -m "Automated updated artifacts_version.yaml by GitHub Actions workflow"
   
       - name: Push Changes
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          pwd
           git push https://davidruedasalas:${{ secrets.GH_PAT }}@github.com/davidcambrils25/cobol-test.git
 
       - name: Extract Binary version
