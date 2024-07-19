@@ -18,6 +18,11 @@ jobs:
           cd cicd_scripts/
           chmod +x git-diff.sh
           ./git-diff.sh
+      
+      - name: Set up Git
+        run: |
+          git config --global user.name "davidruedasalas"
+          git config --global user.email "davidruedasalas@gmail.com"
 
       - name: Stage Changes
         run: git add .
