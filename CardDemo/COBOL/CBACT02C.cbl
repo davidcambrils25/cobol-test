@@ -1,5 +1,5 @@
        IDENTIFICATION DIVISION.                                                 
-       PROGRAM-ID.    CBACT02C.     :                                            
+       PROGRAM-ID.    CBACT02C.                                            
        AUTHOR.        AWS                                                 
                                                                                 
        ENVIRONMENT DIVISION.                                                    

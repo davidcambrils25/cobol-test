@@ -45,7 +45,7 @@ jobs:
         id: output_version
         run: |
           echo ${{ env.BINARY_NAME }}
-          echo "Binary version to deploy: $NEW_VERSION"
+          echo "Binary version to deploy: ${{ env.NEW_VERSION }}
 
 
 #VERSION=$(yq e ".binaries[] | select(.name == \"$BINARY_NAME\") | .versions[] | select(.version == \"$NEW_VERSION\")" ./artifacts_version.yml)#
