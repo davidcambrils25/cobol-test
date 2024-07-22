@@ -1,8 +1,11 @@
 name: Cobol CI/CD Pipeline
 
 on:
-    push:
-        branches:
+    # push:
+    #     branches:
+    #     - main
+    pull_request:
+      branches:
         - main
 
 jobs:
