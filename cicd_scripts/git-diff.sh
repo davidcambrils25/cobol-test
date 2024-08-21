@@ -15,18 +15,18 @@ for file in $CHANGED_FILES; do
     echo $BINARY_NAME
     echo "BINARY_NAME=${BINARY_NAME}" >> $GITHUB_ENV
     # Check if the entry exists
-    ENTRY_EXISTS=$(yq e ".binaries[] | select(.name == \"$BINARY_NAME\")" $REPO_MANAGEMENT_PATH/artifacts_version.yml)
+    ENTRY_EXISTS=$(yq e ".binaries[] | select(.name == \"$BINARY_NAME\")" ./artifacts_version.yml)
 
     if [ -z "$ENTRY_EXISTS" ]; then
       NEW_VERSION=1
       # Create new entry in the YAML file
-      yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"runID\":\"$RUNNER_ID\", \"version\": \"$NEW_VERSION\", \"sources\": []}]" -i $REPO_MANAGEMENT_PATH/artifacts_version.yml
+      yq e ".binaries += [{\"name\":\"$BINARY_NAME\", \"runID\":\"$RUNNER_ID\", \"version\": \"$NEW_VERSION\", \"sources\": []}]" -i ./artifacts_version.yml
 
     else
       #Search the last version
-      CURRENT_VERSION=$(yq e ".binaries[] | select(.name == \"$BINARY_NAME\") | .version" $REPO_MANAGEMENT_PATH/artifacts_version.yml | sort -V | tail -n1)
+      CURRENT_VERSION=$(yq e ".binaries[] | select(.name == \"$BINARY_NAME\") | .version" ./artifacts_version.yml | sort -V | tail -n1)
       NEW_VERSION=$((CURRENT_VERSION + 1))
-      yq e "(.binaries[] | select(.name == \"$BINARY_NAME\") | .version) = \"$NEW_VERSION\"" -i $REPO_MANAGEMENT_PATH/artifacts_version.yml
+      yq e "(.binaries[] | select(.name == \"$BINARY_NAME\") | .version) = \"$NEW_VERSION\"" -i ./artifacts_version.yml
     fi
   else
     NON_COBOL_FILES+=("$file")
