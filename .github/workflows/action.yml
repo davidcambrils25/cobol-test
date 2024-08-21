@@ -39,6 +39,7 @@ jobs:
         
       - name: Commit changes
         run: |
+          cd /home/runner/actions-runner/_work/cobol-test/cobol-test
           git add ./artifacts_version.yaml
           git commit -m "Automated updated artifacts_version.yaml by GitHub Actions workflow"
           git push https://davidruedasalas:${{ secrets.GH_PAT }}@github.com/davidcambrils25/cobol-test.git

@@ -26,7 +26,9 @@ for file in $CHANGED_FILES; do
       #Search the last version
       CURRENT_VERSION=$(yq e ".binaries[] | select(.name == \"$BINARY_NAME\") | .version" ./artifacts_version.yml | sort -V | tail -n1)
       NEW_VERSION=$((CURRENT_VERSION + 1))
-      yq e "(.binaries[] | select(.name == \"$BINARY_NAME\") | .version) = \"$NEW_VERSION\"" -i ./artifacts_version.yml
+      #yq e "(.binaries[] | select(.name == \"$BINARY_NAME\") | .version) = \"$NEW_VERSION\"" -i ./artifacts_version.yml
+      # Update the version of the entry with the highest version
+      yq e "(.binaries[] | select(.name == \"$BINARY_NAME\" and .version == \"$CURRENT_VERSION\") | .version) = \"$NEW_VERSION\"" -i ./artifacts_version.yml
     fi
   else
     NON_COBOL_FILES+=("$file")
