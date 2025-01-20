@@ -1,12 +1,14 @@
 name: Cobol CI/CD Pipeline
+run-name: 'test: ${{ github.ref }}'
 
 on:
+  workflow_dispatch:
     # push:
     #     branches:
     #     - main
-    pull_request:
-      branches:
-        - main
+    #pull_request:
+     # branches:
+      #  - main
 
 jobs:
   build-artifacts:
